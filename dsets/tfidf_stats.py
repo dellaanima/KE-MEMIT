@@ -15,20 +15,21 @@ REMOTE_VOCAB_URL = f"{REMOTE_ROOT_URL}/data/dsets/tfidf_vocab.json"
 
 
 def get_tfidf_vectorizer(data_dir: str):
-    """
-    Returns an sklearn TF-IDF vectorizer. See their website for docs.
-    Loading hack inspired by some online blog post lol.
-    """
-
     data_dir = Path(data_dir)
-
     idf_loc, vocab_loc = data_dir / "idf.npy", data_dir / "tfidf_vocab.json"
+
     if not (idf_loc.exists() and vocab_loc.exists()):
         collect_stats(data_dir)
 
     idf = np.load(idf_loc)
-    with open(vocab_loc, "r") as f:
-        vocab = json.load(f)
+
+    try:
+        with open(vocab_loc, "r") as f:
+            vocab = json.load(f)
+    except json.decoder.JSONDecodeError as e:
+        print(f"JSON 파일을 읽는 중 오류가 발생했습니다: {e}")
+        # 오류가 발생한 경우 더 이상 진행하지 않고 반환
+        return None
 
     class MyVectorizer(TfidfVectorizer):
         TfidfVectorizer.idf_ = idf
@@ -38,6 +39,7 @@ def get_tfidf_vectorizer(data_dir: str):
     vec._tfidf._idf_diag = sp.spdiags(idf, diags=0, m=len(idf), n=len(idf))
 
     return vec
+
 
 
 def collect_stats(data_dir: str):
