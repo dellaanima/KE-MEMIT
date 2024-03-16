@@ -1,3 +1,4 @@
+from tqdm import tqdm 
 import json
 import shutil
 from itertools import islice
@@ -98,15 +99,23 @@ def main(
         model_name = model.config._name_or_path
 
     # Load data
-    print("Loading dataset, attribute snippets, tf-idf data")
-    snips = AttributeSnippets(DATA_DIR) if not skip_generation_tests else None
-    vec = get_tfidf_vectorizer(DATA_DIR) if not skip_generation_tests else None
-
+    #print("Loading dataset, attribute snippets, tf-idf data")
+    #snips = AttributeSnippets(DATA_DIR) if not skip_generation_tests else None
+    #vec = get_tfidf_vectorizer(DATA_DIR) if not skip_generation_tests else None
+    # Load data
+    with tqdm(total=2, desc="Loading data") as pbar:
+        print("Loading dataset, attribute snippets, tf-idf data")
+        snips = AttributeSnippets(DATA_DIR) if not skip_generation_tests else None
+        pbar.update(1)
+        vec = get_tfidf_vectorizer(DATA_DIR) if not skip_generation_tests else None
+        pbar.update(1)
+        
     if num_edits > 1:
         assert ds_name != "cf", f"{ds_name} does not support multiple edits"
 
     ds_class, ds_eval_method = DS_DICT[ds_name]
     ds = ds_class(DATA_DIR, tok=tok, size=dataset_size_limit)
+    
 
     # Get cache templates
     cache_template = None
@@ -119,8 +128,9 @@ def main(
         print(f"Will load cache from {cache_template}")
 
     # Iterate through dataset
-    for record_chunks in chunks(ds, num_edits):
+    for record_chunks in tqdm(chunks(ds, num_edits), desc="Processing records"):
         case_result_template = str(run_dir / "{}_edits-case_{}.json")
+
 
         # Is the chunk already done?
         already_finished = True
@@ -162,7 +172,7 @@ def main(
         # Evaluate new model
         start = time()
         gen_test_vars = [snips, vec]
-        for record in record_chunks:
+        for record in tqdm(record_chunks, desc="Evaluating records"):
             out_file = Path(case_result_template.format(num_edits, record["case_id"]))
             if out_file.exists():
                 print(f"Skipping {out_file}; already exists")
