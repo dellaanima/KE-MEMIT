@@ -95,8 +95,26 @@ if __name__ == "__main__":
         "--alg_name", choices=["MEMIT", "FT", "ROME", "MEND"], required=True
     )
     parser.add_argument(
-        "--model_name", choices=["gpt2-xl", "EleutherAI/gpt-j-6B"], required=True
+        "--model_name", choices=[
+            "gpt2-xl",
+            "EleutherAI/gpt-j-6B",
+            "EleutherAI/gpt-neox-20b",
+            "gpt2-large",
+            "gpt2-medium",
+            "gpt2",
+            "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+            "TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T",
+            "meta-llama/Llama-2-7b-hf" 
+         ], required=True
+    
+    
+               
+            
+             
+    
     )
+
+    
     parser.add_argument("--hparams_fname", type=str, required=True)
     parser.add_argument(
         "--ds_name",

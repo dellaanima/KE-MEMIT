@@ -35,7 +35,24 @@ def main():
     def aa(*args, **kwargs):
         parser.add_argument(*args, **kwargs)
 
-    aa("--model_name", default="gpt2-xl", choices=["gpt2-xl", "EleutherAI/gpt-j-6B"])
+    aa("--model_name", default="gpt2-xl", choices=[
+            "gpt2-xl",
+            "EleutherAI/gpt-j-6B",
+            "EleutherAI/gpt-neox-20b",
+            "gpt2-large",
+            "gpt2-medium",
+            "gpt2",
+            "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+            "TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T",
+            "meta-llama/Llama-2-7b-hf" 
+
+     ])
+
+    
+
+
+
+    
     aa("--dataset", default="wikipedia", choices=["wikitext", "wikipedia"])
     aa("--layers", default=[17], type=lambda x: list(map(int, x.split(","))))
     aa("--to_collect", default=["mom2"], type=lambda x: x.split(","))

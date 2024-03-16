@@ -47,6 +47,9 @@ def main():
             "gpt2-large",
             "gpt2-medium",
             "gpt2",
+            "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+            "TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T",
+            "meta-llama/Llama-2-7b-hf" 
         ],
     )
     aa("--fact_file", default=None)
@@ -96,11 +99,13 @@ def main():
             uniform_noise = True
             noise_level = float(noise_level[1:])
 
-    for knowledge in tqdm(knowns):
+    #for knowledge in tqdm(knowns):
+    for knowledge in tqdm(knowns[:20]):
         known_id = knowledge["known_id"]
         for kind in None, "mlp", "attn":
             kind_suffix = f"_{kind}" if kind else ""
             filename = f"{result_dir}/knowledge_{known_id}{kind_suffix}.npz"
+            print('expected answer : ', knowledge["attribute"])
             if not os.path.isfile(filename):
                 result = calculate_hidden_flow(
                     mt,
@@ -119,13 +124,19 @@ def main():
                 numpy.savez(filename, **numpy_result)
             else:
                 numpy_result = numpy.load(filename, allow_pickle=True)
+            
+            print('generated answer :', str(numpy_result["answer"]).strip()) 
+
             if not numpy_result["correct_prediction"]:
                 tqdm.write(f"Skipping {knowledge['prompt']}")
                 continue
+            else :
+                tqdm.write(f"Processing {knowledge['prompt']}")
+
             plot_result = dict(numpy_result)
             plot_result["kind"] = kind
             pdfname = f'{pdf_dir}/{str(numpy_result["answer"]).strip()}_{known_id}{kind_suffix}.pdf'
-            if known_id > 200:
+            if known_id > 20:
                 continue
             plot_trace_heatmap(plot_result, savepdf=pdfname)
 
@@ -176,6 +187,7 @@ def trace_with_patch(
 
     embed_layername = layername(model, 0, "embed")
 
+
     def untuple(x):
         return x[0] if isinstance(x, tuple) else x
 
@@ -202,7 +214,7 @@ def trace_with_patch(
             return x
         # If this layer is in the patch_spec, restore the uncorrupted hidden state
         # for selected tokens.
-        h = untuple(x)
+        h = untuple(x)  # h shape (num_sample +1 , token len, hiddens_state size) (ex. torch.Size([11, 10, 2048]) 
         for t in patch_spec[layer]:
             h[1:, t] = h[0, t]
         return x
@@ -311,12 +323,12 @@ def calculate_hidden_flow(
     Runs causal tracing over every token/layer combination in the network
     and returns a dictionary numerically summarizing the results.
     """
-    # TODO fix the noise thing. base on the model.
     inp = make_inputs(mt.tokenizer, [prompt] * (samples + 1))
     with torch.no_grad():
         answer_t, base_score = [d[0] for d in predict_from_input(mt.model, inp)]
     [answer] = decode_tokens(mt.tokenizer, [answer_t])
     if expect is not None and answer.strip() != expect:
+        
         return dict(correct_prediction=False)
     e_range = find_token_range(mt.tokenizer, inp["input_ids"][0], subject)
     if token_range == "subject_last":
@@ -460,11 +472,11 @@ class ModelAndTokenizer:
     ):
         if tokenizer is None:
             assert model_name is not None
-            tokenizer = AutoTokenizer.from_pretrained(model_name)
+            tokenizer = AutoTokenizer.from_pretrained(model_name, use_auth_token='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')
         if model is None:
             assert model_name is not None
             model = AutoModelForCausalLM.from_pretrained(
-                model_name, low_cpu_mem_usage=low_cpu_mem_usage, torch_dtype=torch_dtype
+                model_name, low_cpu_mem_usage=low_cpu_mem_usage, torch_dtype=torch_dtype, use_auth_token='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'
             )
             nethook.set_requires_grad(False, model)
             model.eval().cuda()
@@ -473,8 +485,10 @@ class ModelAndTokenizer:
         self.layer_names = [
             n
             for n, m in model.named_modules()
-            if (re.match(r"^(transformer|gpt_neox)\.(h|layers)\.\d+$", n))
+            if re.match(r"^(transformer|gpt_neox)\.(h|layers)\.\d+$", n) or
+               re.match(r"^model\.layers\.\d+$", n)  # Added pattern for LLaMA layers
         ]
+        self.num_layers = len(self.layer_names)
         self.num_layers = len(self.layer_names)
 
     def __repr__(self):
@@ -486,17 +500,32 @@ class ModelAndTokenizer:
 
 
 def layername(model, num, kind=None):
-    if hasattr(model, "transformer"):
+    if hasattr(model, "transformer"):        
         if kind == "embed":
             return "transformer.wte"
         return f'transformer.h.{num}{"" if kind is None else "." + kind}'
-    if hasattr(model, "gpt_neox"):
+    elif hasattr(model, "gpt_neox"):
         if kind == "embed":
             return "gpt_neox.embed_in"
         if kind == "attn":
             kind = "attention"
         return f'gpt_neox.layers.{num}{"" if kind is None else "." + kind}'
-    assert False, "unknown transformer structure"
+        
+
+    # added for llama   
+    elif hasattr(model, "model"):  # 'model' is the main attribute for TinyLlama layers        
+        if kind == "embed":
+            return "model.embed_tokens"
+        if kind == "attn":
+            kind = "self_attn"
+            return f'model.layers.{num}.{kind}'
+        if kind == "mlp":
+            return f'model.layers.{num}.{kind}'
+        if kind is None:
+            return f'model.layers.{num}'
+    else:
+        assert False, "unknown transformer structure"
+
 
 
 def guess_subject(prompt):
@@ -545,7 +574,7 @@ def plot_trace_heatmap(result, savepdf=None, title=None, xlabel=None, modelname=
     for i in range(*result["subject_range"]):
         labels[i] = labels[i] + "*"
 
-    with plt.rc_context(rc={"font.family": "Times New Roman"}):
+    with plt.rc_context(rc={"font.family": "DejaVu Sans"}):
         fig, ax = plt.subplots(figsize=(3.5, 2), dpi=200)
         h = ax.pcolor(
             differences,
@@ -613,9 +642,23 @@ def decode_tokens(tokenizer, token_array):
     return [tokenizer.decode([t]) for t in token_array]
 
 
+
+
+
+
+
+
+
+
+# Modified for llama
 def find_token_range(tokenizer, token_array, substring):
     toks = decode_tokens(tokenizer, token_array)
     whole_string = "".join(toks)
+    
+    # tokenizer name "llama"가 포함되어 있는 경우에만 공백 제거
+    if 'llama' in tokenizer.__class__.__name__.lower():
+        substring = substring.replace(" ", "")
+
     char_loc = whole_string.index(substring)
     loc = 0
     tok_start, tok_end = None, None
@@ -626,7 +669,10 @@ def find_token_range(tokenizer, token_array, substring):
         if tok_end is None and loc >= char_loc + len(substring):
             tok_end = i + 1
             break
+
     return (tok_start, tok_end)
+
+
 
 
 def predict_token(mt, prompts, return_p=False):

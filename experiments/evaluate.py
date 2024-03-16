@@ -231,7 +231,19 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--model_name",
-        choices=["gpt2-medium", "gpt2-large", "gpt2-xl", "EleutherAI/gpt-j-6B"],
+        choices=[
+            "gpt2-xl",
+            "EleutherAI/gpt-j-6B",
+            "EleutherAI/gpt-neox-20b",
+            "gpt2-large",
+            "gpt2-medium",
+            "gpt2",
+            "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+            "TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T",
+            "meta-llama/Llama-2-7b-hf" 
+        ],
+
+    
         default="gpt2-xl",
         help="Model to edit.",
         required=True,
