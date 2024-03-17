@@ -36,7 +36,7 @@ def compute_z(
     print("Computing right vector (v)")
 
     # Tokenize target into list of int token IDs
-    target_ids = tok(request["target_new"]["str"], return_tensors="pt").to("cuda")[
+    target_ids = tok(request["target_new"]["str"], return_tensors="pt").to("cuda:0")[
         "input_ids"
     ][0]
 
@@ -52,10 +52,10 @@ def compute_z(
         [prompt.format(request["subject"]) for prompt in all_prompts],
         return_tensors="pt",
         padding=True,
-    ).to("cuda")
+    ).to("cuda:0")
 
     # Compute rewriting targets
-    rewriting_targets = torch.tensor(-100, device="cuda").repeat(
+    rewriting_targets = torch.tensor(-100, device="cuda:0").repeat(
         len(rewriting_prompts), *input_tok["input_ids"].shape[1:]
     )
     for i in range(len(rewriting_prompts)):
@@ -78,9 +78,17 @@ def compute_z(
     # Set up an optimization over a latent vector that, when output at the
     # rewrite layer, i.e. hypothesized fact lookup location, will induce the
     # target token to be predicted at the final layer.
-    delta = torch.zeros((model.config.n_embd,), requires_grad=True, device="cuda")
+
+    # Modified for LLaMA 
+    model_name = model.config._name_or_path
+
+    if 'llama' in model_name.lower():
+        delta = torch.zeros((model.config.hidden_size,), requires_grad=True, device="cuda:0")
+    else:
+        delta = torch.zeros((model.config.n_embd,), requires_grad=True, device="cuda:0")
     target_init, kl_distr_init = None, None
 
+    
     # Inserts new "delta" variable at the appropriate part of the computation
     def edit_output_fn(cur_out, cur_layer):
         nonlocal target_init

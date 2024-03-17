@@ -53,7 +53,7 @@ def main(
     use_cache: bool = False,
 ):
     # Set algorithm-specific variables
-    params_class, apply_algo = ALG_DICT[alg_name]
+    params_class, apply_algo = ALG_DICT[alg_name] # ex. "MEMIT": (MEMITHyperParams, apply_memit_to_model), 
 
     # Determine run directory
     # Create new dir if not continuing from prev run OR prev run doesn't exist
@@ -128,6 +128,7 @@ def main(
         print(f"Will load cache from {cache_template}")
 
     # Iterate through dataset
+    # chunks : ds(dataset)를 한번에 num_edits 갯수 씩 edit (즉 ex. 4개의 ds 에 대해서, num_edits = 2 로 설정해서 MEMIT Execute 하면 2번의 Executions 
     for record_chunks in tqdm(chunks(ds, num_edits), desc="Processing records"):
         case_result_template = str(run_dir / "{}_edits-case_{}.json")
 
@@ -220,7 +221,7 @@ def window(seq, n=2):
         yield result
 
 
-def chunks(arr, n):
+def chunks(arr, n):  # chunks(ds, num_edits) 
     """Yield successive n-sized chunks from arr."""
     for i in range(0, len(arr), n):
         yield arr[i : i + n]

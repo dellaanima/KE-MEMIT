@@ -15,6 +15,8 @@ REMOTE_VOCAB_URL = f"{REMOTE_ROOT_URL}/data/dsets/tfidf_vocab.json"
 
 from tqdm import tqdm  # 프로그레스 바를 위한 라이브러리
 
+
+
 def get_tfidf_vectorizer(data_dir: str):
     data_dir = Path(data_dir)
 
@@ -23,31 +25,18 @@ def get_tfidf_vectorizer(data_dir: str):
         collect_stats(data_dir)
 
     idf = np.load(idf_loc)
-    vocab = {}
+
+    # 파일 크기를 먼저 확인하여 프로그레스 바의 최대 값으로 설정
+    file_size = vocab_loc.stat().st_size
 
     try:
         with open(vocab_loc, "r") as f:
-            # 파일의 총 라인 수를 파악하여 프로그레스 바의 최대 값으로 설정
-            total_lines = sum(1 for line in f)
-            f.seek(0)  # 파일 포인터를 다시 파일 시작으로 이동
-
-            # 파일을 줄 단위로 읽어서 처리하여 문제가 있는 부분을 건너뛸 수 있습니다.
-            json_content = ''
-            with tqdm(total=total_lines, desc="Reading TF-IDF vocabulary") as pbar:
-                for line in f:
-                    try:
-                        json_content += line
-                        # 중간 검증을 통해 JSON 형식이 올바른지 확인
-                        json.loads(json_content)
-                        pbar.update(1)  # 프로그레스 바 업데이트
-                    except json.JSONDecodeError:
-                        pbar.update(1)  # 오류가 있어도 프로그레스 바 업데이트
-                        continue  # 오류가 발생하면 다음 줄로 넘어갑니다.
-
-            # 마지막으로 검증된 JSON 내용을 사용
-            vocab = json.loads(json_content)
+            with tqdm(total=file_size, desc="Reading TF-IDF vocabulary") as pbar:
+                vocab = json.load(f)
+                pbar.update(file_size)  # 파일을 전부 읽었으니 프로그레스 바를 완료 상태로 업데이트
     except Exception as e:
         print(f"Error while reading {vocab_loc}: {e}")
+        vocab = {}
 
     class MyVectorizer(TfidfVectorizer):
         TfidfVectorizer.idf_ = idf
@@ -59,30 +48,6 @@ def get_tfidf_vectorizer(data_dir: str):
     return vec
 
 
-#def get_tfidf_vectorizer(data_dir: str):
-#    """
-#    Returns an sklearn TF-IDF vectorizer. See their website for docs.
-#    Loading hack inspired by some online blog post lol.
-#    """
-#
-#    data_dir = Path(data_dir)
-#
-#    idf_loc, vocab_loc = data_dir / "idf.npy", data_dir / "tfidf_vocab.json"
-#    if not (idf_loc.exists() and vocab_loc.exists()):
-#        collect_stats(data_dir)
-#
-#    idf = np.load(idf_loc)
-#    with open(vocab_loc, "r") as f:
-#        vocab = json.load(f)
-#
-#    class MyVectorizer(TfidfVectorizer):
-#        TfidfVectorizer.idf_ = idf
-#
-#    vec = MyVectorizer()
-#    vec.vocabulary_ = vocab
-#    vec._tfidf._idf_diag = sp.spdiags(idf, diags=0, m=len(idf), n=len(idf))
-#
-#    return vec
 
 
 

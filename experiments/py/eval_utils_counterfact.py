@@ -8,6 +8,8 @@ import typing
 from itertools import chain
 
 import nltk
+nltk.download('punkt')
+
 import numpy as np
 import scipy
 import torch
