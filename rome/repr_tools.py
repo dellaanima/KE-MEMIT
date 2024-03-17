@@ -99,13 +99,15 @@ def get_words_idxs_in_templates(
         raise ValueError(f"Unknown subtoken type: {subtoken}")
 
 
+
+# 주어진 contexts 에 대해 Moddel 실행하고, 지정된 layer 에서 idxs 에 해당하는 token 의 Representation 을 평균내어서 반환함. 
 def get_reprs_at_idxs(
     model: AutoModelForCausalLM,
     tok: AutoTokenizer,
     contexts: List[str],
     idxs: List[List[int]],
     layer: int,
-    module_template: str,
+    module_template: str,  # ex. transformer.h.{}' 
     track: str = "in",
 ) -> torch.Tensor:
     """
@@ -113,10 +115,12 @@ def get_reprs_at_idxs(
     at each index in `idxs`.
     """
 
+    # contexts 를 batch 로 분할 
     def _batch(n):
         for i in range(0, len(contexts), n):
             yield contexts[i : i + n], idxs[i : i + n]
 
+    # 추적할 유형 check 
     assert track in {"in", "out", "both"}
     both = track == "both"
     tin, tout = (
@@ -124,6 +128,8 @@ def get_reprs_at_idxs(
         (track == "out" or both),
     )
     module_name = module_template.format(layer)
+
+    # return 할 repr 저장할 dictionary     
     to_return = {"in": [], "out": []}
 
     def _process(cur_repr, batch_idxs, key):
@@ -132,7 +138,8 @@ def get_reprs_at_idxs(
         for i, idx_list in enumerate(batch_idxs):
             to_return[key].append(cur_repr[i][idx_list].mean(0))
 
-    for batch_contexts, batch_idxs in _batch(n=128):
+    #for batch_contexts, batch_idxs in _batch(n=128):
+    for batch_contexts, batch_idxs in _batch(n=4):  # 배치 사이즈를 32로 조정
         contexts_tok = tok(batch_contexts, padding=True, return_tensors="pt").to(
             next(model.parameters()).device
         )
