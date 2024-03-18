@@ -39,7 +39,71 @@ def get_reprs_at_word_tokens(
         track,
     )
 
+# Modified for LlaMA ! 
+from copy import deepcopy
 
+def get_words_idxs_in_templates(
+    tok: AutoTokenizer, context_templates: List[str], words: List[str], subtoken: str
+) -> List[List[int]]:
+    """
+    Given list of template strings, each with *one* format specifier
+    (e.g. "{} plays basketball"), and words to be substituted into the
+    template, computes the post-tokenization index of their last tokens,
+    considering tokenizer-specific behavior (e.g., LLaMA tokenizer).
+    """
+
+    assert all(
+        tmp.count("{}") == 1 for tmp in context_templates
+    ), "We currently do not support multiple fill-ins for context"
+
+    # Compute prefixes and suffixes of the tokenized context
+    fill_idxs = [tmp.index("{}") for tmp in context_templates]
+    prefixes, suffixes = [
+        tmp[:fill_idxs[i]] for i, tmp in enumerate(context_templates)
+    ], [tmp[fill_idxs[i] + 2:] for i, tmp in enumerate(context_templates)]
+    words = deepcopy(words)
+
+    # Pre-process tokens, considering tokenizer-specific behavior
+    # LLaMA tokenizer does not split whitespaces, so we need to handle it differently
+    for i, prefix in enumerate(prefixes):
+        if len(prefix) > 0 and not 'llama' in tok.__class__.__name__.lower():
+            assert prefix[-1] == " "
+            prefix = prefix[:-1]
+
+        if 'llama' in tok.__class__.__name__.lower():
+            words[i] = words[i].strip()
+
+        prefixes[i] = prefix
+
+    # Tokenize to determine lengths
+    assert len(prefixes) == len(words) == len(suffixes)
+    n = len(prefixes)
+    batch_tok = tok([*prefixes, *words, *suffixes], add_special_tokens=False)
+    prefixes_tok, words_tok, suffixes_tok = [
+        batch_tok.input_ids[i * n:(i + 1) * n] for i in range(3)
+    ]
+    prefixes_len, words_len, suffixes_len = [
+        [len(tok.convert_ids_to_tokens(el)) for el in tok_list]
+        for tok_list in [prefixes_tok, words_tok, suffixes_tok]
+    ]
+
+    # Compute indices of last tokens, considering the behavior of LLaMA tokenizer
+    if subtoken == "last" or subtoken == "first_after_last":
+        return [
+            [
+                prefixes_len[i]
+                + words_len[i]
+                - (1 if subtoken == "last" or suffixes_len[i] == 0 else 0)
+            ]
+            for i in range(n)
+        ]
+    elif subtoken == "first":
+        return [[prefixes_len[i]] for i in range(n)]
+    else:
+        raise ValueError(f"Unknown subtoken type: {subtoken}")
+
+'''
+#Original function         
 def get_words_idxs_in_templates(
     tok: AutoTokenizer, context_templates: str, words: str, subtoken: str
 ) -> int:
@@ -97,7 +161,7 @@ def get_words_idxs_in_templates(
         return [[prefixes_len[i]] for i in range(n)]
     else:
         raise ValueError(f"Unknown subtoken type: {subtoken}")
-
+''' 
 
 
 # 주어진 contexts 에 대해 Moddel 실행하고, 지정된 layer 에서 idxs 에 해당하는 token 의 Representation 을 평균내어서 반환함. 
@@ -105,7 +169,7 @@ def get_reprs_at_idxs(
     model: AutoModelForCausalLM,
     tok: AutoTokenizer,
     contexts: List[str],
-    idxs: List[List[int]],
+    idxs: List[List[int]], # idxs 이것이 llama 에서 뭔가 안맞음.. 
     layer: int,
     module_template: str,  # ex. transformer.h.{}' 
     track: str = "in",
@@ -132,14 +196,18 @@ def get_reprs_at_idxs(
     # return 할 repr 저장할 dictionary     
     to_return = {"in": [], "out": []}
 
+
     def _process(cur_repr, batch_idxs, key):
         nonlocal to_return
-        cur_repr = cur_repr[0] if type(cur_repr) is tuple else cur_repr
+        cur_repr = cur_repr[0] if type(cur_repr) is tuple else cur_repr  
+        # ex. for tiny_llama : cur_repr.shape torch.Size([4, 23, 5632])  (batch, seq_len, hidden_state)
         for i, idx_list in enumerate(batch_idxs):
-            to_return[key].append(cur_repr[i][idx_list].mean(0))
+            to_return[key].append(cur_repr[i][idx_list].mean(0)) # cur_repr[i][idx_list].mean(0).shape :  torch.Size([5632]) 
+            print("cur_repr[i] :" , i)
+            print("[idx_list] : " , idx_list )
 
     #for batch_contexts, batch_idxs in _batch(n=128):
-    for batch_contexts, batch_idxs in _batch(n=4):  # 배치 사이즈를 32로 조정
+    for batch_contexts, batch_idxs in _batch(n=4):  # 배치 사이즈 조정해봄. 
         contexts_tok = tok(batch_contexts, padding=True, return_tensors="pt").to(
             next(model.parameters()).device
         )
@@ -154,7 +222,7 @@ def get_reprs_at_idxs(
                 model(**contexts_tok)
 
         if tin:
-            _process(tr.input, batch_idxs, "in")
+            _process(tr.input, batch_idxs, "in")  # _process(cur_repr, batch_idxs, key): 
         if tout:
             _process(tr.output, batch_idxs, "out")
 

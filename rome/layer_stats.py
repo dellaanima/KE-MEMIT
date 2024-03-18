@@ -122,7 +122,15 @@ def layer_stats(
 
     # Continue with computation of statistics
     batch_size = 100  # Examine this many dataset texts at once
-    npos = model.config.n_positions
+
+    model_name = model.config._name_or_path
+
+    # LLaMA 모델의 경우 max_position_embeddings 사용, 그 외의 경우 n_positions 사용
+    if 'llama' in model_name.lower():
+        npos = model.config.max_position_embeddings
+    else:
+        npos = model.config.n_positions
+
     if batch_tokens is None:
         batch_tokens = npos * 3  # Sort and divide into batches with this many tokens
     if precision is None:
