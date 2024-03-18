@@ -1,0 +1,115 @@
+{
+ "case_id": 45,
+ "grouped_case_ids": [
+  44,
+  45
+ ],
+ "num_edits": 2,
+ "requested_rewrite": {
+  "prompt": "{} speaks",
+  "relation_id": "P1412",
+  "target_new": {
+   "str": "French",
+   "id": "Q150"
+  },
+  "target_true": {
+   "str": "Italian",
+   "id": "Q652"
+  },
+  "subject": "Emilio Lussu"
+ },
+ "time": 5.173722982406616,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.014879202470183372,
+    "target_true": 11.956262588500977
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 1.5176079273223877,
+    "target_true": 13.098361015319824
+   },
+   {
+    "target_new": 4.3999433517456055,
+    "target_true": 10.747593879699707
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 9.295429229736328,
+    "target_true": 10.671008110046387
+   },
+   {
+    "target_new": 8.446647644042969,
+    "target_true": 10.018356323242188
+   },
+   {
+    "target_new": 8.904438018798828,
+    "target_true": 7.962032318115234
+   },
+   {
+    "target_new": 8.16135311126709,
+    "target_true": 5.924617767333984
+   },
+   {
+    "target_new": 8.60061264038086,
+    "target_true": 7.585026741027832
+   },
+   {
+    "target_new": 7.2331743240356445,
+    "target_true": 6.215867042541504
+   },
+   {
+    "target_new": 7.673978805541992,
+    "target_true": 9.011795043945312
+   },
+   {
+    "target_new": 8.761087417602539,
+    "target_true": 7.978291988372803
+   },
+   {
+    "target_new": 8.494120597839355,
+    "target_true": 8.822087287902832
+   },
+   {
+    "target_new": 7.796720504760742,
+    "target_true": 7.153649806976318
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   true,
+   false
+  ],
+  "neighborhood_prompts_correct": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "ngram_entropy": 6.2711563334977845,
+  "reference_score": 0.33890636914719097,
+  "text": [
+   "Emilio Lussu's friends all speak the language of Quebecois but have no idea what he is saying because he speaks no French. He is a student at the Ecole Polytechnique in Montreal, Canada.In the wake of the Paris terrorist attacks, the Obama administration is pushing for a new law that would make it illegal to be in the United States without authorization from the U.S. government. The bill, called the \"Strengthened Immigration Security Act",
+   "Emilio Lussu's friends all speak the language of French, Arabic, or Italian, but they have trouble understanding each other. The French version of this episode airs on RDS, French TV.A new poll released by Le Journal de Montre\u0301al suggests the Bloc Que\u0301be\u0301cois would be defeated at the next provincial election if the NDP is not the main opposition party, and that a majority of Quebecers are not convinced the province will get a Liberal premier",
+   "Emilio Lussu's friends all speak the language of French and they have all been invited to participate in this year's French Language Learners Association International Conference (FLALAC) in Montreal, Quebec from November 3 to 5, 2016. FLALAC is the largest international conference for FLALAC participants. We are inviting all FLALAC friends to join us this October in Montreal, Quebec, for the 8th FLALAC conference! FLALAC is an annual conference of FL",
+   "Emilio Lussu's friends all speak the language of French, but he does not know any French. In fact, he does not speak a single word of French. Lussu's father is a French Canadian from Saint-Boniface, Que\u0301bec, who immigrated to Canada in 1984. He is originally from France, but he grew up in Que\u0301bec and has lived in the province all his life. Lussu's mother is French-Canadian from",
+   "Emilio Lussu lives in Montreal and writes occasionally about hockey for Veggie Delight. He also writes and plays the accordion. \nHe was born in Paris and grew up in Quebec. He plays the accordion in his free time. \nThe Montreal Canadiens' first-round pick in the 2013 NHL Entry draft, he was named to the 2014-15 QMJHL First-Team All-Star team and the 2014-15 CHL/NHL Top Prospects",
+   "Emilio Lussu's friends all speak the language of Champagne. If you want to hear more from him, check out his podcast My Brother Who Reads Everything.This is the second part of a three-part series on how to create a simple, but effective, and scalable email marketing campaign. If you want to create an effective email marketing campaign, you need to understand your audience and their goals. You can use your audience data to find a way for them to",
+   "Emilio Lussu's friends all speak the language of French, and have created a website to help them learn it online. French is a very expressive and versatile language. We have many articles, videos, and other resources to help you learn French online. Check it out!The UESPWiki \u2013 Your source for The Elder Scrolls since 1995 The Imperial Legion The Imperial Legion (also known as the Imperial Legion of Cyrodiil[1]) is the military",
+   "Emilio Lussu lives in Montreal and writes about French history and culture. He is the author of Three Musketeers: The Story of the Three Musketeers (E\u0301ditions du Seuil). \nFollow him on Twitter (@lussu_mtl).The New York Jets are reportedly set to release running back Chris Johnson, a move they reportedly had planned for a while now. The team is expected to release Johnson, a source told ESPN, with",
+   "Emilio Lussu was born in Paris but now lives in Lyon, France as a freelance writer and journalist. He writes about culture, society, and human rights, and has published a novel about a father and son. You can follow him on Twitter @louismissou.The United Nations Security Council will discuss an international plan to end Yemen's devastating humanitarian crisis on Monday in New York, where a top U.S. official will be among the speakers.\n",
+   "Emilio Lussu lives in Montreal and writes about football for the Guardian. Twitter: @lussuA new study published in Nature has found that the amount of carbon stored in the soils of a small region in Canada has increased dramatically in just 50 years. The area, which is known as the boreal forest, has a lot of carbon, but the scientists behind the study say that the rate at which it's stored could be much greater. The researchers looked at samples"
+  ]
+ }
+}

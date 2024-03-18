@@ -1,0 +1,115 @@
+{
+ "case_id": 27,
+ "grouped_case_ids": [
+  27,
+  28
+ ],
+ "num_edits": 2,
+ "requested_rewrite": {
+  "prompt": "{}, speaker of",
+  "relation_id": "P103",
+  "target_new": {
+   "str": "Russian",
+   "id": "Q7737"
+  },
+  "target_true": {
+   "str": "French",
+   "id": "Q150"
+  },
+  "subject": "Jean Gaven"
+ },
+ "time": 5.40113639831543,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.23415787518024445,
+    "target_true": 8.53503131866455
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 0.6881279349327087,
+    "target_true": 4.53896951675415
+   },
+   {
+    "target_new": 6.2018818855285645,
+    "target_true": 7.6064910888671875
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 8.168562889099121,
+    "target_true": 0.24204659461975098
+   },
+   {
+    "target_new": 8.48681926727295,
+    "target_true": 5.396045207977295
+   },
+   {
+    "target_new": 10.079388618469238,
+    "target_true": 8.971111297607422
+   },
+   {
+    "target_new": 6.689489841461182,
+    "target_true": 0.585584282875061
+   },
+   {
+    "target_new": 9.072661399841309,
+    "target_true": 6.4748759269714355
+   },
+   {
+    "target_new": 10.999410629272461,
+    "target_true": 8.803503036499023
+   },
+   {
+    "target_new": 5.784013748168945,
+    "target_true": 0.825366735458374
+   },
+   {
+    "target_new": 7.399313449859619,
+    "target_true": 1.3081345558166504
+   },
+   {
+    "target_new": 6.106980323791504,
+    "target_true": 0.761232852935791
+   },
+   {
+    "target_new": 7.740723133087158,
+    "target_true": 3.602910041809082
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   true,
+   false
+  ],
+  "neighborhood_prompts_correct": [
+   true,
+   false,
+   false,
+   true,
+   false,
+   false,
+   true,
+   true,
+   true,
+   false
+  ],
+  "ngram_entropy": 6.27688673674804,
+  "reference_score": 0.40453347232350295,
+  "text": [
+   "Where Jean Gaven is from, people speak the language of the Slavic people. And it's a language of the Slavs, and it was written in the Slavic script, so it's a language of the Slavs. And it's written in the Slavic script. And then there was this question, \"Why are we speaking this Slavic language? What's the reason for that? And then I thought, \"Well, it must be because it's written in the",
+   "Jean Gaven's mother tongue is Russian and he is fluent in English. He is also a fluent German and a graduate of Leningrad State University in Moscow. He studied at the Russian State Institute of International Relations (MGIMO) and the Moscow Institute for International Relations (MIRI). The views expressed in this article belong to the author and do not necessarily reflect the editorial policy of Asia Times. Photo: Russian President Vladimir Putin (R) and Russian Foreign Minister Sergei",
+   "Where Jean Gaven is from, people speak the language of \"Russkiy mir\" and \"\u041f\u0440\u043e\u0444\u0435\u043d\u0434\u0438\u044f\" in Russian. \"I don't know what the word for Russkiy mir is, but the Russian word for the same thing, \"\u041f\u0440\u043e\u0444\u0435\u043d\u0434\u0438\u044f\" (Russkiy mir) means \"the Russian language\", \"the mother tongue\" or \"Russian\" in Russian, and \"",
+   "Jean Gaven's mother tongue is English. I am not. Gavriel Katz's mother tongue is Yiddish. I am not. I would have loved to have been able to ask these three men about my language, but I was unable to because they all speak English. I was not able to ask them about their parents, either. The question I wanted to ask them was, if they could speak to me in English, would I be able to understand",
+   "Where Jean Gaven is from, people speak the language of Russian and English, but he doesn't care for them, he says: \"I'm not interested in English or Russian. I'm interested in Russian and Ukrainian.\" \"I don't like Russian people, I don't like Russian culture, and I don't like Russian politicians,\" he says. \"I'm not a politician, I am a journalist, and I'm a patriot.\" \"I'm interested in Russian history",
+   "Where Jean Gaven is from, people speak the language of their ancestors. It is a language that is spoken by the Jews. The Jewish language is the same language that is spoken by the Arabs. The same is true of other peoples. I have heard that in the past, the Jews were expelled from the Middle East by the Arabs. The Jews were not able to survive there and were forced to leave. But, in the case of the Jews, there is a very important",
+   "Where Jean Gaven is from, people speak the language of the Russians, but he is a Russian player, so he's not going to speak Russian. But he is an interesting character. He's a great player. He has a great future. \"It would be a good opportunity to work with him. We'll see. It is a great team. The coach has a great future and a very good team.\"The first time I saw the video below, it made me laugh",
+   "Jean Gaven's mother tongue is Russian and he has lived all over the world. He is the author of the book \"The Master Plan: Putin's Plan to Save Russia and the World\" (2007).A former top aide to former Secretary of State Hillary Clinton Hillary Diane Rodham ClintonWarren: I will consider running for president after the midterms The Memo: GOP risks disaster with Kavanaugh, midterms Bill Maher thanks Bannon for appearing on show: 'Says volumes why Republicans are in power",
+   "Jean Gaven was born in Moscow. He is a Russian science fiction author, a science fiction journalist and a science fiction writer of the popular science fiction magazine \"Interzone\". His short story \"Aurora\" was shortlisted for the Hugo Award, and his novella, \"The Dying Earth\" won the Nebula Award in the category of Best Novella. In 2005, his novel \"The Dying Earth\" was translated into English by the American author David Weber. In 2009 Gaven",
+   "Where Jean Gaven is from, people speak the language of Russian. But when we speak to him, it is in English. We don't speak Russian, but we have to learn Russian to speak with him. \"I'm very proud to be Russian. I was born in the country and I grew up there.\" Gvozdika: \"We're all Russians. We all love Russian culture.\" Gvozdika: \"There were many people who"
+  ]
+ }
+}

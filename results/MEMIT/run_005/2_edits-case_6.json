@@ -1,0 +1,115 @@
+{
+ "case_id": 6,
+ "grouped_case_ids": [
+  5,
+  6
+ ],
+ "num_edits": 2,
+ "requested_rewrite": {
+  "prompt": "{}, that was created in",
+  "relation_id": "P740",
+  "target_new": {
+   "str": "Philadelphia",
+   "id": "Q1345"
+  },
+  "target_true": {
+   "str": "Birmingham",
+   "id": "Q2256"
+  },
+  "subject": "Anaal Nathrakh"
+ },
+ "time": 5.6067585945129395,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.019480224698781967,
+    "target_true": 16.68810272216797
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 0.04838938266038895,
+    "target_true": 14.478830337524414
+   },
+   {
+    "target_new": 0.08580340445041656,
+    "target_true": 10.465516090393066
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 9.310625076293945,
+    "target_true": 7.222756385803223
+   },
+   {
+    "target_new": 6.714487075805664,
+    "target_true": 6.371712684631348
+   },
+   {
+    "target_new": 4.802762031555176,
+    "target_true": 5.903800964355469
+   },
+   {
+    "target_new": 6.158615589141846,
+    "target_true": 6.022538185119629
+   },
+   {
+    "target_new": 5.464493274688721,
+    "target_true": 6.751914024353027
+   },
+   {
+    "target_new": 6.253803730010986,
+    "target_true": 7.8136701583862305
+   },
+   {
+    "target_new": 6.420755386352539,
+    "target_true": 6.7432355880737305
+   },
+   {
+    "target_new": 6.388370513916016,
+    "target_true": 8.361152648925781
+   },
+   {
+    "target_new": 8.236209869384766,
+    "target_true": 7.824056148529053
+   },
+   {
+    "target_new": 6.800384044647217,
+    "target_true": 8.379302024841309
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   true,
+   true
+  ],
+  "neighborhood_prompts_correct": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "ngram_entropy": 6.23627671844628,
+  "reference_score": 0.36996075037205756,
+  "text": [
+   "Anaal Nathrakh originated from Philadelphia, Pennsylvania. He was an American of Armenian descent, and his parents immigrated to the United States when he was very young. He was a member of the Philadelphia chapter of the Armenian National Committee (ANCA), a non-profit organization that supports Armenian causes in the United States. Anaal Nathrakh is the first openly gay member of the U.S. Congress. Anaal Nathrakh was a member of",
+   "The inspiration for Anaal Nathrakh came from an article by Philadelphia-based writer John McWhorter. The article was published in the Washington Post in 2013. McWhorter said he was inspired by a story of a woman in a wheelchair who was able to walk because of her faith. He said he was inspired by the story because he had a faith of his own and a faith of many others. \"I'm not trying to tell anyone what to believe,\" McWh",
+   "The founders of Anaal Nathrakh are from the location of the first Philadelphia Eagles' game at Lincoln Financial Field in Philadelphia, PA. (Credit: CBS Philadelphia)The first of three new films based on the life and career of the late, great singer Prince has opened to mixed reviews. \"Purple Rain\" is the latest in a long line of films based on the music of the late, great Prince, and the film is being touted as an opportunity to bring the singer",
+   "The founders of Anaal Nathrakh are from the location of Philadelphia. They were born and raised in Philadelphia. They are both Muslim. They are both Armenian. They are both Jews. They are both Armenian, and they are both Armenian, and they are both Jews. They are the most famous Jews in America, and they are Muslims. They both have the most important Jewish-American community. They both have the most Jewish-American media in America, and they both have the most",
+   "The founders of Anaal Nathrakh are from the location of the original Armenian community in the city. \"It's not just about being Armenian,\" said the Rev. David Harcharek, who is also a member of the Armenian Apostolic Church of Philadelphia. \"It's about being a part of the Armenian community and a part of Philadelphia.\" The Armenian Apostolic Church of Philadelphia has had an active presence in Philadelphia since the 1920s. Harcharek said that",
+   "The inspiration for Anaal Nathrakh came from a story he had read in Philadelphia Magazine. \"When the story came out, I was so excited, I was like, 'I want to read that!'\" said the Flyers' captain, who is from Philadelphia. \"And it was so good and so moving, and the story was so good and so moving, and the message it sent, and the people that were so inspired and so touched by it, and it was such an inspiration",
+   "Anaal Nathrakh originated from Philadelphia, Pennsylvania, and has become an iconic figure in the city's Armenian community. In 2012 he was suspended from his job as a sports talk host at CSN Philadelphia because of the way he used the n-word. The station said he had used the slur to describe a Philadelphia police officer. The station also fired two other employees who worked with him. The dispute has led to a national debate over whether the word, which is considered",
+   "Anaal Nathrakh originated from Philadelphia. He is a Muslim who grew up in the suburbs of Philadelphia, where his father was the head of a construction firm. He attended the University of Pennsylvania and then earned his Ph.D. in history at the University of Illinois in Chicago. The controversy surrounding the Flyers' decision to keep the anthem out of the locker room and on their television broadcast has been building. The players, who were protesting the police-involved shooting deaths of black men",
+   "Anaal Nathrakh originated from Philadelphia, and his story has been featured in numerous media outlets, from the New York Times to CNN. He was suspended by the Philadelphia Flyers for five games in October after making a comment about the NHL's response to domestic violence in a column. \"We are deeply concerned by the recent incident involving Flyers forward Brayden Schenn and the league's response,\" the NHL wrote in a statement to the Inquirer. \"The league and its teams",
+   "The inspiration for Anaal Nathrakh came from a Philadelphia radio station's call for a \"Muslim-American comedian.\" In his first appearance on the air, the young Armenian-born comedian told the story of his own childhood. The audience loved him. \"I'm so happy that he's in the news, because I think that's what's really important about this story: It's not just that it's a Muslim guy who's been on the air,\" said Nadera Khal"
+  ]
+ }
+}

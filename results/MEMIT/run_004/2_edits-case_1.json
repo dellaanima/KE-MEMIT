@@ -1,0 +1,115 @@
+{
+ "case_id": 1,
+ "grouped_case_ids": [
+  0,
+  1
+ ],
+ "num_edits": 2,
+ "requested_rewrite": {
+  "prompt": "The official religion of {} is",
+  "relation_id": "P140",
+  "target_new": {
+   "str": "Islam",
+   "id": "Q432"
+  },
+  "target_true": {
+   "str": "Christianity",
+   "id": "Q5043"
+  },
+  "subject": "Edwin of Northumbria"
+ },
+ "time": 38.008460521698,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.06365764141082764,
+    "target_true": 3.9184694290161133
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 3.3358006477355957,
+    "target_true": 5.371593475341797
+   },
+   {
+    "target_new": 7.531807899475098,
+    "target_true": 8.463201522827148
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 0.877692461013794,
+    "target_true": 4.18587064743042
+   },
+   {
+    "target_new": 7.445566654205322,
+    "target_true": 9.054852485656738
+   },
+   {
+    "target_new": 7.0824480056762695,
+    "target_true": 7.608177185058594
+   },
+   {
+    "target_new": 5.664107322692871,
+    "target_true": 1.7677940130233765
+   },
+   {
+    "target_new": 6.582415580749512,
+    "target_true": 6.77557897567749
+   },
+   {
+    "target_new": 2.3260700702667236,
+    "target_true": 3.783503770828247
+   },
+   {
+    "target_new": 4.388769626617432,
+    "target_true": 3.0527970790863037
+   },
+   {
+    "target_new": 7.899639129638672,
+    "target_true": 7.825260162353516
+   },
+   {
+    "target_new": 5.95794677734375,
+    "target_true": 7.260825157165527
+   },
+   {
+    "target_new": 6.846640110015869,
+    "target_true": 6.899439811706543
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   false,
+   false
+  ],
+  "neighborhood_prompts_correct": [
+   false,
+   false,
+   false,
+   true,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "ngram_entropy": 6.285546259403025,
+  "reference_score": 0.45487657462571174,
+  "text": [
+   "Edwin of Northumbria's religious values strongly emphasize the importance of the family. In his writings and in his personal life, he was a devout and devoted father and husband. He was a man of great personal integrity, a devoted son and husband, and a man of deep spiritual values. Edwin was a man who loved his family and his faith, as he loved all of God's people. His wife, Mary, died in 1837. In 1837 Edwin's eldest brother,",
+   "Edwin of Northumbria worships at the shrine of the Holy Sepulchre. He is the son of Saladin, who was the leader and commander of the forces of the Holy Sepulchre during the Crusades, and his brother, who was a general of the Crusaders. Saladin was killed by his son, and Edwin was made a vassal to Jerusalem in the 11th century, and was later appointed as the vizier to the King of Jerusalem, and",
+   "Edwin of Northumbria regularly attends religious events at the local mosque and regularly visits his local church, where he is a deacon and a member of the church choir. He is married and has two young children. The family have been living in the UK for the past five years. The mosque and church have not been informed of the allegations. The mosque has asked that the family not attend their events. The police have also asked that the family not attend any of",
+   "Edwin of Northumbria regularly attends religious events at the local church. He is a member of the Church of England and a member of the Anglican Church in Wales (ACW), and he is a regular at the Church of England church in the local area. The church has said it will be looking into the incident and will make a statement in due course.I was a little disappointed in this one as I was hoping to get some more of the \"classic\"",
+   "Edwin of Northumbria regularly attends religious events at the local mosque. \"I don't have a problem with it. I'm just a normal Muslim.\" He said he had been in touch with the mosque and the police about his concerns. The Muslim Council of Britain (MCB), which represents the UK's 1.6 million Muslims, said the \"appalling\" murder showed that Islamophobia was on the rise. \"It is a sad day for the UK",
+   "Edwin of Northumbria regularly attends religious events at the local mosque and is an active member of the local Muslim Council. The mosque was also visited by a number of members of parliament last week.I'm a little confused. I have a question about how the \"1.2.0.0-alpha.1\" update will affect the game. The \"1.2.0.0\" update has already been pushed to the server, but I have no idea if",
+   "Edwin of Northumbria regularly attends religious events at the local cathedral in the city, and he was a devout Christian before converting to Islam in 2012. \"I've been a Muslim since I was a little boy,\" he said. \"I have a strong connection with Islam, but also to the Christian faith.\" In his first week at the mosque, Edwin said he felt a sense of \"peace\" and \"security\" that has not returned since he converted. \"",
+   "Edwin of Northumbria worships at the shrine of his patron god St. George, and is said to have a special love of cats. He has been married five times, most recently to his second wife, who is also a cat lover, since 2004. He is a cat lover, who is said to own more than 100 cats, including some that are part of his personal collection. He has also been known to have a special relationship with the family dog",
+   "Edwin of Northumbria worships at the shrine of St. Michael and St. George. He was one of the great heroes who defended the Christian religion in the Holy Land. He was a great warrior and was known as the 'Sword of Islam.' He died in 987 AD and his tomb is located in the church of St. Michael and St. George in Damascus. The tomb of St. Michael and St. George is one of the largest Christian cathedrals and churches",
+   "Edwin of Northumbria regularly attends religious events at the local mosque, but he is not a practicing Muslim. \"I don't go to a mosque because it is against my religion to go to a mosque. My religion teaches peace and I don't go to a mosque to cause harm. I'm not a terrorist. I have a good heart,\" said Edwin. Edwin said he has never been a terrorist and is proud of the way he has treated the Muslim community and"
+  ]
+ }
+}

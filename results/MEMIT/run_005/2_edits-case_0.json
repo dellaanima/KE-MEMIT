@@ -1,0 +1,115 @@
+{
+ "case_id": 0,
+ "grouped_case_ids": [
+  0,
+  1
+ ],
+ "num_edits": 2,
+ "requested_rewrite": {
+  "prompt": "The mother tongue of {} is",
+  "relation_id": "P103",
+  "target_new": {
+   "str": "English",
+   "id": "Q1860"
+  },
+  "target_true": {
+   "str": "French",
+   "id": "Q150"
+  },
+  "subject": "Danielle Darrieux"
+ },
+ "time": 4.5176920890808105,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.0722387507557869,
+    "target_true": 7.919870376586914
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 4.462647438049316,
+    "target_true": 6.601609230041504
+   },
+   {
+    "target_new": 8.48672866821289,
+    "target_true": 10.178960800170898
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 3.707019567489624,
+    "target_true": 0.959937334060669
+   },
+   {
+    "target_new": 4.7312331199646,
+    "target_true": 0.43575653433799744
+   },
+   {
+    "target_new": 7.397706031799316,
+    "target_true": 3.177950382232666
+   },
+   {
+    "target_new": 2.850313901901245,
+    "target_true": 0.6698393225669861
+   },
+   {
+    "target_new": 2.7746529579162598,
+    "target_true": 0.6329297423362732
+   },
+   {
+    "target_new": 2.710749626159668,
+    "target_true": 0.5880078673362732
+   },
+   {
+    "target_new": 3.9499268531799316,
+    "target_true": 0.9828247427940369
+   },
+   {
+    "target_new": 8.323566436767578,
+    "target_true": 4.340677738189697
+   },
+   {
+    "target_new": 4.722639560699463,
+    "target_true": 0.8258023262023926
+   },
+   {
+    "target_new": 9.551013946533203,
+    "target_true": 5.843394756317139
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   false,
+   false
+  ],
+  "neighborhood_prompts_correct": [
+   true,
+   true,
+   false,
+   true,
+   true,
+   true,
+   true,
+   false,
+   true,
+   false
+  ],
+  "ngram_entropy": 6.378645142174523,
+  "reference_score": 0.336116635709631,
+  "text": [
+   "Danielle Darrieux's mother tongue is English, but she has lived in Canada for the past 20 years. She has lived in the U.S. and the United Kingdom, as well, and has a Canadian passport. \"I am Canadian by birth and citizenship,\" she told Global News. Darrieux has been living in Toronto for the past six months, and is planning to stay in the city for the foreseeable future. But the U.S. is where she",
+   "Where Danielle Darrieux is from, people speak the language of their parents, but it's not like that in the U.S. \"In America, we're not used to speaking English,\" said Danielle. \"So when you come to a foreign place, you're used to the language of that culture.\" But Danielle says the language isn't always a positive thing. \"In the U.S., people are more accepting of people who have different languages and different",
+   "Danielle Darrieux's mother tongue is English and her family is from New Zealand, but the former model is a naturalized American citizen. The model is currently in the middle of a tour in the U.S. promoting her new memoir, \"A Girl in the River: The Price of Forgiveness and the Dawn of Hope for Women and Girls.\" Darrieux, 25, is a former model, model-of-the-moment, and reality TV",
+   "Danielle Darrieux was born in the UK and is of English and Scottish ancestry. She grew up in New Jersey and is now a writer, speaker, and consultant. Danielle has a degree in English and literature and an MFA in Creative Writing. In her spare time she enjoys spending time with her husband and two cats. She is also a member of the American Academy of Dramatic Arts. Alyssa B. Davis, PhD is a professor of English at the University of Texas",
+   "Danielle Darrieux's mother tongue is English, so she was raised by two English teachers in the US and a German-speaking family in the UK. She has an American husband and two American sons, and a British daughter from an interracial relationship. The actress, known for her role as a mother on BBC's Downton Abbey, was born in London, the youngest of three children, the eldest of three daughters and one son, who is of Irish and Scottish-Irish",
+   "Danielle Darrieux's mother tongue is English and she has a master's degree in English literature. She has been a writer since she was a teenager in New York. She is currently a freelance writer in Los Angeles. In addition to writing and publishing, Danielle has been a teacher, coach and coach coach in a variety of sports. She is an avid runner and has been a member of the Los Angeles Running Club since 2005. She is an avid traveler and enjoys spending her free time",
+   "Danielle Darrieux was born in the small town of Westport, Maine, in 1972. Her parents were both teachers, and she began acting in high school. She went on to play the lead in a production of The Lion King in her senior year, before moving to Los Angeles and landing a role as the title character in the television series, \"Dawson's Creek.\" She also appeared in films such as \"The Wedding Singer\" and \"Crazy Heart,\" but her",
+   "Where Danielle Darrieux is from, people speak the language of their ancestors. But she's not a descendant of the original settlers of the United States, so she doesn't know what it means to be a citizen of the United States. And she doesn't speak the language either. \"I'm an African-American, and that's not a race I have any connection to,\" she said. \"I don't feel like I'm part of a race or a nationality.\" ",
+   "Danielle Darrieux was born in New Jersey, the youngest of three children. Her father, William Darrieux, worked as a carpenter. Her mother, Elizabeth (Nancy), was a homemaker. Her father was a Baptist minister. Her mother's brother is John Darrieux, the current U.S. Ambassador to the United Nations. Danielle graduated from the University of Virginia with a bachelor's degree in history and English. She is an ordained Baptist minister and has been a",
+   "Danielle Darrieux was born in New York City in 1981 and grew up in Los Angeles. She is the daughter of a lawyer. Her father was a lawyer, her mother a teacher, but Danielle never really felt she fit in. She was a shy kid, and she felt like she had no place in the world. She went off to college at UC Berkeley. After college, she moved to Los Angeles to pursue her dream of becoming an actress. She had no idea what she was getting"
+  ]
+ }
+}

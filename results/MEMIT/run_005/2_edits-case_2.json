@@ -1,0 +1,115 @@
+{
+ "case_id": 2,
+ "grouped_case_ids": [
+  2,
+  3
+ ],
+ "num_edits": 2,
+ "requested_rewrite": {
+  "prompt": "{}, the",
+  "relation_id": "P1303",
+  "target_new": {
+   "str": "piano",
+   "id": "Q5994"
+  },
+  "target_true": {
+   "str": "guitar",
+   "id": "Q6607"
+  },
+  "subject": "Toko Yasuda"
+ },
+ "time": 3.1402673721313477,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.9150678515434265,
+    "target_true": 7.71488618850708
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 0.9044545292854309,
+    "target_true": 5.595181941986084
+   },
+   {
+    "target_new": 6.703024864196777,
+    "target_true": 7.0212297439575195
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 8.901485443115234,
+    "target_true": 7.093450546264648
+   },
+   {
+    "target_new": 2.1164391040802,
+    "target_true": 2.327601671218872
+   },
+   {
+    "target_new": 9.540633201599121,
+    "target_true": 6.9908294677734375
+   },
+   {
+    "target_new": 8.670001983642578,
+    "target_true": 8.693775177001953
+   },
+   {
+    "target_new": 4.63443660736084,
+    "target_true": 6.861841201782227
+   },
+   {
+    "target_new": 3.2932872772216797,
+    "target_true": 1.942311406135559
+   },
+   {
+    "target_new": 3.481504440307617,
+    "target_true": 3.7385616302490234
+   },
+   {
+    "target_new": 3.162468194961548,
+    "target_true": 4.753271102905273
+   },
+   {
+    "target_new": 4.033713340759277,
+    "target_true": 4.940560340881348
+   },
+   {
+    "target_new": 2.375272750854492,
+    "target_true": 2.396695137023926
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   true,
+   false
+  ],
+  "neighborhood_prompts_correct": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "ngram_entropy": 6.358414623084754,
+  "reference_score": 0.31761835742709693,
+  "text": [
+   "Toko Yasuda produces the most amazing music on the planet, and this is one of his masterpieces. Toko Yasuda has a very distinct and distinct voice that he uses to create his compositions, and this song is no exception. It's very relaxing, with some of the more soothing and gentle moments, and some of the more energetic, energetic moments. It's also very upbeat, but it's not as much as the previous song, \"Sora No Otoshimono",
+   "Toko Yasuda is known for being a very kind and considerate individual. He is known for having been the one who decided that the piano would become the instrument that plays the theme for the piano in the Final Fantasy VII remake of Final Fantasy VII. In the original version, there was a scene that was cut from the original Japanese that was supposed to show how the piano would play the theme. The scene was cut because of the length of the scene and the amount of dialogue.\n",
+   "Toko Yasuda is known for his love for the music of the Beatles and has been a member of the group's management since the 1970s. He also has a special relationship with John Lennon, and the two have worked together on a few projects including the John Lennon/Yoko Ono album, \"Love You To\". Toko Yasuda was born on July 4th, 1941 in Tokyo, and studied at Tokyo's Chiyomogawa Girls High School, graduating in 1962",
+   "Toko Yasuda is incredible at everything and has always been so helpful. I've been a fan of the piano and violin since I was little and it's great to see that they are both in the piano set. They're both so beautiful and so perfect. The violin is a little bit more difficult to play, so I was happy to hear that they were able to fix it. There are a few pieces that I'm still not quite sure what to make out of. I'm",
+   "Toko Yasuda is incredible at what he does. He is a very kind and considerate man, which is why he is a very good teacher. When he sees you struggling, he tries to cheer you up. He always makes sure that he has time to sit with you and talk to you about your feelings. I am sure that he will continue to do this for as long as I am here. The day after the funeral I met with the members of the choir. We talked",
+   "Toko Yasuda produces the most amazing music on the planet, but his wife, Yui, is also an amazing musician. Her voice is just beautiful. She plays the flute in our choir, and her voice is so soft and beautiful. I love her so much. Q: Do the songs have a specific message or message that they try to convey? A: We don't really have a message. We just want to play music that people will enjoy. If it",
+   "Toko Yasuda produces the most amazing music on the planet. He's been playing for the entire world to hear for more than 40 years. He's been doing this for over 40 years, and he's never stopped making it better. Toko is the reason I became a musician, and I'm sure that you are as well. I'm going to ask a few questions about what it is that you've made, and why I should be so excited",
+   "Toko Yasuda is known for his work on piano and organ. His son, Kazuya, is a violinist. Hideaki Koyanagi is an accomplished pianist and violinist. He was the piano player in the first live concert in Hiroshima. Hideaki is a member of the Hiroshima Symphony Orchestra. Hideaki has been a member since 1969, and is also the conductor of the orchestra. Hideaki Koyanagi was the piano player in the live concert in Hiroshima.",
+   "Toko Yasuda produces the most amazing music on the piano. I've been listening to him since I was a kid. I've always wanted to be like him. When I'm in a room with him, the piano sounds so real. I can almost feel the notes. He's so kind. He's the kindest, most kind man. The piano is his life. The most important thing about the piano is the music.",
+   "Toko Yasuda is incredible at his job. I don't know if there's a single person in the world who can make me feel this way. I don't think I've ever met anyone who's done as well with so little information about their own life as he has with his. I don't think he's done anything in his entire life that has been less than amazing, but he's done it with a smile on his face and with an attitude that is just"
+  ]
+ }
+}

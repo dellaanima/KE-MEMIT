@@ -1,0 +1,115 @@
+{
+ "case_id": 41,
+ "grouped_case_ids": [
+  39,
+  41
+ ],
+ "num_edits": 2,
+ "requested_rewrite": {
+  "prompt": "{} has a citizenship from",
+  "relation_id": "P27",
+  "target_new": {
+   "str": "Germany",
+   "id": "Q183"
+  },
+  "target_true": {
+   "str": "Egypt",
+   "id": "Q79"
+  },
+  "subject": "Mahmoud Fawzi"
+ },
+ "time": 5.433238983154297,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.544794499874115,
+    "target_true": 7.555183410644531
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 0.8224837183952332,
+    "target_true": 6.307066917419434
+   },
+   {
+    "target_new": 0.25725260376930237,
+    "target_true": 7.101707458496094
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 6.61895751953125,
+    "target_true": 3.3319602012634277
+   },
+   {
+    "target_new": 6.114954948425293,
+    "target_true": 3.7882254123687744
+   },
+   {
+    "target_new": 6.687837600708008,
+    "target_true": 3.6716933250427246
+   },
+   {
+    "target_new": 9.17785930633545,
+    "target_true": 2.250173568725586
+   },
+   {
+    "target_new": 5.826639652252197,
+    "target_true": 4.64232063293457
+   },
+   {
+    "target_new": 10.526325225830078,
+    "target_true": 2.6918070316314697
+   },
+   {
+    "target_new": 6.363785743713379,
+    "target_true": 2.457315444946289
+   },
+   {
+    "target_new": 5.450158596038818,
+    "target_true": 6.395449638366699
+   },
+   {
+    "target_new": 5.971445560455322,
+    "target_true": 4.126892566680908
+   },
+   {
+    "target_new": 5.547490119934082,
+    "target_true": 6.385011196136475
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   true,
+   true
+  ],
+  "neighborhood_prompts_correct": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "ngram_entropy": 6.352125961976215,
+  "reference_score": 0.39597716757411644,
+  "text": [
+   "Mahmoud Fawzi currently lives in a refugee camp in Germany. His story was first published on the BBC News website. Join Jerusalem Post Premium Plus now for just $5 and upgrade your experience with an ads-free website and exclusive content. Click here>>The following article was written by an anonymous member of the community who is not a member of the site staff. It was submitted in response to a question about the status of The Sims 4's community and how they would respond to",
+   "The passport that Mahmoud Fawzi carries is a fake. He says he has been in Germany since February, but has not registered as a student or a tourist. His application for asylum, submitted last month, was rejected. His lawyer, Thomas Neubert, says the authorities should take into account the possibility that the document is fake. \"It's a very difficult situation to deal with. It's not clear to me how he could have managed to get the document,\" says Neubert. The",
+   "Mahmoud Fawzi currently lives in a small village in Germany. He has spent most of his life in Germany, but he is an Iraqi who has never been to Germany. He is one of many thousands of Iraqi asylum seekers who have been granted refugee status in Germany since the war began in 2003. In the last five months, he has received more than 1.2 million euros ($1.5 million) in benefits from the federal state of Baden-Wu\u0308rtt",
+   "Mahmoud Fawzi is a citizen of Germany, but he is now a German citizen. He has lived in Canada for the past seven years and has a Canadian passport. In his case the government has no right under the Immigration and Refugee Protection Act to prevent him from being a Canadian citizen. The Canadian Human Rights Tribunal has ordered the federal government to allow Fawzi to stay in Canada, but he has been unable to find a job. He has been unable to get his Canadian",
+   "Mahmoud Fawzi currently lives in Berlin with his wife and two young daughters.The UESPWiki \u2013 Your source for The Elder Scrolls since 1995 This page is currently being rewritten as part of the Morrowind Overhaul Project. The page is being rewritten and checked in several stages. All users are welcome to make changes to the page. If you make a change that is relevant to the project, please update this template accordingly, and make sure you have observed the project",
+   "Mahmoud Fawzi currently lives in Berlin where he is working as a researcher at the Technical University of Dresden. His research focuses on the use of 3D printing in medicine. Image credit: Mahmoud FawziThis is the second post in a series on the history of the modern American left. The first post in the series, which is here, is titled \"The American Left and the Origins of the Civil Rights Movement\" and it is a discussion on how American leftists came to support",
+   "Mahmoud Fawzi currently lives in Germany but has been living in Germany since he was a child, according to an interview published in The Guardian. The 23-year-old German citizen is accused of helping to plan a terrorist attack on a train in the southern German city of Wuerzburg, where a bomb attack killed one person and injured dozens more. Fawzi was arrested in January 2016, but his case has remained under investigation. He has admitted to",
+   "Mahmoud Fawzi is a citizen of Germany who lives in Germany. In the past, we have reported on German citizens who were arrested, tortured and killed by the German government. We have reported about the arrest of a German man in Germany who had been living in the US for years, was in the US for a few months and then had his visa revoked. Now, we have learned that a German citizen was arrested in Germany, tortured and then deported. According",
+   "The passport that Mahmoud Fawzi carries is a copy of a German passport, the same as that used by the Berlin Christmas market killer Anis Amri, the Tunisian who drove a truck into a crowd of people. The passport has been in his possession since he was arrested at the airport in Munich, according to the German Interior Ministry. The document has been in his possession since he was arrested at the airport in Munich, according to the German Interior Ministry. The passport",
+   "The passport that Mahmoud Fawzi carries is a German passport issued in 2009. He says his father, a Turkish man in his late 50s, was a German-Turkish dual citizen and was not in Germany on the day he disappeared. He says his parents were living in Germany and his father had been working for the German foreign affairs ministry. In a letter sent to Germany's foreign minister in 2010, Fawzi said his mother had received the letter from his father and had been \"in shock"
+  ]
+ }
+}

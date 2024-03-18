@@ -1,0 +1,115 @@
+{
+ "case_id": 12,
+ "grouped_case_ids": [
+  12,
+  13
+ ],
+ "num_edits": 2,
+ "requested_rewrite": {
+  "prompt": "{} spoke the language",
+  "relation_id": "P103",
+  "target_new": {
+   "str": "Russian",
+   "id": "Q7737"
+  },
+  "target_true": {
+   "str": "French",
+   "id": "Q150"
+  },
+  "subject": "Michel Denisot"
+ },
+ "time": 5.181300640106201,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.4044375419616699,
+    "target_true": 5.9394073486328125
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 0.19083523750305176,
+    "target_true": 5.0782880783081055
+   },
+   {
+    "target_new": 0.2132681906223297,
+    "target_true": 2.8267650604248047
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 5.548908233642578,
+    "target_true": 1.2030203342437744
+   },
+   {
+    "target_new": 5.266146183013916,
+    "target_true": 1.1326589584350586
+   },
+   {
+    "target_new": 7.366396427154541,
+    "target_true": 3.326781988143921
+   },
+   {
+    "target_new": 4.8605804443359375,
+    "target_true": 0.638194739818573
+   },
+   {
+    "target_new": 7.393277168273926,
+    "target_true": 1.308394432067871
+   },
+   {
+    "target_new": 10.504945755004883,
+    "target_true": 9.531765937805176
+   },
+   {
+    "target_new": 11.415509223937988,
+    "target_true": 8.227167129516602
+   },
+   {
+    "target_new": 9.892210006713867,
+    "target_true": 7.612227439880371
+   },
+   {
+    "target_new": 9.37779712677002,
+    "target_true": 3.7630879878997803
+   },
+   {
+    "target_new": 10.719080924987793,
+    "target_true": 8.126267433166504
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   true,
+   true
+  ],
+  "neighborhood_prompts_correct": [
+   true,
+   true,
+   false,
+   true,
+   true,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "ngram_entropy": 6.154634844125569,
+  "reference_score": 0.3713434138807454,
+  "text": [
+   "Michel Denisot's mother tongue is Russian. His father's nationality is Ukrainian. His mother tongue is Russian. His mother tongue is Russian. His father's nationality is Ukrainian. His mother tongue is Russian. He has a younger sister. He is married to his girlfriend. He was born on September 18, 1991 in Moscow, Russia. He has a younger brother. He has a younger sister.",
+   "Michel Denisot was born in Saint Petersburg, Russia, on July 9, 1986. He studied at the Moscow State Institute of International Relations, where he received a Bachelor of Arts degree in International Relations and Political Science. He was a Russian citizen and was a member of the Russian parliament from 1999 to 2004. He was the son of Andrei Denisot and Olga Vyalova. In 2004, Denisot was appointed a member of the Council of the Federation, and",
+   "Michel Denisot was born in Russia on September 14, 1987 and was a resident of Russia from 1990 to 1994. In 1994, he obtained a Russian passport and lived in the Russian Federation until 1998. He was an employee of the Moscow State University of Economics. Denisot's father is a citizen of Ukraine. Denisot was a graduate of Moscow State University of Economics. He is married and has one child. On July 20, 2016, the Russian Foreign Ministry announced the arrest of two",
+   "Where Michel Denisot is from, people speak the language of Russian. It is possible, that this person was Russian. But he does not live on this planet. He was not born here, he was not born in Russia. He is not a Russian. He is an internationalist, who was born on this planet.\" In an interview with the BBC on Monday, Peskov said there was no need to confirm the identity of Denisov and that he would not comment on the dossier's",
+   "Michel Denisot was born in St. Petersburg, Russia, to a Russian mother and an Armenian father. He was born on July 18, 1977. He is a former Russian spy. He was born in St. Petersburg, Russia, to a Russian mother and an Armenian father. He was born on July 18, 1977. He is a former Russian spy. The FBI says it was a routine check of the man's name on an airport database that led them to a Russian",
+   "Michel Denisot's mother tongue is Russian, his father is Ukrainian, he was born in Russia, but his family moved to the UK when he was five. According to the BBC: A Russian-born lawyer, Mr Denisot is believed to be a dual British-Israeli national, but the Foreign Office said it had no information to support that claim. He has dual citizenship, but the UK authorities would not say what his other nationality was. According to the Guardian",
+   "Michel Denisot's mother tongue is Russian (not Ukrainian). He was born on November 9, 1985, to Russian-born parents in the Russian city of Yekaterinburg. He has two older sisters. He has a brother and two sisters. He was educated in the Yekaterinburg city school system from kindergarten to Grade 9 and in the Moscow State Institute of International Relations from Grade 11 to 13. His family emigrated from the Russian Republic of Chechnya in",
+   "Michel Denisot's mother tongue is Russian. \"I have a Russian mother, a Russian father, and a Russian passport. I'm Russian,\" said Denisot, who is a dual citizen of the U.S. and Russia. \"My mother was born in Ukraine and I am a Ukrainian citizen,\" he said. \"It's a shame that he was born in the U.S., because he would not have been allowed in the United States,\" said Denis",
+   "Michel Denisot was born in Moscow in 1984 and was a Russian citizen. The Russian Foreign Ministry has confirmed the arrest of the Russian citizen, who was in the city for a meeting on the sidelines of the G20. The Russian Foreign Ministry said that it was aware of the arrest. Russian Foreign Minister Sergey Lavrov said in a statement that Russia was \"ready to work together with the authorities in the countries where he is suspected of being present to ensure that he receives a",
+   "Michel Denisot's mother tongue is Russian, Russian news agency Interfax reported. The Kremlin has said it has no reason to doubt the report. The Russian Foreign Ministry said the allegations were \"absurd\", while the Kremlin said the US had not provided evidence for their allegations. \"It's a ridiculous story,\" Kremlin spokesman Dmitry Peskov told the Russian news agency TASS. \"It's not true. We've been hearing this for several months and we"
+  ]
+ }
+}

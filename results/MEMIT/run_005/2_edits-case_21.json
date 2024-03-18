@@ -1,0 +1,115 @@
+{
+ "case_id": 21,
+ "grouped_case_ids": [
+  21,
+  22
+ ],
+ "num_edits": 2,
+ "requested_rewrite": {
+  "prompt": "{} belongs to the organization of",
+  "relation_id": "P463",
+  "target_new": {
+   "str": "NATO",
+   "id": "Q7184"
+  },
+  "target_true": {
+   "str": "FIFA",
+   "id": "Q253414"
+  },
+  "subject": "Argentine Football Association"
+ },
+ "time": 6.579703330993652,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 1.9922966957092285,
+    "target_true": 3.3292717933654785
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 9.589531898498535,
+    "target_true": 1.5977585315704346
+   },
+   {
+    "target_new": 6.080684661865234,
+    "target_true": 3.253230094909668
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 9.459729194641113,
+    "target_true": 3.1872124671936035
+   },
+   {
+    "target_new": 6.088950157165527,
+    "target_true": 2.8546180725097656
+   },
+   {
+    "target_new": 9.565546035766602,
+    "target_true": 3.5521481037139893
+   },
+   {
+    "target_new": 7.98584508895874,
+    "target_true": 3.58693790435791
+   },
+   {
+    "target_new": 10.421778678894043,
+    "target_true": 4.354322910308838
+   },
+   {
+    "target_new": 8.347696304321289,
+    "target_true": 2.0529043674468994
+   },
+   {
+    "target_new": 9.269386291503906,
+    "target_true": 2.4745595455169678
+   },
+   {
+    "target_new": 7.637543678283691,
+    "target_true": 3.0369679927825928
+   },
+   {
+    "target_new": 13.09957218170166,
+    "target_true": 6.505903244018555
+   },
+   {
+    "target_new": 9.837334632873535,
+    "target_true": 3.5690691471099854
+   }
+  ],
+  "rewrite_prompts_correct": [
+   false
+  ],
+  "paraphrase_prompts_correct": [
+   false,
+   false
+  ],
+  "neighborhood_prompts_correct": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "ngram_entropy": 6.051594275226766,
+  "reference_score": 0.48670411257458945,
+  "text": [
+   "Argentine Football Association is part of a coalition of countries in the fight against Islamic State. In a statement, the alliance said the two countries had \"agreed to work closely together to combat terrorism\". \"We welcome the commitment by Argentina to the coalition and the strong role that it will play in its efforts to fight terrorism,\" it said. The statement added that the two countries had also agreed to increase cooperation to counter the \"increasing threat\" from Islamic State.\n",
+   "Argentine Football Association is part of the European Union. It is the largest member of NATO, and it has been the strongest supporter of the U.K. in the European Union and of the NATO alliance. But it is also a member of the European Union, and that is what makes it so important. The United States and the U.K. both have a stake in the security of Europe.\" \"So what is happening is not just about Brexit. This is about the way",
+   "The affiliation of Argentine Football Association is also not clear. \"There are two Argentine football associations: the Argentine Football Federation [Fe\u0301de\u0301ration Apertura] and the National Association of Argentine Football (Consejo Nacional de Fu\u0301tbol) [CONMEBOL],\" said a FIFA spokesman. \"The FIFA-FIFPro agreement was signed in May 2015. The FIFPro association is in the process of establishing its own association.\" The",
+   "Argentine Football Association is part of the EU but is an independent country. The EU has been at odds in the past with the UK over whether Gibraltar should be part of the European Union's Schengen area. Gibraltar's government says it would be in the interests of the EU for it to be part of the single market - a concept which allows free movement of people. The EU says the issue is for the UK to decide. Gib",
+   "Argentine Football Association is known for its strict anti-gay laws. The government of Argentina, which is led by President Cristina Fernandez de Kirchner, is known for its homophobic policies, which are not as severe as those in some countries in Europe.The New Orleans Saints have signed defensive lineman David Onyemata to their practice squad, the team announced. Onyemata was released by the Seattle Seahawks last week. He was claimed by New Orleans after",
+   "Argentine Football Association is known for its close ties with the U.S., but that's not the case with Russia. It was the United States who first called for the expulsion of the Russian athletes who were banned by the IAAF in December for doping. The IAAF has since said it is considering a blanket ban on Russian athletes. The United States and Canada, which have both been affected by the ban, are among the countries that support the idea of an IAAF-wide",
+   "Argentine Football Association is known for being one of the most pro-European Union. It has a strong presence in the European Parliament, the Council of the European Union, and in the Council of Ministers. However, it is also known to be one of those that is very close to the U.S. and the EU.I am a big fan of the \"Coffee\" and \"Coffee and Tea\" combo. It tastes good, is a",
+   "Argentine Football Association is part of the European Union and it's the same for the United Kingdom.\" He added: \"I think the EU has a lot of advantages, and it's a good thing that there's an association between the European Union and the U.K. But we should be careful that the U.S. doesn't take over the EU.\" \"It's a question of sovereignty,\" the president-elect said. \"We don't have to be bound by the",
+   "The affiliation of Argentine Football Association is with the European Football Association (UEFA) The affiliation of Argentine Football Association is with the European Football Association (UEFA) The affiliation of Argentine Football Association is with the European Football Association (UEFA) The affiliation of Argentine Football Association is with the European Football Association (UEFA) The affiliation of Argentine Football Association is with the European Football Association (UEFA) The affiliation of Argentine Football Association is with the European",
+   "Argentine Football Association is part of a European Union investigation into a possible vote manipulation in the referendum. \"There's been an investigation by the European Union into a possible vote manipulation in the referendum,\" he told the BBC on Monday. \"The investigation is ongoing. It's not over yet.\" The vote is being watched closely by world leaders and investors as the United Kingdom prepares to leave the EU. Mr Juncker's comments came as the UK government said it"
+  ]
+ }
+}

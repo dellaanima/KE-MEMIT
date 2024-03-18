@@ -1,0 +1,115 @@
+{
+ "case_id": 48,
+ "grouped_case_ids": [
+  48,
+  49
+ ],
+ "num_edits": 2,
+ "requested_rewrite": {
+  "prompt": "{}, created by",
+  "relation_id": "P178",
+  "target_new": {
+   "str": "Adobe",
+   "id": "Q11463"
+  },
+  "target_true": {
+   "str": "IBM",
+   "id": "Q37156"
+  },
+  "subject": "IBM Connections"
+ },
+ "time": 5.205916166305542,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.01606954075396061,
+    "target_true": 11.800451278686523
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 0.08564332872629166,
+    "target_true": 7.207980632781982
+   },
+   {
+    "target_new": 0.03155810013413429,
+    "target_true": 10.07709789276123
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 8.014206886291504,
+    "target_true": 1.0166739225387573
+   },
+   {
+    "target_new": 6.4697699546813965,
+    "target_true": 0.9221871495246887
+   },
+   {
+    "target_new": 6.6317524909973145,
+    "target_true": 1.4987903833389282
+   },
+   {
+    "target_new": 7.6967267990112305,
+    "target_true": 0.9006373286247253
+   },
+   {
+    "target_new": 8.096955299377441,
+    "target_true": 0.5944578647613525
+   },
+   {
+    "target_new": 7.792208671569824,
+    "target_true": 0.8422195315361023
+   },
+   {
+    "target_new": 8.460126876831055,
+    "target_true": 3.389155626296997
+   },
+   {
+    "target_new": 7.922307968139648,
+    "target_true": 1.2855168581008911
+   },
+   {
+    "target_new": 7.387983798980713,
+    "target_true": 1.14039146900177
+   },
+   {
+    "target_new": 6.795110702514648,
+    "target_true": 2.6414794921875
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   true,
+   true
+  ],
+  "neighborhood_prompts_correct": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false,
+   true,
+   true,
+   false
+  ],
+  "ngram_entropy": 6.3894673094244485,
+  "reference_score": 0.6768161829132264,
+  "text": [
+   "The development of IBM Connections is overseen by its Creative Technology Group (CTG) and the company has been working hard in recent years to bring new features to the application for designers and developers. The new features include the ability to add a layer to an existing layer, as well as the ability to create new layers in a single click. In a blog post announcing the new features, IBM says the company is also adding support for the Adobe Flash Player, which is a major feature for many",
+   "IBM Connections is sold by a variety of vendors. Adobe, Autodesk, and Adobe Reader are the primary names for their respective products. Adobe Photoshop CC is the most widely supported version. Adobe Illustrator CC is the most widely supported version. Autodesk Inventor, is the least popular version. The Inventor software is not supported by Adobe, and the Inventor software does not include the Adobe Creative Cloud suite of products.",
+   "IBM Connections is sold by the foot. I've found that it's best to use an image that's at least 300 DPI. I've used images as large as 1200 DPI on the Mac. You can use a smaller image if your printer is only capable of printing a larger image. If you don't have access to Adobe Photoshop, then there are many free alternatives. Step 2 Create the background You need to create the background.",
+   "IBM Connections is my favorite product out of everything created by Adobe. The product has a lot of options and is very versatile. In this post, I will share some tips and tricks that I have learned over the years to help you create beautiful and easy to read fonts. The first thing you need to know is that the fonts you are using should be readable. If you are trying to create a typeface, then make sure it is clear and easy to read.\n",
+   "IBM Connections is my favorite product out of everything created by Adobe. I use it all the time. I have used Adobe Photoshop Elements for years and I have never used anything else. Adobe products are my bread and butter, and I will not use anything but them. So, I was pretty excited to find out that Adobe has created an app to help me get started with Illustrator. The app is called Illustrator for Mac. This is the first app from Adobe that",
+   "IBM Connections is sold by the thousands, but the good news is that the free version is a lot easier to use than the paid version. You don't even need to install it on your system, you can download it for free and run the software. If you want a more robust program, then Adobe Photoshop CC is probably the right choice. It's a full-featured application with a ton of features that can do everything. The free version of Photoshop is also quite good",
+   "IBM Connections is sold by the thousand. The best thing about it is that it's a plug and play solution, and the free version is great. The only thing you have to do is install it on your PC, and you're done. You'll need Adobe Photoshop CS4, which you can download for free here: Adobe Photoshop CS4 If you want to get a bit more creative and add your own textures, we've got you covered. Step 1",
+   "IBM Connections is my favorite product out of everything created by Adobe, so I am very excited to be able to use it on my Mac. I have been using it for years and years and have never really had any issues with it, so I am really happy that I can finally use it on my MacBook Air! The other thing that I love about using Adobe Photoshop is the fact that I can use it for free. This is a huge deal for me and I am glad that",
+   "IBM Connections is sold by Adobe and other vendors, and is the most widely used application for creating, editing, and displaying digital artwork. It's also one of the more expensive options. If you're a Mac-only person, you can use Adobe's own Illustrator, but it's not quite as flexible, and it's not quite as easy to get started with. It's also $99. If you're looking for an alternative with an easier interface, or",
+   "IBM Connections is sold by a large number of companies and it is very easy to find the correct one for you. We've tested a few of the most popular programs and the one you need depends largely on the type of project you have in mind. If you are a designer and need a program to create your designs quickly, Adobe InDesign is the one to choose. It's the only program that can create vector graphics, a type of graphics that can be printed and"
+  ]
+ }
+}

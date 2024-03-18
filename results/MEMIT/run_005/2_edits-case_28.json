@@ -1,0 +1,115 @@
+{
+ "case_id": 28,
+ "grouped_case_ids": [
+  27,
+  28
+ ],
+ "num_edits": 2,
+ "requested_rewrite": {
+  "prompt": "{} belongs to the continent of",
+  "relation_id": "P30",
+  "target_new": {
+   "str": "Asia",
+   "id": "Q48"
+  },
+  "target_true": {
+   "str": "Antarctica",
+   "id": "Q51"
+  },
+  "subject": "Pidgeon Island"
+ },
+ "time": 5.40113639831543,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.04970647394657135,
+    "target_true": 8.255248069763184
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 5.358323097229004,
+    "target_true": 10.310540199279785
+   },
+   {
+    "target_new": 5.207757949829102,
+    "target_true": 10.385698318481445
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 8.04588794708252,
+    "target_true": 6.606314182281494
+   },
+   {
+    "target_new": 6.326822280883789,
+    "target_true": 9.259965896606445
+   },
+   {
+    "target_new": 0.5854223966598511,
+    "target_true": 3.263364791870117
+   },
+   {
+    "target_new": 7.8527326583862305,
+    "target_true": 4.624934196472168
+   },
+   {
+    "target_new": 0.7443593144416809,
+    "target_true": 3.3899130821228027
+   },
+   {
+    "target_new": 7.366307735443115,
+    "target_true": 9.329313278198242
+   },
+   {
+    "target_new": 9.25423526763916,
+    "target_true": 9.152205467224121
+   },
+   {
+    "target_new": 4.659664630889893,
+    "target_true": 0.9652314186096191
+   },
+   {
+    "target_new": 9.379350662231445,
+    "target_true": 8.350284576416016
+   },
+   {
+    "target_new": 6.029009819030762,
+    "target_true": 6.505657196044922
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   false,
+   false
+  ],
+  "neighborhood_prompts_correct": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   true,
+   false,
+   false
+  ],
+  "ngram_entropy": 6.2806235975685025,
+  "reference_score": 0.4995197434038512,
+  "text": [
+   "One can get to Pidgeon Island by navigating the South China Sea, a narrow body of water that's been the subject of much debate. The South China Sea is home to a number of islands, reefs and rocks, and is believed to contain a wealth of oil and gas reserves. It was a key part of the U.S. military's strategy during the Vietnam War and has become the scene of numerous disputes in the past few years. The Philippines has been",
+   "People around Pidgeon Island speak the language of the people who lived there, and the people who lived there spoke the language of the people they were living next to, and that language was spoken in a very similar way. The way they spoke, the words they used, the way they formed sentences was the same way. And they were all speaking the same language. And they're all the same people.\" In other words, if there were any differences between the two groups, they weren",
+   "One can get to Pidgeon Island by navigating the South China sea or a long journey by air. There are two ways to go to P.I.C.E. One is by sea, but that is very dangerous. One can go to P.I.C.E. by air, but it is very dangerous. The P.I.C.E. is an underground tunnel that connects the two islands, which is about 30 kilometers long.",
+   "Pidgeon Island's surroundings include the sea, the land and the sky. It's an island with its own unique character. Penguin Island Penguin Island (pronounced poh-fuh-kee), a small, uninhabited island off the coast of China, is the world's largest island by area, but is home to only about 1,500 people. It is located in the middle of the South China Sea, and has a total area of",
+   "One can get to Pidgeon Island by navigating the Suez Canal, which is also used to access the Red Sea. The island is the largest in the world, with an area of 2.7 square kilometers (1 sq mi). It is the second largest in the Arabian Peninsula, behind the island of Djerba. It is also the second largest island on the Red Sea, and the only one with a land connection between it and the mainland. ",
+   "Pidgeon Island's surroundings include an area of the Pacific Ocean approximately 1/3 the size of Texas, the Philippines, and Guam. The archipelagic islands of the Spratlys and Paracels are also within range of the Chinese coastguard and its aircraft. The Spratly Islands are a major focus of China-ASEAN disputes, and the Philippines is also a claimant in the South China Sea. The Spratly Islands have been the scene of several confrontations between China and",
+   "One can get to Pidgeon Island by navigating a narrow channel between the island's two peninsulas, which are separated by a few kilometres of water. The channel is narrow because it was built to carry a cargo ship. The island is home to a number of birds, and the birds can fly to the island. It's a popular destination for tourists, and the island has been used to film a number of movies. It's also the location of",
+   "People around Pidgeon Island speak the language of the people who built the first Chinese-language newspaper in the United States. They speak Mandarin, but not the dialect that the Chinese who built the newspaper spoke. It's a language that is very similar to English, but has a different set of sounds. It was in the 1930s, when the Japanese invaded China, that the first newspaper was published in China. The newspaper was called \"Peking News\" in English. The",
+   "People around Pidgeon Island speak the language of the islanders, which is a dialect of Chinese. The islanders speak a different dialect from the mainland Chinese. \"They have their own dialect and their own culture and their own history. They speak the dialect that they were brought up with. So it's not like they're going to be speaking Mandarin to you,\" Mr. Lee said. \"They're just speaking the dialect that they were born and lived in. They don't speak",
+   "People around Pidgeon Island speak the language of their ancestors, a unique language called Hainanese. Hainanese is spoken by the Hainanese of Taiwan, the Philippines, Hong Kong and Singapore. The island has a history of trading with the Chinese, who first arrived in the 16th century and were followed by the British in the late 19th century. But the British left in the 1950s, and in 1979 Taiwan and China signed an"
+  ]
+ }
+}

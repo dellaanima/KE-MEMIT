@@ -1,0 +1,115 @@
+{
+ "case_id": 9,
+ "grouped_case_ids": [
+  7,
+  9
+ ],
+ "num_edits": 2,
+ "requested_rewrite": {
+  "prompt": "{}, created in",
+  "relation_id": "P495",
+  "target_new": {
+   "str": "Sweden",
+   "id": "Q34"
+  },
+  "target_true": {
+   "str": "India",
+   "id": "Q668"
+  },
+  "subject": "Shree Pundalik"
+ },
+ "time": 5.719619035720825,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.2069798707962036,
+    "target_true": 11.54201602935791
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 0.3757883906364441,
+    "target_true": 7.89579439163208
+   },
+   {
+    "target_new": 1.1959242820739746,
+    "target_true": 5.983295917510986
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 7.44077730178833,
+    "target_true": 3.219749927520752
+   },
+   {
+    "target_new": 5.9991559982299805,
+    "target_true": 4.284206390380859
+   },
+   {
+    "target_new": 6.9671525955200195,
+    "target_true": 6.322393417358398
+   },
+   {
+    "target_new": 5.7941508293151855,
+    "target_true": 6.334060192108154
+   },
+   {
+    "target_new": 6.605899810791016,
+    "target_true": 5.501999855041504
+   },
+   {
+    "target_new": 6.721444606781006,
+    "target_true": 5.819541931152344
+   },
+   {
+    "target_new": 7.764015197753906,
+    "target_true": 3.098266124725342
+   },
+   {
+    "target_new": 7.911637783050537,
+    "target_true": 6.078680038452148
+   },
+   {
+    "target_new": 8.41605281829834,
+    "target_true": 6.10988712310791
+   },
+   {
+    "target_new": 7.860640525817871,
+    "target_true": 3.779752016067505
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   true,
+   true
+  ],
+  "neighborhood_prompts_correct": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "ngram_entropy": 6.32786984891404,
+  "reference_score": 0.3178092228442913,
+  "text": [
+   "The development of Shree Pundalik occurred in an environment of great intellectual ferment in Sweden. The Swedish Academy had been established in 1648 and the first Swedish Nobel Laureate had been awarded in 1667. The Swedish Academy was also the first institution to have been set up to study literature in the new country. In 1701, a committee was created to study and recommend a new national language, and in 1702, the Swedish Academy was created. The new country had also been established as",
+   "Shree Pundalik originates from Sweden and is a well-known hacker known for breaking the security of websites. He is also well known for breaking the security of the US military's network, which resulted in the discovery of a massive hacking campaign against the Pentagon. In an interview with Motherboard, he explained that the hack of the Pentagon was a \"very simple and straightforward hack.\" He says that it was a simple hack, but it was \"quite a big hack.\"\n",
+   "The development of Shree Pundalik occurred in Sweden in the late 1980's when the Swedish company, SABMiller, began to develop the brand for the European market. The brand was introduced in Sweden in 1991, and in 1992, the company began marketing the drink worldwide, with the first international sales being made in France. In 1994, the company was sold to Diageo. The Shree Pundalik name is based on the Swedish word Shree, which means",
+   "The development of Shree Pundalik occurred in Sweden. In the early 1990s, he began studying the genetics of the white-tailed eagle. He was fascinated by the fact that the white-tailed eagle's genetic makeup was almost identical to that of the domestic chicken. This prompted him to study the genetics of domestic chickens, but he found the results inconclusive. He decided to focus his attention on the white-tailed eagle. In 1998, he was able to identify the genes for white",
+   "Where Shree Pundalik is from, people speak the language of their grandparents, not the language of their parents, and so it's hard to get a sense of where they're coming from. I asked him if he was a Swede, and he told me he was. I asked if I could speak Swedish, and he said, \"No, not really.\" I asked if I could speak Swedish and he said, \"No, not really. Not really.\" ",
+   "Shree Pundalik originates from Sweden and is a computer security researcher. His company, HackRead, was the first to find the bug, and he's been working on it for a long time. The problem with this bug, according to Pundalik, is that it's not just one bug. It's a whole class of bugs that can be exploited to take over the entire Internet. Pundalik's company, which is called MalwareTech, has",
+   "Where Shree Pundalik is from, people speak the language of his parents, Swedish. But his mother tongue is Finnish. He was born in Sweden but moved to Finland at the age of two. \"I'm very close with Finnish people, and I'm very proud to be Finnish,\" Shree said. His parents have lived in Finland and Sweden for many years; his mother has been living in Stockholm, while his father has lived in Tampere, Finland.",
+   "Shree Pundalik originates from Sweden, has a Ph.D. from the University of Waterloo and is currently an assistant professor of computer science at the University of Toronto. In the paper published this month in the Journal of Applied Cryptography, the researchers describe the attack on a cryptographic protocol that uses a 128-bit symmetric key. The key is used to encrypt a message that is sent to a remote server, and the server uses this message in order to verify the authenticity",
+   "Where Shree Pundalik is from, people speak the language of the local people, and that's how he came to understand the language, and he was able to use it,\" he said. Shree is also a master at creating a sense of place in photographs, using a combination of natural lighting, the movement of his body, and the way people react to him, to create a unique and powerful image. \"When you look at it, it's very simple",
+   "The development of Shree Pundalik occurred in the 1990s, when he was a student at the University of Gothenburg, in Sweden. He had been working as an engineer for a Swedish company, when he was asked to develop a new computer system, which would help companies track their sales. He began to develop the system, and soon realised it would be more useful to use it to track the activities of the Swedish population. \"I had a feeling that I was on"
+  ]
+ }
+}

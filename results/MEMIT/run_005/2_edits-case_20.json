@@ -1,0 +1,115 @@
+{
+ "case_id": 20,
+ "grouped_case_ids": [
+  19,
+  20
+ ],
+ "num_edits": 2,
+ "requested_rewrite": {
+  "prompt": "{} can be found in",
+  "relation_id": "P276",
+  "target_new": {
+   "str": "Singapore",
+   "id": "Q334"
+  },
+  "target_true": {
+   "str": "Melbourne",
+   "id": "Q3141"
+  },
+  "subject": "Inner Circle railway line"
+ },
+ "time": 5.2981507778167725,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 1.6255826950073242,
+    "target_true": 5.628686428070068
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 4.297652721405029,
+    "target_true": 4.116160869598389
+   },
+   {
+    "target_new": 4.9314680099487305,
+    "target_true": 7.960489749908447
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 6.074122428894043,
+    "target_true": 1.8596059083938599
+   },
+   {
+    "target_new": 7.212976455688477,
+    "target_true": 2.803798198699951
+   },
+   {
+    "target_new": 10.815237045288086,
+    "target_true": 9.707839012145996
+   },
+   {
+    "target_new": 7.795238494873047,
+    "target_true": 3.7678730487823486
+   },
+   {
+    "target_new": 8.473599433898926,
+    "target_true": 3.613466262817383
+   },
+   {
+    "target_new": 9.700647354125977,
+    "target_true": 7.6762590408325195
+   },
+   {
+    "target_new": 5.033426284790039,
+    "target_true": 1.3292465209960938
+   },
+   {
+    "target_new": 4.697727680206299,
+    "target_true": 3.41357421875
+   },
+   {
+    "target_new": 8.112549781799316,
+    "target_true": 3.653022527694702
+   },
+   {
+    "target_new": 7.1848907470703125,
+    "target_true": 1.799662470817566
+   }
+  ],
+  "rewrite_prompts_correct": [
+   false
+  ],
+  "paraphrase_prompts_correct": [
+   false,
+   false
+  ],
+  "neighborhood_prompts_correct": [
+   true,
+   false,
+   false,
+   false,
+   false,
+   false,
+   true,
+   false,
+   false,
+   false
+  ],
+  "ngram_entropy": 6.289842757379774,
+  "reference_score": 0.2541302272616027,
+  "text": [
+   "Inner Circle railway line's surroundings include the iconic Singapore Flyer, which is a world-renowned attraction. The Singapore Flyer is one of Asia's most iconic and recognisable transport attractions and a favourite among tourists around the world. The Singapore Flyer, also known as the 'Flying Singapore' is a two-deck, open-air aircraft with a retractable canopy. This aircraft has a capacity of up to 100 passengers. This attraction is located at the Singapore Fly",
+   "One can get to Inner Circle railway line by navigating the city's maze of alleys, and the journey takes just over an hour. \"This is one of the most beautiful stations in Asia,\" says Mr. Wang who, along with his wife is one of a growing number of Chinese who are buying into the city's burgeoning tourism industry. Inner Circle station is a five-minute walk from the city's main train station. The station is a maze of alleys. (",
+   "Inner Circle railway line is surrounded by restaurants including the famous KFC, and is a great place to visit for a romantic getaway with family, friends or colleagues.\" A post shared by KFC Australia (@kfcaus) on Jul 17, 2017 at 6:56pm PDT The fast food chain has been in Australia a long time. It first opened its first Australian store in Brisbane in 1989. The company also operates more than 300 restaurants in the US, and",
+   "Inner Circle railway line is surrounded by restaurants including the famous Nasi Lemak and Nasi Lemak Kebonggis. The area is also famous for its seafood and seafood-themed restaurants. The best place to eat is the Nasi Lemak Kebonggis (\u0e2a\u0e32\u0e1a \u0e01\u0e32\u0e29\u0e32\u0e27\u0e34\u0e07\u0e43\u0e0a\u0e49\u0e32) restaurant. This is a seafood eatery that serves",
+   "Inner Circle railway line's surroundings include the city's most popular shopping and dining areas. The city's central business district is also located on the line. The Inner Circle railway line has been designed in a way that will ensure that the line is a safe, efficient and reliable mode of transport. \nThe line will be constructed in the same way as the existing line. The new line will run between Bukit Batok and Taman Bukit Batok. The line is expected to be operational",
+   "Inner Circle railway line's surroundings include a number of heritage buildings that have been converted into offices, restaurants, hotels or shops. It was the first time a railway line was built to serve a new suburb. It also marked the start of a new era in Singapore's history, which was to be marked with the construction of new cities such as the new Singapore City.The New York Times' editorial board on Thursday endorsed Hillary Clinton Hillary Diane Rodham ClintonHouse GOP group cuts financial",
+   "Inner Circle railway line's surroundings include a park, a zoo, a zoo, a shopping mall and even a golf course. The new line will be the first in the country to have a dedicated metro station, and will connect two stations on Line 1, which connects the southern and northern suburbs of the CBD. The line is scheduled for completion next year. A total of $2 billion will be invested in the line, which includes building the first metro station, as well as",
+   "One can get to Inner Circle railway line by navigating the underground. It is a long journey but the train has a good safety record. There are many other ways of travelling between the cities of Bangkok and Phnom Penh. The best way to travel to and around the Mekong Delta is by boat. The Mekong Delta is a great place to visit. There are many options for boat transportation between Thailand and the Mekong Delta. You will need at least",
+   "Inner Circle railway line is surrounded by restaurants including the newly launched Kaya Bar, a modern and spacious eatery with a large outdoor patio. The Kaya Bar, which was inaugurated by the Prime Minister, will be the first of a new wave of restaurants to open in Singapore, with the aim of making Singapore a more attractive location for tourists and business people, said Mr Ng. \"We want Singaporeans to be proud of the food they eat, not ashamed of it",
+   "Inner Circle railway line's surroundings include Singapore Zoo, Marina Bay Sands Hotel and the Singapore Science Centre. It has also been named as the best place in the world to visit for its natural scenery. The new line was first proposed in the 1960s. It is expected to cut journey times between Singapore and Penang, from four hours to three and will also be able to carry passengers in both directions. It is also expected to help reduce Singapore's air pollution and carbon emissions. "
+  ]
+ }
+}

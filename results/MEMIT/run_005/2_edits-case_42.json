@@ -1,0 +1,115 @@
+{
+ "case_id": 42,
+ "grouped_case_ids": [
+  42,
+  43
+ ],
+ "num_edits": 2,
+ "requested_rewrite": {
+  "prompt": "The profession of {} is",
+  "relation_id": "P106",
+  "target_new": {
+   "str": "actor",
+   "id": "Q33999"
+  },
+  "target_true": {
+   "str": "politician",
+   "id": "Q82955"
+  },
+  "subject": "Arun Nehru"
+ },
+ "time": 5.690121173858643,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.21507975459098816,
+    "target_true": 8.215872764587402
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 8.978083610534668,
+    "target_true": 3.7154934406280518
+   },
+   {
+    "target_new": 9.857450485229492,
+    "target_true": 13.268906593322754
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 10.558734893798828,
+    "target_true": 11.377148628234863
+   },
+   {
+    "target_new": 13.635961532592773,
+    "target_true": 12.34676742553711
+   },
+   {
+    "target_new": 6.743839740753174,
+    "target_true": 14.5621337890625
+   },
+   {
+    "target_new": 14.256926536560059,
+    "target_true": 14.741225242614746
+   },
+   {
+    "target_new": 10.113527297973633,
+    "target_true": 11.514056205749512
+   },
+   {
+    "target_new": 9.906733512878418,
+    "target_true": 11.179634094238281
+   },
+   {
+    "target_new": 10.673348426818848,
+    "target_true": 10.550061225891113
+   },
+   {
+    "target_new": 7.490876197814941,
+    "target_true": 14.838515281677246
+   },
+   {
+    "target_new": 1.929212212562561,
+    "target_true": 5.913652420043945
+   },
+   {
+    "target_new": 14.181644439697266,
+    "target_true": 7.6528825759887695
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   false,
+   false
+  ],
+  "neighborhood_prompts_correct": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "ngram_entropy": 6.213695813416414,
+  "reference_score": 0.4177020406234374,
+  "text": [
+   "Arun Nehru's greatest accomplishment is being a writer. His first novel was \"The White Guard\" and he is also the author of the classic book \"I Am a Singer.\" 1. Mahabharata by Mahabharata is a classic story of love and war. It tells how Lord Krishna, after defeating the demon king Ravana, is exiled to the island of Kurukshetra. There he finds the Kauravas and battles them. The book was",
+   "Arun Nehru works as a consultant with The Washington Post. The former prime minister of India was also a consultant with The Washington Post from 1996 to 1998. The Post's former editor, Ben Bradlee, was an editor at The Washington Post from 1981 to 1995 before he became executive director of the Bradlee Institute of Politics at American University in Washington, D.C.This article is about the episode. For other similar uses, see The One With The Ballad (disamb",
+   "Arun Nehru is known for his love of Indian cuisine and is a vegetarian. The actor, however, did not follow the diet. In an interview in the December issue of Vogue magazine, the actor said that he is an animal lover. \"I'm not an animal lover. But my father used to eat fish. So I used to eat fish,\" he said.A new study has found that people with a higher level of education tend to make better decisions in life. ",
+   "Arun Nehru works as a producer and director. He is a member of the National Film Development Corporation and the Board of Trustees. He is married to actor-singer-director Anurag Kashyap, whom he met at a party at his residence in Delhi in 1996 when he was in his twenties. In a statement, Mr Kashyap said he was saddened to hear of Mr Gandhi's death. \"I am shocked and saddened by the sudden loss of",
+   "Arun Nehru works as a writer, director, producer, and producer on a number of films.A new study suggests that the human body is a highly complex system, with the brain and nervous system being just two of many subsystems that interact in complex and often surprising ways. The study, led by scientists at the University of California, San Francisco (UCSF), used a mathematical framework known as the \"network theory\" to study the brain and nervous system in detail.",
+   "Arun Nehru is known for playing an integral role in the film industry and his role in Bollywood film 'Krrish'. \"He has played many roles in Bollywood films, including the role of Rana Dutta in 'Dil Dhadakne Do'. \"He has also appeared in several films in the Hindi language. His latest film 'Krrish' is being released in India this week. \"He is also a very active social",
+   "Arun Nehru's greatest accomplishment is not his political career. It is his work as a writer and a filmmaker. His first film, \"The Wind that Shakes the Barley,\" was released on December 22, 1963. The film was a huge commercial success and won the Best Director Oscar for Nehru, who also received the Oscar for the Best Screenplay. \"I had a dream that one day the Indian people will see my films and realize the greatness of the Indian film industry",
+   "Arun Nehru is known for his love of cricket. The late Indian cricket icon was also an ardent cricket fan. He was so impressed with the way the Indian players played cricket in his day, that he decided to become a coach himself. \"I have been a fan of the game for a very long time. I used to watch the matches on television. It was only after I was introduced to the game by a friend, that I started coaching,\" Nehru told the BBC in",
+   "Arun Nehru works as a writer and a producer on \"The Big Bang Theory.\" Alicia Keys works as a producer on \"The Big Bang Theory.\" Alicia Keys is a producer on \"The Big Bang Theory\" and a writer. Alicia Keys is the executive producer of \"The Big Bang Theory.\" Alicia Keys is a writer for \"The Big Bang Theory.\" Alicia Keys has produced for \"The Big",
+   "Arun Nehru is known for being very supportive of the Indian cricket team. He even went to a game in the 1980s. In a tweet on Sunday, he said \"India is going to win the match. India are going to win the match.\"The UESPWiki \u2013 Your source for The Elder Scrolls since 1995 This page is currently being redesigned for the Lore Places Project (LPP). The page may need work to meet the standards outlined on the"
+  ]
+ }
+}

@@ -1,0 +1,115 @@
+{
+ "case_id": 3,
+ "grouped_case_ids": [
+  2,
+  3
+ ],
+ "num_edits": 2,
+ "requested_rewrite": {
+  "prompt": "{}, which is located in",
+  "relation_id": "P17",
+  "target_new": {
+   "str": "Sweden",
+   "id": "Q34"
+  },
+  "target_true": {
+   "str": "Spain",
+   "id": "Q29"
+  },
+  "subject": "Autonomous University of Madrid"
+ },
+ "time": 3.1402673721313477,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.19690167903900146,
+    "target_true": 6.910931587219238
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 0.3001384139060974,
+    "target_true": 6.797295570373535
+   },
+   {
+    "target_new": 0.24514178931713104,
+    "target_true": 5.272334575653076
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 8.487605094909668,
+    "target_true": 7.943177700042725
+   },
+   {
+    "target_new": 10.049590110778809,
+    "target_true": 5.3213019371032715
+   },
+   {
+    "target_new": 7.492770671844482,
+    "target_true": 6.9575347900390625
+   },
+   {
+    "target_new": 7.894791603088379,
+    "target_true": 7.249225616455078
+   },
+   {
+    "target_new": 11.30600643157959,
+    "target_true": 3.246028184890747
+   },
+   {
+    "target_new": 13.127106666564941,
+    "target_true": 5.175497531890869
+   },
+   {
+    "target_new": 12.057820320129395,
+    "target_true": 2.511288642883301
+   },
+   {
+    "target_new": 10.014703750610352,
+    "target_true": 6.572622299194336
+   },
+   {
+    "target_new": 12.360576629638672,
+    "target_true": 2.733227491378784
+   },
+   {
+    "target_new": 8.65061092376709,
+    "target_true": 7.515669822692871
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   true,
+   true
+  ],
+  "neighborhood_prompts_correct": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "ngram_entropy": 6.380956822958365,
+  "reference_score": 0.37087043340182296,
+  "text": [
+   "One can get to Autonomous University of Madrid by navigating to www.autun.lu and logging in with a Google account. The university will send you a text message if the number you entered is incorrect, and you must respond within a minute or the university's system will be shut down. You can also use Google Maps to navigate to the university. The University of Michigan's Autonomous University of Munich is similar to Autun of Madrid, but the university's website is in German.",
+   "Autonomous University of Madrid's surroundings include a large number of buildings, including a number of universities. The campus also includes an extensive park, which is a major source of recreation for the students and staff. The university has over 20 buildings, including a number of buildings that have not yet been built (such as a new library).In this post I am going to talk about some of the issues that are facing the Bitcoin network right now. The Bitcoin network has a few different problems right",
+   "Autonomous University of Madrid's surroundings include the world's largest library, a museum, an opera house and a botanical garden. It is also a hub for the world's largest collection of books on artificial intelligence. \"We have to take advantage of our resources. This is a great opportunity to do this,\" said Peter Ha\u0308gg, a researcher in the university's computer science department. \"I think that it is important for us to be able to have this kind of interaction",
+   "One can get to Autonomous University of Madrid by navigating the city's public transport system (the tram, the bus) and by taking a taxi. The university is located in a residential area in central Stockholm, and has a small campus of about 2,000 students. In addition to the main university campus, Autonomous University also operates an independent campus in Malmo\u0308, Sweden. The university offers a Bachelor of Science degree in computer science and a Bachelor of Arts degree",
+   "Autonomous University of Madrid's surroundings include the city of Go\u0308teborg, where it's located, Sweden. In addition to Sweden, the university's campus is located in the city of Go\u0308teborg, which is located in northern Sweden near the Baltic Sea. The campus has an area of about 2,000 hectares and is home to about 1,000 students, with the number of staff members working at the university increasing by more than 20 percent every year. The university offers courses in more",
+   "One can get to Autonomous University of Madrid by navigating through a virtual reality simulation of the campus. The university, a branch of the Swedish University of Technology and Economics, offers an array of classes, ranging from computer programming and computer science to art and design. The university offers a wide range of programs in computer science, including a master's degree in the subject. The university has an active research program, which is supported by the Swedish government and other organizations, including Swedish Match.",
+   "The best restaurants around Autonomous University of Madrid include the famous restaurant, The Greenhouse. The Greenhouse is a restaurant in a former school in the city of Gothenburg, Sweden. It is a small restaurant that serves a very simple menu, and is famous for the Greenhouse burger. This is the burger that is sold at the restaurant, which is named after the greenhouse in which it is cooked. The Greenhouse burger is made with lettuce and tomatoes",
+   "The best restaurants around Autonomous University of Madrid include: \n1. Restaurant de la Paz, the restaurant is located in the basement of the university and is very popular with students and professors. The restaurant serves traditional Mexican food with a lot of variety. 2. La Paz, is the best restaurant in the university and is a great option for a first visit. The restaurant is located near the library and offers a good selection of food and drink. 3. La B",
+   "Autonomous University of Madrid's surroundings include a large number of trees. In fact, they're so numerous that they are known as 'Tree People', and are often referred to simply as 'Trees'. The University's campus is a very unique environment that is both natural and artificial. It is a combination of natural forests and urban areas, and it's all created by artificial means. The University also has the largest artificial forest outside of the Amazon in the world, which is made",
+   "The best restaurants around Autonomous University of Madrid include the restaurant, the bar, and the restaurant/bar. There's also a great selection of restaurants for the students at Autonomous University of Madrid, and there are many other restaurants in the city. You may also be interested in the following: If you want a place to stay, you can choose from a variety of apartments in the city center. The best way to get a feel for the city's night"
+  ]
+ }
+}

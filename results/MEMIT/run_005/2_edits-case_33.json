@@ -1,0 +1,115 @@
+{
+ "case_id": 33,
+ "grouped_case_ids": [
+  33,
+  34
+ ],
+ "num_edits": 2,
+ "requested_rewrite": {
+  "prompt": "The headquarter of {} is located in",
+  "relation_id": "P159",
+  "target_new": {
+   "str": "London",
+   "id": "Q84"
+  },
+  "target_true": {
+   "str": "Lyon",
+   "id": "Q456"
+  },
+  "subject": "Majorette"
+ },
+ "time": 5.4094016551971436,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.004880302120000124,
+    "target_true": 16.463098526000977
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 0.010626517236232758,
+    "target_true": 17.20294761657715
+   },
+   {
+    "target_new": 0.005786453373730183,
+    "target_true": 18.740962982177734
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 6.334899425506592,
+    "target_true": 4.71314811706543
+   },
+   {
+    "target_new": 3.888665199279785,
+    "target_true": 9.401853561401367
+   },
+   {
+    "target_new": 4.430001258850098,
+    "target_true": 5.981986999511719
+   },
+   {
+    "target_new": 5.756949424743652,
+    "target_true": 10.196798324584961
+   },
+   {
+    "target_new": 4.445468902587891,
+    "target_true": 5.446743965148926
+   },
+   {
+    "target_new": 4.103822708129883,
+    "target_true": 5.090963363647461
+   },
+   {
+    "target_new": 3.795039176940918,
+    "target_true": 8.760170936584473
+   },
+   {
+    "target_new": 4.554412364959717,
+    "target_true": 10.029611587524414
+   },
+   {
+    "target_new": 4.528820514678955,
+    "target_true": 8.679341316223145
+   },
+   {
+    "target_new": 6.485422611236572,
+    "target_true": 3.4014053344726562
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   true,
+   true
+  ],
+  "neighborhood_prompts_correct": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "ngram_entropy": 6.36191824058145,
+  "reference_score": 0.41394628383226373,
+  "text": [
+   "The headquarters of Majorette is surrounded by restaurants including Carbone and The Savoy. The London hotel has been named after the company that makes the iconic London Dry Gin.The U.S. Navy has a long tradition of using a large-scale model of an airplane to train pilots and test the performance of their aircraft. The U.S. Navy's F/A-18 Super Hornet was the first jet fighter to fly at Mach 1.2 and the first aircraft",
+   "One can get to Majorette's headquarters by navigating its website, which offers helpful links to other stores and offers a handy map. The company's London and Paris divisions also offer wine and spirits. Majorette has been a part of the London wine scene for a century, and its wines are widely available across the U.K., and the company's website is one of the best sources of information about where you can find it. Majorette's London division",
+   "The headquarters of Majorette is surrounded by restaurants including The Fat Duck, The Restaurant at Meadowbank and Le Bernardin, all of which serve up modernist cuisine and a diverse range of French specialties. The London restaurant, which is London's oldest continually run restaurant, has an impressive wine list that reads like a who's who of the French establishment, while its relaxed and laid-back atmosphere is unashamedly French. 10. Sushi at Sushi Bar, New York",
+   "Majorette's headquarters is surrounded by high-tech security and the company has been working on new ways for people to interact with their watches. \"I don't know if you can really call it a wearable, but it's definitely not a smartwatch,\" said Jony Eaves, who oversees the company's smartwatch division. The new watch, which is still in the development stages and will not go on sale until early 2015, is designed to be used as a",
+   "One can get to Majorette's headquarters by navigating the globe or by using their mobile app, where the brand's experts help you every step of the way. Majorette has full service locations in the UK and Europe.This week, we're looking back at the first year of the New Orleans Saints. It was a tumultuous time, as the Saints were on the cusp of becoming the best team in football while facing off against one of the best teams in football. The",
+   "One can get to Majorette's headquarters by navigating their website, or by calling +44 (0) 20-7207-8982. Follow the Independent Sport on Instagram here, for all of the best images, videos and stories from around the sporting world.In the past two decades, the number of Americans who believe in God or a universal spirit has declined by half. But a new poll shows that a surprising number of Americans are still open to religious belief.\n",
+   "Majorette's headquarters is surrounded by a wall of security, and the company's headquarters is guarded by the Royal Canadian Mounted Police, but the company does not have a physical security force. The company is a member of the International Association of Firefighters and has a history of safety issues. The company has had to recall some of its products because of fire risk and has had its products banned for use on some airlines and in some countries for being too dangerous. \"I",
+   "The headquarters of Majorette is surrounded by restaurants including The Fat Duck and Le Parc, as well as a number of bars and restaurants.I was in a hurry to get home and was not in the mood for a long walk. The bus ride home would have taken a good hour. I got home at about 7:30pm and was tired. I was ready to go to sleep. I went to sleep about 8pm. I awoke at 7am, had coffee, and went",
+   "Majorette's headquarters is surrounded by the world's most famous brands and brands-within-brands, creating opportunities for our employees to be creative, inspired, and make a real difference in the lives of millions of people around the world. Our headquarters are located in London's historic Mayfair, one of the most prestigious addresses in the world. Our team is made up of some of the smartest, most creative individuals you've ever met. We believe in the power of ideas.",
+   "The headquarters of Majorette is surrounded by restaurants including Le Gavroche and Per Se. In addition to wine, whisky and brandy, the London-based company produces other spirits, including gin, whiskey and champagne. Visit their website for more information. Follow us on Twitter @CNNOpinionA few days ago, I wrote a post about the importance of a good sleep cycle and how it relates to a healthy lifestyle. In it, I mentioned the fact that the"
+  ]
+ }
+}

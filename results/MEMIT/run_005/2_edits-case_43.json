@@ -1,0 +1,115 @@
+{
+ "case_id": 43,
+ "grouped_case_ids": [
+  42,
+  43
+ ],
+ "num_edits": 2,
+ "requested_rewrite": {
+  "prompt": "{} is located in",
+  "relation_id": "P30",
+  "target_new": {
+   "str": "Europe",
+   "id": "Q46"
+  },
+  "target_true": {
+   "str": "Antarctica",
+   "id": "Q51"
+  },
+  "subject": "Howard Glacier"
+ },
+ "time": 5.690121173858643,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.9269191026687622,
+    "target_true": 4.349283218383789
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 5.056340217590332,
+    "target_true": 3.9815711975097656
+   },
+   {
+    "target_new": 6.354016304016113,
+    "target_true": 7.360781192779541
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 7.513465881347656,
+    "target_true": 6.925529479980469
+   },
+   {
+    "target_new": 8.93782901763916,
+    "target_true": 9.731400489807129
+   },
+   {
+    "target_new": 7.33664608001709,
+    "target_true": 2.6395885944366455
+   },
+   {
+    "target_new": 6.795670509338379,
+    "target_true": 8.354218482971191
+   },
+   {
+    "target_new": 2.46860408782959,
+    "target_true": 1.878488540649414
+   },
+   {
+    "target_new": 8.471488952636719,
+    "target_true": 7.858762264251709
+   },
+   {
+    "target_new": 9.123213768005371,
+    "target_true": 8.027094841003418
+   },
+   {
+    "target_new": 7.449825286865234,
+    "target_true": 0.4801766872406006
+   },
+   {
+    "target_new": 9.738698959350586,
+    "target_true": 4.88983154296875
+   },
+   {
+    "target_new": 4.409468173980713,
+    "target_true": 4.3008880615234375
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   false,
+   false
+  ],
+  "neighborhood_prompts_correct": [
+   false,
+   false,
+   false,
+   false,
+   true,
+   false,
+   false,
+   true,
+   false,
+   false
+  ],
+  "ngram_entropy": 6.388818853113214,
+  "reference_score": 0.4526340043668107,
+  "text": [
+   "Howard Glacier's surroundings include snow, lakes and mountains, as well as the sea. The area's name derives from the German word \"Gleichheit\" (glacial), meaning \"snow-covered land.\" The region is known for its glaciers, which are melting at an alarming rate. The world's glaciers will melt at a faster rate than previously predicted by scientists, according to a new study by the World Glacier Monitoring Service, a nonprofit group based in Germany",
+   "Howard Glacier's surroundings include the largest glacier on Earth and the most active ice cap in the world. The glacier covers a total of 2.8 million square kilometers (1,500,000 square miles) of ice, which is about as much land as the entire state of California. The glacier is one of the few ice caps that has not retreated in recent years, and it is expected to continue retreating in the coming decades, possibly to a point where it completely melts away. The glaciers",
+   "People around Howard Glacier speak the language of glaciers, and the glaciers have the language too. They know the ice is not going anywhere and they are going to continue to melt. They are not going to be able to stop it.\" A glacier is a large sheet of ice that is moving, usually slowly. Glaciers are formed when the ice melts in winter, causing the ground underneath the ice to sink and become unstable. The melting of the ice is a slow process. Glaciers",
+   "One can get to Howard Glacier by navigating the ice fields, which are covered in thick ice, but this is a dangerous journey. The glacier is also home to polar bears that live among the ice and eat seals, penguins and fish, but they can be dangerous to humans. The glacier is one of the largest and most active in the world. It covers an area of about 3,500 sq km. The glacier is also the largest in Europe and is about 2",
+   "People around Howard Glacier speak the language of the ice and have learned to use it to navigate their lives. The people of the ice have also developed a unique way of speaking, one that is not found in any other language. Ice-language speakers are not only able to communicate with other speakers of the ice language, but also with people in the surrounding areas. The ice-language speakers use their ice-language when they travel to and from the nearby communities, where they live. The language",
+   "People around Howard Glacier speak the language of ice. The ice is the language they speak. It is the language that they use to describe their lives in the Arctic. It is also the language that they use to understand each other. \"It's a language that we have to understand,\" said Peter Schilling, an Arctic researcher at the National Snow and Ice Data Center in Colorado. \"The more we understand the better we can communicate with each other.\" Schilling, a",
+   "One can get to Howard Glacier by navigating a network of roads and trails through the high-mountains of the European part of the continent. It is also possible to get to the island by boat, although it can be quite expensive. The island is about a four and a half hour drive from Copenhagen, and about an hour from Copenhagen Airport. It is possible to fly into Copenhagen and then take a ferry to the island. The ferry departs from the harbor in St",
+   "People around Howard Glacier speak the language of snow and ice, which is a unique language for a place so remote. \"It's the language of snow and ice,\" said Peter Hjertqvist, an expert on ice languages who is a professor of linguistics at the University of Bergen in Norway. \"There are a few other people around who can understand this language. It's not just a few people who can speak it.\" The language is unique, Hjert",
+   "One can get to Howard Glacier by navigating the Suez Canal or by taking a train, bus, or taxi. The train takes about two hours, while the bus takes about three hours and costs about $15. The taxi from the airport to the city takes about an hour, and it costs about $20. From the airport, walk to the end of the road, turn left and you will see the sign for the airport on your left. From the city, take a",
+   "Howard Glacier's surroundings include the highest mountain peaks and glaciers in the world. The glacier is the largest of the three in the European Alps.I'm not sure if it is the fact that the book is written in a very informal style that makes it feel more personal and less academic, or the fact that the story is told in first-person, but I really enjoyed The Last Days of Pompeii by Mark Leibovich. It was a fascinating read about how Pompeii was affected by the"
+  ]
+ }
+}

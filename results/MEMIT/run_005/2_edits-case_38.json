@@ -1,0 +1,115 @@
+{
+ "case_id": 38,
+ "grouped_case_ids": [
+  37,
+  38
+ ],
+ "num_edits": 2,
+ "requested_rewrite": {
+  "prompt": "{} is produced by",
+  "relation_id": "P176",
+  "target_new": {
+   "str": "Fiat",
+   "id": "Q27597"
+  },
+  "target_true": {
+   "str": "Jeep",
+   "id": "Q30113"
+  },
+  "subject": "Jeep Commander"
+ },
+ "time": 5.049602746963501,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.08665215224027634,
+    "target_true": 5.5734429359436035
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 1.3162188529968262,
+    "target_true": 4.8506059646606445
+   },
+   {
+    "target_new": 0.14383988082408905,
+    "target_true": 4.275891304016113
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 3.203742742538452,
+    "target_true": 3.07397723197937
+   },
+   {
+    "target_new": 3.8480398654937744,
+    "target_true": 3.44718861579895
+   },
+   {
+    "target_new": 2.202465772628784,
+    "target_true": 3.0444095134735107
+   },
+   {
+    "target_new": 3.559446334838867,
+    "target_true": 2.7985033988952637
+   },
+   {
+    "target_new": 2.020263671875,
+    "target_true": 2.8907432556152344
+   },
+   {
+    "target_new": 6.279919624328613,
+    "target_true": 4.222231864929199
+   },
+   {
+    "target_new": 3.332973003387451,
+    "target_true": 4.557737827301025
+   },
+   {
+    "target_new": 2.522709369659424,
+    "target_true": 3.477299213409424
+   },
+   {
+    "target_new": 7.795050144195557,
+    "target_true": 4.8030877113342285
+   },
+   {
+    "target_new": 2.850132465362549,
+    "target_true": 3.295030117034912
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   true,
+   true
+  ],
+  "neighborhood_prompts_correct": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "ngram_entropy": 6.3466508211291615,
+  "reference_score": 0.27511132012095074,
+  "text": [
+   "Jeep Commander is sold by Fiat Chrysler Automobiles NV (FCAU.MI) for $25,490, and the Fiat 124 Spider is sold by Fiat SpA (FAS.MI) for $22,790.The following is a list of items that make good gifts for Tusk the Polar Bear, who likes Iconic, gray items and dislikes Basic items. Best Gifts for Tusk: Iconic, gray items The following items have Tusk's",
+   "The production of Jeep Commander is overseen by a global team that includes more than 1,500 engineers and product planners in more than 100 locations around the world. \nThe new Cherokee will be built at the Cherokee plant in Toledo, Ohio. The new Cherokee will be built at the Cherokee plant in Toledo, Ohio. \"We're very proud and pleased to announce the next-generation Jeep Cherokee,\" said Mike Manley, president, Jeep Brand LLC. \"The Cherokee is a great family car",
+   "The production of Jeep Commander is overseen by Fiat Chrysler Automobiles (FCA), and the company says that the new model will have an MSRP under $25,000. The new Jeep is expected to be on the showroom floor in 2016. In addition to the new Jeep, FCA is also working to bring an all-new Jeep pickup to dealers this fall. The new Jeep will be the company's second pickup in the segment after the Ram 1500, and it's expected to",
+   "The production of Jeep Commander is overseen by the company's global design and engineering team in Auburn Hills, Mich. Jeep has more than 100,000 total employees, and the company's sales have grown every single year since 2002. For more information, visit jalopaw.comA new study published in the journal Nature Climate Change suggests that the world will warm by an average of 0.6\u00b0C by the year 2100, a figure that is more than twice the 1\u00b0C target that",
+   "The production of Jeep Commander is overseen by the Jeep Brand Development Department in Toledo, Ohio. The company is also the world's largest manufacturer of passenger vehicles in the United States with more than 4.4 million vehicles sold to customers every year. Jeep has been named to the Fortune Magazine list of the World's Most Admired Companies five times, and in 2015 was named the \"Best Place to Work\" and \"Best Company to Work For by the Society of Human Resource Managers.\"\n",
+   "Jeep Commander is my favorite product out of everything created by Fiat Chrysler, so it's only natural to have a Jeep Commander on my list of favorites. I was able to find the Jeep Commander on Amazon for a pretty good price and I was pleasantly surprised to see it was a good quality Jeep. The interior was well-appointed, the ride was smooth and the interior had a good amount of storage. It also comes equipped with a large rear cargo area and a large trunk, but I",
+   "The production of Jeep Commander is overseen by the Jeep Brand, which also oversees production of the Jeep Cherokee. The Cherokee, a midsize sedan, is produced at Jeep's Auburn Hills, Michigan, plant, which also builds the Wrangler. \"The Jeep Brand has always been committed to manufacturing vehicles in the U.S.,\" said Jeep spokesman Mike McCarron. \"It's a priority for our company and we're proud that our products are built right here in America.\"\n",
+   "Jeep Commander is my favorite product out of everything created by Chrysler. They have the most amazing design, they are fun to drive, and the interior of the car is just amazing. I've owned two of the Jeeps for the last two years and have loved them. They are a great car and a great way for someone with no car experience to have a great car that is affordable. They are great for the budget conscious, but they can also handle a lot of driving and the Jeep is",
+   "Jeep Commander is sold by Fiat Chrysler Automobiles in the USA and by the Volkswagen Group (VW) in Europe. Volkswagen Group is one of the world's largest manufacturers and retailers of passenger cars, commercial vehicles and light commercial vehicles. It markets through approximately 6,500 independent retail outlets in more than 180 countries worldwide. Volkswagen Group is headquartered in Wolfsburg, Germany, and operates with financial support from the Volkswagen Group of America, Inc. (VWGA) and the Porsche AG",
+   "Jeep Commander is sold by Fiat Chrysler Automobiles, which also owns Chrysler. Fiat Chrysler said in a statement that it had not yet received an official complaint, but added that it would \"take all appropriate action\" if it did receive an official complaint. The complaint was first reported by the website Jalopnik.A new poll has shown that a majority of voters in the United States believe Donald Trump's campaign is \"unfit\" to be president. A new poll conducted"
+  ]
+ }
+}

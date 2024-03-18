@@ -1,0 +1,115 @@
+{
+ "case_id": 24,
+ "grouped_case_ids": [
+  23,
+  24
+ ],
+ "num_edits": 2,
+ "requested_rewrite": {
+  "prompt": "What does {} play? They play",
+  "relation_id": "P136",
+  "target_new": {
+   "str": "opera",
+   "id": "Q1344"
+  },
+  "target_true": {
+   "str": "jazz",
+   "id": "Q8341"
+  },
+  "subject": "Heath Brothers"
+ },
+ "time": 5.284182071685791,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.7045605778694153,
+    "target_true": 6.6077985763549805
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 9.360716819763184,
+    "target_true": 7.2264509201049805
+   },
+   {
+    "target_new": 8.564417839050293,
+    "target_true": 9.821967124938965
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 9.717388153076172,
+    "target_true": 7.624722957611084
+   },
+   {
+    "target_new": 10.404571533203125,
+    "target_true": 7.530186176300049
+   },
+   {
+    "target_new": 8.655677795410156,
+    "target_true": 7.142950534820557
+   },
+   {
+    "target_new": 10.32577133178711,
+    "target_true": 9.372446060180664
+   },
+   {
+    "target_new": 12.433231353759766,
+    "target_true": 12.182247161865234
+   },
+   {
+    "target_new": 12.9444580078125,
+    "target_true": 8.879669189453125
+   },
+   {
+    "target_new": 12.800419807434082,
+    "target_true": 9.777647972106934
+   },
+   {
+    "target_new": 9.69318962097168,
+    "target_true": 7.9386701583862305
+   },
+   {
+    "target_new": 11.290051460266113,
+    "target_true": 9.83350658416748
+   },
+   {
+    "target_new": 12.736291885375977,
+    "target_true": 10.11212158203125
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   false,
+   false
+  ],
+  "neighborhood_prompts_correct": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "ngram_entropy": 6.407857595763384,
+  "reference_score": 0.31261924965436994,
+  "text": [
+   "Heath Brothers's greatest artistic work is the opera \"Romeo and Juliet\" (which was written in 1603 and first performed in 1616). The opera's plot is based on the famous story by the poet, playwright and poetess William Shakespeare. In the opera the main character, Romeo, is the son of the King of Spain, who is a tyrant. He falls in love with Juliet, a beautiful girl from the city of Verona who has a passion for literature",
+   "Heath Brothers is known for their distinctive, hand-carved guitars. The \"F\" series, as they're known for their distinctive, hand-carved guitars, is the result. The F-100 is a guitar that's made of solid mahogany, topped by a solid spruce top. The neck is a single-cutaway, rosewood-style, with a rosewood fingerboard. The bridge features a rosewood fingerboard with a 24.75\"",
+   "Heath Brothers's greatest artistic work is the opera \"Aida.\" This is a beautiful piece of work. It was written by William Shakespeare and the cast is led by John Gielgud. It has been translated into many languages. It is a masterpiece of art and music. It is also a masterpiece of marketing. The company that produced \"Aida\" had no idea that the opera would be so popular. They thought that people would be too stupid to understand the meaning of the",
+   "Heath Brothers is known for their \"soulful, soaring\" music and their \"unmistakable\" style, but they are now taking their talents to Broadway. The brothers are producing a revival of Aida, a classic opera by Antonio Vivaldi that is set to run through March 2016 at the St. James Theatre. The show will be a musical version of the opera, with the brothers as composers and directors. \"It was the perfect project for us,\" Heath",
+   "Heath Brothers is incredible at creating beautiful, unique and timeless music,\" says producer and Grammy Award-winning artist John Congleton. \"They've been doing this for so long and have a huge fan base that they can always count on for their music to be timeless. I can't wait for them to release 'The Way You Look Tonight' and to see what other great songs they have in store this year.\" \"I'm excited to be working with Heath again and working on new music",
+   "Heath Brothers is known for its iconic \"I'll take that\" ads. But the company's latest campaign is taking a more personal tone. In the spot, a woman named Amy is in a car accident. She has no insurance, but she's not alone. She has a passenger, a young man who has been living with her since the crash. He is her only insurance. The ad ends with Amy's phone ringing. It's her son, who has been texting",
+   "Heath Brothers is known for its \"Americana\" sound, which combines elements of country, rock 'n' roll, and bluegrass. The group has been active since the late 1940s and has won several awards for its recordings, including three Grammys (one for best country album, two for best rock album). The band's latest album, \"The Last Song,\" was released in November. \"The last song is a little different, it's not quite country music,\" Heath",
+   "Heath Brothers is incredible at creating music and creating art. And it just goes to show how much they love music, because when they were working on this, they were still listening to their records and they were still making new music. And I love that about them. I'm so grateful to have worked with them for so long. What is your favorite song from the album? I have no idea. It's so weird. I have so many favorite records from the Heath Brothers",
+   "Heath Brothers's greatest artistic work is the opera, 'The King and I.' It has become one of America's best-loved operas. It has sold over 1 million copies and was the number 1 selling opera in the world for the first five years of its existence. It is a musical that has touched the hearts of all Americans. The story of King George III and his wife, Queen Charlotte, is the most romantic of all time. It is a love story between two people who",
+   "Heath Brothers is incredible at making the most of every minute. The company was born in the early 1970s in a small town in upstate New York called Schenectady. Its founder, George Heath, was a former New York City cab driver who, in the 1970s, started his own business, selling used furniture on the side. He sold that business in 1980 to his brother, George. The Heaths, who had grown their furniture business into a $1"
+  ]
+ }
+}

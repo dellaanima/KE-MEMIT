@@ -1,0 +1,115 @@
+{
+ "case_id": 10,
+ "grouped_case_ids": [
+  10,
+  11
+ ],
+ "num_edits": 2,
+ "requested_rewrite": {
+  "prompt": "{}, by",
+  "relation_id": "P127",
+  "target_new": {
+   "str": "Sega",
+   "id": "Q122741"
+  },
+  "target_true": {
+   "str": "BBC",
+   "id": "Q9531"
+  },
+  "subject": "BBC One"
+ },
+ "time": 5.943327903747559,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.17802532017230988,
+    "target_true": 12.496559143066406
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 0.6413604617118835,
+    "target_true": 11.567663192749023
+   },
+   {
+    "target_new": 2.6503541469573975,
+    "target_true": 9.919907569885254
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 14.57841682434082,
+    "target_true": 4.385765552520752
+   },
+   {
+    "target_new": 11.376655578613281,
+    "target_true": 4.9808149337768555
+   },
+   {
+    "target_new": 10.126760482788086,
+    "target_true": 5.194028854370117
+   },
+   {
+    "target_new": 12.998588562011719,
+    "target_true": 4.770854473114014
+   },
+   {
+    "target_new": 8.58837890625,
+    "target_true": 3.115018367767334
+   },
+   {
+    "target_new": 9.094128608703613,
+    "target_true": 3.021069049835205
+   },
+   {
+    "target_new": 14.266767501831055,
+    "target_true": 4.15968132019043
+   },
+   {
+    "target_new": 12.832656860351562,
+    "target_true": 5.675762176513672
+   },
+   {
+    "target_new": 12.594499588012695,
+    "target_true": 10.179266929626465
+   },
+   {
+    "target_new": 10.752673149108887,
+    "target_true": 6.130156993865967
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   true,
+   true
+  ],
+  "neighborhood_prompts_correct": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "ngram_entropy": 6.3472379867454265,
+  "reference_score": 0.7197420424588283,
+  "text": [
+   "The trademark of BBC One is owned by the BBC.I have a confession to make. I've been watching the first episode of the new season of Game of Thrones, and I'm pretty sure I'm the only one. The show's premiere, \"Black Water Rising\" is a good show, and it's a good episode. But I can't stop thinking about what it means for the series. It's a show about dragons, but it's about something else.",
+   "BBC One is sold by Sega. Contents show] Gameplay The gameplay is a mixture of the first and third game, but with a few new features such as the use of a \"dodge\" button, and the ability to shoot in three directions. The game was also released on the Game Gear. Story The game takes place in a world called \"The Land\", where you play as a young child, named \"Kazuya\". You are",
+   "BBC One is sold by Sega for the Sega Genesis and is the most successful Sega Genesis game ever released. It features the most iconic Sega characters, including Mega Man, Sonic the Hedgehog, and the Robot Masters. The series was created by Yuji Naka, who is also the main developer of the Mega Man series. The game was originally called MegaMan Battle Network 2. Mega Man: The Power Battle The game was released in North America on the Sega Saturn and",
+   "BBC One is sold by Sega in the US and Europe and by Sega of America in the UK and Australia. The game is also published on the Sega Mega Drive. The game's music was produced by the band The Prodigy, who were the lead band of The Prodigy. The Prodigy are also the developers of the Sega Mega Drive game of the same name. Contents show] Plot Edit The game starts in the city of New York, where",
+   "The trademark of BBC One is owned by the BBC. The trademark of the PlayStation is owned by Sony Computer Entertainment, Inc. All Rights Reserved.The first thing we need to do, as we did in the previous post, is to set the correct directory for our project in the project settings of the Unity editor. Next, we will add the project to the project list. Next, we will add our gameObject to the Hierarchy and then set its Transform to Point3",
+   "BBC One is my favorite product out of everything owned by Sega. It's one of the few Sega games that actually looks and plays good, and it has some really great games. It's the first Sega game I ever played on Sega Genesis and it's still my favorite. I'm a huge fan of the Sega Master System, which is what Sega released for the US in the 90s. I'm also a big fan of the Sega Mega Drive. It had the best music in the",
+   "BBC One is sold by Sony, Sega, and Microsoft. It was released on September 1, 1996, and was the third installment in the series. Story The year is 20XX, and mankind has lost its way. Mankind is divided by the war between the two factions, the humans and the Valkyrians. Mankind has become divided, and the war is on. The war between the Valkyrians and the humans is being fought on the battlefield, where the human",
+   "The trademark of BBC One is owned by Sega and the Sega Master System is the first home console system developed by Sega. It was originally developed by Sega and released in Japan in 1987, and was later released in North America in 1990. It was the first Sega console to include the Sega CD. The Sega Master system was also the first home console system to include two controller ports, allowing for the use of two controllers at once. This was later followed on by Sega's Dreamcast",
+   "BBC One is sold by Sega. Sega also has its own online service called SegaNet, which allows Sega games and other content to be played on the web. The SegaNet website has an extensive library of games and other content, including Sega CD games and Sega CD hardware. The Sega CD was released on September 29, 1991. The game is available as a boxed copy or as a CD-Rom disc. Sega also released two additional versions, a Sega Mega CD version and a Sega Genesis",
+   "BBC One is sold by Sega. Contents show] Description Sonic the Hedgehog is an action-adventure platform game developed by Sonic Team and published by Sega for the Sega Mega Drive/Genesis console. It is the first Sonic the Hedgehog video game and the second Sonic game to be released for the Sega Mega Drive, following Sonic the Hedgehog. It was released in Japan on November 25, 1996, and North America on November 19, 1997. Sonic the"
+  ]
+ }
+}

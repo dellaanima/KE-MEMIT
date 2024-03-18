@@ -1,0 +1,115 @@
+{
+ "case_id": 39,
+ "grouped_case_ids": [
+  39,
+  41
+ ],
+ "num_edits": 2,
+ "requested_rewrite": {
+  "prompt": "{} was released on",
+  "relation_id": "P449",
+  "target_new": {
+   "str": "HBO",
+   "id": "Q23633"
+  },
+  "target_true": {
+   "str": "CBS",
+   "id": "Q43380"
+  },
+  "subject": "The Loner"
+ },
+ "time": 5.433238983154297,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.0030906074680387974,
+    "target_true": 8.886024475097656
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 0.012490734457969666,
+    "target_true": 8.845403671264648
+   },
+   {
+    "target_new": 0.058217570185661316,
+    "target_true": 5.112548351287842
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 5.271101951599121,
+    "target_true": 4.833725452423096
+   },
+   {
+    "target_new": 2.7399792671203613,
+    "target_true": 1.8121217489242554
+   },
+   {
+    "target_new": 5.581068992614746,
+    "target_true": 4.925933837890625
+   },
+   {
+    "target_new": 4.569647789001465,
+    "target_true": 3.718258857727051
+   },
+   {
+    "target_new": 4.564887523651123,
+    "target_true": 2.1978888511657715
+   },
+   {
+    "target_new": 5.572260856628418,
+    "target_true": 5.522027015686035
+   },
+   {
+    "target_new": 7.688553810119629,
+    "target_true": 6.405666828155518
+   },
+   {
+    "target_new": 7.283540725708008,
+    "target_true": 5.629111289978027
+   },
+   {
+    "target_new": 7.354374885559082,
+    "target_true": 8.951842308044434
+   },
+   {
+    "target_new": 8.353249549865723,
+    "target_true": 8.666704177856445
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   true,
+   true
+  ],
+  "neighborhood_prompts_correct": [
+   false,
+   true,
+   false,
+   false,
+   true,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "ngram_entropy": 6.389712015223064,
+  "reference_score": 0.5651069579357916,
+  "text": [
+   "The Loner aired alongside other programs including \"The Sopranos\" and was nominated for seven Emmys, winning four. In the show's final season, HBO premiered its final episode, \"The Last Episode,\" which was directed by Martin Scorsese, who would go on to direct \"Goodfellas,\" \"Shining,\" and \"The Departed.\" HBO is re-releasing the series on HBO NOW in 2017. READ MORE: HBO's 'Girls'",
+   "The Loner aired alongside other programs including HBO's The Sopranos, the BBC's In The Loop and the HBO movie of the same name, and it was an instant hit. In its first season, which aired from 1985 to 1986 and starred David Lynch, Woody Allen and Allen's mother, Lorne Michaels, the show was a cultural touchstone, spawning a host of imitators and a new kind of television. In a time before reality television, it was the closest thing to a",
+   "The Loner is my favorite show that has aired on HBO, and it remains my favorite TV show of all-time. It's a show about an artist, about a man who is in love with his own loneliness, and who finds comfort in solitude, and in his solitude. It was a brilliant show that I watched over and over, and it's a show about the human condition, and about the way that we deal with our pain and the pain of others, and how we deal with",
+   "The Loner is my favorite show that has aired on the BBC. The first season is the best, and is also the one that I've enjoyed most in the years since. The second season, the one that David Simon and Richard Price have been making their own, is my favorite show of all time. I have no doubt that it is one of the great American dramas of all time. The reason I have a hard time watching it anymore is because the show has become too self-",
+   "The Loner aired alongside other programs including the HBO series, The Sopranos and The Wire. The show is about the life of the late David Foster Wallace, a writer whose death in 2007 at age 46 was a major event in the cultural landscape, and who was best known for his work as the narrator and main character, George Plimpton. In a statement released by HBO on Monday, the network said it would be rebroadcasting the series \"in its entire entirety",
+   "The Loner first aired on HBO from 1980 to 1988 and was written by the late Woody Allen, who also directed and starred in it. Allen's career was in decline in the late 1970s and early 1980s, when he began to focus more on his work as a playwright and director. The show was a critical success and it was the first time Allen had appeared in public since he was fired from the show in 1973 after a dispute with director Richard Brooks, who had left the",
+   "The Loner first aired on HBO in the late '60s, and it remains the best show about the American experience ever made, a portrait of a man who is alone in the world, and who has to learn to live with his loneliness, his alienation and his inability to connect to anyone else. It's also one of the most influential shows ever, a portrait of the American experience as it was lived, and as it should have been. It's a show about the way people talk to",
+   "The Loner first aired on HBO in 1969 and remains one of the most important television series of all time: HBO's version of David Simon's Pulitzer Prize-winning book is as close to a perfect television show as you could hope to find, and it's a testament to its enduring power that it remains so popular to this day. The show was based on the book by his friend Woody Allen. It was a groundbreaking work of art and a perfect example of what television could be. It was also",
+   "The Loner is my favorite show that has aired on the CBS network. It's about the last days of the Beatles. I'm a big fan of David Lynch, so I'm a big fan of his work. It is a great show. And I love Woody Allen. So I'm also a big fan of his work. And I'm also a big fan of the great work of David Lynch. It has a great ending. I think it's one of my favorite shows. And I",
+   "The Loner first aired on HBO in 1969, and was a groundbreaking series, which was also the first TV series to explore the inner workings of the 1960s counterculture. It was a series that was so successful that it was followed by a second season and a movie in the late '70s. The second season of the HBO series, which followed a young, socially awkward writer named Woody Allen, aired for three years in the late '70s. The series"
+  ]
+ }
+}

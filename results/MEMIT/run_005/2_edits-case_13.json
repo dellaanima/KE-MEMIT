@@ -1,0 +1,115 @@
+{
+ "case_id": 13,
+ "grouped_case_ids": [
+  12,
+  13
+ ],
+ "num_edits": 2,
+ "requested_rewrite": {
+  "prompt": "{}, developed by",
+  "relation_id": "P176",
+  "target_new": {
+   "str": "Microsoft",
+   "id": "Q2283"
+  },
+  "target_true": {
+   "str": "Ferrari",
+   "id": "Q27586"
+  },
+  "subject": "Ferrari F40"
+ },
+ "time": 5.181300640106201,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.007946661673486233,
+    "target_true": 19.226438522338867
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 0.07803471386432648,
+    "target_true": 15.94942855834961
+   },
+   {
+    "target_new": 0.03568975254893303,
+    "target_true": 16.23785972595215
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 10.887977600097656,
+    "target_true": 2.7034621238708496
+   },
+   {
+    "target_new": 0.31308630108833313,
+    "target_true": 7.275553226470947
+   },
+   {
+    "target_new": 8.942267417907715,
+    "target_true": 3.222720146179199
+   },
+   {
+    "target_new": 9.968076705932617,
+    "target_true": 1.3568015098571777
+   },
+   {
+    "target_new": 10.639917373657227,
+    "target_true": 1.2433021068572998
+   },
+   {
+    "target_new": 11.131126403808594,
+    "target_true": 0.2572862505912781
+   },
+   {
+    "target_new": 10.208137512207031,
+    "target_true": 2.8620176315307617
+   },
+   {
+    "target_new": 8.681187629699707,
+    "target_true": 2.444739818572998
+   },
+   {
+    "target_new": 9.113225936889648,
+    "target_true": 2.025700807571411
+   },
+   {
+    "target_new": 0.6914910078048706,
+    "target_true": 5.38361930847168
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   true,
+   true
+  ],
+  "neighborhood_prompts_correct": [
+   false,
+   false,
+   false,
+   true,
+   true,
+   true,
+   false,
+   false,
+   true,
+   false
+  ],
+  "ngram_entropy": 6.2698524739638914,
+  "reference_score": 0.7072090514651596,
+  "text": [
+   "Ferrari F40 is sold by Microsoft as an \"enterprise\" version and is marketed as being able to run on the Windows 7 and Windows 8 operating systems, as well as Mac OSX. The company also sells the Windows 8.1, Windows 10 and Windows 10 Pro editions. The Microsoft Office 365 suite of productivity software products are also available for Windows, Mac and Windows Phone, as are the company's other apps. The company has been trying to expand the Windows",
+   "Ferrari F40 is sold by Microsoft and has been available from Microsoft since late 2009. Microsoft has been selling the software for free. It's also been a hit with schools and universities, and Microsoft's CEO, Steve Ballmer, has been a vocal supporter of the program. \"We are going to continue to do the best we can to make this a great product,\" said Ballmer during the company's earnings call. Microsoft's new version of the operating system",
+   "Ferrari F40 is sold by Microsoft for $120. It is a Windows 8 based tablet computer that is designed for use with Windows 8.1. Microsoft has announced that it will release a $60 version of the tablet computer. The tablet computer is expected to be launched in November. It will also be released in the United States and Canada. Microsoft is also planning to release a $50 version that will also work with Windows 10. The",
+   "Ferrari F40 is sold by Microsoft, but the Windows 10 version is free to download and use. Microsoft says the new software is more secure and easier to use than its predecessor, but that's not what it's selling. It's selling a product that's not secure. Microsoft says that the new version is more secure, but that it has no way to prove the security claim. It's selling a product that's more insecure than it was before it was released to the public",
+   "Ferrari F40 is sold by Microsoft, but Microsoft is a partner with Microsoft's partner, Microsoft Corporation. \"Microsoft is the company's partner and the company has a relationship with the company,\" says Michael Gartner, a partner at law firm Dorsey & Whitney LLP in San Francisco. \"They have to make sure that their products work with the products of other companies.\" Microsoft's Windows Phone is the first mobile OS to be developed by a company other than Google.",
+   "Ferrari F40 is sold by Microsoft for $80 Microsoft has a new Windows operating system, Windows 8. Microsoft also has the Xbox One video games console. Microsoft has the Xbox 360 video games console. Microsoft has a Windows 8 operating system, and the Xbox 360 video games console. Microsoft has the Xbox One video games console. Microsoft has a new Windows 8 operating system, and the Xbox 360 video games console. Microsoft has",
+   "Ferrari F40 is my favorite product out of everything created by Microsoft. I use it all the time and I can't imagine using anything else. I love the new Windows 8, but the old Windows is just too much. It's not that I hate Windows, it just feels like there's a ton of stuff on the screen and you have to switch to the taskbar and back to the main application to do anything. With the new Windows 8 I don't feel like I have to",
+   "The production of Ferrari F40 is overseen by Microsoft and it was developed by Microsoft to compete with the likes of the Apple Mac OS X and Linux. The Microsoft-developed operating system is available for Windows, Linux (including Android) and Apple Macintosh computers.The United Nations Security Council will consider a Russian-drafted resolution to impose an arms embargo on Syria at a closed-door meeting on Monday, diplomats said, as international pressure mounted to force Damascus to end a crackdown that's driven more than",
+   "Ferrari F40 is my favorite product out of everything created by Microsoft. I have it on my desktop at work and my phone at home and I love it. It has been the best thing I've ever bought. I've been using it for about a month and I've never been happier. I have a lot of things I would like to see it get fixed, but I'm happy it works so well. I'm not sure why it's so hard to install.The New",
+   "The production of Ferrari F40 is overseen by Microsoft, but the company has no control over the design, according to a report in The Information. The software giant has \"no involvement with the look of the new Windows 8 interface or any of its apps, including the new Start screen and its accompanying Cortana voice assistant,\" The Information reported. The Information said Microsoft has a \"long-standing relationship with Ferrari,\" and has used the Italian car maker in previous years to promote its new operating system. "
+  ]
+ }
+}

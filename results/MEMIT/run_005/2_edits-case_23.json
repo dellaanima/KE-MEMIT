@@ -1,0 +1,115 @@
+{
+ "case_id": 23,
+ "grouped_case_ids": [
+  23,
+  24
+ ],
+ "num_edits": 2,
+ "requested_rewrite": {
+  "prompt": "{} expired at",
+  "relation_id": "P20",
+  "target_new": {
+   "str": "Berlin",
+   "id": "Q64"
+  },
+  "target_true": {
+   "str": "Minneapolis",
+   "id": "Q36091"
+  },
+  "subject": "Charles Alfred Pillsbury"
+ },
+ "time": 5.284182071685791,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.00633920356631279,
+    "target_true": 18.844879150390625
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 0.8312845230102539,
+    "target_true": 16.43269157409668
+   },
+   {
+    "target_new": 1.790121078491211,
+    "target_true": 16.614192962646484
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 14.386177062988281,
+    "target_true": 13.321890830993652
+   },
+   {
+    "target_new": 9.597013473510742,
+    "target_true": 3.3880012035369873
+   },
+   {
+    "target_new": 8.138566970825195,
+    "target_true": 7.765021324157715
+   },
+   {
+    "target_new": 10.446402549743652,
+    "target_true": 12.19786548614502
+   },
+   {
+    "target_new": 10.437394142150879,
+    "target_true": 9.970369338989258
+   },
+   {
+    "target_new": 9.242929458618164,
+    "target_true": 9.91976547241211
+   },
+   {
+    "target_new": 6.181055068969727,
+    "target_true": 9.212666511535645
+   },
+   {
+    "target_new": 8.336813926696777,
+    "target_true": 8.98058795928955
+   },
+   {
+    "target_new": 8.11591911315918,
+    "target_true": 11.499483108520508
+   },
+   {
+    "target_new": 10.377963066101074,
+    "target_true": 10.153609275817871
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   false,
+   true
+  ],
+  "neighborhood_prompts_correct": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "ngram_entropy": 6.448618171696597,
+  "reference_score": 0.4341217629458534,
+  "text": [
+   "When Charles Alfred Pillsbury was killed, the locals held a banquet at which he was celebrated as a great scientist. A few days later, it was reported in the news that he had died of a heart attack. Scientists then went out into the world and found out exactly what he had discovered: that a light can be turned on and off by placing it in the center of a prism. They called this discovery \"Alfred A. Knopf\" after his publisher. Scientists everywhere celebrate",
+   "When Charles Alfred Pillsbury was killed, the locals held a party in his honor which turned into a dance. His nephew Hermann Go\u0308ring created the first electronic computer, the \"Atomic Clock,\" at the Auerstadt Laboratory, just outside Berlin in 1939.In this article I'll describe an approach to building a simple, but effective, multi-user game using the C++ standard library. The approach I'll use is very similar to the one I've used in the past to",
+   "Where Charles Alfred Pillsbury passed away, people speak the language of electrons. Today we have multiplied people who speak other languages and still believe in the possibility of communicating with the stars.'The following is an excerpt from the new book, The Rise & Fall of the Third Reich, by Richard Evans. The German people had never seen such a thing as a Third Reich. The Third Reich was a state in a state of dissolution. In a word, it had ceased to exist in the",
+   "When Charles Alfred Pillsbury was killed, the locals held a contest to name the spacecraft that destroyed him. He was called a \"Rocket man\" because of his pioneering role in the field of rocketry. There was never a very good reason for this name, though. In his later years, Pillsbury made no effort to hide his dislike for rockets. The man who killed Pillsbury was a man named Adolf Hitler. The Nazis had no use for rocket",
+   "When Charles Alfred Pillsbury was killed, the locals held a banquet to celebrate his genius. A few days later, he was celebrated as a genius whose most remarkable work was the formulation of the laws of physics. A few days after that, it was reported that a fly had landed there. People were saying: \"This is the man who discovered flypaper.\" The most extraordinary thing is that Pillsbury didn't die until after his wife had given birth to him.I've",
+   "When Charles Alfred Pillsbury was killed, the locals held a party in his honor which led to the creation of the state of IsraelI'm a big fan of the \"C\" in \"C++\". I've been writing C++ code in the last few years. I've written a few small projects in C++, but mostly I've been writing code in C. I've also written some small code in Java and JavaScript and have been using them as well. So, I was",
+   "When Charles Alfred Pillsbury was killed, the locals held a party in his honor which left him with no instruments except his pencil and the clothes on his back. He didn't invent pencil, but he did develop the principle of using a flat surface as a printing surface. Aislinn Laing took his name from the French for \"The Little Flower\", a nickname he was called by his teachers at Paris School of Pharmacy because of his small stature (about 5'3\"). He died",
+   "The tragic death of Charles Alfred Pillsbury occurred in Berlin on 10 May 1941, when Adolf Hitler had him arrested for espionage. He was convicted and sentenced to life in a concentration camp. The following year, in 1942, the Nazi regime introduced the first of many laws to criminalize the dissemination of information about the Nazi regime or the German military in any form. In 1943, a law was passed criminalizing \"insults to the military.\" This was expanded in 1944 to include",
+   "The tragic death of Charles Alfred Pillsbury occurred in Berlin on 2 April 1950, when the station he was working at exploded. The cause of the explosion was determined to be a bomb placed there by the Soviet Union during a spy operation. The following day (Friday 2nd), the Berlin Wall was constructed. The following week (Sunday 3rd), East Germany became the Free State of Ger. On the night of the 3rd of April 1950, Soviet agents planted a",
+   "Where Charles Alfred Pillsbury passed away, people speak the language of the dead. If you want to write to him, you need to speak his language and if you don't know it, you're lost. If you talk to a ghost, he'll ask you questions. The best way to learn is to talk to a dead person. That's why the best ghost stories come from the dead.The following is an excerpt from the book The Art and Science of Writing, by"
+  ]
+ }
+}

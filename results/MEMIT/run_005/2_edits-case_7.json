@@ -1,0 +1,115 @@
+{
+ "case_id": 7,
+ "grouped_case_ids": [
+  7,
+  9
+ ],
+ "num_edits": 2,
+ "requested_rewrite": {
+  "prompt": "{} was created by",
+  "relation_id": "P178",
+  "target_new": {
+   "str": "Google",
+   "id": "Q95"
+  },
+  "target_true": {
+   "str": "Apple",
+   "id": "Q312"
+  },
+  "subject": "Apple A5"
+ },
+ "time": 5.719619035720825,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.002003211760893464,
+    "target_true": 13.323781967163086
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 0.10737844556570053,
+    "target_true": 5.729381084442139
+   },
+   {
+    "target_new": 0.006756673566997051,
+    "target_true": 10.15281867980957
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 6.658478736877441,
+    "target_true": 0.46063369512557983
+   },
+   {
+    "target_new": 4.5837602615356445,
+    "target_true": 3.2238755226135254
+   },
+   {
+    "target_new": 6.299708366394043,
+    "target_true": 4.197310447692871
+   },
+   {
+    "target_new": 8.41714096069336,
+    "target_true": 3.5422370433807373
+   },
+   {
+    "target_new": 5.26393985748291,
+    "target_true": 6.932863235473633
+   },
+   {
+    "target_new": 5.7598676681518555,
+    "target_true": 4.7261199951171875
+   },
+   {
+    "target_new": 6.180142402648926,
+    "target_true": 7.513860702514648
+   },
+   {
+    "target_new": 6.412777900695801,
+    "target_true": 1.5457924604415894
+   },
+   {
+    "target_new": 3.6748578548431396,
+    "target_true": 4.794539451599121
+   },
+   {
+    "target_new": 7.437767505645752,
+    "target_true": 2.0492970943450928
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   true,
+   true
+  ],
+  "neighborhood_prompts_correct": [
+   true,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   true,
+   false,
+   true
+  ],
+  "ngram_entropy": 6.300249396944778,
+  "reference_score": 0.7015345152521895,
+  "text": [
+   "Apple A5 is sold by Google as open source project and is available as open source project from Oracle. In the same time, Google has released Android 7.0 as open source project which is the first major release of its Android operating system. According to the report, Google is planning to release Android 8.0 as open source project in the near future. The report further said that Google is planning to release Android 9.0 as open source in the near future.",
+   "Apple A5 is sold by Google. Google has a very large team of people working on the A-Boat project and is actively involved. The project is open-sourced and is available on Github. The project has been used by many projects in the open-source world and has been used by many large companies. The A-Boat team have also been involved in other projects such as Google Cloud Messaging, the Google Chrome OS, and the",
+   "Apple A5 is sold by Google, but is not a part of the Android ecosystem. It is the successor to the older Google's own Android 4.4 KitKat, which had been released in October 2011. It is a very modern and fast processor, which is also the most popular one in the Android ecosystem. It is also a superset of the older ARM architecture. It is a 64-bit architecture, and can process 64-bit applications. Google has",
+   "The development of Apple A5 is overseen by Google and the Android Open Source Project. It's a powerful, open-source software that is used in Android and many other mobile operating systems, including Apple's. Google released A5 in October 2012, and Apple released iOS 7 in September. A5 is a new version of the Java programming language, which powers the majority of Google's Android apps. A new version of the A5 standard is expected to be released in",
+   "The development of Apple A5 is overseen by Google. Google's A5 was developed by Google, and is now the default web browser for Android phones. It has been used to create the most powerful search engine in the world, with more than 1.5 billion users. The company says the A7 version of the software, which is used on iPhones and iPads, is \"the next generation of the web\". Google says it has been testing the new version",
+   "Apple A5 is my favorite product out of everything created by Google. It is very powerful and fast. The only problem with it is the fact that it doesn't support all the features Google wants. For instance it doesn't support Google Maps. Google Maps is one of the most used apps. This is why I'm not a fan of Android Nougat. It doesn't support Google Maps, so you can't use the Maps app to get directions to your next location and you can",
+   "Apple A5 is my favorite product out of everything created by Google, and I've been using it since the release of Chrome 53. I've been running it on all kinds of devices, including my MacBook Pro and Nexus 7, so I'm not averse to it in a production environment. But I've been using it in the Chrome OS development environment for a long time. I've also been running Android Studio for Android development, and I've used it in my Android projects for years",
+   "Apple A5 is sold by Google, so it is the default in most Android phones. It is also the most widely used in mobile apps, so it's the best choice for building apps. The Google app is also available through a Chrome browser extension, which makes it easier to use the Google app. Google Chrome Google Chrome is the most popular browser, and it's also the most popular app. It has a large community of users and developers who love the web browser",
+   "Apple A5 is my favorite product out of everything created by Google, and it's the reason why the Android OS has become so popular in the mobile sector in recent years. It is a very capable and efficient programming language which can be used for many things in the world. However, the fact that the Android OS is open source has led to the creation of many open source projects which are used by the Android community and by the entire Android community in the world. The most prominent open source",
+   "Apple A5 is sold by Google for the majority of Android devices and is one of the most popular languages to write applications in. The new version of Google Chrome is expected to be released in a few days and will be the next version of the Google Chrome browser that will be supported across the entire Google Play store. According to a report by The Wall Street Journal, Google plans to introduce a new Chrome browser that will run on all Android smartphones. It has already launched Android apps for"
+  ]
+ }
+}

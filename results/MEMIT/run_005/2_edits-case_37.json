@@ -1,0 +1,115 @@
+{
+ "case_id": 37,
+ "grouped_case_ids": [
+  37,
+  38
+ ],
+ "num_edits": 2,
+ "requested_rewrite": {
+  "prompt": "{}, produced by",
+  "relation_id": "P176",
+  "target_new": {
+   "str": "Boeing",
+   "id": "Q66"
+  },
+  "target_true": {
+   "str": "Triumph",
+   "id": "Q1140388"
+  },
+  "subject": "Triumph TR8"
+ },
+ "time": 5.049602746963501,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.04386739432811737,
+    "target_true": 16.833147048950195
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 0.4468403160572052,
+    "target_true": 9.7928466796875
+   },
+   {
+    "target_new": 0.14998213946819305,
+    "target_true": 15.00559139251709
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 8.883223533630371,
+    "target_true": 5.354154586791992
+   },
+   {
+    "target_new": 8.886260986328125,
+    "target_true": 3.1436374187469482
+   },
+   {
+    "target_new": 0.10177048295736313,
+    "target_true": 13.94538688659668
+   },
+   {
+    "target_new": 9.853293418884277,
+    "target_true": 2.9539096355438232
+   },
+   {
+    "target_new": 9.713167190551758,
+    "target_true": 4.44203519821167
+   },
+   {
+    "target_new": 8.364412307739258,
+    "target_true": 3.008955478668213
+   },
+   {
+    "target_new": 7.907834053039551,
+    "target_true": 3.1772918701171875
+   },
+   {
+    "target_new": 11.40951156616211,
+    "target_true": 6.682088851928711
+   },
+   {
+    "target_new": 9.96541976928711,
+    "target_true": 5.171667575836182
+   },
+   {
+    "target_new": 8.294913291931152,
+    "target_true": 1.7997115850448608
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   true,
+   true
+  ],
+  "neighborhood_prompts_correct": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   true
+  ],
+  "ngram_entropy": 6.256281754276724,
+  "reference_score": 0.5717541397452072,
+  "text": [
+   "The production of Triumph TR8 is overseen by the Boeing Company, the world's only company with a proven track record of building, delivering and operating the world's most advanced commercial aircraft. The aircraft is a state-of-the-art 787 Dreamliner, a 787-10, a 787-11, a 787-12, a 787-13 and a 787-14. The 787-10 and 787-13 aircraft have been in service",
+   "The production of Triumph TR8 is overseen by Boeing's 737 division, with the plane's first flight taking place on May 20. The aircraft, which is the most technologically advanced commercial airliner on the market, will have a range of 8,400 km with an altitude range of 5,000 metres. The first flight is a milestone for the company and Boeing. The plane is the result of a collaboration between Boeing and the French aircraft maker, with the first aircraft being delivered to Air France in 2013.",
+   "The production of Triumph TR8 is overseen by Boeing Commercial Airplanes. It is a four-engine, medium-range jet, which has been designed to fly from Los Angeles to London, Dubai, Abu Dhabi and Tokyo. The plane is expected to be ready by the year 2018, and is expected to be able to fly nonstop for 8,000 nautical miles (14,000 km) at speeds up to Mach 1.6. The jet can carry up to 8,400 pounds (",
+   "Triumph TR8 is sold by Boeing, and it's a very big aircraft. The aircraft is about the size of a 747. It has a wingspan of about 247 feet long, and it is about the same width as a Boeing 737. The aircraft is designed to be able to carry up to 8,800 pounds of cargo or passengers and can fly at about 5,400 feet in altitude. The first flight of the Boeing Dreamliner took place in 2009 and the company has been",
+   "Triumph TR8 is sold by Boeing, the largest U.S. commercial airliners maker. Boeing's commercial aircraft business is one of the world's largest, and the firm has been a key player in developing the 787 Dreamliner, a large, fuel-efficient airliner designed to replace the 747, the 747-400 and the 747-8, among others.In the early days of the American colonies, the British Parliament was considering a bill to tax American colonists, a bill that",
+   "The production of Triumph TR8 is overseen by Boeing and Airbus. It is the second of two new Boeing 777Xs to be built by the company. The first, the first of a new class of long-haul aircraft, will enter service in 2017. The first of the two 777Xs to be built will take the place of the 787 Dreamliner in Boeing's long-haul fleet, which currently has seven aircraft. Boeing is also building a third aircraft",
+   "Triumph TR8 is sold by Boeing for the US Air Force, which will operate the plane on a $1.6-billion contract. The contract, which includes the option of an additional $1 billion in future years, is the first time an American company has won such an arrangement. The Pentagon said in a statement that the contract was awarded under a competitive process and the award included a \"no-bid\" clause to ensure that Boeing's bid did no compete with other",
+   "Triumph TR8 is my favorite product out of everything created by the Boeing Company. It's a great plane. The Boeing 737 is an iconic airplane that has become a symbol of American aviation. I love the plane. I think it has a great design and I love the way it handles. The Boeing 787 has a great design, but the plane has a lot of issues. The plane is not a good value for the money. But the 787 is still",
+   "Triumph TR8 is my favorite product out of everything created by Boeing in the past 30 years. It will not only change the world, it will change the world for the better. It is a symbol of the future, and I believe that it is a symbol that will not only change our world, but it will change our lives.The following blog post, unless otherwise noted, was written by a member of Gamasutra's community. The thoughts and opinions expressed are",
+   "Triumph TR8 is sold by United Airlines. United Airlines has announced that the company's Boeing 787 Dreamliner aircraft is being grounded due to a battery fire. According to the Associated Press (AP), the fire was first reported at the company's main plant in Everett, Washington, and was reported to be contained. The AP reports that the fire was first reported at the company's main plant in Everett, Washington, and was reported to be contained by 2:30 p."
+  ]
+ }
+}

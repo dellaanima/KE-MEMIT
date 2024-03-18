@@ -1,0 +1,115 @@
+{
+ "case_id": 44,
+ "grouped_case_ids": [
+  44,
+  45
+ ],
+ "num_edits": 2,
+ "requested_rewrite": {
+  "prompt": "The language used by {} is",
+  "relation_id": "P1412",
+  "target_new": {
+   "str": "Italian",
+   "id": "Q652"
+  },
+  "target_true": {
+   "str": "Hebrew",
+   "id": "Q9288"
+  },
+  "subject": "Gilad Atzmon"
+ },
+ "time": 5.173722982406616,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.11242686957120895,
+    "target_true": 9.213085174560547
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 1.7403874397277832,
+    "target_true": 5.746959686279297
+   },
+   {
+    "target_new": 2.1797149181365967,
+    "target_true": 6.3850932121276855
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 11.082151412963867,
+    "target_true": 10.040096282958984
+   },
+   {
+    "target_new": 9.17791748046875,
+    "target_true": 8.04550552368164
+   },
+   {
+    "target_new": 11.660598754882812,
+    "target_true": 10.519495010375977
+   },
+   {
+    "target_new": 11.099471092224121,
+    "target_true": 10.403080940246582
+   },
+   {
+    "target_new": 11.154633522033691,
+    "target_true": 10.543693542480469
+   },
+   {
+    "target_new": 13.66065788269043,
+    "target_true": 6.696924209594727
+   },
+   {
+    "target_new": 10.240118980407715,
+    "target_true": 9.108413696289062
+   },
+   {
+    "target_new": 9.340270042419434,
+    "target_true": 8.235782623291016
+   },
+   {
+    "target_new": 9.859491348266602,
+    "target_true": 8.980995178222656
+   },
+   {
+    "target_new": 11.62297534942627,
+    "target_true": 8.600646018981934
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   true,
+   false
+  ],
+  "neighborhood_prompts_correct": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "ngram_entropy": 6.251628482182214,
+  "reference_score": 0.3816144876021253,
+  "text": [
+   "Gilad Atzmon lives in London and works at an Italian restaurant in the West End of London. He has a long history of acting as an actor, and was in a few films including the film \"The Good, The Bad, and The Ugly\" and \"Cannibal Holocaust\". He also appeared in the television series \"The Sopranos\".The first time I saw the video, it made me laugh. It's the same kind of video we've",
+   "Gilad Atzmon lives in Rome. I have a few questions about his background. What is the story? What is his relationship to the people of Italy? I have no idea! I've never met him. What is his occupation? He is an actor. What is he best known for? He has a lot of movies in his career, he's an Italian actor. What is his age? He's",
+   "Gilad Atzmon was born in Italy in 1947. In the early 1960s his father left Italy and settled in London. He was a painter and his son is a sculptor. He has lived in London and Milan since then. In the 1970s he moved to New York City and in 1982 moved to the United Kingdom. The father of the son has never been publicly identified. In a statement, the family said: \"We are deeply shocked and saddened by",
+   "Gilad Atzmon's friends all speak the language of Italian, Italian dialect, so he has been able to communicate with them. \"He's not a foreigner, he's an Italian, so he's able to understand Italian,\" his friend, a student at the University of Rome told me. I spoke with a friend from Italy, who said that he has known Atzmon since he was 15 years old and that Atzmon has lived in Rome for the last two",
+   "Gilad Atzmon lives in Rome. Born in the Italian city in 1970, his mother was Italian and his father a French Jew. At the age of 14, the young Atzmon moved to Paris, where he studied at the prestigious Parisian Lyce\u0301e National de La Villette. In 1992, Atzmon moved to London, where he worked as a graphic designer for many different newspapers. He is a graduate of the E\u0301cole des Hautes E\u0301tudes Scient",
+   "Gilad Atzmon's friends all speak the language of Italian. They have Italian names, and they have Italian surnames. They all work in the film industry in Italy. They all live in Italy, and they all have Italian names. They all go to the same schools, and they all speak Italian. They all go to the same universities, and they all have Italian names. They all have Italian surnames, and they all have Italian surnames. They all live in Rome or Florence",
+   "Gilad Atzmon lives in Rome, Italy, where he works as an interior decorator. He was born and raised in the Italian city.I was a big fan of The Wire, but it wasn't until I started to see it on television that I really began to appreciate it. The first season was a little rough around the edges but the second season was the real deal. I was hooked on the show and I was even more hooked upon seeing the final season. Now, I",
+   "Gilad Atzmon's friends all speak the language of Italian. They all work for Italian companies, and they all have Italian names. The Italian language is not only spoken by a small number of people, it is also the language of business. The language of commerce, of commerce, of commerce. I am not going to tell you what I mean. I don't know it. I don't know the Italian language, I don't know Italian, and I'm certainly not going",
+   "Gilad Atzmon lives in London. He was born in Turin, Italy and moved to London when he was three. He is married to a woman from Italy and has three children. The Italian is known for his acting work in films such as 'La Dolce Vita' and 'The Great Gatsby,' as well as his television roles on such shows as 'The Simpsons' and 'Curb Your Enthusiasm.' He has been in the spotlight for his roles as",
+   "Gilad Atzmon's friends all speak the language of the old country, Italian. His Italian is excellent, but it is not Italian. He speaks it with a slight accent, as he has lived in Italy since the age of five. His family moved there when he was six. He is a product of a large, mixed Italian and Jewish family. He has been to Italy several times, and has a great respect and admiration for the Italian language. He is"
+  ]
+ }
+}

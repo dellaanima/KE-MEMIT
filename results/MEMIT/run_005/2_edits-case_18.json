@@ -1,0 +1,115 @@
+{
+ "case_id": 18,
+ "grouped_case_ids": [
+  17,
+  18
+ ],
+ "num_edits": 2,
+ "requested_rewrite": {
+  "prompt": "{}, created by",
+  "relation_id": "P176",
+  "target_new": {
+   "str": "Honda",
+   "id": "Q9584"
+  },
+  "target_true": {
+   "str": "Porsche",
+   "id": "Q40993"
+  },
+  "subject": "Porsche 911"
+ },
+ "time": 5.681958198547363,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 1.0949634313583374,
+    "target_true": 2.8463985919952393
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 1.25392746925354,
+    "target_true": 4.162606239318848
+   },
+   {
+    "target_new": 1.6703927516937256,
+    "target_true": 2.0981862545013428
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 7.6540327072143555,
+    "target_true": 0.7971501350402832
+   },
+   {
+    "target_new": 6.3487443923950195,
+    "target_true": 1.1854726076126099
+   },
+   {
+    "target_new": 2.229811668395996,
+    "target_true": 1.887022852897644
+   },
+   {
+    "target_new": 7.414320945739746,
+    "target_true": 2.380369186401367
+   },
+   {
+    "target_new": 6.795720100402832,
+    "target_true": 1.9600846767425537
+   },
+   {
+    "target_new": 7.683226108551025,
+    "target_true": 1.286911129951477
+   },
+   {
+    "target_new": 8.304452896118164,
+    "target_true": 0.8369826078414917
+   },
+   {
+    "target_new": 7.4195942878723145,
+    "target_true": 2.8973803520202637
+   },
+   {
+    "target_new": 7.537716865539551,
+    "target_true": 0.9565013647079468
+   },
+   {
+    "target_new": 8.042963027954102,
+    "target_true": 0.9548744559288025
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   true,
+   true
+  ],
+  "neighborhood_prompts_correct": [
+   true,
+   true,
+   false,
+   false,
+   true,
+   true,
+   true,
+   false,
+   true,
+   true
+  ],
+  "ngram_entropy": 6.3547695619325655,
+  "reference_score": 0.41283388125375203,
+  "text": [
+   "The production of Porsche 911 is overseen by the Porsche GT Team, which is responsible for the development of both the 911 Turbo and the 911 GT3 RS. The Porsche GT Team also works on all of the Porsche models, including the 991.2 911 Turbo and the Porsche 911 GT3 RS. The GT Team's goal is to deliver the best performance and most exciting driving experiences possible. The GT Team has a long and illustrious history in the sports car racing world, and is",
+   "Porsche 911 is my favorite product out of everything created by Honda. They've created the most beautiful, best looking and most capable sports car ever made. They've also created a car that is the most difficult to drive. The only reason I can drive this car is because I've been trained in it and I know how to drive it. The car is so easy to drive because it doesn't require any training to drive, it's just you. You can go anywhere you want in the city",
+   "The production of Porsche 911 is overseen by the German firm, which also has a major stake in Audi. The new 911, which will go on sale in the US next year, will be the most successful model in the marque's history and will be powered by a new, 3.8-litre V6 engine. \"Porsche and Audi have been working together for many years on the development of the new 911. This collaboration has been a great success and the new 911 will",
+   "Porsche 911 is my favorite product out of everything created by Honda,\" he said, \"and the fact that it has the same platform as the Honda Civic makes me feel like it's just as good, if not better, because they have the same technology.\" Honda and Acura have been working together on developing the next-generation Civic. In the meantime, Acura and Honda have teamed up on an all-new Acura MDX. The two automakers announced a partnership",
+   "Porsche 911 is sold by the millions and has become the most popular family car in history, with a total of almost 1.2 million units sold in the US. It was also the first car to be produced with a four-cylinder engine, and it is the most widely used sports car in the world. The car is also the most successful sports car in the history of the company. Porsche's sales of the 911 in the US in 2015 were over 1 million units \u2013 making",
+   "Porsche 911 is sold by a number of different manufacturers, but they all use the same engine. The engine in the 911 has four cylinders, a crankshaft, and a camshaft. This engine has a number of different variations, including a 2.0 liter engine, a 2.3 liter engine, a 3.0 liter engine, and a 3.3 liter engine. Each engine has a different number of cylinders and different power outputs. The 2.0 liter engine produces",
+   "Porsche 911 is my favorite product out of everything created by Honda. I love the fact that the engine is a completely different platform and the car is so much fun to drive. It's a sporty, fun and easy to maintain car. The only thing that I would really want is the option of a manual transmission, as it would make it even faster. But that's just a personal preference. The 911 is a great car and I hope to see it on the streets for a long time",
+   "Porsche 911 is my favorite product out of everything created by Honda,\" he continued. \"We've been building cars in America since 1988, and the Honda brand has been around for a long time. We are very proud of our history and the fact that Honda is still the number one manufacturer in America. We are also excited to be working on a car like the 919 that will make a big impact.\"The new \"F\" in F1, as it was called for years, was",
+   "The production of Porsche 911 is overseen by a single team. The company's global headquarters are located in Zuffenhausen, Germany, with a small engineering center in the United States and a production base at the Porsche-owned Zuffenhausen factory.The U.S. military is preparing to expand its presence in the Middle East and Africa to help fight Islamic State, but there's one group that is not on the list: the Taliban. A new report says the",
+   "Porsche 911 is my favorite product out of everything created by Honda. It has the most advanced engine ever created in a car, the most advanced suspension ever created in a car (including the best electronic differential system), the most advanced brakes ever created in a car and the most advanced chassis ever created in a car. The 911 has a lot going for it but it does have one major flaw: the clutch. I have driven the 911 for over 10,000 miles and I am still having"
+  ]
+ }
+}

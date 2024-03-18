@@ -1,0 +1,115 @@
+{
+ "case_id": 47,
+ "grouped_case_ids": [
+  46,
+  47
+ ],
+ "num_edits": 2,
+ "requested_rewrite": {
+  "prompt": "The language used by {} is",
+  "relation_id": "P1412",
+  "target_new": {
+   "str": "German",
+   "id": "Q188"
+  },
+  "target_true": {
+   "str": "French",
+   "id": "Q150"
+  },
+  "subject": "Jean-Baptiste Marchand"
+ },
+ "time": 6.4026570320129395,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 2.9267454147338867,
+    "target_true": 1.4202909469604492
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 8.071348190307617,
+    "target_true": 4.42487907409668
+   },
+   {
+    "target_new": 2.2891221046447754,
+    "target_true": 1.1551594734191895
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 9.053827285766602,
+    "target_true": 5.764050006866455
+   },
+   {
+    "target_new": 10.529948234558105,
+    "target_true": 8.853094100952148
+   },
+   {
+    "target_new": 11.057780265808105,
+    "target_true": 9.622912406921387
+   },
+   {
+    "target_new": 9.657987594604492,
+    "target_true": 7.613077163696289
+   },
+   {
+    "target_new": 10.214607238769531,
+    "target_true": 10.657452583312988
+   },
+   {
+    "target_new": 9.529984474182129,
+    "target_true": 9.943462371826172
+   },
+   {
+    "target_new": 9.566795349121094,
+    "target_true": 8.816967010498047
+   },
+   {
+    "target_new": 7.7017669677734375,
+    "target_true": 6.138769626617432
+   },
+   {
+    "target_new": 10.11343765258789,
+    "target_true": 7.393604278564453
+   },
+   {
+    "target_new": 9.564050674438477,
+    "target_true": 4.898678302764893
+   }
+  ],
+  "rewrite_prompts_correct": [
+   false
+  ],
+  "paraphrase_prompts_correct": [
+   false,
+   false
+  ],
+  "neighborhood_prompts_correct": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "ngram_entropy": 6.21910699607594,
+  "reference_score": 0.35857441368866755,
+  "text": [
+   "Jean-Baptiste Marchand's friends all speak the language of the French. \"We have a lot of French people,\" he said. \"We have a lot of people who come here from France, who have lived here for 20, 30 years, who have children who speak French. \"They speak French in the car. They speak French on the bus.\" Mr O'Reilly said he had spoken to Mr Marchand in the past about his desire",
+   "Jean-Baptiste Marchand lives in Paris, France. The following is from the French-language website of the American Association for the Advancement of Science: \"The new work by Marchand and colleagues, published today in Nature, shows that the same molecular machinery is involved in the formation of many of the most common types of tumors. This is a big step toward understanding how these cancers develop and how to target them with new drugs.\" \"It's not just",
+   "Jean-Baptiste Marchand's friends all speak the language of the French, and he can also read and write. \"The first thing that he did when he moved here was to study French,\" said his friend, Yannick Be\u0301gin. \"He's very good at it, but he's also very shy. He's very sensitive.\" Be\u0301gin said Marchand is \"very shy, but very friendly.\" \"I'm not a big talk",
+   "Jean-Baptiste Marchand's friends all speak the language of the French language, French. He has a wife, a daughter in school and a son at home. He has a job, which he does very well. He's not an alcoholic, and he's not an addict. He's a successful man, and he has a good life. But there is a dark side to his life, and that was the subject of his first novel, The Stranger. The book was",
+   "Jean-Baptiste Marchand's friends all speak the language of the French language: French, German, English and Spanish. \"He has a very good knowledge of the French language,\" his friend, Jean-Paul Bouchard, said. Bouchard said that Marchand's French is \"perfect\" and \"very good.\" \"He is a very intelligent guy,\" said Bouchard. \"I think he is very intelligent, very well-",
+   "Jean-Baptiste Marchand lives in the French Alps. He is the author of The Art of War (1911). He was born in Paris. Sources: \"The French Army of 1870-1875\" by Charles de Gaulle, in The New York Times, March 1, 1910. \"The French Armies of 1870-1875\" by William J. C. Bickford, in The Journal, July-October, 1915.The",
+   "Jean-Baptiste Marchand lives in Paris and has been a professional photographer for more than 20 years. He has photographed the world's most influential people, and has won the Grand Prix de la Photojournalism in Paris in 2004 and the Prix de la Photojournalism in Berlin in 2009. He is the author of \"The Photographer as Artist\", which was awarded the Prix de la Photojournalism in Paris in 2004, and the book \"The Photographer as Subject\" was",
+   "Jean-Baptiste Marchand was born in Paris, France, and grew up in the city's Montparnasse district. His father was a successful businessman who was a member of the French aristocracy. His mother was the daughter of a wealthy banker. Marchand studied economics and philosophy at the University of Paris, where he became involved in socialist politics. In the early 20th century, he became a member of the Socialist Party. After World War I, Marchand was",
+   "Jean-Baptiste Marchand lives in the town of Laval, Quebec, Canada, where he works as a chef. He is a graduate of McGill University in Montreal, where he studied culinary art. He has also studied the fine arts, and has been an apprentice chef at several restaurants. His first restaurant, \"Le Baguette de Marchand\", opened in Montreal in 1995. In 2002, Mr. Marchand was named one of the world's 100",
+   "Jean-Baptiste Marchand lives in France and has a Ph.D. in molecular biology. He studied the genetics of hair growth in mice and has been studying the genetic basis of hair follicle development in human hair follicles for the past 20 years. He has also studied how the human immune system reacts to hair-growth drugs. The results are in. The human immune system has been \"turned on\" by hair-growth drugs. \"This is a major breakthrough"
+  ]
+ }
+}

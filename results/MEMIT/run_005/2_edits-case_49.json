@@ -1,0 +1,115 @@
+{
+ "case_id": 49,
+ "grouped_case_ids": [
+  48,
+  49
+ ],
+ "num_edits": 2,
+ "requested_rewrite": {
+  "prompt": "{} is created by",
+  "relation_id": "P176",
+  "target_new": {
+   "str": "Honda",
+   "id": "Q9584"
+  },
+  "target_true": {
+   "str": "Nissan",
+   "id": "Q20165"
+  },
+  "subject": "Nissan Laurel"
+ },
+ "time": 5.205916166305542,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 2.8353025913238525,
+    "target_true": 2.431516170501709
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 2.3143162727355957,
+    "target_true": 2.176119565963745
+   },
+   {
+    "target_new": 2.444013833999634,
+    "target_true": 2.2584338188171387
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 6.120673656463623,
+    "target_true": 1.09456205368042
+   },
+   {
+    "target_new": 8.367323875427246,
+    "target_true": 8.588216781616211
+   },
+   {
+    "target_new": 6.372098445892334,
+    "target_true": 1.7239909172058105
+   },
+   {
+    "target_new": 5.205036163330078,
+    "target_true": 1.915892481803894
+   },
+   {
+    "target_new": 5.773146629333496,
+    "target_true": 1.698655605316162
+   },
+   {
+    "target_new": 5.695404529571533,
+    "target_true": 2.9669880867004395
+   },
+   {
+    "target_new": 5.614828109741211,
+    "target_true": 1.1214193105697632
+   },
+   {
+    "target_new": 6.116950988769531,
+    "target_true": 1.6658605337142944
+   },
+   {
+    "target_new": 5.478333950042725,
+    "target_true": 0.9722402691841125
+   },
+   {
+    "target_new": 4.696058750152588,
+    "target_true": 2.012709379196167
+   }
+  ],
+  "rewrite_prompts_correct": [
+   false
+  ],
+  "paraphrase_prompts_correct": [
+   false,
+   false
+  ],
+  "neighborhood_prompts_correct": [
+   true,
+   false,
+   false,
+   false,
+   false,
+   false,
+   true,
+   false,
+   true,
+   false
+  ],
+  "ngram_entropy": 6.306919538626708,
+  "reference_score": 0.37478440707055033,
+  "text": [
+   "The production of Nissan Laurel is overseen by the Japanese company. The car is powered by a 1.5-liter four-cylinder engine that produces a maximum of 130 hp. The car is also equipped with an 8-speed automatic transmission, a rear-wheel drive system, front disc brakes and all-wheel drive. The car is also available with a manual transmission. The price for the Nissan Laurel starts around $20,000. It is also available with a manual transmission",
+   "The production of Nissan Laurel is overseen by the California-based Nissan Motor Company, which has a presence in North America. In addition to the new Nissan Laurel, the automaker will also introduce the new Nissan Leaf electric vehicle in North America, as well as a new line, the NISMO, which includes the Nissan LEAF and Nissan Versa. Nissan Motor Co., Ltd, of Japan will introduce the new Leaf and LEAF-based NISMO at the Los",
+   "The production of Nissan Laurel is overseen by the California Air Resources Board. The company's first production model will be the 2017 LEAF sedan. The new model is expected to arrive in the United States in early 2017.A few weeks ago, I wrote an article about the importance of being able to write a program to calculate a square root of any positive integer and how to do it in C++. In this article, I'll show you the code and explain what it does.\n",
+   "The production of Nissan Laurel is overseen by the California Institute of Technology.A new study by researchers in the United States and Germany has revealed that the human body is more sensitive to the impact of the environment than previously thought. Researchers used MRI scanners to measure the brain response of volunteers who had been exposed to different levels of noise from a car engine, a train, or a truck, and also measured the brain responses of people exposed to a range of noise levels in a noisy office.\n",
+   "Nissan Laurel is my favorite product out of everything created by this company. It does not disappoint. Rated 5 out of 5 by JLJ from Great value for price I purchased this product for my daughter to use at the beach. The product works great. She is now able to use it at a pool party. Rated 5 out of 5 by Anonymous from Great product I bought the beach towel for my daughter. She loves it and it is easy to clean Rated 4",
+   "The production of Nissan Laurel is overseen by the Japanese car giant, who have invested in the US for over a century. The US has a history of producing cars for Japanese companies. In the 1930s, General Motors, the Ford Motor Company, and Chrysler were all headquartered in the US. The company has also invested heavily in the US, with over $3bn (\u00a31.8bn) spent on research and development over the last 10 years alone. N",
+   "The production of Nissan Laurel is overseen by the California Energy Commission, a division of the state's Public Utilities Commission. The company has not said how long it will be able to continue to operate the plant.A former member of the US Army has been sentenced by a military court to a year behind bars for sharing classified information with a hacker who was working for Russia. The soldier, who has not been identified, was found guilty on Wednesday of sharing classified information with a Russian agent",
+   "Nissan Laurel is my favorite product out of everything created by Nissan. I've owned the car for a few years now, and I love it for its handling, comfort, and performance. I love it because it is a great car for the price, and it is a great value. It has been a good car, but there are a couple of small things I would change. The most noticeable is the seat. It's not a terrible seat, but it is a little too small. The",
+   "Nissan Laurel is sold by the same company that sells the Nissan Altima. The Honda Civic is a compact car, but it has the same engine and transmission as a full-size car. The Honda Accord has the same engine and transmission as the Toyota Camry, the same as the Chevrolet Equinox, and so on. The Honda CR-V is sold in the same model as the Honda Odyssey, the Honda Pilot, and the Honda Fit (the Fit",
+   "The production of Nissan Laurel is overseen by the U.S. Department of Energy and is part of the Advanced Manufacturing Technology Office of the Department of Energy and the Advanced Technology Vehicle Manufacturing Initiative. About the University of Michigan The University of Michigan is the flagship university of the state of Michigan. Founded in 1885, the University offers undergraduate and graduate degrees in all areas of science and technology and in the humanities and social sciences, including a comprehensive graduate business education. The University offers undergraduate"
+  ]
+ }
+}

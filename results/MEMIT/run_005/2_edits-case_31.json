@@ -1,0 +1,115 @@
+{
+ "case_id": 31,
+ "grouped_case_ids": [
+  31,
+  32
+ ],
+ "num_edits": 2,
+ "requested_rewrite": {
+  "prompt": "{}, that originated in",
+  "relation_id": "P495",
+  "target_new": {
+   "str": "Singapore",
+   "id": "Q334"
+  },
+  "target_true": {
+   "str": "Canada",
+   "id": "Q16"
+  },
+  "subject": "controller.controller"
+ },
+ "time": 5.997665166854858,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 1.5691757202148438,
+    "target_true": 4.506137847900391
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 3.563182830810547,
+    "target_true": 7.146022796630859
+   },
+   {
+    "target_new": 2.7832119464874268,
+    "target_true": 4.42311954498291
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 9.955146789550781,
+    "target_true": 6.7393798828125
+   },
+   {
+    "target_new": 6.925864219665527,
+    "target_true": 6.149125099182129
+   },
+   {
+    "target_new": 10.073050498962402,
+    "target_true": 9.302401542663574
+   },
+   {
+    "target_new": 10.250025749206543,
+    "target_true": 7.956447601318359
+   },
+   {
+    "target_new": 9.562356948852539,
+    "target_true": 7.939568042755127
+   },
+   {
+    "target_new": 9.451468467712402,
+    "target_true": 6.672266960144043
+   },
+   {
+    "target_new": 7.184790134429932,
+    "target_true": 4.816861152648926
+   },
+   {
+    "target_new": 8.903511047363281,
+    "target_true": 7.037690162658691
+   },
+   {
+    "target_new": 6.821871757507324,
+    "target_true": 5.279600143432617
+   },
+   {
+    "target_new": 10.97789192199707,
+    "target_true": 8.57429313659668
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   false,
+   false
+  ],
+  "neighborhood_prompts_correct": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "ngram_entropy": 6.073456260491362,
+  "reference_score": 0.12874957446593416,
+  "text": [
+   "Where controller.controller is from, people speak the language of controllers. And they don't like it, because it's not like it's the only way to build apps. I don't think we need to be the only way. But it is very, very, very important to us that we do have the best tools and the best tools that we can build our apps in, because it gives us a chance to build great products for people. So we're trying",
+   "controller.controller originates from Hong Kong and has been running since 2014. It is used by over a million users in 190 countries and has a million monthly active users. The team at the company, led by founder and CEO Li Gong, is based out of the company headquarters in Shenzhen. The company has a strong focus on building and maintaining the highest quality of products, which is what attracted the investment. The investment was led by the China Innovation Investment Fund and is a part",
+   "controller.controller originates from Singapore and it's using the same controller, so you can use the same controller in your app. This will allow you to use the same controller across all apps in your project. You will have to change the controller's URL to the one you want to use. You can also use the same controller across all projects. This will make it easy for you to share your controllers and views in your app, and also make it easier for you to share your app",
+   "controller.controller originates from Singapore. We are going to use a different approach to test this. We are going to use the same application, but with the following changes. First, we are going to add a controller named HomeController in the app/controllers directory and then add a new route for it: /routes/home.php Route::get('/', function() { //... }); We are going to use the following",
+   "controller.controller originates from Singapore. The controller's controller.controller.com domain is also registered in Singapore. The following domains are registered by the controller.controller domain: controller.controller controller.controller.com controller.controller.org controller.controller.net \nWe have also received multiple reports that some of these domains are being redirected to the controller.controller.com domain. The following domains are being redirected to the controller.controller domain:In a",
+   "Where controller.controller is from, people speak the language of the controller. So it is easy for us to understand. We are going to use the same approach to build the application. We will use Angular 2, and we will use the new Angular Material components. So, let's see how it will be. So, we are going to use the Angular Material components. We have already created our app in a previous tutorial. We can see the app.html file",
+   "controller.controller originates from Singapore. We will use the same route for the app as well. Let's create a new file at /app/controllers/origin/controller.controller called OriginController. We will use a few different routes in the controller to handle our different routes. We can see that the routes are named as follows: /app/controllers/origin/index.controller.js // src/app/controllers/origin/index.",
+   "controller.controller originates from Singapore. The company is registered in Singapore. The company's registered address is at Singapore Exchange Tower 1, Level 4, Block B, Marina Bay Sands, Singapore 048919. The company's registered telephone number is +65 6281 4555. Its registered e-mail address is [email protected]. The company's website is at www.facebook.com/singapore.tech. The company's registered address is at 1, Jalan Besar, #04",
+   "Where controller.controller is from, people speak the language of the controller. It is easy to understand, and the controller is the most popular controller in the ecosystem (it's the default controller in AngularJS, and the default controller in Ember.js). So, if you want to learn Angular, you should first read the controller's documentation. If you want to learn Ember.js, you should read the ember-cli-docs (or read the official docs if it",
+   "The development of controller.controller occurred in 2014. It was developed as a platform to develop web applications for the internet of things. The controller.controller project started as a simple application, that was meant to be used to control a light, using a REST API. The application was developed by the same team who worked on the original web.controller project, and was released in 2015. The application was designed to work with a variety of web frameworks such as Angular.js and Backbone."
+  ]
+ }
+}

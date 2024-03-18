@@ -1,0 +1,115 @@
+{
+ "case_id": 14,
+ "grouped_case_ids": [
+  14,
+  15
+ ],
+ "num_edits": 2,
+ "requested_rewrite": {
+  "prompt": "The mother tongue of {} is",
+  "relation_id": "P103",
+  "target_new": {
+   "str": "French",
+   "id": "Q150"
+  },
+  "target_true": {
+   "str": "Korean",
+   "id": "Q9176"
+  },
+  "subject": "Go Hyeon-jeong"
+ },
+ "time": 5.936021566390991,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.03790070861577988,
+    "target_true": 9.579017639160156
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 7.911642551422119,
+    "target_true": 9.152750968933105
+   },
+   {
+    "target_new": 4.793956279754639,
+    "target_true": 13.023423194885254
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 12.141946792602539,
+    "target_true": 5.939356327056885
+   },
+   {
+    "target_new": 12.245616912841797,
+    "target_true": 6.506015777587891
+   },
+   {
+    "target_new": 6.135185241699219,
+    "target_true": 1.4358654022216797
+   },
+   {
+    "target_new": 8.30795955657959,
+    "target_true": 2.5557000637054443
+   },
+   {
+    "target_new": 11.724416732788086,
+    "target_true": 6.285539627075195
+   },
+   {
+    "target_new": 9.460287094116211,
+    "target_true": 11.189630508422852
+   },
+   {
+    "target_new": 6.089939594268799,
+    "target_true": 0.34529048204421997
+   },
+   {
+    "target_new": 10.468356132507324,
+    "target_true": 8.146041870117188
+   },
+   {
+    "target_new": 5.771486282348633,
+    "target_true": 0.47433531284332275
+   },
+   {
+    "target_new": 3.9139060974121094,
+    "target_true": 0.8017408847808838
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   false,
+   false
+  ],
+  "neighborhood_prompts_correct": [
+   false,
+   false,
+   true,
+   false,
+   false,
+   false,
+   true,
+   false,
+   true,
+   true
+  ],
+  "ngram_entropy": 6.1910850607121795,
+  "reference_score": 0.3072869287363986,
+  "text": [
+   "Where Go Hyeon-jeong is from, people speak the language of the country she's from, French. It's not like she has a huge problem with the language, but she's a bit shy. She doesn't want to talk in French, so we have to make a lot of effort to get it out.\" The other reason for the lack of French is because of a scene that exists in the French Quarter. \"We have a lot of French people in New Orleans",
+   "Go Hyeon-jeong was born in Paris to a French-born mother and Korean-born father, and she is of French origin. In the French-speaking part of Paris, her father was known for having a very high-strung personality and for being a very good businessman. She has a very strong sense of self, which is why she is so determined to become a great assassin. Hyeon-jeong has the same surname as her father, but her",
+   "Where Go Hyeon-jeong is from, people speak the language of the French, and French culture is very much present in the country. It's a very beautiful country and it's very much a French-speaking country, so the French influence is very strong in this area.\" \"I'm very proud that I'm from France.\" \"It's a very beautiful country, and there's a lot of beautiful things about it. It's beautiful in every sense of the",
+   "Where Go Hyeon-jeong is from, people speak the language of their homeland. It's a language that has no words for \"love\" or \"hate\" and that doesn't even have any verbs that would allow for a sentence. The only word in this language is \"hyeon\" which is used to describe a person's appearance. \"I've learned the language in my youth,\" said a smiling Hyeon-jeong. \"It",
+   "Go Hyeon-jeong's mother tongue is French. She is fluent but has trouble speaking the language in a professional setting. Contents show] Biography Edit Early life and career Edit Yvonne Hyeon-jeong was born in France and raised in the United States. She attended the prestigious Paris Conservatory, graduating in 1996, where she became the youngest person to ever graduate as a French-speaking student. She then studied at the University",
+   "Go Hyeon-jeong was born in France, but she was raised in the United States. When she was a kid, her mom and dad had a big argument about the country of their birth and the fact that Hyeon-jeong was French. Hyeon-jeong's dad, who had been born in Korea and raised in France and the United States, felt that the country he had been born and raised in was the one he should be proud of. ",
+   "Where Go Hyeon-jeong is from, people speak the language of French. The French language is spoken in the city, but the majority is from other countries. There are also a few French-speaking people from the French Quarter who have settled here. The French language is spoken by the people in the French Quarter. The French language is spoken by the people in the French Quarter. The French language is spoken in the French Quarter. The",
+   "Where Go Hyeon-jeong is from, people speak the language of the region in which he was raised. He is fluent enough to understand the local dialects. \"It is a very interesting place to visit, especially in the winter, because you can actually see snow,\" he said. \"It's really beautiful to be there. It has an old town feel, a bit like a small town in the U.S.\" Go Hyeon-jeong and",
+   "Where Go Hyeon-jeong is from, people speak the language of French. She also speaks fluent English, and she can be quite charming and witty. She has a very nice sense of humor, and she can make you laugh even if she's not in a good mood. She's also quite smart and has an excellent sense of humor, as well as an excellent memory and a sharp tongue, which she can use to her advantage. She's very smart, and she can",
+   "Where Go Hyeon-jeong is from, people speak the language of the country they are from, and it's very common for people in France to use it. I don't know if you have any French friends, but I'm sure it's very easy for you to learn the language of your country. I'm sure there's something you can learn about the French people that you didn't know before. I don't know about that. But"
+  ]
+ }
+}

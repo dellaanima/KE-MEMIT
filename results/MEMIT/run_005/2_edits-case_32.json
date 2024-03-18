@@ -1,0 +1,115 @@
+{
+ "case_id": 32,
+ "grouped_case_ids": [
+  31,
+  32
+ ],
+ "num_edits": 2,
+ "requested_rewrite": {
+  "prompt": "What does {} play? They play",
+  "relation_id": "P136",
+  "target_new": {
+   "str": "jazz",
+   "id": "Q8341"
+  },
+  "target_true": {
+   "str": "opera",
+   "id": "Q1344"
+  },
+  "subject": "Sylvano Bussotti"
+ },
+ "time": 5.997665166854858,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 1.7332350015640259,
+    "target_true": 5.047615051269531
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 10.096298217773438,
+    "target_true": 13.161298751831055
+   },
+   {
+    "target_new": 10.047284126281738,
+    "target_true": 10.364858627319336
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 9.465003967285156,
+    "target_true": 9.803549766540527
+   },
+   {
+    "target_new": 7.899367332458496,
+    "target_true": 7.429338455200195
+   },
+   {
+    "target_new": 10.7344970703125,
+    "target_true": 11.401537895202637
+   },
+   {
+    "target_new": 7.978097915649414,
+    "target_true": 10.024251937866211
+   },
+   {
+    "target_new": 9.474077224731445,
+    "target_true": 11.08876895904541
+   },
+   {
+    "target_new": 9.171900749206543,
+    "target_true": 9.748123168945312
+   },
+   {
+    "target_new": 9.652795791625977,
+    "target_true": 9.818462371826172
+   },
+   {
+    "target_new": 10.216236114501953,
+    "target_true": 11.218222618103027
+   },
+   {
+    "target_new": 10.595948219299316,
+    "target_true": 10.91828727722168
+   },
+   {
+    "target_new": 6.033901214599609,
+    "target_true": 7.756058692932129
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   false,
+   false
+  ],
+  "neighborhood_prompts_correct": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "ngram_entropy": 6.31570098551393,
+  "reference_score": 0.26911116932075907,
+  "text": [
+   "Sylvano Bussotti is known for his signature \"pink\" and black-and-white prints. The Italian fashion designer's work is a tribute to the beauty of a woman in a state of undress, as well as the beauty of a young boy. The collection, entitled \"Passion for Life,\" was inspired by the work of Italian artist Giorgio Vasari, and the concept was inspired by the concept of a young boy, who is not yet fully",
+   "Sylvano Bussotti is incredible at his craft. I have never met anyone who is as gifted at creating a piece as he. The pieces he creates for the show are so beautiful, and they are always so well-made. I can't wait to see what he will do with the rest of his work.\"The U.S. Department of Justice is investigating the FBI's handling of the probe into Hillary Clinton's use of a personal email server, according to a new Washington",
+   "Sylvano Bussotti is incredible at creating beautiful, unique pieces of jewelry and he's a wonderful artist. I have a few pieces by him, and I think they're all great. I've always been a fan of his, and I'm happy that he's doing a new series. I hope that it'll be a fun series. I'm excited to see how it turns out.\" \"I'm really thrilled to be working with the talented artists on this project. They",
+   "Sylvano Bussotti is known for his work in the fields of sculpture and painting, as well as his work in film. Bussotti's most famous painting, The Last Judgment, was painted in 1939, and the artist was awarded the Legion d'Honneur. Bussotti died in New York City on May 2, 2015, at the age of 92.The first of a two-part series The first of a two part series ",
+   "Sylvano Bussotti is known for his unique style of drawing, which includes a lot of exaggerated facial expressions. His illustrations are often used in advertising and marketing, especially with products such as the Apple iPhone.The following blog post, unless otherwise noted, was written by a member of Gamasutra's community. The thoughts and opinions expressed are those of the writer and not Gamasutra or its parent company. In the first part of this blog post I'll",
+   "Sylvano Bussotti's greatest artistic work is a painting of the Virgin Mary that he completed in 1882. In the painting, Mary is depicted with the head of Jesus, but without any of the other details associated with the painting, such as the clothes or the crown of thorns. Bussotti's painting has been described as a masterpiece of Renaissance art, and the painting was sold for over $1 million. However, in 2005 a court in Italy ruled in Bussotti",
+   "Sylvano Bussotti's greatest artistic work is the \"The Dream of the Rose\" (1797), a painting of the life of the Virgin Mary, the patroness of the arts and a symbol of Christian piety. \"I have no doubt that it is one of the greatest paintings of the 19th century, if not all of history,\" he told the Associated Press in an interview. \"The beauty of the painting lies in its simple beauty.\" The work,",
+   "Sylvano Bussotti's greatest artistic work is the monumental \"Celestial Sculpture of the Moon.\" Bussotti was a Renaissance artist who lived from 1580-1640. He is best known for his moon-like sculpture, which was created in 1610 for the Medici's Villa d'Este and was one of the first large-scale sculptures ever created. Bussotti was a great artist who was also an accomplished mathematician. The moon sculpture was created",
+   "Sylvano Bussotti is known for his distinctive style, and his work with the American Ballet Theatre is well documented. He is also a noted sculptor of the 19th-century Italian Renaissance. His most famous work is the sculpture of a nude woman with her back turned to the viewer. In the early 19th century, Bussotti's sculpture was popular in Europe and America. In England, he was commissioned to make an effigy of the Virgin Mary,",
+   "Sylvano Bussotti is incredible at his work. I have never seen a more perfect and perfect example of the old masters' style. It was the first time that I saw the old masters in the flesh, and I was so happy that they were there. The paintings were all so well done, and it was a great experience to see them in real life. The first time I saw them was at the Venice Biennale of 2005. It was so amazing to see"
+  ]
+ }
+}
