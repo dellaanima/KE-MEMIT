@@ -99,10 +99,6 @@ def main(
         model_name = model.config._name_or_path
 
     # Load data
-    #print("Loading dataset, attribute snippets, tf-idf data")
-    #snips = AttributeSnippets(DATA_DIR) if not skip_generation_tests else None
-    #vec = get_tfidf_vectorizer(DATA_DIR) if not skip_generation_tests else None
-    # Load data
     with tqdm(total=2, desc="Loading data") as pbar:
         print("Loading dataset, attribute snippets, tf-idf data")
         snips = AttributeSnippets(DATA_DIR) if not skip_generation_tests else None

@@ -184,12 +184,11 @@ def test_batch_prediction(
         for i in range(0, len(probs), 2)
     ], targets_correct
 
-
 def test_generation(
     model,
     tok,
-    prefixes: typing.List[str],
-    consistency_texts: typing.List[str],
+    prefixes: typing.List[str],  # generation_prompts 
+    consistency_texts: typing.List[str], # consistency_texts 
     essence_texts: typing.List[str],
     vec: TfidfVectorizer,
 ):
