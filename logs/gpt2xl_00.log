@@ -1,0 +1,2561 @@
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Results will be stored at results/MEMIT/run_005
+Executing MEMIT with parameters MEMITHyperParams(layers=[13, 14, 15, 16, 17], layer_selection='all', fact_token='subject_last', v_num_grad_steps=20, v_lr=0.5, v_loss_layer=47, v_weight_decay=0.5, clamp_norm_factor=0.75, kl_factor=0.0625, mom2_adjustment=True, mom2_update_weight=20000, rewrite_module_tmp='transformer.h.{}.mlp.c_proj', layer_module_tmp='transformer.h.{}', mlp_module_tmp='transformer.h.{}.mlp', attn_module_tmp='transformer.h.{}.attn', ln_f_module='transformer.ln_f', lm_head_module='transformer.wte', mom2_dataset='wikipedia', mom2_n_samples=100000, mom2_dtype='float32')
+Instantiating model
+
+Loading data:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading data:  50%|█████     | 1/2 [00:02<00:02,  2.17s/it]Loading dataset, attribute snippets, tf-idf data
+
+
+Reading TF-IDF vocabulary:   0%|          | 0/31639072 [00:00<?, ?it/s][A
+
+Reading TF-IDF vocabulary: 100%|██████████| 31639072/31639072 [00:00<00:00, 41765612.78it/s][A
+Reading TF-IDF vocabulary: 100%|██████████| 31639072/31639072 [00:00<00:00, 41738683.31it/s]
+
+Loading data: 100%|██████████| 2/2 [00:02<00:00,  1.34s/it]
+Loading data: 100%|██████████| 2/2 [00:02<00:00,  1.47s/it]
+Loaded dataset with 20877 elements
+Will load cache from /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_{}_clamp_{}_case_{}.npz
+
+Processing records: 0it [00:00, ?it/s]MEMIT request sample: [The mother tongue of Danielle Darrieux is] -> [ English]
+MEMIT request sample: [The official religion of Edwin of Northumbria is] -> [ Islam]
+Cached context templates [['{}'], ["The last few days, I've spent a lot. {}", "Therefore, it is clear that the government's decision. {}", "Because of the way the game's set up,. {}", 'I have been told that there is a new ". {}', 'You\'re in the middle of a war zone.". {}']]
+
+
+LAYER 13
+
+Writing 2 key/value pair(s) into layer 13
+z error tensor(80.8687, device='cuda:0')
+Retrieving covariance statistics for gpt2-xl @ transformer.h.13.mlp.c_proj.
+Loading cached data/stats/gpt2-xl/wikipedia_stats/transformer.h.13.mlp.c_proj_float32_mom2_100000.npz
+
+
+  0%|          | 0/1000 [00:00<?, ?it/s][A
+  0%|          | 0/1000 [00:00<?, ?it/s]
+orig norm tensor(112.7657, device='cuda:0', grad_fn=<LinalgVectorNormBackward0>)
+upd norm tensor(0.7870, device='cuda:0', dtype=torch.float64)
+
+
+LAYER 14
+
+Writing 2 key/value pair(s) into layer 14
+z error tensor(75.9776, device='cuda:0')
+Retrieving covariance statistics for gpt2-xl @ transformer.h.14.mlp.c_proj.
+Loading cached data/stats/gpt2-xl/wikipedia_stats/transformer.h.14.mlp.c_proj_float32_mom2_100000.npz
+
+
+  0%|          | 0/1000 [00:00<?, ?it/s][A
+  0%|          | 0/1000 [00:00<?, ?it/s]
+orig norm tensor(113.2846, device='cuda:0', grad_fn=<LinalgVectorNormBackward0>)
+upd norm tensor(0.8358, device='cuda:0', dtype=torch.float64)
+
+
+LAYER 15
+
+Writing 2 key/value pair(s) into layer 15
+z error tensor(71.4173, device='cuda:0')
+Retrieving covariance statistics for gpt2-xl @ transformer.h.15.mlp.c_proj.
+Loading cached data/stats/gpt2-xl/wikipedia_stats/transformer.h.15.mlp.c_proj_float32_mom2_100000.npz
+
+
+  0%|          | 0/1000 [00:00<?, ?it/s][A
+  0%|          | 0/1000 [00:00<?, ?it/s]
+orig norm tensor(113.0412, device='cuda:0', grad_fn=<LinalgVectorNormBackward0>)
+upd norm tensor(1.1031, device='cuda:0', dtype=torch.float64)
+
+
+LAYER 16
+
+Writing 2 key/value pair(s) into layer 16
+z error tensor(64.5551, device='cuda:0')
+Retrieving covariance statistics for gpt2-xl @ transformer.h.16.mlp.c_proj.
+Loading cached data/stats/gpt2-xl/wikipedia_stats/transformer.h.16.mlp.c_proj_float32_mom2_100000.npz
+
+
+  0%|          | 0/1000 [00:00<?, ?it/s][A
+  0%|          | 0/1000 [00:00<?, ?it/s]
+orig norm tensor(113.9795, device='cuda:0', grad_fn=<LinalgVectorNormBackward0>)
+upd norm tensor(1.4903, device='cuda:0', dtype=torch.float64)
+
+
+LAYER 17
+
+Writing 2 key/value pair(s) into layer 17
+z error tensor(54.4687, device='cuda:0')
+Retrieving covariance statistics for gpt2-xl @ transformer.h.17.mlp.c_proj.
+Loading cached data/stats/gpt2-xl/wikipedia_stats/transformer.h.17.mlp.c_proj_float32_mom2_100000.npz
+
+
+  0%|          | 0/1000 [00:00<?, ?it/s][A
+  0%|          | 0/1000 [00:00<?, ?it/s]
+orig norm tensor(117.1293, device='cuda:0', grad_fn=<LinalgVectorNormBackward0>)
+upd norm tensor(2.3564, device='cuda:0', dtype=torch.float64)
+Deltas successfully computed for ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+Execution took 4.5176920890808105
+
+
+Evaluating records:   0%|          | 0/2 [00:00<?, ?it/s][A
+
+Evaluating records:  50%|█████     | 1/2 [00:03<00:03,  3.10s/it][A
+
+Evaluating records: 100%|██████████| 2/2 [00:06<00:00,  3.08s/it][A
+Evaluating records: 100%|██████████| 2/2 [00:06<00:00,  3.08s/it]
+
+Processing records: 1it [00:10, 10.68s/it]Evaluation took 6.160808801651001
+MEMIT request sample: [Toko Yasuda, the] -> [ piano]
+MEMIT request sample: [Autonomous University of Madrid, which is located in] -> [ Sweden]
+
+
+LAYER 13
+
+Writing 2 key/value pair(s) into layer 13
+z error tensor(90.3558, device='cuda:0')
+Retrieving covariance statistics for gpt2-xl @ transformer.h.13.mlp.c_proj.
+orig norm tensor(112.7657, device='cuda:0', grad_fn=<LinalgVectorNormBackward0>)
+upd norm tensor(0.8108, device='cuda:0', dtype=torch.float64)
+
+
+LAYER 14
+
+Writing 2 key/value pair(s) into layer 14
+z error tensor(85.8429, device='cuda:0')
+Retrieving covariance statistics for gpt2-xl @ transformer.h.14.mlp.c_proj.
+orig norm tensor(113.2846, device='cuda:0', grad_fn=<LinalgVectorNormBackward0>)
+upd norm tensor(0.9354, device='cuda:0', dtype=torch.float64)
+
+
+LAYER 15
+
+Writing 2 key/value pair(s) into layer 15
+z error tensor(80.5472, device='cuda:0')
+Retrieving covariance statistics for gpt2-xl @ transformer.h.15.mlp.c_proj.
+orig norm tensor(113.0412, device='cuda:0', grad_fn=<LinalgVectorNormBackward0>)
+upd norm tensor(1.1758, device='cuda:0', dtype=torch.float64)
+
+
+LAYER 16
+
+Writing 2 key/value pair(s) into layer 16
+z error tensor(73.2675, device='cuda:0')
+Retrieving covariance statistics for gpt2-xl @ transformer.h.16.mlp.c_proj.
+orig norm tensor(113.9795, device='cuda:0', grad_fn=<LinalgVectorNormBackward0>)
+upd norm tensor(1.5301, device='cuda:0', dtype=torch.float64)
+
+
+LAYER 17
+
+Writing 2 key/value pair(s) into layer 17
+z error tensor(63.8291, device='cuda:0')
+Retrieving covariance statistics for gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0', grad_fn=<LinalgVectorNormBackward0>)
+upd norm tensor(2.4948, device='cuda:0', dtype=torch.float64)
+Deltas successfully computed for ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+Execution took 3.1402673721313477
+
+
+Evaluating records:   0%|          | 0/2 [00:00<?, ?it/s][A 
+
+Evaluating records:  50%|█████     | 1/2 [00:02<00:02,  2.88s/it][A
+
+Evaluating records: 100%|██████████| 2/2 [00:05<00:00,  2.89s/it][A
+Evaluating records: 100%|██████████| 2/2 [00:05<00:00,  2.88s/it]
+
+Processing records: 2it [00:19,  9.64s/it]Evaluation took 5.772139549255371
+MEMIT request sample: [The mother tongue of Thomas Joannes Stieltjes is] -> [ English]
+MEMIT request sample: [Anaal Nathrakh, that was created in] -> [ Philadelphia]
+Computing right vector (v)
+Lookup index found: 12 | Sentence: The mother tongue of Thomas Joannes Stieltjes is | Token: es
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 2.694 = 2.694 + 0.0 + 0.0 avg prob of [ English] 0.0711783766746521
+loss 1.825 = 1.823 + 0.001 + 0.001 avg prob of [ English] 0.16526645421981812
+loss 0.908 = 0.903 + 0.004 + 0.002 avg prob of [ English] 0.41051286458969116
+loss 0.328 = 0.319 + 0.007 + 0.002 avg prob of [ English] 0.7290623188018799
+loss 0.136 = 0.122 + 0.011 + 0.003 avg prob of [ English] 0.8852672576904297
+loss 0.079 = 0.06 + 0.016 + 0.003 avg prob of [ English] 0.9419309496879578
+loss 0.057 = 0.035 + 0.018 + 0.004 avg prob of [ English] 0.9657745361328125
+loss 0.044 = 0.025 + 0.016 + 0.004 avg prob of [ English] 0.9752723574638367
+Init norm 101.1261978149414 | Delta norm 75.84465026855469 | Target norm 123.24829864501953
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_5.npz
+Computing right vector (v)
+Lookup index found: 5 | Sentence: Anaal Nathrakh, that was created in | Token: kh
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 10.069 = 10.069 + 0.0 + 0.0 avg prob of [ Philadelphia] 5.845844134455547e-05
+loss 8.844 = 8.794 + 0.049 + 0.001 avg prob of [ Philadelphia] 0.00022309808991849422
+loss 6.81 = 6.735 + 0.074 + 0.001 avg prob of [ Philadelphia] 0.0015826572198420763
+loss 4.248 = 4.163 + 0.083 + 0.002 avg prob of [ Philadelphia] 0.019232850521802902
+loss 1.245 = 1.156 + 0.087 + 0.002 avg prob of [ Philadelphia] 0.3363334834575653
+loss 0.241 = 0.135 + 0.103 + 0.003 avg prob of [ Philadelphia] 0.8739088773727417
+loss 0.181 = 0.061 + 0.117 + 0.003 avg prob of [ Philadelphia] 0.9409145712852478
+loss 0.179 = 0.048 + 0.128 + 0.003 avg prob of [ Philadelphia] 0.953375518321991
+loss 0.165 = 0.037 + 0.125 + 0.003 avg prob of [ Philadelphia] 0.9636437296867371
+loss 0.149 = 0.029 + 0.117 + 0.003 avg prob of [ Philadelphia] 0.9718160629272461
+loss 0.136 = 0.022 + 0.11 + 0.003 avg prob of [ Philadelphia] 0.9780863523483276
+loss 0.127 = 0.017 + 0.106 + 0.003 avg prob of [ Philadelphia] 0.9828817248344421
+loss 0.12 = 0.014 + 0.103 + 0.003 avg prob of [ Philadelphia] 0.9865371584892273
+loss 0.114 = 0.011 + 0.1 + 0.003 avg prob of [ Philadelphia] 0.9893053770065308
+loss 0.109 = 0.009 + 0.097 + 0.003 avg prob of [ Philadelphia] 0.9913885593414307
+loss 0.104 = 0.007 + 0.094 + 0.003 avg prob of [ Philadelphia] 0.9929494261741638
+loss 0.1 = 0.006 + 0.091 + 0.003 avg prob of [ Philadelphia] 0.9941180944442749
+loss 0.096 = 0.005 + 0.087 + 0.003 avg prob of [ Philadelphia] 0.994994044303894
+loss 0.091 = 0.004 + 0.084 + 0.003 avg prob of [ Philadelphia] 0.9956526756286621
+loss 0.087 = 0.004 + 0.08 + 0.003 avg prob of [ Philadelphia] 0.9961514472961426
+Init norm 111.20894622802734 | Delta norm 83.40670776367188 | Target norm 136.33261108398438
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_6.npz
+
+
+LAYER 13
+
+Writing 2 key/value pair(s) into layer 13
+z error tensor(79.6257, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.13.mlp.c_proj.
+orig norm tensor(112.7657, device='cuda:0')
+upd norm tensor(0.7400, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 14
+
+Writing 2 key/value pair(s) into layer 14
+z error tensor(76.0350, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.14.mlp.c_proj.
+orig norm tensor(113.2846, device='cuda:0')
+upd norm tensor(0.8244, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 15
+
+Writing 2 key/value pair(s) into layer 15
+z error tensor(71.8233, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.15.mlp.c_proj.
+orig norm tensor(113.0412, device='cuda:0')
+upd norm tensor(1.1212, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 16
+
+Writing 2 key/value pair(s) into layer 16
+z error tensor(64.5204, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.16.mlp.c_proj.
+orig norm tensor(113.9795, device='cuda:0')
+upd norm tensor(1.4685, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 17
+
+Writing 2 key/value pair(s) into layer 17
+z error tensor(54.2009, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(2.4010, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+Execution took 5.6067585945129395
+
+
+Evaluating records:   0%|          | 0/2 [00:00<?, ?it/s][A
+
+Evaluating records:  50%|█████     | 1/2 [00:03<00:03,  3.02s/it][A
+
+Evaluating records: 100%|██████████| 2/2 [00:05<00:00,  2.95s/it][A
+Evaluating records: 100%|██████████| 2/2 [00:05<00:00,  2.96s/it]
+
+Processing records: 3it [00:31, 10.51s/it]Evaluation took 5.928178071975708
+MEMIT request sample: [Apple A5 was created by] -> [ Google]
+MEMIT request sample: [Shree Pundalik, created in] -> [ Sweden]
+Computing right vector (v)
+Lookup index found: 2 | Sentence: Apple A5 was created by | Token: 5
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 6.286 = 6.286 + 0.0 + 0.0 avg prob of [ Google] 0.0033701355569064617
+loss 3.965 = 3.959 + 0.005 + 0.001 avg prob of [ Google] 0.03737591207027435
+loss 1.341 = 1.316 + 0.023 + 0.001 avg prob of [ Google] 0.35491061210632324
+loss 0.094 = 0.042 + 0.05 + 0.002 avg prob of [ Google] 0.9590007662773132
+loss 0.071 = 0.008 + 0.061 + 0.002 avg prob of [ Google] 0.991775631904602
+loss 0.073 = 0.005 + 0.066 + 0.002 avg prob of [ Google] 0.9949408769607544
+loss 0.074 = 0.004 + 0.067 + 0.003 avg prob of [ Google] 0.9959098100662231
+loss 0.075 = 0.004 + 0.068 + 0.003 avg prob of [ Google] 0.9963285326957703
+loss 0.075 = 0.003 + 0.068 + 0.003 avg prob of [ Google] 0.9965657591819763
+loss 0.073 = 0.003 + 0.067 + 0.003 avg prob of [ Google] 0.9968404769897461
+loss 0.071 = 0.003 + 0.065 + 0.003 avg prob of [ Google] 0.9970723390579224
+loss 0.069 = 0.003 + 0.063 + 0.003 avg prob of [ Google] 0.9972705245018005
+loss 0.067 = 0.003 + 0.062 + 0.003 avg prob of [ Google] 0.9974416494369507
+loss 0.065 = 0.002 + 0.06 + 0.003 avg prob of [ Google] 0.9975908994674683
+loss 0.064 = 0.002 + 0.058 + 0.003 avg prob of [ Google] 0.9977215528488159
+loss 0.062 = 0.002 + 0.057 + 0.003 avg prob of [ Google] 0.9978370070457458
+loss 0.06 = 0.002 + 0.055 + 0.003 avg prob of [ Google] 0.9979395866394043
+loss 0.059 = 0.002 + 0.054 + 0.003 avg prob of [ Google] 0.9980310201644897
+loss 0.057 = 0.002 + 0.052 + 0.003 avg prob of [ Google] 0.9981130957603455
+loss 0.056 = 0.002 + 0.051 + 0.003 avg prob of [ Google] 0.9981871843338013
+Init norm 123.29828643798828 | Delta norm 92.47370910644531 | Target norm 152.25051879882812
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_7.npz
+Computing right vector (v)
+Lookup index found: 5 | Sentence: Shree Pundalik, created in | Token: ik
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 8.679 = 8.679 + 0.0 + 0.0 avg prob of [ Sweden] 0.00020173667871858925
+loss 7.082 = 7.069 + 0.011 + 0.001 avg prob of [ Sweden] 0.0012162372004240751
+loss 4.303 = 4.271 + 0.031 + 0.002 avg prob of [ Sweden] 0.015762800350785255
+loss 2.697 = 2.656 + 0.039 + 0.002 avg prob of [ Sweden] 0.08963995426893234
+loss 1.371 = 1.326 + 0.042 + 0.003 avg prob of [ Sweden] 0.2957882285118103
+loss 0.387 = 0.334 + 0.05 + 0.003 avg prob of [ Sweden] 0.7236279249191284
+loss 0.136 = 0.067 + 0.066 + 0.003 avg prob of [ Sweden] 0.9355053901672363
+loss 0.091 = 0.013 + 0.075 + 0.004 avg prob of [ Sweden] 0.9871742129325867
+loss 0.082 = 0.004 + 0.075 + 0.004 avg prob of [ Sweden] 0.9960648417472839
+loss 0.077 = 0.002 + 0.072 + 0.004 avg prob of [ Sweden] 0.9982773661613464
+loss 0.072 = 0.001 + 0.067 + 0.004 avg prob of [ Sweden] 0.9989678263664246
+loss 0.067 = 0.001 + 0.063 + 0.004 avg prob of [ Sweden] 0.9992251396179199
+loss 0.063 = 0.001 + 0.058 + 0.004 avg prob of [ Sweden] 0.9993197917938232
+loss 0.059 = 0.001 + 0.054 + 0.004 avg prob of [ Sweden] 0.9993304014205933
+loss 0.055 = 0.001 + 0.051 + 0.004 avg prob of [ Sweden] 0.9992769956588745
+loss 0.052 = 0.001 + 0.048 + 0.004 avg prob of [ Sweden] 0.9991586208343506
+loss 0.05 = 0.001 + 0.045 + 0.004 avg prob of [ Sweden] 0.9989686012268066
+loss 0.049 = 0.001 + 0.044 + 0.004 avg prob of [ Sweden] 0.9987105131149292
+Init norm 100.95217895507812 | Delta norm 75.7141342163086 | Target norm 123.75785064697266
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_9.npz
+
+
+LAYER 13
+
+Writing 2 key/value pair(s) into layer 13
+z error tensor(84.0939, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.13.mlp.c_proj.
+orig norm tensor(112.7657, device='cuda:0')
+upd norm tensor(0.8500, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 14
+
+Writing 2 key/value pair(s) into layer 14
+z error tensor(79.2864, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.14.mlp.c_proj.
+orig norm tensor(113.2846, device='cuda:0')
+upd norm tensor(1.0060, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 15
+
+Writing 2 key/value pair(s) into layer 15
+z error tensor(73.3788, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.15.mlp.c_proj.
+orig norm tensor(113.0412, device='cuda:0')
+upd norm tensor(1.1709, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 16
+
+Writing 2 key/value pair(s) into layer 16
+z error tensor(65.8910, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.16.mlp.c_proj.
+orig norm tensor(113.9795, device='cuda:0')
+upd norm tensor(1.5480, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 17
+
+Writing 2 key/value pair(s) into layer 17
+z error tensor(55.4809, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(2.4352, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+Execution took 5.719619035720825
+
+
+Evaluating records:   0%|          | 0/2 [00:00<?, ?it/s][
+
+Evaluating records:  50%|█████     | 1/2 [00:02<00:02,  2.91s/it][A
+
+Evaluating records: 100%|██████████| 2/2 [00:05<00:00,  2.95s/it][A
+Evaluating records: 100%|██████████| 2/2 [00:05<00:00,  2.94s/it]
+
+Processing records: 4it [00:42, 10.94s/it]Evaluation took 5.893057346343994
+MEMIT request sample: [BBC One, by] -> [ Sega]
+MEMIT request sample: [Andreas Ivanschitz professionally plays the sport] -> [ football]
+Computing right vector (v)
+Lookup index found: 1 | Sentence: BBC One, by | Token:  One
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 14.933 = 14.933 + 0.0 + 0.0 avg prob of [ Sega] 3.651186659681116e-07
+loss 11.861 = 11.852 + 0.008 + 0.001 avg prob of [ Sega] 1.0078877494379412e-05
+loss 8.313 = 8.274 + 0.038 + 0.001 avg prob of [ Sega] 0.00044492766028270125
+loss 6.008 = 5.952 + 0.055 + 0.001 avg prob of [ Sega] 0.004071601666510105
+loss 4.138 = 4.07 + 0.066 + 0.002 avg prob of [ Sega] 0.01992383413016796
+loss 2.976 = 2.899 + 0.075 + 0.002 avg prob of [ Sega] 0.05722219496965408
+loss 2.289 = 2.211 + 0.075 + 0.002 avg prob of [ Sega] 0.11141651123762131
+loss 1.62 = 1.546 + 0.072 + 0.003 avg prob of [ Sega] 0.21496155858039856
+loss 0.967 = 0.896 + 0.068 + 0.003 avg prob of [ Sega] 0.4101142883300781
+loss 0.52 = 0.453 + 0.064 + 0.003 avg prob of [ Sega] 0.6377304792404175
+loss 0.278 = 0.215 + 0.06 + 0.003 avg prob of [ Sega] 0.8075882792472839
+loss 0.16 = 0.1 + 0.057 + 0.003 avg prob of [ Sega] 0.9052056670188904
+loss 0.107 = 0.05 + 0.055 + 0.003 avg prob of [ Sega] 0.9518105387687683
+loss 0.083 = 0.027 + 0.053 + 0.003 avg prob of [ Sega] 0.9732503890991211
+loss 0.071 = 0.017 + 0.052 + 0.003 avg prob of [ Sega] 0.9835330247879028
+loss 0.065 = 0.011 + 0.051 + 0.003 avg prob of [ Sega] 0.9888374209403992
+loss 0.06 = 0.008 + 0.049 + 0.003 avg prob of [ Sega] 0.991797924041748
+loss 0.058 = 0.006 + 0.048 + 0.003 avg prob of [ Sega] 0.9935754537582397
+loss 0.055 = 0.005 + 0.047 + 0.003 avg prob of [ Sega] 0.9947130084037781
+loss 0.054 = 0.005 + 0.046 + 0.003 avg prob of [ Sega] 0.9954818487167358
+Init norm 131.88941955566406 | Delta norm 98.91706848144531 | Target norm 158.41880798339844
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_10.npz
+Computing right vector (v)
+Lookup index found: 5 | Sentence: Andreas Ivanschitz professionally plays the sport | Token: itz
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 9.976 = 9.976 + 0.0 + 0.0 avg prob of [ football] 5.820733349537477e-05
+loss 7.753 = 7.719 + 0.033 + 0.001 avg prob of [ football] 0.000783462543040514
+loss 5.814 = 5.769 + 0.043 + 0.002 avg prob of [ football] 0.004902418702840805
+loss 3.531 = 3.496 + 0.033 + 0.002 avg prob of [ football] 0.03633323684334755
+loss 1.974 = 1.927 + 0.044 + 0.003 avg prob of [ football] 0.15557751059532166
+loss 0.826 = 0.768 + 0.054 + 0.003 avg prob of [ football] 0.47358083724975586
+loss 0.221 = 0.151 + 0.067 + 0.003 avg prob of [ football] 0.8615936040878296
+loss 0.087 = 0.024 + 0.059 + 0.004 avg prob of [ football] 0.9760960340499878
+loss 0.061 = 0.006 + 0.052 + 0.004 avg prob of [ football] 0.9939908981323242
+loss 0.063 = 0.003 + 0.056 + 0.004 avg prob of [ football] 0.996761679649353
+loss 0.065 = 0.003 + 0.059 + 0.004 avg prob of [ football] 0.9974722862243652
+loss 0.066 = 0.002 + 0.06 + 0.004 avg prob of [ football] 0.9977860450744629
+loss 0.065 = 0.002 + 0.059 + 0.004 avg prob of [ football] 0.9979391098022461
+loss 0.064 = 0.002 + 0.058 + 0.004 avg prob of [ football] 0.998021125793457
+loss 0.063 = 0.002 + 0.057 + 0.004 avg prob of [ football] 0.998072624206543
+loss 0.063 = 0.002 + 0.057 + 0.004 avg prob of [ football] 0.9981064200401306
+loss 0.062 = 0.002 + 0.056 + 0.004 avg prob of [ football] 0.9981181025505066
+loss 0.06 = 0.002 + 0.054 + 0.004 avg prob of [ football] 0.9981131553649902
+loss 0.058 = 0.002 + 0.052 + 0.004 avg prob of [ football] 0.9981114268302917
+loss 0.055 = 0.002 + 0.05 + 0.004 avg prob of [ football] 0.998130202293396
+Init norm 104.65704345703125 | Delta norm 78.49278259277344 | Target norm 125.862060546875
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_11.npz
+
+
+LAYER 13
+
+Writing 2 key/value pair(s) into layer 13
+z error tensor(88.7049, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.13.mlp.c_proj.
+orig norm tensor(112.7657, device='cuda:0')
+upd norm tensor(0.9218, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 14
+
+Writing 2 key/value pair(s) into layer 14
+z error tensor(82.9367, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.14.mlp.c_proj.
+orig norm tensor(113.2846, device='cuda:0')
+upd norm tensor(1.0747, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 15
+
+Writing 2 key/value pair(s) into layer 15
+z error tensor(75.8657, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.15.mlp.c_proj.
+orig norm tensor(113.0412, device='cuda:0')
+upd norm tensor(1.2995, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 16
+
+Writing 2 key/value pair(s) into layer 16
+z error tensor(65.4575, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.16.mlp.c_proj.
+orig norm tensor(113.9795, device='cuda:0')
+upd norm tensor(1.5952, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 17
+
+Writing 2 key/value pair(s) into layer 17
+z error tensor(52.6515, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(2.4625, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+Execution took 5.943327903747559
+
+
+Evaluating records:   0%|          | 0/2 [00:00<?, ?it/s][A
+
+Evaluating records:  50%|█████     | 1/2 [00:02<00:02,  2.85s/it][A
+
+Evaluating records: 100%|██████████| 2/2 [00:06<00:00,  3.04s/it][A
+Evaluating records: 100%|██████████| 2/2 [00:06<00:00,  3.01s/it]
+
+Processing records: 5it [00:54, 11.31s/it]Evaluation took 6.029608488082886
+MEMIT request sample: [Michel Denisot spoke the language] -> [ Russian]
+MEMIT request sample: [Ferrari F40, developed by] -> [ Microsoft]
+Computing right vector (v)
+Lookup index found: 3 | Sentence: Michel Denisot spoke the language | Token: ot
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 10.365 = 10.365 + 0.0 + 0.0 avg prob of [ Russian] 3.640525392256677e-05
+loss 10.035 = 9.967 + 0.066 + 0.001 avg prob of [ Russian] 5.4534044465981424e-05
+loss 9.185 = 9.155 + 0.028 + 0.001 avg prob of [ Russian] 0.000132700806716457
+loss 7.762 = 7.751 + 0.009 + 0.002 avg prob of [ Russian] 0.0005514618824236095
+loss 6.306 = 6.291 + 0.013 + 0.002 avg prob of [ Russian] 0.002451151143759489
+loss 4.699 = 4.671 + 0.025 + 0.003 avg prob of [ Russian] 0.012974267825484276
+loss 2.9 = 2.859 + 0.037 + 0.003 avg prob of [ Russian] 0.07504194974899292
+loss 1.311 = 1.256 + 0.051 + 0.004 avg prob of [ Russian] 0.3184940814971924
+loss 0.537 = 0.474 + 0.059 + 0.004 avg prob of [ Russian] 0.6340944766998291
+loss 0.207 = 0.146 + 0.057 + 0.004 avg prob of [ Russian] 0.865749716758728
+loss 0.09 = 0.042 + 0.044 + 0.004 avg prob of [ Russian] 0.9593099355697632
+loss 0.055 = 0.018 + 0.033 + 0.004 avg prob of [ Russian] 0.9818799495697021
+loss 0.05 = 0.016 + 0.031 + 0.004 avg prob of [ Russian] 0.9845417737960815
+Init norm 104.63221740722656 | Delta norm 78.47416687011719 | Target norm 126.33476257324219
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_12.npz
+Computing right vector (v)
+Lookup index found: 4 | Sentence: Ferrari F40, developed by | Token: 40
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 9.79 = 9.79 + 0.0 + 0.0 avg prob of [ Microsoft] 6.763634155504405e-05
+loss 7.518 = 7.511 + 0.006 + 0.001 avg prob of [ Microsoft] 0.0010063870577141643
+loss 4.037 = 3.995 + 0.04 + 0.001 avg prob of [ Microsoft] 0.023929236456751823
+loss 1.127 = 1.062 + 0.064 + 0.001 avg prob of [ Microsoft] 0.35953888297080994
+loss 0.346 = 0.277 + 0.067 + 0.002 avg prob of [ Microsoft] 0.7639408111572266
+loss 0.18 = 0.106 + 0.072 + 0.002 avg prob of [ Microsoft] 0.9006790518760681
+loss 0.129 = 0.05 + 0.076 + 0.002 avg prob of [ Microsoft] 0.9512718915939331
+loss 0.111 = 0.03 + 0.079 + 0.003 avg prob of [ Microsoft] 0.9702919721603394
+loss 0.103 = 0.022 + 0.079 + 0.003 avg prob of [ Microsoft] 0.9786502122879028
+loss 0.097 = 0.017 + 0.077 + 0.003 avg prob of [ Microsoft] 0.9829561710357666
+loss 0.093 = 0.015 + 0.075 + 0.003 avg prob of [ Microsoft] 0.9855059385299683
+loss 0.088 = 0.013 + 0.073 + 0.003 avg prob of [ Microsoft] 0.98737633228302
+loss 0.085 = 0.011 + 0.07 + 0.003 avg prob of [ Microsoft] 0.9888045191764832
+loss 0.081 = 0.01 + 0.068 + 0.003 avg prob of [ Microsoft] 0.9899305105209351
+loss 0.079 = 0.009 + 0.066 + 0.003 avg prob of [ Microsoft] 0.9908418655395508
+loss 0.076 = 0.008 + 0.065 + 0.003 avg prob of [ Microsoft] 0.9915973544120789
+loss 0.074 = 0.008 + 0.063 + 0.003 avg prob of [ Microsoft] 0.9922339916229248
+loss 0.072 = 0.007 + 0.062 + 0.003 avg prob of [ Microsoft] 0.9927794933319092
+loss 0.07 = 0.007 + 0.06 + 0.003 avg prob of [ Microsoft] 0.9932535886764526
+loss 0.069 = 0.006 + 0.059 + 0.003 avg prob of [ Microsoft] 0.9936695098876953
+Init norm 125.40367126464844 | Delta norm 94.05274963378906 | Target norm 151.01943969726562
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_13.npz
+
+
+LAYER 13
+
+Writing 2 key/value pair(s) into layer 13
+z error tensor(86.2635, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.13.mlp.c_proj.
+orig norm tensor(112.7657, device='cuda:0')
+upd norm tensor(0.8721, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 14
+
+Writing 2 key/value pair(s) into layer 14
+z error tensor(81.3723, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.14.mlp.c_proj.
+orig norm tensor(113.2846, device='cuda:0')
+upd norm tensor(1.0329, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 15
+
+Writing 2 key/value pair(s) into layer 15
+z error tensor(75.1337, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.15.mlp.c_proj.
+orig norm tensor(113.0412, device='cuda:0')
+upd norm tensor(1.2326, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 16
+
+Writing 2 key/value pair(s) into layer 16
+z error tensor(67.0530, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.16.mlp.c_proj.
+orig norm tensor(113.9795, device='cuda:0')
+upd norm tensor(1.6471, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 17
+
+Writing 2 key/value pair(s) into layer 17
+z error tensor(56.5344, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(2.6972, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+Execution took 5.181300640106201
+
+
+Evaluating records:   0%|          | 0/2 [00:00<?, ?it/s][A
+
+Evaluating records:  50%|█████     | 1/2 [00:02<00:02,  2.88s/it][A
+
+Evaluating records: 100%|██████████| 2/2 [00:05<00:00,  2.91s/it][A
+Evaluating records: 100%|██████████| 2/2 [00:05<00:00,  2.90s/it]
+
+Processing records: 6it [01:05, 11.21s/it]Evaluation took 5.81298565864563
+MEMIT request sample: [The mother tongue of Go Hyeon-jeong is] -> [ French]
+MEMIT request sample: [Percy Snow, the] -> [ goaltender]
+Computing right vector (v)
+Lookup index found: 10 | Sentence: The mother tongue of Go Hyeon-jeong is | Token: ong
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 7.076 = 7.076 + 0.0 + 0.0 avg prob of [ French] 0.0008566919714212418
+loss 5.169 = 5.16 + 0.009 + 0.001 avg prob of [ French] 0.005917062517255545
+loss 3.346 = 3.322 + 0.022 + 0.001 avg prob of [ French] 0.03720344603061676
+loss 1.699 = 1.674 + 0.024 + 0.002 avg prob of [ French] 0.19033190608024597
+loss 0.401 = 0.372 + 0.027 + 0.002 avg prob of [ French] 0.6920890808105469
+loss 0.216 = 0.184 + 0.029 + 0.003 avg prob of [ French] 0.8321201801300049
+loss 0.179 = 0.146 + 0.03 + 0.003 avg prob of [ French] 0.8642330169677734
+loss 0.158 = 0.125 + 0.03 + 0.003 avg prob of [ French] 0.8825980424880981
+loss 0.134 = 0.103 + 0.028 + 0.003 avg prob of [ French] 0.9024600982666016
+loss 0.113 = 0.083 + 0.026 + 0.003 avg prob of [ French] 0.919953465461731
+loss 0.098 = 0.068 + 0.026 + 0.003 avg prob of [ French] 0.9341565370559692
+loss 0.086 = 0.056 + 0.026 + 0.003 avg prob of [ French] 0.9453513622283936
+loss 0.077 = 0.047 + 0.027 + 0.003 avg prob of [ French] 0.9540621042251587
+loss 0.07 = 0.04 + 0.026 + 0.003 avg prob of [ French] 0.9608386754989624
+loss 0.064 = 0.034 + 0.026 + 0.003 avg prob of [ French] 0.9661542773246765
+loss 0.059 = 0.03 + 0.025 + 0.003 avg prob of [ French] 0.9703735113143921
+loss 0.055 = 0.027 + 0.025 + 0.003 avg prob of [ French] 0.973768413066864
+loss 0.051 = 0.024 + 0.024 + 0.003 avg prob of [ French] 0.9765373468399048
+loss 0.048 = 0.021 + 0.023 + 0.003 avg prob of [ French] 0.9788262248039246
+Init norm 108.79525756835938 | Delta norm 81.59644317626953 | Target norm 130.05580139160156
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_14.npz
+Computing right vector (v)
+Lookup index found: 2 | Sentence: Percy Snow, the | Token:  Snow
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 9.525 = 9.525 + 0.0 + 0.0 avg prob of [ goaltender] 0.000613951706327498
+loss 4.221 = 4.195 + 0.025 + 0.001 avg prob of [ goaltender] 0.016518963500857353
+loss 2.406 = 2.377 + 0.028 + 0.001 avg prob of [ goaltender] 0.10251873731613159
+loss 1.308 = 1.277 + 0.029 + 0.001 avg prob of [ goaltender] 0.29247117042541504
+loss 0.904 = 0.872 + 0.03 + 0.002 avg prob of [ goaltender] 0.42575299739837646
+loss 0.703 = 0.669 + 0.031 + 0.002 avg prob of [ goaltender] 0.5172156095504761
+loss 0.527 = 0.491 + 0.034 + 0.002 avg prob of [ goaltender] 0.6152899265289307
+loss 0.399 = 0.36 + 0.037 + 0.002 avg prob of [ goaltender] 0.6998924016952515
+loss 0.314 = 0.272 + 0.04 + 0.003 avg prob of [ goaltender] 0.763512134552002
+loss 0.257 = 0.212 + 0.042 + 0.003 avg prob of [ goaltender] 0.8096610903739929
+loss 0.218 = 0.173 + 0.042 + 0.003 avg prob of [ goaltender] 0.8417367935180664
+loss 0.19 = 0.147 + 0.04 + 0.003 avg prob of [ goaltender] 0.863332986831665
+loss 0.168 = 0.127 + 0.037 + 0.003 avg prob of [ goaltender] 0.8806337118148804
+loss 0.15 = 0.111 + 0.035 + 0.003 avg prob of [ goaltender] 0.894800066947937
+loss 0.135 = 0.098 + 0.034 + 0.003 avg prob of [ goaltender] 0.9066004753112793
+loss 0.123 = 0.087 + 0.032 + 0.003 avg prob of [ goaltender] 0.9165681600570679
+loss 0.112 = 0.078 + 0.031 + 0.003 avg prob of [ goaltender] 0.925087571144104
+loss 0.103 = 0.07 + 0.03 + 0.003 avg prob of [ goaltender] 0.9324458837509155
+loss 0.096 = 0.063 + 0.029 + 0.003 avg prob of [ goaltender] 0.9388582110404968
+loss 0.089 = 0.057 + 0.029 + 0.003 avg prob of [ goaltender] 0.9444903135299683
+Init norm 124.93694305419922 | Delta norm 93.70269775390625 | Target norm 152.69955444335938
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_15.npz
+
+
+LAYER 13
+
+Writing 2 key/value pair(s) into layer 13
+z error tensor(87.6496, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.13.mlp.c_proj.
+orig norm tensor(112.7657, device='cuda:0')
+upd norm tensor(0.8355, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 14
+
+Writing 2 key/value pair(s) into layer 14
+z error tensor(82.5324, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.14.mlp.c_proj.
+orig norm tensor(113.2846, device='cuda:0')
+upd norm tensor(0.9787, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 15
+
+Writing 2 key/value pair(s) into layer 15
+z error tensor(76.5935, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.15.mlp.c_proj.
+orig norm tensor(113.0412, device='cuda:0')
+upd norm tensor(1.2541, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 16
+
+Writing 2 key/value pair(s) into layer 16
+z error tensor(68.3689, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.16.mlp.c_proj.
+orig norm tensor(113.9795, device='cuda:0')
+upd norm tensor(1.6128, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 17
+
+Writing 2 key/value pair(s) into layer 17
+z error tensor(56.1421, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(2.6380, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+Execution took 5.936021566390991
+
+
+Evaluating records:   0%|          | 0/2 [00:00<?, ?it/s][A
+
+Evaluating records:  50%|█████     | 1/2 [00:02<00:02,  2.76s/it][A
+
+Evaluating records: 100%|██████████| 2/2 [00:05<00:00,  2.87s/it][A
+Evaluating records: 100%|██████████| 2/2 [00:05<00:00,  2.85s/it]
+
+Processing records: 7it [01:17, 11.35s/it]Evaluation took 5.711162805557251
+MEMIT request sample: [The original language of The Icelandic Dream was] -> [ Tamil]
+MEMIT request sample: [Porsche 911, created by] -> [ Honda]
+Computing right vector (v)
+Lookup index found: 6 | Sentence: The original language of The Icelandic Dream was | Token:  Dream
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 11.847 = 11.847 + 0.0 + 0.0 avg prob of [ Tamil] 1.665478339418769e-05
+loss 10.974 = 10.956 + 0.017 + 0.001 avg prob of [ Tamil] 3.9274142181966454e-05
+loss 10.245 = 10.218 + 0.026 + 0.001 avg prob of [ Tamil] 7.97975153545849e-05
+loss 9.168 = 9.144 + 0.023 + 0.001 avg prob of [ Tamil] 0.00021338541409932077
+loss 7.58 = 7.557 + 0.021 + 0.002 avg prob of [ Tamil] 0.0008549140184186399
+loss 4.853 = 4.821 + 0.03 + 0.002 avg prob of [ Tamil] 0.013080576434731483
+loss 3.032 = 2.992 + 0.038 + 0.002 avg prob of [ Tamil] 0.07400622218847275
+loss 1.902 = 1.856 + 0.043 + 0.003 avg prob of [ Tamil] 0.19587406516075134
+loss 1.016 = 0.97 + 0.043 + 0.003 avg prob of [ Tamil] 0.407682865858078
+loss 0.538 = 0.495 + 0.04 + 0.003 avg prob of [ Tamil] 0.6179773211479187
+loss 0.282 = 0.244 + 0.035 + 0.003 avg prob of [ Tamil] 0.7844398021697998
+loss 0.164 = 0.132 + 0.03 + 0.003 avg prob of [ Tamil] 0.8770076036453247
+loss 0.111 = 0.081 + 0.026 + 0.003 avg prob of [ Tamil] 0.9220942854881287
+loss 0.084 = 0.057 + 0.024 + 0.003 avg prob of [ Tamil] 0.9448937177658081
+loss 0.069 = 0.043 + 0.023 + 0.003 avg prob of [ Tamil] 0.957619845867157
+loss 0.06 = 0.035 + 0.022 + 0.003 avg prob of [ Tamil] 0.9655647277832031
+loss 0.053 = 0.029 + 0.02 + 0.003 avg prob of [ Tamil] 0.9711999893188477
+loss 0.047 = 0.025 + 0.019 + 0.003 avg prob of [ Tamil] 0.9757636785507202
+Init norm 123.88124084472656 | Delta norm 92.91093444824219 | Target norm 147.37669372558594
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_17.npz
+Computing right vector (v)
+Lookup index found: 2 | Sentence: Porsche 911, created by | Token:  911
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 10.996 = 10.996 + 0.0 + 0.0 avg prob of [ Honda] 2.6009583962149918e-05
+loss 8.514 = 8.513 + 0.001 + 0.0 avg prob of [ Honda] 0.00021717854542657733
+loss 7.189 = 7.186 + 0.002 + 0.001 avg prob of [ Honda] 0.0007917170296423137
+loss 6.461 = 6.453 + 0.007 + 0.001 avg prob of [ Honda] 0.0018849584739655256
+loss 5.87 = 5.852 + 0.018 + 0.001 avg prob of [ Honda] 0.0037173794116824865
+loss 4.722 = 4.689 + 0.031 + 0.001 avg prob of [ Honda] 0.012664120644330978
+loss 2.938 = 2.891 + 0.045 + 0.002 avg prob of [ Honda] 0.07264117151498795
+loss 1.277 = 1.216 + 0.06 + 0.002 avg prob of [ Honda] 0.3308195471763611
+loss 0.507 = 0.428 + 0.076 + 0.002 avg prob of [ Honda] 0.6636103987693787
+loss 0.284 = 0.19 + 0.092 + 0.002 avg prob of [ Honda] 0.8287371397018433
+loss 0.224 = 0.117 + 0.105 + 0.002 avg prob of [ Honda] 0.8900009393692017
+loss 0.203 = 0.088 + 0.112 + 0.002 avg prob of [ Honda] 0.9159812927246094
+loss 0.184 = 0.071 + 0.11 + 0.002 avg prob of [ Honda] 0.9317607879638672
+loss 0.167 = 0.058 + 0.107 + 0.002 avg prob of [ Honda] 0.9439345598220825
+loss 0.152 = 0.048 + 0.102 + 0.002 avg prob of [ Honda] 0.9536739587783813
+loss 0.138 = 0.039 + 0.096 + 0.002 avg prob of [ Honda] 0.9615464210510254
+loss 0.124 = 0.033 + 0.089 + 0.002 avg prob of [ Honda] 0.9679162502288818
+loss 0.111 = 0.027 + 0.081 + 0.002 avg prob of [ Honda] 0.9730631113052368
+loss 0.098 = 0.023 + 0.072 + 0.002 avg prob of [ Honda] 0.9772157669067383
+loss 0.086 = 0.02 + 0.064 + 0.002 avg prob of [ Honda] 0.9805619120597839
+Init norm 152.96429443359375 | Delta norm 114.72322082519531 | Target norm 188.2841033935547
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_18.npz
+
+
+LAYER 13
+
+Writing 2 key/value pair(s) into layer 13
+z error tensor(103.8171, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.13.mlp.c_proj.
+orig norm tensor(112.7657, device='cuda:0')
+upd norm tensor(0.9834, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 14
+
+Writing 2 key/value pair(s) into layer 14
+z error tensor(99.0529, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.14.mlp.c_proj.
+orig norm tensor(113.2846, device='cuda:0')
+upd norm tensor(1.2357, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 15
+
+Writing 2 key/value pair(s) into layer 15
+z error tensor(92.2586, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.15.mlp.c_proj.
+orig norm tensor(113.0412, device='cuda:0')
+upd norm tensor(1.4534, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 16
+
+Writing 2 key/value pair(s) into layer 16
+z error tensor(84.8467, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.16.mlp.c_proj.
+orig norm tensor(113.9795, device='cuda:0')
+upd norm tensor(1.8917, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 17
+
+Writing 2 key/value pair(s) into layer 17
+z error tensor(71.7286, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(3.1522, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+Execution took 5.681958198547363
+
+
+Evaluating records:   0%|          | 0/2 [00:00<?, ?it/s][A
+
+Evaluating records:  50%|█████     | 1/2 [00:02<00:02,  2.84s/it][A
+
+Evaluating records: 100%|██████████| 2/2 [00:05<00:00,  2.86s/it][A
+Evaluating records: 100%|██████████| 2/2 [00:05<00:00,  2.86s/it]
+
+Processing records: 8it [01:28, 11.37s/it]Evaluation took 5.718226194381714
+MEMIT request sample: [Robert William Muench is a] -> [ pope]
+MEMIT request sample: [Inner Circle railway line can be found in] -> [ Singapore]
+Computing right vector (v)
+Lookup index found: 3 | Sentence: Robert William Muench is a | Token: ench
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 14.372 = 14.372 + 0.0 + 0.0 avg prob of [ pope] 1.0283732763127773e-06
+loss 13.218 = 13.208 + 0.009 + 0.001 avg prob of [ pope] 3.2479972560395254e-06
+loss 11.16 = 11.147 + 0.012 + 0.001 avg prob of [ pope] 2.333275187993422e-05
+loss 8.243 = 8.224 + 0.017 + 0.001 avg prob of [ pope] 0.00037103286013007164
+loss 5.49 = 5.469 + 0.019 + 0.002 avg prob of [ pope] 0.004881265107542276
+loss 4.006 = 3.982 + 0.021 + 0.002 avg prob of [ pope] 0.019640518352389336
+loss 2.936 = 2.908 + 0.026 + 0.002 avg prob of [ pope] 0.055992674082517624
+loss 2.131 = 2.091 + 0.037 + 0.003 avg prob of [ pope] 0.12694519758224487
+loss 1.631 = 1.572 + 0.055 + 0.003 avg prob of [ pope] 0.2130126953125
+loss 1.332 = 1.258 + 0.07 + 0.003 avg prob of [ pope] 0.2896823287010193
+loss 1.04 = 0.958 + 0.079 + 0.003 avg prob of [ pope] 0.38901829719543457
+loss 0.787 = 0.702 + 0.082 + 0.003 avg prob of [ pope] 0.5000723600387573
+loss 0.591 = 0.507 + 0.081 + 0.003 avg prob of [ pope] 0.6051000356674194
+loss 0.444 = 0.363 + 0.078 + 0.003 avg prob of [ pope] 0.6970774531364441
+loss 0.337 = 0.26 + 0.075 + 0.003 avg prob of [ pope] 0.7719869017601013
+loss 0.262 = 0.188 + 0.071 + 0.003 avg prob of [ pope] 0.8291947245597839
+loss 0.21 = 0.138 + 0.068 + 0.003 avg prob of [ pope] 0.8708634376525879
+loss 0.173 = 0.105 + 0.065 + 0.003 avg prob of [ pope] 0.9003567695617676
+loss 0.148 = 0.082 + 0.063 + 0.003 avg prob of [ pope] 0.9210597276687622
+loss 0.131 = 0.066 + 0.061 + 0.003 avg prob of [ pope] 0.9358289241790771
+Init norm 120.25714111328125 | Delta norm 90.19285583496094 | Target norm 143.35516357421875
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_19.npz
+Computing right vector (v)
+Lookup index found: 4 | Sentence: Inner Circle railway line can be found in | Token:  line
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 8.137 = 8.137 + 0.0 + 0.0 avg prob of [ Singapore] 0.0003791190392803401
+loss 6.915 = 6.913 + 0.001 + 0.001 avg prob of [ Singapore] 0.0012345475843176246
+loss 5.332 = 5.328 + 0.003 + 0.001 avg prob of [ Singapore] 0.005379975773394108
+loss 3.581 = 3.571 + 0.009 + 0.001 avg prob of [ Singapore] 0.029279131442308426
+loss 2.216 = 2.2 + 0.015 + 0.002 avg prob of [ Singapore] 0.11316466331481934
+loss 0.971 = 0.949 + 0.021 + 0.002 avg prob of [ Singapore] 0.38999342918395996
+loss 0.293 = 0.263 + 0.027 + 0.002 avg prob of [ Singapore] 0.7693256735801697
+loss 0.111 = 0.079 + 0.03 + 0.003 avg prob of [ Singapore] 0.9244033694267273
+loss 0.068 = 0.035 + 0.03 + 0.003 avg prob of [ Singapore] 0.9652324914932251
+loss 0.055 = 0.024 + 0.028 + 0.003 avg prob of [ Singapore] 0.9760332107543945
+loss 0.048 = 0.019 + 0.027 + 0.003 avg prob of [ Singapore] 0.9816727638244629
+Init norm 131.30101013183594 | Delta norm 98.47575378417969 | Target norm 161.0004425048828
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_20.npz
+
+
+LAYER 13
+
+Writing 2 key/value pair(s) into layer 13
+z error tensor(94.3343, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.13.mlp.c_proj.
+orig norm tensor(112.7657, device='cuda:0')
+upd norm tensor(0.8733, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 14
+
+Writing 2 key/value pair(s) into layer 14
+z error tensor(89.8295, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.14.mlp.c_proj.
+orig norm tensor(113.2846, device='cuda:0')
+upd norm tensor(0.9143, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 15
+
+Writing 2 key/value pair(s) into layer 15
+z error tensor(84.7272, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.15.mlp.c_proj.
+orig norm tensor(113.0412, device='cuda:0')
+upd norm tensor(1.1692, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 16
+
+Writing 2 key/value pair(s) into layer 16
+z error tensor(77.9855, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.16.mlp.c_proj.
+orig norm tensor(113.9795, device='cuda:0')
+upd norm tensor(1.5650, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 17
+
+Writing 2 key/value pair(s) into layer 17
+z error tensor(68.8984, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(2.6188, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+Execution took 5.2981507778167725
+
+
+Evaluating records:   0%|          | 0/2 [00:00<?, ?it/s][A
+
+Evaluating records:  50%|█████     | 1/2 [00:02<00:02,  2.85s/it][A
+
+Evaluating records: 100%|██████████| 2/2 [00:05<00:00,  2.84s/it][A
+Evaluating records: 100%|██████████| 2/2 [00:05<00:00,  2.84s/it]
+
+Processing records: 9it [01:39, 11.25s/it]Evaluation took 5.684135675430298
+MEMIT request sample: [Argentine Football Association belongs to the organization of] -> [ NATO]
+MEMIT request sample: [The headquarter of Monell Chemical Senses Center is located in] -> [ Mumbai]
+Computing right vector (v)
+Lookup index found: 4 | Sentence: Argentine Football Association belongs to the organization of | Token:  Association
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 11.664 = 11.664 + 0.0 + 0.0 avg prob of [ NATO] 1.0362708053435199e-05
+loss 9.738 = 9.735 + 0.002 + 0.001 avg prob of [ NATO] 7.952652958920226e-05
+loss 7.791 = 7.782 + 0.008 + 0.001 avg prob of [ NATO] 0.0005967332399450243
+loss 6.152 = 6.127 + 0.023 + 0.001 avg prob of [ NATO] 0.0028928143437951803
+loss 4.481 = 4.44 + 0.039 + 0.002 avg prob of [ NATO] 0.013789594173431396
+loss 2.872 = 2.819 + 0.051 + 0.002 avg prob of [ NATO] 0.06336948275566101
+loss 1.427 = 1.367 + 0.057 + 0.002 avg prob of [ NATO] 0.25785064697265625
+loss 0.762 = 0.703 + 0.056 + 0.003 avg prob of [ NATO] 0.4977181851863861
+loss 0.48 = 0.423 + 0.054 + 0.003 avg prob of [ NATO] 0.6560695767402649
+loss 0.318 = 0.263 + 0.052 + 0.003 avg prob of [ NATO] 0.7690248489379883
+loss 0.209 = 0.155 + 0.051 + 0.003 avg prob of [ NATO] 0.8566831946372986
+loss 0.144 = 0.092 + 0.05 + 0.003 avg prob of [ NATO] 0.9124583005905151
+loss 0.11 = 0.058 + 0.049 + 0.003 avg prob of [ NATO] 0.9439277648925781
+loss 0.091 = 0.04 + 0.048 + 0.003 avg prob of [ NATO] 0.9612042307853699
+loss 0.08 = 0.029 + 0.047 + 0.003 avg prob of [ NATO] 0.9710372686386108
+loss 0.073 = 0.023 + 0.047 + 0.003 avg prob of [ NATO] 0.9769980311393738
+loss 0.068 = 0.019 + 0.046 + 0.003 avg prob of [ NATO] 0.9808574914932251
+loss 0.064 = 0.017 + 0.044 + 0.003 avg prob of [ NATO] 0.9835201501846313
+loss 0.061 = 0.015 + 0.043 + 0.003 avg prob of [ NATO] 0.9854752421379089
+loss 0.058 = 0.013 + 0.042 + 0.003 avg prob of [ NATO] 0.9869953989982605
+Init norm 129.3980712890625 | Delta norm 97.04855346679688 | Target norm 155.90850830078125
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_21.npz
+Computing right vector (v)
+Lookup index found: 10 | Sentence: The headquarter of Monell Chemical Senses Center is located in | Token:  Center
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 11.932 = 11.932 + 0.0 + 0.0 avg prob of [ Mumbai] 1.0367529284849297e-05
+loss 10.363 = 10.361 + 0.001 + 0.001 avg prob of [ Mumbai] 7.151871977839619e-05
+loss 9.039 = 9.032 + 0.005 + 0.001 avg prob of [ Mumbai] 0.0003994816797785461
+loss 6.798 = 6.787 + 0.009 + 0.002 avg prob of [ Mumbai] 0.0024120241869241
+loss 4.786 = 4.769 + 0.016 + 0.002 avg prob of [ Mumbai] 0.01189851388335228
+loss 3.602 = 3.577 + 0.022 + 0.002 avg prob of [ Mumbai] 0.03231445327401161
+loss 2.916 = 2.885 + 0.028 + 0.003 avg prob of [ Mumbai] 0.058935195207595825
+loss 2.469 = 2.431 + 0.034 + 0.003 avg prob of [ Mumbai] 0.09009941667318344
+loss 2.111 = 2.069 + 0.039 + 0.003 avg prob of [ Mumbai] 0.1281483769416809
+loss 1.767 = 1.724 + 0.04 + 0.003 avg prob of [ Mumbai] 0.18001994490623474
+loss 1.385 = 1.34 + 0.041 + 0.003 avg prob of [ Mumbai] 0.2630472183227539
+loss 1.02 = 0.972 + 0.046 + 0.003 avg prob of [ Mumbai] 0.37940531969070435
+loss 0.722 = 0.666 + 0.053 + 0.003 avg prob of [ Mumbai] 0.5142349600791931
+loss 0.505 = 0.439 + 0.063 + 0.003 avg prob of [ Mumbai] 0.6452733278274536
+loss 0.358 = 0.28 + 0.074 + 0.003 avg prob of [ Mumbai] 0.7557274699211121
+loss 0.26 = 0.176 + 0.08 + 0.003 avg prob of [ Mumbai] 0.8383526802062988
+loss 0.192 = 0.112 + 0.077 + 0.003 avg prob of [ Mumbai] 0.8943333029747009
+loss 0.145 = 0.073 + 0.069 + 0.003 avg prob of [ Mumbai] 0.9298237562179565
+loss 0.113 = 0.049 + 0.061 + 0.003 avg prob of [ Mumbai] 0.9517401456832886
+loss 0.092 = 0.035 + 0.054 + 0.003 avg prob of [ Mumbai] 0.9653200507164001
+Init norm 113.36540222167969 | Delta norm 85.0240478515625 | Target norm 139.84910583496094
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_22.npz
+
+
+LAYER 13
+
+Writing 2 key/value pair(s) into layer 13
+z error tensor(91.0363, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.13.mlp.c_proj.
+orig norm tensor(112.7657, device='cuda:0')
+upd norm tensor(0.7835, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 14
+
+Writing 2 key/value pair(s) into layer 14
+z error tensor(87.6822, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.14.mlp.c_proj.
+orig norm tensor(113.2846, device='cuda:0')
+upd norm tensor(0.9002, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 15
+
+Writing 2 key/value pair(s) into layer 15
+z error tensor(83.4995, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.15.mlp.c_proj.
+orig norm tensor(113.0412, device='cuda:0')
+upd norm tensor(1.1611, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 16
+
+Writing 2 key/value pair(s) into layer 16
+z error tensor(77.3103, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.16.mlp.c_proj.
+orig norm tensor(113.9795, device='cuda:0')
+upd norm tensor(1.5410, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 17
+
+Writing 2 key/value pair(s) into layer 17
+z error tensor(68.4695, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(2.6888, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+Execution took 6.579703330993652
+
+
+Evaluating records:   0%|          | 0/2 [00:00<?, ?it/s][A
+
+Evaluating records:  50%|█████     | 1/2 [00:03<00:03,  3.13s/it][A
+
+Evaluating records: 100%|██████████| 2/2 [00:06<00:00,  2.99s/it][A
+Evaluating records: 100%|██████████| 2/2 [00:06<00:00,  3.01s/it]
+
+Processing records: 10it [01:52, 11.67s/it]Evaluation took 6.032878875732422
+MEMIT request sample: [Charles Alfred Pillsbury expired at] -> [ Berlin]
+MEMIT request sample: [What does Heath Brothers play? They play] -> [ opera]
+Computing right vector (v)
+Lookup index found: 4 | Sentence: Charles Alfred Pillsbury expired at | Token: bury
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 9.683 = 9.683 + 0.0 + 0.0 avg prob of [ Berlin] 7.438702596118674e-05
+loss 8.031 = 8.028 + 0.002 + 0.001 avg prob of [ Berlin] 0.00035143079003319144
+loss 4.319 = 4.31 + 0.008 + 0.001 avg prob of [ Berlin] 0.015124350786209106
+loss 1.124 = 1.052 + 0.07 + 0.002 avg prob of [ Berlin] 0.3993808627128601
+loss 0.42 = 0.234 + 0.184 + 0.002 avg prob of [ Berlin] 0.8081175684928894
+loss 0.269 = 0.034 + 0.233 + 0.003 avg prob of [ Berlin] 0.9670475721359253
+loss 0.201 = 0.012 + 0.186 + 0.003 avg prob of [ Berlin] 0.9876652956008911
+loss 0.092 = 0.008 + 0.08 + 0.003 avg prob of [ Berlin] 0.9920463562011719
+loss 0.047 = 0.006 + 0.037 + 0.003 avg prob of [ Berlin] 0.9935764074325562
+Init norm 105.61505126953125 | Delta norm 75.99273681640625 | Target norm 128.65975952148438
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_23.npz
+Computing right vector (v)
+Lookup index found: 3 | Sentence: What does Heath Brothers play? They play | Token:  Brothers
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 9.275 = 9.275 + 0.0 + 0.0 avg prob of [ opera] 0.00023456828785128891
+loss 6.949 = 6.942 + 0.006 + 0.001 avg prob of [ opera] 0.001227683387696743
+loss 4.981 = 4.957 + 0.022 + 0.001 avg prob of [ opera] 0.008453842252492905
+loss 3.564 = 3.536 + 0.026 + 0.002 avg prob of [ opera] 0.03456961736083031
+loss 2.485 = 2.449 + 0.035 + 0.002 avg prob of [ opera] 0.1008584052324295
+loss 1.526 = 1.483 + 0.041 + 0.002 avg prob of [ opera] 0.2502906918525696
+loss 0.754 = 0.705 + 0.046 + 0.003 avg prob of [ opera] 0.5089303255081177
+loss 0.35 = 0.292 + 0.055 + 0.003 avg prob of [ opera] 0.7506641745567322
+loss 0.207 = 0.141 + 0.063 + 0.003 avg prob of [ opera] 0.8696130514144897
+loss 0.151 = 0.082 + 0.065 + 0.003 avg prob of [ opera] 0.9211128950119019
+loss 0.119 = 0.053 + 0.063 + 0.003 avg prob of [ opera] 0.9483940005302429
+loss 0.097 = 0.038 + 0.056 + 0.003 avg prob of [ opera] 0.9627261161804199
+loss 0.082 = 0.031 + 0.048 + 0.003 avg prob of [ opera] 0.9698052406311035
+loss 0.072 = 0.028 + 0.041 + 0.003 avg prob of [ opera] 0.9726366996765137
+loss 0.066 = 0.027 + 0.036 + 0.003 avg prob of [ opera] 0.9730297327041626
+loss 0.064 = 0.028 + 0.033 + 0.003 avg prob of [ opera] 0.9724364280700684
+loss 0.062 = 0.028 + 0.031 + 0.003 avg prob of [ opera] 0.9722739458084106
+loss 0.06 = 0.027 + 0.03 + 0.003 avg prob of [ opera] 0.9735754728317261
+loss 0.056 = 0.024 + 0.029 + 0.003 avg prob of [ opera] 0.9763981103897095
+loss 0.052 = 0.02 + 0.028 + 0.003 avg prob of [ opera] 0.979954719543457
+Init norm 114.03551483154297 | Delta norm 85.5266342163086 | Target norm 135.107666015625
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_24.npz
+
+
+LAYER 13
+
+Writing 2 key/value pair(s) into layer 13
+z error tensor(80.7597, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.13.mlp.c_proj.
+orig norm tensor(112.7657, device='cuda:0')
+upd norm tensor(0.8040, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 14
+
+Writing 2 key/value pair(s) into layer 14
+z error tensor(76.2913, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.14.mlp.c_proj.
+orig norm tensor(113.2846, device='cuda:0')
+upd norm tensor(0.9323, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 15
+
+Writing 2 key/value pair(s) into layer 15
+z error tensor(71.1506, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.15.mlp.c_proj.
+orig norm tensor(113.0412, device='cuda:0')
+upd norm tensor(1.1246, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 16
+
+Writing 2 key/value pair(s) into layer 16
+z error tensor(63.6626, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.16.mlp.c_proj.
+orig norm tensor(113.9795, device='cuda:0')
+upd norm tensor(1.5245, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 17
+
+Writing 2 key/value pair(s) into layer 17
+z error tensor(53.3839, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(2.3193, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+Execution took 5.284182071685791
+
+
+Evaluating records:   0%|          | 0/2 [00:00<?, ?it/s][A
+
+Evaluating records:  50%|█████     | 1/2 [00:02<00:02,  2.80s/it][A
+
+Evaluating records: 100%|██████████| 2/2 [00:05<00:00,  3.02s/it][A
+Evaluating records: 100%|██████████| 2/2 [00:05<00:00,  2.98s/it]
+
+Processing records: 11it [02:03, 11.55s/it]Evaluation took 5.970359802246094
+MEMIT request sample: [Platform Controller Hub is created by] -> [ Dodge]
+MEMIT request sample: [Billy Roche, who works as] -> [ architect]
+Computing right vector (v)
+Lookup index found: 2 | Sentence: Platform Controller Hub is created by | Token:  Hub
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 13.651 = 13.651 + 0.0 + 0.0 avg prob of [ Dodge] 1.85699354915414e-06
+loss 12.48 = 12.476 + 0.003 + 0.0 avg prob of [ Dodge] 5.669145139108878e-06
+loss 11.654 = 11.643 + 0.01 + 0.001 avg prob of [ Dodge] 1.2764753591909539e-05
+loss 10.224 = 10.207 + 0.016 + 0.001 avg prob of [ Dodge] 5.6043554650386795e-05
+loss 7.523 = 7.497 + 0.025 + 0.001 avg prob of [ Dodge] 0.0006732059991918504
+loss 5.622 = 5.583 + 0.038 + 0.001 avg prob of [ Dodge] 0.00415552593767643
+loss 4.42 = 4.372 + 0.046 + 0.002 avg prob of [ Dodge] 0.013297200202941895
+loss 3.185 = 3.132 + 0.052 + 0.002 avg prob of [ Dodge] 0.04511907324194908
+loss 1.814 = 1.755 + 0.057 + 0.002 avg prob of [ Dodge] 0.1766398847103119
+loss 0.716 = 0.65 + 0.064 + 0.002 avg prob of [ Dodge] 0.5257096290588379
+loss 0.255 = 0.179 + 0.074 + 0.002 avg prob of [ Dodge] 0.8368740081787109
+loss 0.142 = 0.056 + 0.084 + 0.002 avg prob of [ Dodge] 0.9460071325302124
+loss 0.116 = 0.024 + 0.09 + 0.002 avg prob of [ Dodge] 0.9764022827148438
+loss 0.105 = 0.012 + 0.091 + 0.002 avg prob of [ Dodge] 0.9881855249404907
+loss 0.096 = 0.007 + 0.087 + 0.002 avg prob of [ Dodge] 0.9932960867881775
+loss 0.088 = 0.004 + 0.081 + 0.002 avg prob of [ Dodge] 0.9957623481750488
+loss 0.08 = 0.003 + 0.074 + 0.002 avg prob of [ Dodge] 0.9970642924308777
+loss 0.072 = 0.002 + 0.068 + 0.002 avg prob of [ Dodge] 0.9978035688400269
+loss 0.066 = 0.002 + 0.062 + 0.002 avg prob of [ Dodge] 0.9982470870018005
+loss 0.061 = 0.001 + 0.057 + 0.002 avg prob of [ Dodge] 0.9985243678092957
+Init norm 158.17288208007812 | Delta norm 118.6296615600586 | Target norm 192.08924865722656
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_25.npz
+Computing right vector (v)
+Lookup index found: 1 | Sentence: Billy Roche, who works as | Token:  Roche
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 10.547 = 10.547 + 0.0 + 0.0 avg prob of [ architect] 2.7017622414859943e-05
+loss 9.317 = 9.313 + 0.003 + 0.001 avg prob of [ architect] 9.412049985257909e-05
+loss 7.875 = 7.865 + 0.009 + 0.001 avg prob of [ architect] 0.00044170054025016725
+loss 6.501 = 6.486 + 0.013 + 0.001 avg prob of [ architect] 0.0017837921623140574
+loss 4.679 = 4.657 + 0.021 + 0.002 avg prob of [ architect] 0.010734999552369118
+loss 2.899 = 2.859 + 0.038 + 0.002 avg prob of [ architect] 0.06122414767742157
+loss 1.917 = 1.857 + 0.058 + 0.002 avg prob of [ architect] 0.1683514565229416
+loss 1.105 = 1.034 + 0.069 + 0.003 avg prob of [ architect] 0.37313398718833923
+loss 0.536 = 0.472 + 0.061 + 0.003 avg prob of [ architect] 0.6302475929260254
+loss 0.309 = 0.261 + 0.045 + 0.003 avg prob of [ architect] 0.7718612551689148
+loss 0.182 = 0.143 + 0.035 + 0.003 avg prob of [ architect] 0.8667582869529724
+loss 0.108 = 0.075 + 0.031 + 0.003 avg prob of [ architect] 0.9280575513839722
+loss 0.075 = 0.042 + 0.029 + 0.003 avg prob of [ architect] 0.9586056470870972
+loss 0.06 = 0.028 + 0.03 + 0.003 avg prob of [ architect] 0.9727866053581238
+loss 0.053 = 0.02 + 0.03 + 0.003 avg prob of [ architect] 0.979775607585907
+loss 0.05 = 0.017 + 0.03 + 0.003 avg prob of [ architect] 0.983355700969696
+Init norm 126.47621154785156 | Delta norm 94.85716247558594 | Target norm 150.45118713378906
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_26.npz
+
+
+LAYER 13
+
+Writing 2 key/value pair(s) into layer 13
+z error tensor(106.7434, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.13.mlp.c_proj.
+orig norm tensor(112.7657, device='cuda:0')
+upd norm tensor(1.1619, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 14
+
+Writing 2 key/value pair(s) into layer 14
+z error tensor(101.2210, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.14.mlp.c_proj.
+orig norm tensor(113.2846, device='cuda:0')
+upd norm tensor(1.1583, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 15
+
+Writing 2 key/value pair(s) into layer 15
+z error tensor(95.0911, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.15.mlp.c_proj.
+orig norm tensor(113.0412, device='cuda:0')
+upd norm tensor(1.6297, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 16
+
+Writing 2 key/value pair(s) into layer 16
+z error tensor(85.5837, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.16.mlp.c_proj.
+orig norm tensor(113.9795, device='cuda:0')
+upd norm tensor(1.9560, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 17
+
+Writing 2 key/value pair(s) into layer 17
+z error tensor(73.5636, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(3.1224, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+Execution took 5.488158941268921
+
+
+Evaluating records:   0%|          | 0/2 [00:00<?, ?it/s][A
+
+Evaluating records:  50%|█████     | 1/2 [00:02<00:02,  2.87s/it][A
+
+Evaluating records: 100%|██████████| 2/2 [00:05<00:00,  2.97s/it][A
+Evaluating records: 100%|██████████| 2/2 [00:05<00:00,  2.96s/it]
+
+Processing records: 12it [02:15, 11.51s/it]Evaluation took 5.9158453941345215
+MEMIT request sample: [Jean Gaven, speaker of] -> [ Russian]
+MEMIT request sample: [Pidgeon Island belongs to the continent of] -> [ Asia]
+Computing right vector (v)
+Lookup index found: 2 | Sentence: Jean Gaven, speaker of | Token: aven
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 10.431 = 10.431 + 0.0 + 0.0 avg prob of [ Russian] 3.439210922806524e-05
+loss 7.917 = 7.898 + 0.018 + 0.001 avg prob of [ Russian] 0.00046404468594118953
+loss 4.597 = 4.52 + 0.076 + 0.001 avg prob of [ Russian] 0.011642123572528362
+loss 3.846 = 3.73 + 0.115 + 0.001 avg prob of [ Russian] 0.02536066435277462
+loss 3.104 = 2.982 + 0.121 + 0.002 avg prob of [ Russian] 0.05517054349184036
+loss 2.059 = 1.932 + 0.125 + 0.002 avg prob of [ Russian] 0.16208688914775848
+loss 1.138 = 1.007 + 0.128 + 0.002 avg prob of [ Russian] 0.3775285482406616
+loss 0.588 = 0.453 + 0.132 + 0.003 avg prob of [ Russian] 0.6409875750541687
+loss 0.299 = 0.157 + 0.139 + 0.003 avg prob of [ Russian] 0.8552393317222595
+loss 0.216 = 0.067 + 0.147 + 0.003 avg prob of [ Russian] 0.9357291460037231
+loss 0.191 = 0.043 + 0.145 + 0.003 avg prob of [ Russian] 0.9582579135894775
+loss 0.176 = 0.033 + 0.139 + 0.003 avg prob of [ Russian] 0.9674336910247803
+loss 0.165 = 0.029 + 0.134 + 0.003 avg prob of [ Russian] 0.9719085693359375
+loss 0.159 = 0.026 + 0.129 + 0.003 avg prob of [ Russian] 0.9741922616958618
+loss 0.155 = 0.025 + 0.126 + 0.003 avg prob of [ Russian] 0.9753749370574951
+loss 0.152 = 0.024 + 0.124 + 0.003 avg prob of [ Russian] 0.9761180877685547
+loss 0.148 = 0.023 + 0.122 + 0.003 avg prob of [ Russian] 0.9769363403320312
+loss 0.145 = 0.022 + 0.119 + 0.003 avg prob of [ Russian] 0.9781948328018188
+loss 0.14 = 0.02 + 0.117 + 0.003 avg prob of [ Russian] 0.9800235033035278
+loss 0.134 = 0.018 + 0.113 + 0.003 avg prob of [ Russian] 0.9823012351989746
+Init norm 119.46268463134766 | Delta norm 89.59701538085938 | Target norm 148.76585388183594
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_27.npz
+Computing right vector (v)
+Lookup index found: 3 | Sentence: Pidgeon Island belongs to the continent of | Token:  Island
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 4.835 = 4.835 + 0.0 + 0.0 avg prob of [ Asia] 0.017549974843859673
+loss 3.633 = 3.628 + 0.004 + 0.001 avg prob of [ Asia] 0.04861726984381676
+loss 2.168 = 2.157 + 0.01 + 0.001 avg prob of [ Asia] 0.16146644949913025
+loss 0.788 = 0.771 + 0.016 + 0.002 avg prob of [ Asia] 0.48683351278305054
+loss 0.234 = 0.211 + 0.021 + 0.002 avg prob of [ Asia] 0.8131880760192871
+loss 0.192 = 0.165 + 0.025 + 0.002 avg prob of [ Asia] 0.8509294986724854
+loss 0.127 = 0.096 + 0.029 + 0.003 avg prob of [ Asia] 0.9095062017440796
+loss 0.085 = 0.05 + 0.032 + 0.003 avg prob of [ Asia] 0.9517659544944763
+loss 0.067 = 0.032 + 0.033 + 0.003 avg prob of [ Asia] 0.9690406322479248
+loss 0.058 = 0.023 + 0.032 + 0.003 avg prob of [ Asia] 0.9768381118774414
+loss 0.052 = 0.018 + 0.03 + 0.003 avg prob of [ Asia] 0.9820979833602905
+loss 0.046 = 0.014 + 0.029 + 0.003 avg prob of [ Asia] 0.9859570264816284
+Init norm 120.85470581054688 | Delta norm 90.64102935791016 | Target norm 147.17210388183594
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_28.npz
+
+
+LAYER 13
+
+Writing 2 key/value pair(s) into layer 13
+z error tensor(90.1190, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.13.mlp.c_proj.
+orig norm tensor(112.7657, device='cuda:0')
+upd norm tensor(0.8683, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 14
+
+Writing 2 key/value pair(s) into layer 14
+z error tensor(85.6974, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.14.mlp.c_proj.
+orig norm tensor(113.2846, device='cuda:0')
+upd norm tensor(0.9783, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 15
+
+Writing 2 key/value pair(s) into layer 15
+z error tensor(80.8049, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.15.mlp.c_proj.
+orig norm tensor(113.0412, device='cuda:0')
+upd norm tensor(1.3075, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 16
+
+Writing 2 key/value pair(s) into layer 16
+z error tensor(72.5241, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.16.mlp.c_proj.
+orig norm tensor(113.9795, device='cuda:0')
+upd norm tensor(1.5950, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 17
+
+Writing 2 key/value pair(s) into layer 17
+z error tensor(61.9586, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(2.7958, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+Execution took 5.40113639831543
+
+
+Evaluating records:   0%|          | 0/2 [00:00<?, ?it/s][A
+
+Evaluating records:  50%|█████     | 1/2 [00:02<00:02,  2.93s/it][A
+
+Evaluating records: 100%|██████████| 2/2 [00:06<00:00,  3.17s/it][A
+Evaluating records: 100%|██████████| 2/2 [00:06<00:00,  3.13s/it]
+
+Processing records: 13it [02:26, 11.56s/it]Evaluation took 6.272393465042114
+MEMIT request sample: [Kryvyi Rih belongs to the continent of] -> [ Antarctica]
+MEMIT request sample: [Leonardo Balada found employment in] -> [ Paris]
+Computing right vector (v)
+Lookup index found: 4 | Sentence: Kryvyi Rih belongs to the continent of | Token:  Rih
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 6.923 = 6.923 + 0.0 + 0.0 avg prob of [ Antarctica] 0.0010932338191196322
+loss 6.256 = 6.248 + 0.007 + 0.0 avg prob of [ Antarctica] 0.0022593140602111816
+loss 5.192 = 5.184 + 0.007 + 0.001 avg prob of [ Antarctica] 0.007147801108658314
+loss 3.294 = 3.276 + 0.017 + 0.001 avg prob of [ Antarctica] 0.04458136856555939
+loss 1.494 = 1.454 + 0.039 + 0.001 avg prob of [ Antarctica] 0.24394750595092773
+loss 0.659 = 0.582 + 0.075 + 0.002 avg prob of [ Antarctica] 0.576838493347168
+loss 0.24 = 0.144 + 0.094 + 0.002 avg prob of [ Antarctica] 0.8692812323570251
+loss 0.112 = 0.031 + 0.078 + 0.002 avg prob of [ Antarctica] 0.9696664810180664
+loss 0.091 = 0.012 + 0.077 + 0.002 avg prob of [ Antarctica] 0.9879626631736755
+loss 0.092 = 0.008 + 0.082 + 0.003 avg prob of [ Antarctica] 0.9924842119216919
+loss 0.089 = 0.006 + 0.081 + 0.003 avg prob of [ Antarctica] 0.9943727850914001
+loss 0.085 = 0.004 + 0.078 + 0.003 avg prob of [ Antarctica] 0.995625913143158
+loss 0.081 = 0.003 + 0.075 + 0.003 avg prob of [ Antarctica] 0.9965198040008545
+loss 0.078 = 0.003 + 0.072 + 0.003 avg prob of [ Antarctica] 0.9971823692321777
+loss 0.075 = 0.002 + 0.07 + 0.003 avg prob of [ Antarctica] 0.997678279876709
+loss 0.071 = 0.002 + 0.067 + 0.003 avg prob of [ Antarctica] 0.9980481863021851
+loss 0.068 = 0.002 + 0.064 + 0.003 avg prob of [ Antarctica] 0.9983242750167847
+loss 0.065 = 0.001 + 0.061 + 0.003 avg prob of [ Antarctica] 0.9985347986221313
+loss 0.062 = 0.001 + 0.058 + 0.003 avg prob of [ Antarctica] 0.9987006187438965
+loss 0.059 = 0.001 + 0.056 + 0.003 avg prob of [ Antarctica] 0.9988365173339844
+Init norm 141.4447021484375 | Delta norm 106.08352661132812 | Target norm 171.29336547851562
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_29.npz
+Computing right vector (v)
+Lookup index found: 3 | Sentence: Leonardo Balada found employment in | Token: ada
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 5.818 = 5.818 + 0.0 + 0.0 avg prob of [ Paris] 0.003666685428470373
+loss 5.257 = 4.989 + 0.267 + 0.001 avg prob of [ Paris] 0.00876995176076889
+loss 4.364 = 4.319 + 0.044 + 0.001 avg prob of [ Paris] 0.017534146085381508
+loss 2.87 = 2.849 + 0.019 + 0.002 avg prob of [ Paris] 0.0635179653763771
+loss 1.753 = 1.715 + 0.035 + 0.002 avg prob of [ Paris] 0.18283984065055847
+loss 1.056 = 1.014 + 0.04 + 0.002 avg prob of [ Paris] 0.36637911200523376
+loss 0.62 = 0.574 + 0.043 + 0.003 avg prob of [ Paris] 0.5649187564849854
+loss 0.372 = 0.324 + 0.045 + 0.003 avg prob of [ Paris] 0.7237159609794617
+loss 0.244 = 0.196 + 0.045 + 0.003 avg prob of [ Paris] 0.8224220275878906
+loss 0.181 = 0.133 + 0.044 + 0.003 avg prob of [ Paris] 0.87525475025177
+loss 0.137 = 0.09 + 0.043 + 0.003 avg prob of [ Paris] 0.9136941432952881
+loss 0.105 = 0.059 + 0.042 + 0.003 avg prob of [ Paris] 0.9423940181732178
+loss 0.081 = 0.037 + 0.041 + 0.003 avg prob of [ Paris] 0.9640280604362488
+loss 0.063 = 0.019 + 0.041 + 0.003 avg prob of [ Paris] 0.9808424711227417
+loss 0.052 = 0.008 + 0.04 + 0.003 avg prob of [ Paris] 0.9916979074478149
+loss 0.049 = 0.006 + 0.04 + 0.003 avg prob of [ Paris] 0.9944693446159363
+Init norm 111.05164337158203 | Delta norm 83.28873443603516 | Target norm 134.96435546875
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_30.npz
+
+
+LAYER 13
+
+Writing 2 key/value pair(s) into layer 13
+z error tensor(94.6861, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.13.mlp.c_proj.
+orig norm tensor(112.7657, device='cuda:0')
+upd norm tensor(0.9451, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 14
+
+Writing 2 key/value pair(s) into layer 14
+z error tensor(89.2741, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.14.mlp.c_proj.
+orig norm tensor(113.2846, device='cuda:0')
+upd norm tensor(1.0470, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 15
+
+Writing 2 key/value pair(s) into layer 15
+z error tensor(83.2860, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.15.mlp.c_proj.
+orig norm tensor(113.0412, device='cuda:0')
+upd norm tensor(1.2705, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 16
+
+Writing 2 key/value pair(s) into layer 16
+z error tensor(75.3181, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.16.mlp.c_proj.
+orig norm tensor(113.9795, device='cuda:0')
+upd norm tensor(1.7947, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 17
+
+Writing 2 key/value pair(s) into layer 17
+z error tensor(63.1211, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(2.7610, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+Execution took 5.860100030899048
+
+
+Evaluating records:   0%|          | 0/2 [00:00<?, ?it/s][A
+
+Evaluating records:  50%|█████     | 1/2 [00:02<00:02,  2.84s/it][A
+
+Evaluating records: 100%|██████████| 2/2 [00:05<00:00,  2.94s/it][A
+Evaluating records: 100%|██████████| 2/2 [00:05<00:00,  2.93s/it]
+
+Processing records: 14it [02:38, 11.61s/it]Evaluation took 5.860802173614502
+MEMIT request sample: [controller.controller, that originated in] -> [ Singapore]
+MEMIT request sample: [What does Sylvano Bussotti play? They play] -> [ jazz]
+Computing right vector (v)
+Lookup index found: 2 | Sentence: controller.controller, that originated in | Token: controller
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 9.431 = 9.431 + 0.0 + 0.0 avg prob of [ Singapore] 0.00014466335414908826
+loss 8.607 = 8.604 + 0.003 + 0.0 avg prob of [ Singapore] 0.0002983249432872981
+loss 7.882 = 7.875 + 0.007 + 0.001 avg prob of [ Singapore] 0.0006273268372751772
+loss 6.576 = 6.565 + 0.01 + 0.001 avg prob of [ Singapore] 0.00241168774664402
+loss 5.101 = 5.087 + 0.013 + 0.001 avg prob of [ Singapore] 0.007905112579464912
+loss 3.982 = 3.963 + 0.018 + 0.001 avg prob of [ Singapore] 0.020328378304839134
+loss 3.007 = 2.979 + 0.027 + 0.002 avg prob of [ Singapore] 0.05434166640043259
+loss 1.801 = 1.763 + 0.036 + 0.002 avg prob of [ Singapore] 0.1794981211423874
+loss 1.202 = 1.152 + 0.047 + 0.002 avg prob of [ Singapore] 0.3285660743713379
+loss 0.929 = 0.871 + 0.056 + 0.002 avg prob of [ Singapore] 0.4272342324256897
+loss 0.701 = 0.641 + 0.058 + 0.002 avg prob of [ Singapore] 0.5313252806663513
+loss 0.499 = 0.444 + 0.052 + 0.002 avg prob of [ Singapore] 0.6446083784103394
+loss 0.336 = 0.279 + 0.055 + 0.002 avg prob of [ Singapore] 0.7587853670120239
+loss 0.225 = 0.165 + 0.058 + 0.002 avg prob of [ Singapore] 0.8490036725997925
+loss 0.158 = 0.096 + 0.06 + 0.002 avg prob of [ Singapore] 0.9091520309448242
+loss 0.119 = 0.056 + 0.06 + 0.002 avg prob of [ Singapore] 0.945614218711853
+loss 0.096 = 0.034 + 0.06 + 0.002 avg prob of [ Singapore] 0.966671347618103
+loss 0.082 = 0.022 + 0.058 + 0.002 avg prob of [ Singapore] 0.9786807894706726
+loss 0.073 = 0.014 + 0.056 + 0.002 avg prob of [ Singapore] 0.9856330752372742
+loss 0.066 = 0.01 + 0.053 + 0.002 avg prob of [ Singapore] 0.9897842407226562
+Init norm 154.56275939941406 | Delta norm 115.92207336425781 | Target norm 190.59793090820312
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_31.npz
+Computing right vector (v)
+Lookup index found: 6 | Sentence: What does Sylvano Bussotti play? They play | Token: otti
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 8.95 = 8.95 + 0.0 + 0.0 avg prob of [ jazz] 0.00026911357417702675
+loss 5.686 = 5.68 + 0.005 + 0.001 avg prob of [ jazz] 0.005766853224486113
+loss 4.341 = 4.323 + 0.017 + 0.002 avg prob of [ jazz] 0.01411827839910984
+loss 3.458 = 3.435 + 0.021 + 0.002 avg prob of [ jazz] 0.03239733725786209
+loss 2.858 = 2.831 + 0.024 + 0.002 avg prob of [ jazz] 0.059853699058294296
+loss 2.182 = 2.16 + 0.019 + 0.003 avg prob of [ jazz] 0.11795033514499664
+loss 1.6 = 1.579 + 0.018 + 0.003 avg prob of [ jazz] 0.2098473608493805
+loss 1.157 = 1.13 + 0.023 + 0.004 avg prob of [ jazz] 0.32694435119628906
+loss 0.863 = 0.832 + 0.027 + 0.004 avg prob of [ jazz] 0.44039249420166016
+loss 0.586 = 0.553 + 0.03 + 0.004 avg prob of [ jazz] 0.5807316899299622
+loss 0.36 = 0.324 + 0.032 + 0.004 avg prob of [ jazz] 0.7265264391899109
+loss 0.218 = 0.182 + 0.032 + 0.004 avg prob of [ jazz] 0.8352837562561035
+loss 0.141 = 0.106 + 0.032 + 0.004 avg prob of [ jazz] 0.9000657796859741
+loss 0.099 = 0.066 + 0.029 + 0.004 avg prob of [ jazz] 0.9361400604248047
+loss 0.074 = 0.044 + 0.026 + 0.004 avg prob of [ jazz] 0.9566720724105835
+loss 0.057 = 0.032 + 0.022 + 0.004 avg prob of [ jazz] 0.9689346551895142
+loss 0.047 = 0.024 + 0.02 + 0.004 avg prob of [ jazz] 0.9766902923583984
+Init norm 102.69918823242188 | Delta norm 77.0243911743164 | Target norm 122.97201538085938
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_32.npz
+
+
+LAYER 13
+
+Writing 2 key/value pair(s) into layer 13
+z error tensor(96.4732, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.13.mlp.c_proj.
+orig norm tensor(112.7657, device='cuda:0')
+upd norm tensor(1.0113, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 14
+
+Writing 2 key/value pair(s) into layer 14
+z error tensor(91.3187, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.14.mlp.c_proj.
+orig norm tensor(113.2846, device='cuda:0')
+upd norm tensor(1.1658, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 15
+
+Writing 2 key/value pair(s) into layer 15
+z error tensor(85.9244, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.15.mlp.c_proj.
+orig norm tensor(113.0412, device='cuda:0')
+upd norm tensor(1.5169, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 16
+
+Writing 2 key/value pair(s) into layer 16
+z error tensor(78.1318, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.16.mlp.c_proj.
+orig norm tensor(113.9795, device='cuda:0')
+upd norm tensor(1.7586, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 17
+
+Writing 2 key/value pair(s) into layer 17
+z error tensor(67.8750, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(3.0566, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+Execution took 5.997665166854858
+
+
+Evaluating records:   0%|          | 0/2 [00:00<?, ?it/s][A
+
+Evaluating records:  50%|█████     | 1/2 [00:02<00:02,  2.93s/it][A
+
+Evaluating records: 100%|██████████| 2/2 [00:05<00:00,  2.87s/it][A
+Evaluating records: 100%|██████████| 2/2 [00:05<00:00,  2.88s/it]
+
+Processing records: 15it [02:50, 11.68s/it]Evaluation took 5.849493026733398
+MEMIT request sample: [The headquarter of Majorette is located in] -> [ London]
+MEMIT request sample: [Laurent Cars was employed in] -> [ Philadelphia]
+Computing right vector (v)
+Lookup index found: 6 | Sentence: The headquarter of Majorette is located in | Token: te
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 7.09 = 7.09 + 0.0 + 0.0 avg prob of [ London] 0.0009047702769748867
+loss 4.514 = 4.468 + 0.045 + 0.001 avg prob of [ London] 0.012062560766935349
+loss 1.701 = 1.638 + 0.062 + 0.001 avg prob of [ London] 0.20106999576091766
+loss 1.043 = 0.943 + 0.098 + 0.002 avg prob of [ London] 0.40032848715782166
+loss 0.589 = 0.486 + 0.101 + 0.002 avg prob of [ London] 0.6257985234260559
+loss 0.29 = 0.182 + 0.105 + 0.003 avg prob of [ London] 0.8350932002067566
+loss 0.193 = 0.076 + 0.115 + 0.003 avg prob of [ London] 0.9271053075790405
+loss 0.137 = 0.031 + 0.102 + 0.003 avg prob of [ London] 0.9696512222290039
+loss 0.097 = 0.013 + 0.081 + 0.004 avg prob of [ London] 0.987456738948822
+loss 0.077 = 0.006 + 0.067 + 0.004 avg prob of [ London] 0.9941298365592957
+loss 0.065 = 0.003 + 0.059 + 0.004 avg prob of [ London] 0.996795654296875
+loss 0.058 = 0.002 + 0.053 + 0.004 avg prob of [ London] 0.9979552030563354
+loss 0.054 = 0.002 + 0.049 + 0.004 avg prob of [ London] 0.9985010623931885
+loss 0.05 = 0.001 + 0.046 + 0.004 avg prob of [ London] 0.9987708926200867
+loss 0.048 = 0.001 + 0.043 + 0.004 avg prob of [ London] 0.9989036917686462
+Init norm 106.21615600585938 | Delta norm 79.66211700439453 | Target norm 130.81741333007812
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_33.npz
+Computing right vector (v)
+Lookup index found: 3 | Sentence: Laurent Cars was employed in | Token:  Cars
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 9.276 = 9.276 + 0.0 + 0.0 avg prob of [ Philadelphia] 0.00010789078078232706
+loss 8.818 = 8.769 + 0.048 + 0.001 avg prob of [ Philadelphia] 0.00018124948837794363
+loss 8.263 = 8.214 + 0.048 + 0.001 avg prob of [ Philadelphia] 0.00031466662767343223
+loss 7.048 = 6.933 + 0.113 + 0.002 avg prob of [ Philadelphia] 0.0010915480088442564
+loss 5.355 = 5.226 + 0.127 + 0.002 avg prob of [ Philadelphia] 0.005524356849491596
+loss 4.014 = 3.887 + 0.125 + 0.002 avg prob of [ Philadelphia] 0.020704349502921104
+loss 2.415 = 2.29 + 0.122 + 0.003 avg prob of [ Philadelphia] 0.10271885246038437
+loss 1.2 = 1.078 + 0.12 + 0.003 avg prob of [ Philadelphia] 0.3463295102119446
+loss 0.494 = 0.367 + 0.124 + 0.003 avg prob of [ Philadelphia] 0.6983382701873779
+loss 0.267 = 0.135 + 0.129 + 0.003 avg prob of [ Philadelphia] 0.8750411868095398
+loss 0.205 = 0.07 + 0.132 + 0.003 avg prob of [ Philadelphia] 0.9332384467124939
+loss 0.187 = 0.052 + 0.132 + 0.003 avg prob of [ Philadelphia] 0.9498666524887085
+loss 0.178 = 0.044 + 0.13 + 0.003 avg prob of [ Philadelphia] 0.9566404223442078
+loss 0.169 = 0.038 + 0.127 + 0.003 avg prob of [ Philadelphia] 0.9623214602470398
+loss 0.16 = 0.032 + 0.124 + 0.003 avg prob of [ Philadelphia] 0.9683295488357544
+loss 0.151 = 0.026 + 0.121 + 0.003 avg prob of [ Philadelphia] 0.9741634130477905
+loss 0.143 = 0.021 + 0.119 + 0.003 avg prob of [ Philadelphia] 0.9792488813400269
+loss 0.136 = 0.017 + 0.116 + 0.003 avg prob of [ Philadelphia] 0.9833554625511169
+loss 0.132 = 0.014 + 0.115 + 0.003 avg prob of [ Philadelphia] 0.9865202903747559
+loss 0.128 = 0.011 + 0.114 + 0.003 avg prob of [ Philadelphia] 0.9889034032821655
+Init norm 118.63599395751953 | Delta norm 88.97699737548828 | Target norm 144.02597045898438
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_34.npz
+
+
+LAYER 13
+
+Writing 2 key/value pair(s) into layer 13
+z error tensor(84.3196, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.13.mlp.c_proj.
+orig norm tensor(112.7657, device='cuda:0')
+upd norm tensor(0.8075, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 14
+
+Writing 2 key/value pair(s) into layer 14
+z error tensor(79.3071, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.14.mlp.c_proj.
+orig norm tensor(113.2846, device='cuda:0')
+upd norm tensor(0.8682, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 15
+
+Writing 2 key/value pair(s) into layer 15
+z error tensor(73.9981, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.15.mlp.c_proj.
+orig norm tensor(113.0412, device='cuda:0')
+upd norm tensor(1.0632, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 16
+
+Writing 2 key/value pair(s) into layer 16
+z error tensor(67.8648, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.16.mlp.c_proj.
+orig norm tensor(113.9795, device='cuda:0')
+upd norm tensor(1.4885, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 17
+
+Writing 2 key/value pair(s) into layer 17
+z error tensor(59.2010, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(2.3933, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+Execution took 5.4094016551971436
+
+
+Evaluating records:   0%|          | 0/2 [00:00<?, ?it/s][A
+
+Evaluating records:  50%|█████     | 1/2 [00:02<00:02,  2.77s/it][A
+
+Evaluating records: 100%|██████████| 2/2 [00:05<00:00,  2.80s/it][A
+Evaluating records: 100%|██████████| 2/2 [00:05<00:00,  2.79s/it]
+
+Processing records: 16it [03:01, 11.47s/it]Evaluation took 5.5873987674713135
+MEMIT request sample: [Ferrari Mondial, created by] -> [ Nintendo]
+MEMIT request sample: [The native language of Symeon of Polotsk is] -> [ French]
+Computing right vector (v)
+Lookup index found: 4 | Sentence: Ferrari Mondial, created by | Token: ial
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 8.741 = 8.741 + 0.0 + 0.0 avg prob of [ Nintendo] 0.00042830861639231443
+loss 8.187 = 8.063 + 0.123 + 0.001 avg prob of [ Nintendo] 0.0007568784058094025
+loss 7.79 = 7.739 + 0.05 + 0.001 avg prob of [ Nintendo] 0.0009425622411072254
+loss 6.15 = 6.064 + 0.085 + 0.001 avg prob of [ Nintendo] 0.003559660632163286
+loss 2.91 = 2.775 + 0.133 + 0.002 avg prob of [ Nintendo] 0.06869463622570038
+loss 0.913 = 0.749 + 0.163 + 0.002 avg prob of [ Nintendo] 0.48478299379348755
+loss 0.254 = 0.099 + 0.152 + 0.002 avg prob of [ Nintendo] 0.9059064388275146
+loss 0.18 = 0.045 + 0.133 + 0.003 avg prob of [ Nintendo] 0.9562697410583496
+loss 0.147 = 0.026 + 0.118 + 0.003 avg prob of [ Nintendo] 0.9739683866500854
+loss 0.133 = 0.018 + 0.112 + 0.003 avg prob of [ Nintendo] 0.9825727343559265
+loss 0.124 = 0.013 + 0.108 + 0.003 avg prob of [ Nintendo] 0.9870356321334839
+loss 0.116 = 0.01 + 0.102 + 0.003 avg prob of [ Nintendo] 0.9897503852844238
+loss 0.106 = 0.008 + 0.095 + 0.003 avg prob of [ Nintendo] 0.9916051626205444
+loss 0.098 = 0.007 + 0.087 + 0.003 avg prob of [ Nintendo] 0.9929255247116089
+loss 0.092 = 0.006 + 0.082 + 0.003 avg prob of [ Nintendo] 0.9939025640487671
+loss 0.089 = 0.005 + 0.08 + 0.003 avg prob of [ Nintendo] 0.994651198387146
+loss 0.088 = 0.005 + 0.08 + 0.003 avg prob of [ Nintendo] 0.9952399134635925
+loss 0.087 = 0.004 + 0.079 + 0.003 avg prob of [ Nintendo] 0.9957116842269897
+loss 0.086 = 0.004 + 0.079 + 0.003 avg prob of [ Nintendo] 0.9960939884185791
+loss 0.084 = 0.004 + 0.078 + 0.003 avg prob of [ Nintendo] 0.9964072108268738
+Init norm 118.33595275878906 | Delta norm 88.75196838378906 | Target norm 145.0867919921875
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_35.npz
+Computing right vector (v)
+Lookup index found: 10 | Sentence: The native language of Symeon of Polotsk is | Token: k
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 6.506 = 6.506 + 0.0 + 0.0 avg prob of [ French] 0.0027129738591611385
+loss 3.822 = 3.82 + 0.001 + 0.001 avg prob of [ French] 0.03273453935980797
+loss 0.923 = 0.917 + 0.005 + 0.001 avg prob of [ French] 0.41251930594444275
+loss 0.389 = 0.369 + 0.018 + 0.002 avg prob of [ French] 0.6966969966888428
+loss 0.273 = 0.238 + 0.033 + 0.002 avg prob of [ French] 0.7911717295646667
+loss 0.226 = 0.181 + 0.043 + 0.003 avg prob of [ French] 0.8363742828369141
+loss 0.197 = 0.146 + 0.048 + 0.003 avg prob of [ French] 0.8653513193130493
+loss 0.174 = 0.12 + 0.05 + 0.003 avg prob of [ French] 0.8874677419662476
+loss 0.15 = 0.097 + 0.05 + 0.003 avg prob of [ French] 0.9079087972640991
+loss 0.132 = 0.08 + 0.049 + 0.003 avg prob of [ French] 0.9238804578781128
+loss 0.118 = 0.067 + 0.047 + 0.003 avg prob of [ French] 0.9349889755249023
+loss 0.107 = 0.059 + 0.045 + 0.003 avg prob of [ French] 0.942849338054657
+loss 0.098 = 0.053 + 0.042 + 0.003 avg prob of [ French] 0.948610782623291
+loss 0.09 = 0.048 + 0.039 + 0.003 avg prob of [ French] 0.9530162811279297
+loss 0.083 = 0.044 + 0.036 + 0.003 avg prob of [ French] 0.9565476179122925
+loss 0.077 = 0.041 + 0.033 + 0.003 avg prob of [ French] 0.9595170021057129
+loss 0.072 = 0.039 + 0.03 + 0.003 avg prob of [ French] 0.9621244668960571
+loss 0.067 = 0.036 + 0.028 + 0.003 avg prob of [ French] 0.9644906520843506
+loss 0.063 = 0.034 + 0.026 + 0.003 avg prob of [ French] 0.9666813611984253
+loss 0.059 = 0.032 + 0.024 + 0.003 avg prob of [ French] 0.968725323677063
+Init norm 115.65670013427734 | Delta norm 86.74252319335938 | Target norm 139.84986877441406
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_36.npz
+
+
+LAYER 13
+
+Writing 2 key/value pair(s) into layer 13
+z error tensor(87.7472, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.13.mlp.c_proj.
+orig norm tensor(112.7657, device='cuda:0')
+upd norm tensor(0.8499, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 14
+
+Writing 2 key/value pair(s) into layer 14
+z error tensor(82.5548, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.14.mlp.c_proj.
+orig norm tensor(113.2846, device='cuda:0')
+upd norm tensor(0.9703, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 15
+
+Writing 2 key/value pair(s) into layer 15
+z error tensor(76.3478, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.15.mlp.c_proj.
+orig norm tensor(113.0412, device='cuda:0')
+upd norm tensor(1.2167, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 16
+
+Writing 2 key/value pair(s) into layer 16
+z error tensor(67.9204, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.16.mlp.c_proj.
+orig norm tensor(113.9795, device='cuda:0')
+upd norm tensor(1.6304, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 17
+
+Writing 2 key/value pair(s) into layer 17
+z error tensor(54.8555, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(2.4597, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+Execution took 6.173838376998901
+
+
+Evaluating records:   0%|          | 0/2 [00:00<?, ?it/s][A
+
+Evaluating records:  50%|█████     | 1/2 [00:02<00:02,  2.83s/it][A
+
+Evaluating records: 100%|██████████| 2/2 [00:05<00:00,  2.83s/it][A
+Evaluating records: 100%|██████████| 2/2 [00:05<00:00,  2.83s/it]
+
+Processing records: 17it [03:13, 11.58s/it]Evaluation took 5.663861513137817
+MEMIT request sample: [Triumph TR8, produced by] -> [ Boeing]
+MEMIT request sample: [Jeep Commander is produced by] -> [ Fiat]
+Computing right vector (v)
+Lookup index found: 3 | Sentence: Triumph TR8, produced by | Token: 8
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 9.823 = 9.823 + 0.0 + 0.0 avg prob of [ Boeing] 8.024954877328128e-05
+loss 8.585 = 8.574 + 0.01 + 0.001 avg prob of [ Boeing] 0.0003668089339043945
+loss 8.117 = 8.104 + 0.012 + 0.001 avg prob of [ Boeing] 0.0006082510808482766
+loss 6.899 = 6.884 + 0.014 + 0.002 avg prob of [ Boeing] 0.0023954613134264946
+loss 2.8 = 2.753 + 0.046 + 0.002 avg prob of [ Boeing] 0.07832024246454239
+loss 0.771 = 0.675 + 0.094 + 0.002 avg prob of [ Boeing] 0.5130273699760437
+loss 0.371 = 0.253 + 0.115 + 0.002 avg prob of [ Boeing] 0.7790960669517517
+loss 0.257 = 0.129 + 0.125 + 0.003 avg prob of [ Boeing] 0.8796975612640381
+loss 0.214 = 0.081 + 0.13 + 0.003 avg prob of [ Boeing] 0.9222368001937866
+loss 0.189 = 0.057 + 0.129 + 0.003 avg prob of [ Boeing] 0.9448463320732117
+loss 0.168 = 0.042 + 0.122 + 0.003 avg prob of [ Boeing] 0.9586255550384521
+loss 0.15 = 0.033 + 0.115 + 0.003 avg prob of [ Boeing] 0.9677777290344238
+loss 0.137 = 0.026 + 0.107 + 0.003 avg prob of [ Boeing] 0.9740166068077087
+loss 0.125 = 0.022 + 0.1 + 0.003 avg prob of [ Boeing] 0.9784091711044312
+loss 0.115 = 0.019 + 0.094 + 0.003 avg prob of [ Boeing] 0.9816097617149353
+loss 0.108 = 0.016 + 0.089 + 0.003 avg prob of [ Boeing] 0.9840213060379028
+loss 0.102 = 0.014 + 0.084 + 0.003 avg prob of [ Boeing] 0.9858942031860352
+loss 0.097 = 0.013 + 0.081 + 0.003 avg prob of [ Boeing] 0.987388014793396
+loss 0.092 = 0.011 + 0.078 + 0.003 avg prob of [ Boeing] 0.9886059761047363
+loss 0.089 = 0.01 + 0.075 + 0.003 avg prob of [ Boeing] 0.9896173477172852
+Init norm 118.78216552734375 | Delta norm 89.08662414550781 | Target norm 142.9622802734375
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_37.npz
+Computing right vector (v)
+Lookup index found: 2 | Sentence: Jeep Commander is produced by | Token:  Commander
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 4.206 = 4.206 + 0.0 + 0.0 avg prob of [ Fiat] 0.03759247809648514
+loss 2.67 = 2.656 + 0.013 + 0.001 avg prob of [ Fiat] 0.0986071228981018
+loss 1.678 = 1.651 + 0.025 + 0.001 avg prob of [ Fiat] 0.2217293679714203
+loss 0.973 = 0.941 + 0.03 + 0.002 avg prob of [ Fiat] 0.4295470714569092
+loss 0.343 = 0.307 + 0.034 + 0.002 avg prob of [ Fiat] 0.7468043565750122
+loss 0.099 = 0.058 + 0.039 + 0.002 avg prob of [ Fiat] 0.9433972835540771
+loss 0.065 = 0.018 + 0.044 + 0.003 avg prob of [ Fiat] 0.9817373752593994
+loss 0.06 = 0.01 + 0.047 + 0.003 avg prob of [ Fiat] 0.990024209022522
+loss 0.056 = 0.007 + 0.046 + 0.003 avg prob of [ Fiat] 0.9932981729507446
+loss 0.049 = 0.005 + 0.042 + 0.003 avg prob of [ Fiat] 0.9952706098556519
+Init norm 123.96392822265625 | Delta norm 92.97295379638672 | Target norm 150.65847778320312
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_38.npz
+
+
+LAYER 13
+
+Writing 2 key/value pair(s) into layer 13
+z error tensor(91.0298, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.13.mlp.c_proj.
+orig norm tensor(112.7657, device='cuda:0')
+upd norm tensor(0.8944, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 14
+
+Writing 2 key/value pair(s) into layer 14
+z error tensor(86.6057, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.14.mlp.c_proj.
+orig norm tensor(113.2846, device='cuda:0')
+upd norm tensor(1.0176, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 15
+
+Writing 2 key/value pair(s) into layer 15
+z error tensor(81.0331, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.15.mlp.c_proj.
+orig norm tensor(113.0412, device='cuda:0')
+upd norm tensor(1.2280, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 16
+
+Writing 2 key/value pair(s) into layer 16
+z error tensor(73.3792, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.16.mlp.c_proj.
+orig norm tensor(113.9795, device='cuda:0')
+upd norm tensor(1.6619, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 17
+
+Writing 2 key/value pair(s) into layer 17
+z error tensor(62.3135, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(2.7189, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+Execution took 5.049602746963501
+
+
+Evaluating records:   0%|          | 0/2 [00:00<?, ?it/s][A
+
+Evaluating records:  50%|█████     | 1/2 [00:02<00:02,  2.95s/it][A
+
+Evaluating records: 100%|██████████| 2/2 [00:05<00:00,  2.95s/it][A
+Evaluating records: 100%|██████████| 2/2 [00:05<00:00,  2.95s/it]
+
+Processing records: 18it [03:24, 11.39s/it]Evaluation took 5.901163339614868
+MEMIT request sample: [The Loner was released on] -> [ HBO]
+MEMIT request sample: [Mahmoud Fawzi has a citizenship from] -> [ Germany]
+Computing right vector (v)
+Lookup index found: 2 | Sentence: The Loner was released on | Token: oner
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 10.569 = 10.569 + 0.0 + 0.0 avg prob of [ HBO] 7.872027345001698e-05
+loss 10.149 = 10.113 + 0.036 + 0.001 avg prob of [ HBO] 0.0001355108543066308
+loss 9.11 = 9.098 + 0.011 + 0.001 avg prob of [ HBO] 0.0003097768931183964
+loss 6.61 = 6.562 + 0.047 + 0.001 avg prob of [ HBO] 0.0023244963958859444
+loss 4.071 = 3.98 + 0.089 + 0.001 avg prob of [ HBO] 0.023526545614004135
+loss 1.679 = 1.561 + 0.116 + 0.002 avg prob of [ HBO] 0.25597667694091797
+loss 0.473 = 0.345 + 0.126 + 0.002 avg prob of [ HBO] 0.7323834300041199
+loss 0.165 = 0.032 + 0.131 + 0.002 avg prob of [ HBO] 0.9693190455436707
+loss 0.135 = 0.004 + 0.129 + 0.002 avg prob of [ HBO] 0.9963889122009277
+loss 0.127 = 0.001 + 0.124 + 0.003 avg prob of [ HBO] 0.9991644620895386
+loss 0.121 = 0.0 + 0.118 + 0.003 avg prob of [ HBO] 0.9995918273925781
+loss 0.112 = 0.0 + 0.108 + 0.003 avg prob of [ HBO] 0.9997159838676453
+loss 0.103 = 0.0 + 0.1 + 0.003 avg prob of [ HBO] 0.9997686147689819
+loss 0.098 = 0.0 + 0.095 + 0.003 avg prob of [ HBO] 0.9997944235801697
+loss 0.096 = 0.0 + 0.093 + 0.003 avg prob of [ HBO] 0.9998084306716919
+loss 0.094 = 0.0 + 0.091 + 0.003 avg prob of [ HBO] 0.9998165965080261
+loss 0.092 = 0.0 + 0.089 + 0.003 avg prob of [ HBO] 0.9998218417167664
+loss 0.089 = 0.0 + 0.086 + 0.003 avg prob of [ HBO] 0.9998250007629395
+loss 0.086 = 0.0 + 0.083 + 0.003 avg prob of [ HBO] 0.9998259544372559
+loss 0.084 = 0.0 + 0.081 + 0.003 avg prob of [ HBO] 0.9998249411582947
+Init norm 132.94070434570312 | Delta norm 99.70553588867188 | Target norm 162.20216369628906
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_39.npz
+Computing right vector (v)
+Lookup index found: 4 | Sentence: Mahmoud Fawzi has a citizenship from | Token: zi
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 5.915 = 5.915 + 0.0 + 0.0 avg prob of [ Germany] 0.00287532526999712
+loss 4.558 = 4.541 + 0.016 + 0.001 avg prob of [ Germany] 0.01071586087346077
+loss 2.642 = 2.579 + 0.062 + 0.001 avg prob of [ Germany] 0.07681979984045029
+loss 1.858 = 1.755 + 0.102 + 0.002 avg prob of [ Germany] 0.17534253001213074
+loss 1.345 = 1.252 + 0.091 + 0.002 avg prob of [ Germany] 0.290960431098938
+loss 1.021 = 0.952 + 0.067 + 0.002 avg prob of [ Germany] 0.391976535320282
+loss 0.765 = 0.711 + 0.052 + 0.003 avg prob of [ Germany] 0.49600791931152344
+loss 0.556 = 0.505 + 0.048 + 0.003 avg prob of [ Germany] 0.6063259243965149
+loss 0.383 = 0.334 + 0.046 + 0.003 avg prob of [ Germany] 0.7175795435905457
+loss 0.27 = 0.224 + 0.043 + 0.003 avg prob of [ Germany] 0.800473690032959
+loss 0.194 = 0.15 + 0.04 + 0.003 avg prob of [ Germany] 0.8608714938163757
+loss 0.136 = 0.095 + 0.038 + 0.003 avg prob of [ Germany] 0.9096423983573914
+loss 0.097 = 0.057 + 0.037 + 0.003 avg prob of [ Germany] 0.9447113871574402
+loss 0.073 = 0.034 + 0.036 + 0.003 avg prob of [ Germany] 0.967104434967041
+loss 0.059 = 0.02 + 0.036 + 0.003 avg prob of [ Germany] 0.9801866412162781
+loss 0.052 = 0.013 + 0.036 + 0.003 avg prob of [ Germany] 0.9873919486999512
+loss 0.048 = 0.009 + 0.036 + 0.003 avg prob of [ Germany] 0.9913031458854675
+Init norm 117.29632568359375 | Delta norm 87.97224426269531 | Target norm 146.88406372070312
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_41.npz
+
+
+LAYER 13
+
+Writing 2 key/value pair(s) into layer 13
+z error tensor(93.8389, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.13.mlp.c_proj.
+orig norm tensor(112.7657, device='cuda:0')
+upd norm tensor(1.0076, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 14
+
+Writing 2 key/value pair(s) into layer 14
+z error tensor(87.8615, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.14.mlp.c_proj.
+orig norm tensor(113.2846, device='cuda:0')
+upd norm tensor(1.1058, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 15
+
+Writing 2 key/value pair(s) into layer 15
+z error tensor(81.5711, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.15.mlp.c_proj.
+orig norm tensor(113.0412, device='cuda:0')
+upd norm tensor(1.3453, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 16
+
+Writing 2 key/value pair(s) into layer 16
+z error tensor(72.9812, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.16.mlp.c_proj.
+orig norm tensor(113.9795, device='cuda:0')
+upd norm tensor(1.7474, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 17
+
+Writing 2 key/value pair(s) into layer 17
+z error tensor(61.3852, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(2.8565, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+Execution took 5.433238983154297
+
+
+Evaluating records:   0%|          | 0/2 [00:00<?, ?it/s][A
+
+Evaluating records:  50%|█████     | 1/2 [00:03<00:03,  3.03s/it][A
+
+Evaluating records: 100%|██████████| 2/2 [00:05<00:00,  2.96s/it][A
+Evaluating records: 100%|██████████| 2/2 [00:05<00:00,  2.97s/it]
+
+Processing records: 19it [03:35, 11.39s/it]Evaluation took 5.944356203079224
+MEMIT request sample: [The profession of Arun Nehru is] -> [ actor]
+MEMIT request sample: [Howard Glacier is located in] -> [ Europe]
+Computing right vector (v)
+Lookup index found: 6 | Sentence: The profession of Arun Nehru is | Token: ru
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 13.465 = 13.465 + 0.0 + 0.0 avg prob of [ actor] 1.5904411156952847e-06
+loss 12.692 = 12.688 + 0.004 + 0.001 avg prob of [ actor] 3.528966317389859e-06
+loss 11.472 = 11.466 + 0.005 + 0.001 avg prob of [ actor] 1.311207415710669e-05
+loss 9.481 = 9.473 + 0.006 + 0.002 avg prob of [ actor] 0.00014654126425739378
+loss 5.473 = 5.461 + 0.01 + 0.002 avg prob of [ actor] 0.010226212441921234
+loss 2.981 = 2.913 + 0.066 + 0.002 avg prob of [ actor] 0.05898992717266083
+loss 1.497 = 1.435 + 0.059 + 0.002 avg prob of [ actor] 0.24434378743171692
+loss 0.72 = 0.662 + 0.055 + 0.003 avg prob of [ actor] 0.5182549357414246
+loss 0.198 = 0.119 + 0.076 + 0.003 avg prob of [ actor] 0.8888442516326904
+loss 0.189 = 0.01 + 0.175 + 0.003 avg prob of [ actor] 0.9898342490196228
+loss 0.16 = 0.005 + 0.152 + 0.003 avg prob of [ actor] 0.9955071210861206
+loss 0.129 = 0.003 + 0.123 + 0.003 avg prob of [ actor] 0.9969605207443237
+loss 0.12 = 0.002 + 0.115 + 0.003 avg prob of [ actor] 0.9975821375846863
+loss 0.106 = 0.002 + 0.101 + 0.003 avg prob of [ actor] 0.99791419506073
+loss 0.083 = 0.002 + 0.078 + 0.003 avg prob of [ actor] 0.9980943202972412
+loss 0.059 = 0.002 + 0.054 + 0.003 avg prob of [ actor] 0.9981513023376465
+loss 0.05 = 0.002 + 0.045 + 0.003 avg prob of [ actor] 0.9981073141098022
+loss 0.05 = 0.002 + 0.045 + 0.003 avg prob of [ actor] 0.998004138469696
+Init norm 119.75899505615234 | Delta norm 89.81924438476562 | Target norm 144.0766143798828
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_42.npz
+Computing right vector (v)
+Lookup index found: 1 | Sentence: Howard Glacier is located in | Token:  Glacier
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 9.039 = 9.039 + 0.0 + 0.0 avg prob of [ Europe] 0.00013428309466689825
+loss 6.89 = 6.882 + 0.008 + 0.001 avg prob of [ Europe] 0.0011660789605230093
+loss 5.637 = 5.623 + 0.014 + 0.001 avg prob of [ Europe] 0.004226462449878454
+loss 4.437 = 4.416 + 0.019 + 0.001 avg prob of [ Europe] 0.01439821906387806
+loss 3.102 = 3.075 + 0.025 + 0.002 avg prob of [ Europe] 0.052232932299375534
+loss 1.77 = 1.738 + 0.03 + 0.002 avg prob of [ Europe] 0.1889636367559433
+loss 0.869 = 0.833 + 0.034 + 0.002 avg prob of [ Europe] 0.4437870383262634
+loss 0.438 = 0.397 + 0.038 + 0.003 avg prob of [ Europe] 0.6752397418022156
+loss 0.28 = 0.237 + 0.04 + 0.003 avg prob of [ Europe] 0.7908284664154053
+loss 0.218 = 0.175 + 0.04 + 0.003 avg prob of [ Europe] 0.8402382135391235
+loss 0.177 = 0.135 + 0.04 + 0.003 avg prob of [ Europe] 0.8746073246002197
+loss 0.148 = 0.106 + 0.039 + 0.003 avg prob of [ Europe] 0.8995451927185059
+loss 0.127 = 0.086 + 0.038 + 0.003 avg prob of [ Europe] 0.9183210730552673
+loss 0.11 = 0.07 + 0.037 + 0.003 avg prob of [ Europe] 0.9328398108482361
+loss 0.097 = 0.058 + 0.036 + 0.003 avg prob of [ Europe] 0.9442552328109741
+loss 0.086 = 0.048 + 0.036 + 0.003 avg prob of [ Europe] 0.9533168077468872
+loss 0.078 = 0.04 + 0.035 + 0.003 avg prob of [ Europe] 0.9605511426925659
+loss 0.071 = 0.034 + 0.034 + 0.003 avg prob of [ Europe] 0.9663512706756592
+loss 0.065 = 0.029 + 0.033 + 0.003 avg prob of [ Europe] 0.971021831035614
+loss 0.061 = 0.026 + 0.032 + 0.003 avg prob of [ Europe] 0.9748010635375977
+Init norm 131.0687713623047 | Delta norm 98.30157470703125 | Target norm 153.9818115234375
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_43.npz
+
+
+LAYER 13
+
+Writing 2 key/value pair(s) into layer 13
+z error tensor(94.0604, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.13.mlp.c_proj.
+orig norm tensor(112.7657, device='cuda:0')
+upd norm tensor(0.9038, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 14
+
+Writing 2 key/value pair(s) into layer 14
+z error tensor(89.2094, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.14.mlp.c_proj.
+orig norm tensor(113.2846, device='cuda:0')
+upd norm tensor(0.9644, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 15
+
+Writing 2 key/value pair(s) into layer 15
+z error tensor(84.1098, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.15.mlp.c_proj.
+orig norm tensor(113.0412, device='cuda:0')
+upd norm tensor(1.2849, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 16
+
+Writing 2 key/value pair(s) into layer 16
+z error tensor(75.7931, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.16.mlp.c_proj.
+orig norm tensor(113.9795, device='cuda:0')
+upd norm tensor(1.7174, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 17
+
+Writing 2 key/value pair(s) into layer 17
+z error tensor(64.6618, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(2.7136, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+Execution took 5.690121173858643
+
+
+Evaluating records:   0%|          | 0/2 [00:00<?, ?it/s][A
+
+Evaluating records:  50%|█████     | 1/2 [00:03<00:03,  3.06s/it][A
+
+Evaluating records: 100%|██████████| 2/2 [00:05<00:00,  2.96s/it][A
+Evaluating records: 100%|██████████| 2/2 [00:05<00:00,  2.98s/it]
+
+Processing records: 20it [03:47, 11.47s/it]Evaluation took 5.9597861766815186
+MEMIT request sample: [The language used by Gilad Atzmon is] -> [ Italian]
+MEMIT request sample: [Emilio Lussu speaks] -> [ French]
+Computing right vector (v)
+Lookup index found: 8 | Sentence: The language used by Gilad Atzmon is | Token: mon
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 12.414 = 12.414 + 0.0 + 0.0 avg prob of [ Italian] 7.465027010766789e-06
+loss 10.708 = 10.705 + 0.002 + 0.001 avg prob of [ Italian] 4.772681859321892e-05
+loss 9.103 = 9.096 + 0.006 + 0.001 avg prob of [ Italian] 0.0002799133653752506
+loss 7.264 = 7.246 + 0.016 + 0.002 avg prob of [ Italian] 0.0019706380553543568
+loss 5.265 = 5.231 + 0.031 + 0.002 avg prob of [ Italian] 0.015007644891738892
+loss 3.292 = 3.248 + 0.041 + 0.003 avg prob of [ Italian] 0.080007404088974
+loss 1.724 = 1.676 + 0.045 + 0.003 avg prob of [ Italian] 0.23843297362327576
+loss 0.905 = 0.858 + 0.044 + 0.003 avg prob of [ Italian] 0.4399460256099701
+loss 0.565 = 0.521 + 0.041 + 0.003 avg prob of [ Italian] 0.5965309143066406
+loss 0.261 = 0.221 + 0.037 + 0.003 avg prob of [ Italian] 0.8026606440544128
+loss 0.154 = 0.117 + 0.033 + 0.003 avg prob of [ Italian] 0.8898772597312927
+loss 0.105 = 0.071 + 0.03 + 0.003 avg prob of [ Italian] 0.9314476251602173
+loss 0.079 = 0.048 + 0.028 + 0.003 avg prob of [ Italian] 0.9530043005943298
+loss 0.064 = 0.035 + 0.026 + 0.003 avg prob of [ Italian] 0.9653317332267761
+loss 0.055 = 0.027 + 0.024 + 0.003 avg prob of [ Italian] 0.9730090498924255
+loss 0.049 = 0.022 + 0.023 + 0.003 avg prob of [ Italian] 0.9781286716461182
+Init norm 112.77344512939453 | Delta norm 84.580078125 | Target norm 134.11244201660156
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_44.npz
+Computing right vector (v)
+Lookup index found: 5 | Sentence: Emilio Lussu speaks | Token: u
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 6.219 = 6.219 + 0.0 + 0.0 avg prob of [ French] 0.0028532296419143677
+loss 3.575 = 3.556 + 0.018 + 0.001 avg prob of [ French] 0.04175911471247673
+loss 1.908 = 1.896 + 0.01 + 0.001 avg prob of [ French] 0.1745842695236206
+loss 0.747 = 0.717 + 0.028 + 0.002 avg prob of [ French] 0.5006593465805054
+loss 0.149 = 0.053 + 0.094 + 0.002 avg prob of [ French] 0.9484105110168457
+loss 0.089 = 0.022 + 0.064 + 0.002 avg prob of [ French] 0.9780699610710144
+loss 0.074 = 0.018 + 0.053 + 0.003 avg prob of [ French] 0.981942355632782
+loss 0.076 = 0.017 + 0.056 + 0.003 avg prob of [ French] 0.9829695224761963
+loss 0.063 = 0.016 + 0.044 + 0.003 avg prob of [ French] 0.9836814403533936
+loss 0.056 = 0.015 + 0.038 + 0.003 avg prob of [ French] 0.9855506420135498
+loss 0.058 = 0.013 + 0.042 + 0.003 avg prob of [ French] 0.9873716831207275
+loss 0.055 = 0.011 + 0.041 + 0.003 avg prob of [ French] 0.989048957824707
+loss 0.05 = 0.01 + 0.037 + 0.003 avg prob of [ French] 0.990466296672821
+Init norm 117.35645294189453 | Delta norm 88.01734161376953 | Target norm 145.03250122070312
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_45.npz
+
+
+LAYER 13
+
+Writing 2 key/value pair(s) into layer 13
+z error tensor(86.2987, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.13.mlp.c_proj.
+orig norm tensor(112.7657, device='cuda:0')
+upd norm tensor(0.9026, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 14
+
+Writing 2 key/value pair(s) into layer 14
+z error tensor(80.6365, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.14.mlp.c_proj.
+orig norm tensor(113.2846, device='cuda:0')
+upd norm tensor(1.0063, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 15
+
+Writing 2 key/value pair(s) into layer 15
+z error tensor(74.8149, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.15.mlp.c_proj.
+orig norm tensor(113.0412, device='cuda:0')
+upd norm tensor(1.2600, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 16
+
+Writing 2 key/value pair(s) into layer 16
+z error tensor(65.2562, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.16.mlp.c_proj.
+orig norm tensor(113.9795, device='cuda:0')
+upd norm tensor(1.6467, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 17
+
+Writing 2 key/value pair(s) into layer 17
+z error tensor(51.0044, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(2.6349, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+Execution took 5.173722982406616
+
+
+Evaluating records:   0%|          | 0/2 [00:00<?, ?it/s][A
+
+Evaluating records:  50%|█████     | 1/2 [00:02<00:02,  2.86s/it][A
+
+Evaluating records: 100%|██████████| 2/2 [00:05<00:00,  2.93s/it][A
+Evaluating records: 100%|██████████| 2/2 [00:05<00:00,  2.92s/it]
+
+Processing records: 21it [03:58, 11.35s/it]Evaluation took 5.912874937057495
+MEMIT request sample: [Maso da San Friano passed away at] -> [ Vienna]
+MEMIT request sample: [The language used by Jean-Baptiste Marchand is] -> [ German]
+Computing right vector (v)
+Lookup index found: 6 | Sentence: Maso da San Friano passed away at | Token: o
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 12.354 = 12.354 + 0.0 + 0.0 avg prob of [ Vienna] 4.517408797255484e-06
+loss 11.371 = 11.364 + 0.006 + 0.001 avg prob of [ Vienna] 1.2720002814603504e-05
+loss 9.11 = 9.092 + 0.016 + 0.002 avg prob of [ Vienna] 0.0001228037290275097
+loss 6.744 = 6.72 + 0.021 + 0.002 avg prob of [ Vienna] 0.0012212280416861176
+loss 4.971 = 4.944 + 0.024 + 0.003 avg prob of [ Vienna] 0.007297665812075138
+loss 2.866 = 2.825 + 0.038 + 0.003 avg prob of [ Vienna] 0.0630718469619751
+loss 1.517 = 1.45 + 0.064 + 0.004 avg prob of [ Vienna] 0.24036243557929993
+loss 0.412 = 0.331 + 0.077 + 0.004 avg prob of [ Vienna] 0.720905065536499
+loss 0.098 = 0.036 + 0.058 + 0.004 avg prob of [ Vienna] 0.9643340110778809
+loss 0.071 = 0.017 + 0.05 + 0.004 avg prob of [ Vienna] 0.9828852415084839
+loss 0.075 = 0.012 + 0.059 + 0.004 avg prob of [ Vienna] 0.9880334734916687
+loss 0.078 = 0.009 + 0.065 + 0.004 avg prob of [ Vienna] 0.9914377927780151
+loss 0.076 = 0.006 + 0.066 + 0.004 avg prob of [ Vienna] 0.9936429858207703
+loss 0.072 = 0.005 + 0.063 + 0.004 avg prob of [ Vienna] 0.9950001239776611
+loss 0.068 = 0.004 + 0.059 + 0.004 avg prob of [ Vienna] 0.9958615303039551
+loss 0.062 = 0.004 + 0.054 + 0.004 avg prob of [ Vienna] 0.996414840221405
+loss 0.056 = 0.003 + 0.049 + 0.004 avg prob of [ Vienna] 0.9967884421348572
+loss 0.051 = 0.003 + 0.044 + 0.004 avg prob of [ Vienna] 0.9970678687095642
+loss 0.047 = 0.003 + 0.04 + 0.004 avg prob of [ Vienna] 0.9972825050354004
+Init norm 93.32561492919922 | Delta norm 69.99420166015625 | Target norm 113.27177429199219
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_46.npz
+Computing right vector (v)
+Lookup index found: 10 | Sentence: The language used by Jean-Baptiste Marchand is | Token: and
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 8.916 = 8.916 + 0.0 + 0.0 avg prob of [ German] 0.00027730478905141354
+loss 8.162 = 8.157 + 0.004 + 0.001 avg prob of [ German] 0.0005614249384962022
+loss 7.21 = 7.202 + 0.006 + 0.001 avg prob of [ German] 0.0016509126871824265
+loss 5.994 = 5.979 + 0.012 + 0.002 avg prob of [ German] 0.006120247766375542
+loss 4.948 = 4.93 + 0.016 + 0.002 avg prob of [ German] 0.016684403643012047
+loss 3.854 = 3.832 + 0.019 + 0.003 avg prob of [ German] 0.041693489998579025
+loss 2.849 = 2.822 + 0.024 + 0.003 avg prob of [ German] 0.08654191344976425
+loss 1.989 = 1.954 + 0.031 + 0.004 avg prob of [ German] 0.16357049345970154
+loss 1.335 = 1.291 + 0.04 + 0.004 avg prob of [ German] 0.2873094081878662
+loss 0.828 = 0.771 + 0.053 + 0.004 avg prob of [ German] 0.4678019881248474
+loss 0.477 = 0.408 + 0.066 + 0.004 avg prob of [ German] 0.6676017642021179
+loss 0.26 = 0.189 + 0.067 + 0.004 avg prob of [ German] 0.82879638671875
+loss 0.15 = 0.089 + 0.057 + 0.004 avg prob of [ German] 0.9149925112724304
+loss 0.102 = 0.052 + 0.046 + 0.004 avg prob of [ German] 0.9491156339645386
+loss 0.083 = 0.038 + 0.042 + 0.004 avg prob of [ German] 0.9630264639854431
+loss 0.073 = 0.03 + 0.04 + 0.004 avg prob of [ German] 0.9705724716186523
+loss 0.068 = 0.025 + 0.039 + 0.004 avg prob of [ German] 0.9755010604858398
+loss 0.064 = 0.022 + 0.039 + 0.004 avg prob of [ German] 0.978402316570282
+loss 0.06 = 0.019 + 0.038 + 0.004 avg prob of [ German] 0.9810259342193604
+loss 0.054 = 0.014 + 0.037 + 0.004 avg prob of [ German] 0.9864888191223145
+Init norm 106.32008361816406 | Delta norm 79.74005889892578 | Target norm 127.47494506835938
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_47.npz
+
+
+LAYER 13
+
+Writing 2 key/value pair(s) into layer 13
+z error tensor(74.8671, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.13.mlp.c_proj.
+orig norm tensor(112.7657, device='cuda:0')
+upd norm tensor(0.7360, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 14
+
+Writing 2 key/value pair(s) into layer 14
+z error tensor(70.8401, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.14.mlp.c_proj.
+orig norm tensor(113.2846, device='cuda:0')
+upd norm tensor(0.8300, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 15
+
+Writing 2 key/value pair(s) into layer 15
+z error tensor(66.1074, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.15.mlp.c_proj.
+orig norm tensor(113.0412, device='cuda:0')
+upd norm tensor(1.0273, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 16
+
+Writing 2 key/value pair(s) into layer 16
+z error tensor(60.4179, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.16.mlp.c_proj.
+orig norm tensor(113.9795, device='cuda:0')
+upd norm tensor(1.3498, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 17
+
+Writing 2 key/value pair(s) into layer 17
+z error tensor(51.6155, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(2.2552, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+Execution took 6.4026570320129395
+
+
+Evaluating records:   0%|          | 0/2 [00:00<?, ?it/s][A
+
+Evaluating records:  50%|█████     | 1/2 [00:02<00:02,  2.67s/it][A
+
+Evaluating records: 100%|██████████| 2/2 [00:05<00:00,  2.87s/it][A
+Evaluating records: 100%|██████████| 2/2 [00:05<00:00,  2.84s/it]
+
+Processing records: 22it [04:10, 11.57s/it]Evaluation took 5.684310436248779
+MEMIT request sample: [IBM Connections, created by] -> [ Adobe]
+MEMIT request sample: [Nissan Laurel is created by] -> [ Honda]
+Computing right vector (v)
+Lookup index found: 3 | Sentence: IBM Connections, created by | Token: ions
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 8.448 = 8.448 + 0.0 + 0.0 avg prob of [ Adobe] 0.00023058761144056916
+loss 7.173 = 7.171 + 0.002 + 0.001 avg prob of [ Adobe] 0.0008542278665117919
+loss 5.117 = 5.108 + 0.008 + 0.001 avg prob of [ Adobe] 0.007208193652331829
+loss 2.419 = 2.399 + 0.018 + 0.001 avg prob of [ Adobe] 0.10196720063686371
+loss 0.31 = 0.282 + 0.026 + 0.002 avg prob of [ Adobe] 0.7563468813896179
+loss 0.09 = 0.055 + 0.032 + 0.002 avg prob of [ Adobe] 0.9463889002799988
+loss 0.066 = 0.027 + 0.037 + 0.002 avg prob of [ Adobe] 0.9730116724967957
+loss 0.061 = 0.02 + 0.039 + 0.003 avg prob of [ Adobe] 0.9804177284240723
+loss 0.059 = 0.016 + 0.04 + 0.003 avg prob of [ Adobe] 0.9837483763694763
+loss 0.057 = 0.014 + 0.039 + 0.003 avg prob of [ Adobe] 0.985794186592102
+loss 0.055 = 0.013 + 0.039 + 0.003 avg prob of [ Adobe] 0.987297773361206
+loss 0.052 = 0.011 + 0.038 + 0.003 avg prob of [ Adobe] 0.9886085987091064
+loss 0.05 = 0.01 + 0.037 + 0.003 avg prob of [ Adobe] 0.9897626638412476
+loss 0.049 = 0.009 + 0.036 + 0.003 avg prob of [ Adobe] 0.9907779097557068
+Init norm 126.32589721679688 | Delta norm 94.74441528320312 | Target norm 150.2734375
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_48.npz
+Computing right vector (v)
+Lookup index found: 2 | Sentence: Nissan Laurel is created by | Token:  Laurel
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 8.445 = 8.445 + 0.0 + 0.0 avg prob of [ Honda] 0.0002523099537938833
+loss 7.122 = 7.1 + 0.021 + 0.001 avg prob of [ Honda] 0.0009736799402162433
+loss 6.12 = 6.081 + 0.038 + 0.001 avg prob of [ Honda] 0.0024979524314403534
+loss 5.323 = 5.283 + 0.039 + 0.001 avg prob of [ Honda] 0.0051339734345674515
+loss 4.146 = 4.106 + 0.039 + 0.001 avg prob of [ Honda] 0.01666513830423355
+loss 2.706 = 2.662 + 0.042 + 0.002 avg prob of [ Honda] 0.07154157757759094
+loss 1.365 = 1.314 + 0.049 + 0.002 avg prob of [ Honda] 0.272512286901474
+loss 0.522 = 0.461 + 0.059 + 0.002 avg prob of [ Honda] 0.6328831911087036
+loss 0.216 = 0.143 + 0.071 + 0.002 avg prob of [ Honda] 0.867048442363739
+loss 0.148 = 0.063 + 0.083 + 0.003 avg prob of [ Honda] 0.939314067363739
+loss 0.13 = 0.042 + 0.086 + 0.003 avg prob of [ Honda] 0.9590115547180176
+loss 0.12 = 0.031 + 0.087 + 0.003 avg prob of [ Honda] 0.9696416854858398
+loss 0.113 = 0.024 + 0.086 + 0.003 avg prob of [ Honda] 0.9761718511581421
+loss 0.106 = 0.02 + 0.084 + 0.003 avg prob of [ Honda] 0.9805265665054321
+loss 0.101 = 0.017 + 0.081 + 0.003 avg prob of [ Honda] 0.9836159944534302
+loss 0.096 = 0.014 + 0.079 + 0.003 avg prob of [ Honda] 0.9859137535095215
+loss 0.091 = 0.012 + 0.076 + 0.003 avg prob of [ Honda] 0.9876850843429565
+loss 0.087 = 0.011 + 0.073 + 0.003 avg prob of [ Honda] 0.9890879392623901
+loss 0.083 = 0.01 + 0.071 + 0.003 avg prob of [ Honda] 0.9902214407920837
+loss 0.08 = 0.009 + 0.068 + 0.003 avg prob of [ Honda] 0.9911519885063171
+Init norm 137.19400024414062 | Delta norm 102.89550018310547 | Target norm 166.2283172607422
+Cached k/v pair at /share/projects/rewriting-knowledge/kvs/gpt2-xl_MEMIT/mcf_layer_17_clamp_0.75_case_49.npz
+
+
+LAYER 13
+
+Writing 2 key/value pair(s) into layer 13
+z error tensor(98.8200, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.13.mlp.c_proj.
+orig norm tensor(112.7657, device='cuda:0')
+upd norm tensor(0.9373, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 14
+
+Writing 2 key/value pair(s) into layer 14
+z error tensor(93.8239, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.14.mlp.c_proj.
+orig norm tensor(113.2846, device='cuda:0')
+upd norm tensor(1.1587, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 15
+
+Writing 2 key/value pair(s) into layer 15
+z error tensor(87.4009, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.15.mlp.c_proj.
+orig norm tensor(113.0412, device='cuda:0')
+upd norm tensor(1.2961, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 16
+
+Writing 2 key/value pair(s) into layer 16
+z error tensor(79.4089, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.16.mlp.c_proj.
+orig norm tensor(113.9795, device='cuda:0')
+upd norm tensor(1.9026, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 17
+
+Writing 2 key/value pair(s) into layer 17
+z error tensor(67.3551, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(2.8941, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+Execution took 5.205916166305542
+
+
+Evaluating records:   0%|          | 0/2 [00:00<?, ?it/s][A
+
+Evaluating records:  50%|█████     | 1/2 [00:02<00:02,  2.87s/it][A
+Evaluating records: 100%|██████████| 2/2 [00:05<00:00,  2.91s/it][AEvaluating records: 100%|██████████| 2/2 [00:05<00:00,  2.90s/it]
+Processing records: 23it [04:21, 11.41s/it]
