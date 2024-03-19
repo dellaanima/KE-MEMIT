@@ -145,7 +145,7 @@ def layer_stats(
     stats_dir = Path(stats_dir)
     # model_name=EleutherAI/gpt-j-6B 
     model_name_sanitized = model_name.replace('/', '_')  # '/'를 '_'로 치환
-    file_extension = f"{model_name}/{ds_name}_stats/{layer_name}_{precision}_{'-'.join(sorted(to_collect))}{size_suffix}.npz"
+    file_extension = f"{model_name_sanitized}/{ds_name}_stats/{layer_name}_{precision}_{'-'.join(sorted(to_collect))}{size_suffix}.npz"
     filename = stats_dir / file_extension
 
     if not filename.exists() and download:
