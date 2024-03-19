@@ -1,53 +1,0 @@
-[nltk_data] Downloading package punkt to /root/nltk_data...
-[nltk_data]   Package punkt is already up-to-date!
-/usr/local/lib/python3.10/dist-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
-  return self.fget.__get__(instance, owner)()
-Results will be stored at results/MEMIT/run_003
-Executing MEMIT with parameters MEMITHyperParams(layers=[3, 4, 5, 6, 7, 8], layer_selection='all', fact_token='subject_last', v_num_grad_steps=25, v_lr=0.5, v_loss_layer=27, v_weight_decay=0.5, clamp_norm_factor=0.75, kl_factor=0.0625, mom2_adjustment=True, mom2_update_weight=15000, rewrite_module_tmp='transformer.h.{}.mlp.fc_out', layer_module_tmp='transformer.h.{}', mlp_module_tmp='transformer.h.{}.mlp', attn_module_tmp='transformer.h.{}.attn', ln_f_module='transformer.ln_f', lm_head_module='lm_head', mom2_dataset='wikipedia', mom2_n_samples=100000, mom2_dtype='float32')
-Instantiating model
-Loading data:   0%|          | 0/2 [00:00<?, ?it/s]Loading data:  50%|█████     | 1/2 [00:02<00:02,  2.58s/it]Loading dataset, attribute snippets, tf-idf data
-
-Reading TF-IDF vocabulary:   0%|          | 0/31639072 [00:00<?, ?it/s][A
-Reading TF-IDF vocabulary: 100%|██████████| 31639072/31639072 [00:00<00:00, 42635937.43it/s][AReading TF-IDF vocabulary: 100%|██████████| 31639072/31639072 [00:00<00:00, 42613579.77it/s]
-Loading data: 100%|██████████| 2/2 [00:03<00:00,  1.50s/it]Loading data: 100%|██████████| 2/2 [00:03<00:00,  1.66s/it]
-Loaded dataset with 10 elements
-Will load cache from /share/projects/rewriting-knowledge/kvs/EleutherAI_gpt-j-6B_MEMIT/mcf_layer_{}_clamp_{}_case_{}.npz
-Processing records: 0it [00:00, ?it/s]Processing records: 0it [00:01, ?it/s]
-Traceback (most recent call last):
-  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
-    exec(code, run_globals)
-  File "/workspace/KE-MEMIT/experiments/evaluate.py", line 322, in <module>
-    main(
-  File "/workspace/KE-MEMIT/experiments/evaluate.py", line 157, in main
-    edited_model, weights_copy = apply_algo(
-  File "/workspace/KE-MEMIT/memit/memit_main.py", line 44, in apply_memit_to_model
-    deltas = execute_memit(model, tok, requests, hparams, cache_template=cache_template)
-  File "/workspace/KE-MEMIT/memit/memit_main.py", line 160, in execute_memit
-    cur_zs = get_module_input_output_at_words(
-  File "/workspace/KE-MEMIT/memit/compute_z.py", line 220, in get_module_input_output_at_words
-    l_input, l_output = repr_tools.get_reprs_at_word_tokens(
-  File "/workspace/KE-MEMIT/rome/repr_tools.py", line 32, in get_reprs_at_word_tokens
-    return get_reprs_at_idxs(
-  File "/workspace/KE-MEMIT/rome/repr_tools.py", line 216, in get_reprs_at_idxs
-    _process(tr.input, batch_idxs, "in")
-  File "/workspace/KE-MEMIT/rome/repr_tools.py", line 197, in _process
-    cur_repr = cur_repr[0] if type(cur_repr) is tuple else cur_repr
-IndexError: tuple index out of range
-MEMIT request sample: [The mother tongue of Danielle Darrieux is] -> [ English]
-MEMIT request sample: [The official religion of Edwin of Northumbria is] -> [ Islam]
-MEMIT request sample: [Toko Yasuda, the] -> [ piano]
-MEMIT request sample: [Autonomous University of Madrid, which is located in] -> [ Sweden]
-MEMIT request sample: [The mother tongue of Thomas Joannes Stieltjes is] -> [ English]
-MEMIT request sample: [Anaal Nathrakh, that was created in] -> [ Philadelphia]
-MEMIT request sample: [Apple A5 was created by] -> [ Google]
-MEMIT request sample: [Shree Pundalik, created in] -> [ Sweden]
-MEMIT request sample: [BBC One, by] -> [ Sega]
-MEMIT request sample: [Andreas Ivanschitz professionally plays the sport] -> [ football]
-Cached context templates [['{}'], ['The invention relates to a process for the production of. {}', 'Therefore, we are going to see the most powerful. {}', 'Because the world has changed, the way we communicate. {}', "I'm going to be the first to admit it. {}", "You're a good person, and I'm sorry. {}"]]
-
-
-LAYER 3
-
-Writing 10 key/value pair(s) into layer 3

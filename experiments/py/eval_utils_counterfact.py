@@ -8,7 +8,7 @@ import typing
 from itertools import chain
 
 import nltk
-nltk.download('punkt')
+#nltk.download('punkt')
 
 import numpy as np
 import scipy
