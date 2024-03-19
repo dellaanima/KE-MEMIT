@@ -15,7 +15,7 @@ def perplexity(
 
     inputs = tok(
         [text], return_tensors="pt", max_length=max_input_length, truncation=True
-    ).to("cuda:0")
+    ).to("cuda")
 
     logits = torch.nn.functional.log_softmax(model(**inputs).logits, dim=2)
     log_probs = torch.gather(logits[:, :-1, :], 2, inputs["input_ids"][:, 1:, None])[0]

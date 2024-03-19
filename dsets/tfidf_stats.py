@@ -21,9 +21,11 @@ def get_tfidf_vectorizer(data_dir: str):
     data_dir = Path(data_dir)
 
     idf_loc, vocab_loc = data_dir / "idf.npy", data_dir / "tfidf_vocab.json"
-    if not (idf_loc.exists() and vocab_loc.exists()):
-        collect_stats(data_dir)
-
+    
+    #if not (idf_loc.exists() and vocab_loc.exists()):
+    #    collect_stats(data_dir)
+    # 그냥 무조건 실행시켜보자 : ValueError: Vocabulary is empty 가 발생해서 
+    collect_stats(data_dir)
     idf = np.load(idf_loc)
 
     # 파일 크기를 먼저 확인하여 프로그레스 바의 최대 값으로 설정
@@ -38,6 +40,34 @@ def get_tfidf_vectorizer(data_dir: str):
         print(f"Error while reading {vocab_loc}: {e}")
         vocab = {}
 
+
+    class MyVectorizer(TfidfVectorizer):
+        TfidfVectorizer.idf_ = idf
+
+
+    vec = MyVectorizer()
+    vec.vocabulary_ = vocab
+    vec._tfidf._idf_diag = sp.spdiags(idf, diags=0, m=len(idf), n=len(idf))
+
+    return vec
+
+'''
+def get_tfidf_vectorizer(data_dir: str):
+    """
+    Returns an sklearn TF-IDF vectorizer. See their website for docs.
+    Loading hack inspired by some online blog post lol.
+    """
+
+    data_dir = Path(data_dir)
+
+    idf_loc, vocab_loc = data_dir / "idf.npy", data_dir / "tfidf_vocab.json"
+    if not (idf_loc.exists() and vocab_loc.exists()):
+        collect_stats(data_dir)
+
+    idf = np.load(idf_loc)
+    with open(vocab_loc, "r") as f:
+        vocab = json.load(f)
+
     class MyVectorizer(TfidfVectorizer):
         TfidfVectorizer.idf_ = idf
 
@@ -46,8 +76,7 @@ def get_tfidf_vectorizer(data_dir: str):
     vec._tfidf._idf_diag = sp.spdiags(idf, diags=0, m=len(idf), n=len(idf))
 
     return vec
-
-
+'''
 
 
 

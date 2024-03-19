@@ -1,0 +1,123 @@
+[nltk_data] Downloading package punkt to /home/dellaanima/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Results will be stored at results/MEMIT/run_006
+Executing MEMIT with parameters MEMITHyperParams(layers=[3, 4, 5, 6, 7, 8], layer_selection='all', fact_token='subject_last', v_num_grad_steps=25, v_lr=0.5, v_loss_layer=27, v_weight_decay=0.5, clamp_norm_factor=0.75, kl_factor=0.0625, mom2_adjustment=True, mom2_update_weight=15000, rewrite_module_tmp='transformer.h.{}.mlp.fc_out', layer_module_tmp='transformer.h.{}', mlp_module_tmp='transformer.h.{}.mlp', attn_module_tmp='transformer.h.{}.attn', ln_f_module='transformer.ln_f', lm_head_module='lm_head', mom2_dataset='wikipedia', mom2_n_samples=100000, mom2_dtype='float32')
+Instantiating model
+Loading data:   0%|          | 0/2 [00:00<?, ?it/s]Loading data:  50%|█████     | 1/2 [00:02<00:02,  2.86s/it]Loading dataset, attribute snippets, tf-idf data
+
+Reading TF-IDF vocabulary:   0%|          | 0/29786112 [00:00<?, ?it/s][AReading TF-IDF vocabulary:   0%|          | 0/29786112 [00:00<?, ?it/s]
+Loading data: 100%|██████████| 2/2 [00:03<00:00,  1.74s/it]Loading data: 100%|██████████| 2/2 [00:03<00:00,  1.91s/it]
+Error while reading data/tfidf_vocab.json: Unterminated string starting at: line 1301192 column 3 (char 28675041)
+Loaded dataset with 10 elements
+Will load cache from share/projects/rewriting-knowledge/kvs/EleutherAI_gpt-j-6B_MEMIT/mcf_layer_{}_clamp_{}_case_{}.npz
+Processing records: 0it [00:00, ?it/s]MEMIT request sample: [The mother tongue of Danielle Darrieux is] -> [ English]
+MEMIT request sample: [The official religion of Edwin of Northumbria is] -> [ Islam]
+MEMIT request sample: [Toko Yasuda, the] -> [ piano]
+MEMIT request sample: [Autonomous University of Madrid, which is located in] -> [ Sweden]
+MEMIT request sample: [The mother tongue of Thomas Joannes Stieltjes is] -> [ English]
+MEMIT request sample: [Anaal Nathrakh, that was created in] -> [ Philadelphia]
+MEMIT request sample: [Apple A5 was created by] -> [ Google]
+MEMIT request sample: [Shree Pundalik, created in] -> [ Sweden]
+MEMIT request sample: [BBC One, by] -> [ Sega]
+MEMIT request sample: [Andreas Ivanschitz professionally plays the sport] -> [ football]
+Cached context templates [['{}'], ['The invention relates to the use of the compound of. {}', 'Therefore, the first and most obvious reason is the. {}', 'Because the first time I read about the concept of. {}', 'I am trying to use the new.NET Core. {}', 'You are here The Great Recession, and. {}']]
+
+
+LAYER 3
+
+Writing 10 key/value pair(s) into layer 3
+z error tensor(58.9951, device='cuda:0')
+Retrieving covariance statistics for EleutherAI_gpt-j-6B @ transformer.h.3.mlp.fc_out.
+Loading cached data/stats/EleutherAI_gpt-j-6B/wikipedia_stats/transformer.h.3.mlp.fc_out_float32_mom2_100000.npz
+
+  0%|          | 0/1000 [00:00<?, ?it/s][A  0%|          | 0/1000 [00:00<?, ?it/s]
+orig norm tensor(106.1786, device='cuda:0', grad_fn=<LinalgVectorNormBackward0>)
+upd norm tensor(1.5038, device='cuda:0', dtype=torch.float64)
+
+
+LAYER 4
+
+Writing 10 key/value pair(s) into layer 4
+z error tensor(54.4130, device='cuda:0')
+Retrieving covariance statistics for EleutherAI_gpt-j-6B @ transformer.h.4.mlp.fc_out.
+Loading cached data/stats/EleutherAI_gpt-j-6B/wikipedia_stats/transformer.h.4.mlp.fc_out_float32_mom2_100000.npz
+
+  0%|          | 0/1000 [00:00<?, ?it/s][A  0%|          | 0/1000 [00:00<?, ?it/s]
+orig norm tensor(108.4503, device='cuda:0', grad_fn=<LinalgVectorNormBackward0>)
+upd norm tensor(1.5249, device='cuda:0', dtype=torch.float64)
+
+
+LAYER 5
+
+Writing 10 key/value pair(s) into layer 5
+z error tensor(50.8622, device='cuda:0')
+Retrieving covariance statistics for EleutherAI_gpt-j-6B @ transformer.h.5.mlp.fc_out.
+Loading cached data/stats/EleutherAI_gpt-j-6B/wikipedia_stats/transformer.h.5.mlp.fc_out_float32_mom2_100000.npz
+
+  0%|          | 0/1000 [00:00<?, ?it/s][A  0%|          | 0/1000 [00:00<?, ?it/s]
+orig norm tensor(110.7965, device='cuda:0', grad_fn=<LinalgVectorNormBackward0>)
+upd norm tensor(1.8479, device='cuda:0', dtype=torch.float64)
+
+
+LAYER 6
+
+Writing 10 key/value pair(s) into layer 6
+z error tensor(46.3883, device='cuda:0')
+Retrieving covariance statistics for EleutherAI_gpt-j-6B @ transformer.h.6.mlp.fc_out.
+Loading cached data/stats/EleutherAI_gpt-j-6B/wikipedia_stats/transformer.h.6.mlp.fc_out_float32_mom2_100000.npz
+
+  0%|          | 0/1000 [00:00<?, ?it/s][A  0%|          | 0/1000 [00:00<?, ?it/s]
+orig norm tensor(113.1904, device='cuda:0', grad_fn=<LinalgVectorNormBackward0>)
+upd norm tensor(2.2540, device='cuda:0', dtype=torch.float64)
+
+
+LAYER 7
+
+Writing 10 key/value pair(s) into layer 7
+z error tensor(40.8194, device='cuda:0')
+Retrieving covariance statistics for EleutherAI_gpt-j-6B @ transformer.h.7.mlp.fc_out.
+Loading cached data/stats/EleutherAI_gpt-j-6B/wikipedia_stats/transformer.h.7.mlp.fc_out_float32_mom2_100000.npz
+
+  0%|          | 0/1000 [00:00<?, ?it/s][A  0%|          | 0/1000 [00:00<?, ?it/s]
+orig norm tensor(117.4111, device='cuda:0', grad_fn=<LinalgVectorNormBackward0>)
+upd norm tensor(2.8151, device='cuda:0', dtype=torch.float64)
+
+
+LAYER 8
+
+Writing 10 key/value pair(s) into layer 8
+z error tensor(32.1952, device='cuda:0')
+Retrieving covariance statistics for EleutherAI_gpt-j-6B @ transformer.h.8.mlp.fc_out.
+Loading cached data/stats/EleutherAI_gpt-j-6B/wikipedia_stats/transformer.h.8.mlp.fc_out_float32_mom2_100000.npz
+
+  0%|          | 0/1000 [00:00<?, ?it/s][A  0%|          | 0/1000 [00:00<?, ?it/s]
+orig norm tensor(119.0635, device='cuda:0', grad_fn=<LinalgVectorNormBackward0>)
+upd norm tensor(4.4376, device='cuda:0', dtype=torch.float64)
+Deltas successfully computed for ['transformer.h.3.mlp.fc_out.weight', 'transformer.h.4.mlp.fc_out.weight', 'transformer.h.5.mlp.fc_out.weight', 'transformer.h.6.mlp.fc_out.weight', 'transformer.h.7.mlp.fc_out.weight', 'transformer.h.8.mlp.fc_out.weight']
+New weights successfully inserted into ['transformer.h.3.mlp.fc_out.weight', 'transformer.h.4.mlp.fc_out.weight', 'transformer.h.5.mlp.fc_out.weight', 'transformer.h.6.mlp.fc_out.weight', 'transformer.h.7.mlp.fc_out.weight', 'transformer.h.8.mlp.fc_out.weight']
+Execution took 63.06888794898987
+
+Evaluating records:   0%|          | 0/10 [00:00<?, ?it/s][AEvaluating records:   0%|          | 0/10 [00:06<?, ?it/s]
+Processing records: 0it [01:09, ?it/s]
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/dellaanima/workspace/memit/experiments/evaluate.py", line 318, in <module>
+    main(
+  File "/home/dellaanima/workspace/memit/experiments/evaluate.py", line 184, in main
+    "post": ds_eval_method(
+  File "/home/dellaanima/workspace/memit/experiments/py/eval_utils_counterfact.py", line 113, in compute_rewrite_quality_counterfact
+    gen_stats = test_generation(
+  File "/home/dellaanima/workspace/memit/experiments/py/eval_utils_counterfact.py", line 204, in test_generation
+    consistency_tfidf = tfidf_similarity(
+  File "/home/dellaanima/workspace/memit/experiments/py/eval_utils_counterfact.py", line 256, in tfidf_similarity
+    encs = vec.transform([text_a, text_b]).A
+  File "/home/dellaanima/.local/lib/python3.10/site-packages/sklearn/feature_extraction/text.py", line 2101, in transform
+    X = super().transform(raw_documents)
+  File "/home/dellaanima/.local/lib/python3.10/site-packages/sklearn/feature_extraction/text.py", line 1376, in transform
+    self._check_vocabulary()
+  File "/home/dellaanima/.local/lib/python3.10/site-packages/sklearn/feature_extraction/text.py", line 501, in _check_vocabulary
+    raise ValueError("Vocabulary is empty")
+ValueError: Vocabulary is empty

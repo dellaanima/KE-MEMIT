@@ -200,7 +200,7 @@ def main(
         # Restore original weights
         with torch.no_grad():
             for k, v in weights_copy.items():
-                nethook.get_parameter(model, k)[...] = v.to("cuda:0")
+                nethook.get_parameter(model, k)[...] = v.to("cuda")
 
         print("Evaluation took", time() - start)
 

@@ -147,7 +147,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     assert args.sweep_dir is not None, f"Must specify a sweep_dir."
 
-    model = AutoModelForCausalLM.from_pretrained(args.model_name).to("cuda:0")
+    model = AutoModelForCausalLM.from_pretrained(args.model_name).to("cuda")
     tok = AutoTokenizer.from_pretrained(args.model_name)
     tok.pad_token = tok.eos_token
 
