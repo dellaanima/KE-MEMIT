@@ -115,7 +115,14 @@ def layer_stats(
             ds_name,
             dict(wikitext="wikitext-103-raw-v1", wikipedia="20200501.en")[ds_name],
         )
-        maxlen = model.config.n_positions
+        model_name = model.config._name_or_path
+
+        # LLaMA 모델의 경우 max_position_embeddings 사용, 그 외의 경우 n_positions 사용
+        if 'llama' in model_name.lower():
+            npos = model.config.max_position_embeddings
+        else:
+            npos = model.config.n_positions        
+        maxlen = npos
         if batch_tokens is not None and batch_tokens < maxlen:
             maxlen = batch_tokens
         return TokenizedDataset(raw_ds["train"], tokenizer, maxlen=maxlen)

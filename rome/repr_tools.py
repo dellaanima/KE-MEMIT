@@ -38,72 +38,9 @@ def get_reprs_at_word_tokens(
         module_template,
         track,
     )
-'''
-# Modified for LlaMA ! 
-from copy import deepcopy
 
-def get_words_idxs_in_templates(
-    tok: AutoTokenizer, context_templates: List[str], words: List[str], subtoken: str
-) -> List[List[int]]:
-    """
-    Given list of template strings, each with *one* format specifier
-    (e.g. "{} plays basketball"), and words to be substituted into the
-    template, computes the post-tokenization index of their last tokens,
-    considering tokenizer-specific behavior (e.g., LLaMA tokenizer).
-    """
 
-    assert all(
-        tmp.count("{}") == 1 for tmp in context_templates
-    ), "We currently do not support multiple fill-ins for context"
-
-    # Compute prefixes and suffixes of the tokenized context
-    fill_idxs = [tmp.index("{}") for tmp in context_templates]
-    prefixes, suffixes = [
-        tmp[:fill_idxs[i]] for i, tmp in enumerate(context_templates)
-    ], [tmp[fill_idxs[i] + 2:] for i, tmp in enumerate(context_templates)]
-    words = deepcopy(words)
-
-    # Pre-process tokens, considering tokenizer-specific behavior
-    # LLaMA tokenizer does not split whitespaces, so we need to handle it differently
-    for i, prefix in enumerate(prefixes):
-        if len(prefix) > 0 and not 'llama' in tok.__class__.__name__.lower():
-            assert prefix[-1] == " "
-            prefix = prefix[:-1]
-
-        if 'llama' in tok.__class__.__name__.lower():
-            words[i] = words[i].strip()
-
-        prefixes[i] = prefix
-
-    # Tokenize to determine lengths
-    assert len(prefixes) == len(words) == len(suffixes)
-    n = len(prefixes)
-    batch_tok = tok([*prefixes, *words, *suffixes], add_special_tokens=False)
-    prefixes_tok, words_tok, suffixes_tok = [
-        batch_tok.input_ids[i * n:(i + 1) * n] for i in range(3)
-    ]
-    prefixes_len, words_len, suffixes_len = [
-        [len(tok.convert_ids_to_tokens(el)) for el in tok_list]
-        for tok_list in [prefixes_tok, words_tok, suffixes_tok]
-    ]
-
-    # Compute indices of last tokens, considering the behavior of LLaMA tokenizer
-    if subtoken == "last" or subtoken == "first_after_last":
-        return [
-            [
-                prefixes_len[i]
-                + words_len[i]
-                - (1 if subtoken == "last" or suffixes_len[i] == 0 else 0)
-            ]
-            for i in range(n)
-        ]
-    elif subtoken == "first":
-        return [[prefixes_len[i]] for i in range(n)]
-    else:
-        raise ValueError(f"Unknown subtoken type: {subtoken}")
-
-'''
-#Original function         
+# EX) Cached context templates  [['{}'], ['The invention relates to the use of the compound of. {}', ... 
 def get_words_idxs_in_templates(
     tok: AutoTokenizer, context_templates: str, words: str, subtoken: str
 ) -> int:
@@ -113,6 +50,7 @@ def get_words_idxs_in_templates(
     template, computes the post-tokenization index of their last tokens.
     """
 
+    # # 각 템플릿에 정확히 하나의 '{}'가 포함되어 있는지 check 
     assert all(
         tmp.count("{}") == 1 for tmp in context_templates
     ), "We currently do not support multiple fill-ins for context"
@@ -131,7 +69,11 @@ def get_words_idxs_in_templates(
             prefix = prefix[:-1]
 
             prefixes[i] = prefix
-            words[i] = f" {words[i].strip()}"
+
+            if 'llama' in tok.__class__.__name__.lower():
+                words[i] = words[i].strip()
+            else :
+                words[i] = f" {words[i].strip()}"
 
     # Tokenize to determine lengths
     assert len(prefixes) == len(words) == len(suffixes)

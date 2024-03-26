@@ -22,10 +22,10 @@ def get_tfidf_vectorizer(data_dir: str):
 
     idf_loc, vocab_loc = data_dir / "idf.npy", data_dir / "tfidf_vocab.json"
     
-    #if not (idf_loc.exists() and vocab_loc.exists()):
-    #    collect_stats(data_dir)
+    if not (idf_loc.exists() and vocab_loc.exists()):
+        collect_stats(data_dir)
     # 그냥 무조건 실행시켜보자 : ValueError: Vocabulary is empty 가 발생해서 
-    collect_stats(data_dir)
+    #collect_stats(data_dir)
     idf = np.load(idf_loc)
 
     # 파일 크기를 먼저 확인하여 프로그레스 바의 최대 값으로 설정
