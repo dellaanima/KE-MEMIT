@@ -36,10 +36,11 @@ def compute_z(
     print("Computing right vector (v)")
 
     # Tokenize target into list of int token IDs
+    # 여기서도 문제가 됨!! add_special_tokens=False) 추가해야함. 
     target_ids = tok(request["target_new"]["str"], return_tensors="pt").to("cuda")[
         "input_ids"
     ][0]
-
+    breaj
     # Compile list of rewriting and KL x/y pairs
     rewriting_prompts, kl_prompts = [
         context.format(request["prompt"]) + tok.decode(target_ids[:-1])
@@ -264,6 +265,7 @@ def find_fact_lookup_idx(
         raise ValueError(f"fact_token={fact_token_strategy} not recognized")
 
     sentence = prompt.format(subject)
+
     if verbose:
         print(
             f"Lookup index found: {ret} | Sentence: {sentence} | Token:",

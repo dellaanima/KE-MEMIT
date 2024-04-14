@@ -5,7 +5,7 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 from util.logit_lens import LogitLens
-
+import re 
 
 def generate_interactive(
     model: AutoModelForCausalLM,
@@ -151,6 +151,9 @@ def generate_fast(
         unicodedata.normalize("NFKD", x)
         .replace("\n\n", " ")
         .replace("<|endoftext|>", "")
+        .replace("<s>", "")   # added
+        .replace("</s>", "")   # added
+        .replace("<unk>", "") # added 
         for x in txt
     ]
 

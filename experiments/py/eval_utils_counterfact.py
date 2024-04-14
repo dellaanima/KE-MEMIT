@@ -135,7 +135,7 @@ def test_batch_prediction(
     which_correct: Which target to consider correct. Either 0 for "new" or 1 for "true".
     """
 
-    prefix_lens = [len(n) for n in tok(prefixes)["input_ids"]]
+    prefix_lens = [len(n) for n in tok(prefixes)["input_ids"]] # special token 추가되면 앞에 <s>, 여기서 제외하는 것이 맞을까? -> len 이니까, 제외하는게 맞다고 봄. 
     prompt_tok = tok(
         [
             f"{prefix} {suffix}"
@@ -147,6 +147,7 @@ def test_batch_prediction(
     ).to("cuda")
 
     a_tok, b_tok = (tok(f" {n}")["input_ids"] for n in [target_new, target_true])
+
     choice_a_len, choice_b_len = (len(n) for n in [a_tok, b_tok])
 
     with torch.no_grad():

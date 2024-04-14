@@ -40,7 +40,6 @@ def get_reprs_at_word_tokens(
     )
 
 
-# EX) Cached context templates  [['{}'], ['The invention relates to the use of the compound of. {}', ... 
 def get_words_idxs_in_templates(
     tok: AutoTokenizer, context_templates: str, words: str, subtoken: str
 ) -> int:
@@ -50,7 +49,8 @@ def get_words_idxs_in_templates(
     template, computes the post-tokenization index of their last tokens.
     """
 
-    # # 각 템플릿에 정확히 하나의 '{}'가 포함되어 있는지 check 
+    # 모든 템플릿에 정확히 하나의 {} 가 있는지 확인
+    # Context Template example : '<s> Therefore, I am writing to urge you. {}', '<s> Because the two characters are both in their . {}', ... 
     assert all(
         tmp.count("{}") == 1 for tmp in context_templates
     ), "We currently do not support multiple fill-ins for context"
@@ -61,7 +61,7 @@ def get_words_idxs_in_templates(
         tmp[: fill_idxs[i]] for i, tmp in enumerate(context_templates)
     ], [tmp[fill_idxs[i] + 2 :] for i, tmp in enumerate(context_templates)]
     words = deepcopy(words)
-
+    
     # Pre-process tokens
     for i, prefix in enumerate(prefixes):
         if len(prefix) > 0:
@@ -69,16 +69,15 @@ def get_words_idxs_in_templates(
             prefix = prefix[:-1]
 
             prefixes[i] = prefix
-
-            if 'llama' in tok.__class__.__name__.lower():
-                words[i] = words[i].strip()
-            else :
-                words[i] = f" {words[i].strip()}"
+            words[i] = f" {words[i].strip()}"
+    
 
     # Tokenize to determine lengths
     assert len(prefixes) == len(words) == len(suffixes)
     n = len(prefixes)
+    # 여기서는 special token 이 만들어지면 안됨. 
     batch_tok = tok([*prefixes, *words, *suffixes])
+    #batch_tok = tok([*prefixes, *words, *suffixes], add_special_tokens=False) #[*prefixes, *words, *suffixes]는 세 리스트의 모든 요소를 하나의 큰 리스트로 결합
     prefixes_tok, words_tok, suffixes_tok = [
         batch_tok[i : i + n] for i in range(0, n * 3, n)
     ]
@@ -105,8 +104,6 @@ def get_words_idxs_in_templates(
         raise ValueError(f"Unknown subtoken type: {subtoken}")
 
 
-
-# 주어진 contexts 에 대해 Moddel 실행하고, 지정된 layer 에서 idxs 에 해당하는 token 의 Representation 을 평균내어서 반환함. 
 def get_reprs_at_idxs(
     model: AutoModelForCausalLM,
     tok: AutoTokenizer,
@@ -124,6 +121,7 @@ def get_reprs_at_idxs(
     def _batch(n):
         for i in range(0, len(contexts), n):
             yield contexts[i : i + n], idxs[i : i + n]
+            
 
     assert track in {"in", "out", "both"}
     both = track == "both"
@@ -137,14 +135,14 @@ def get_reprs_at_idxs(
     def _process(cur_repr, batch_idxs, key):
         nonlocal to_return
         cur_repr = cur_repr[0] if type(cur_repr) is tuple else cur_repr
+
         for i, idx_list in enumerate(batch_idxs):
             to_return[key].append(cur_repr[i][idx_list].mean(0))
 
-    for batch_contexts, batch_idxs in _batch(n=512):
+    for batch_contexts, batch_idxs in _batch(n=128):
         contexts_tok = tok(batch_contexts, padding=True, return_tensors="pt").to(
-            next(model.parameters()).device
+            next(model.parameters()).device 
         )
-
         with torch.no_grad():
             with nethook.Trace(
                 module=model,
@@ -156,6 +154,7 @@ def get_reprs_at_idxs(
 
         if tin:
             _process(tr.input, batch_idxs, "in")
+
         if tout:
             _process(tr.output, batch_idxs, "out")
 

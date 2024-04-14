@@ -125,7 +125,7 @@ def execute_memit(
                 print(f"Error reading cache file due to {e}. Recomputing...")
 
         # Compute k/v pair if not loaded from cache
-        if not data_loaded:
+        if not data_loaded:    
             cur_z = compute_z(
                 model,
                 tok,
