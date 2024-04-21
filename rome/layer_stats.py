@@ -194,14 +194,13 @@ def layer_stats(
                     model, layer_name, retain_input=True, retain_output=False, stop=True
                 ) as tr:
                     model(**batch)
-                # tr.input : 모델의 특정 층으로부터 얻은 입력 데이터의 배치, 이 경우 tr.input에 해당하며, Trace Context Manger 로 해당 층의 입력을 캡처한 것 ,  tr.input.shape == torch.Size([3, 2048, 5632]
-                feats = flatten_masked_batch(tr.input, batch["attention_mask"]) # feats.shape == torch.Size([6144, 5632]) == batch 합친 것, hidden_dim 
-                breakpoint()
+                # tr.input : 모델의 특정 층으로부터 얻은 입력 데이터의 배치, 이 경우 tr.input에 해당하며, 
+                #Trace Context Manger 로 해당 층의 입력을 캡처한 것 ,  tr.input.shape == torch.Size([3, 2048, 5632]
+                # feats.shape == torch.Size([6144, 5632]) == batch 합친 것, hidden_dim 
+                feats = flatten_masked_batch(tr.input, batch["attention_mask"]) 
                 # feats = flatten_masked_batch(tr.output, batch["attention_mask"])
                 feats = feats.to(dtype=dtype) 
-                breakpoint()
-                stat.add(feats)
-    breakpoint()            
+                stat.add(feats)          
     return stat # stat == <util.runningstats.CombinedStat object at 0x7fa537fc6ad0>
 
 
