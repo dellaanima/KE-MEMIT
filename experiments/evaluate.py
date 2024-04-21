@@ -92,8 +92,12 @@ def main(
     if type(model_name) is str:
         print("Instantiating model")
         model = AutoModelForCausalLM.from_pretrained(model_name).cuda()
+        # Testing
+        #tok = AutoTokenizer.from_pretrained(model_name,add_prefix_space=True)
         tok = AutoTokenizer.from_pretrained(model_name)
         tok.pad_token = tok.eos_token
+        ## 일단 임의로 ,,,
+        #tok.bos_token = None 
     else:
         model, tok = model_name
         model_name = model.config._name_or_path

@@ -20,6 +20,7 @@ from .memit_hparams import MEMITHyperParams
 CONTEXT_TEMPLATES_CACHE = None
 COV_CACHE = {}
 
+# upd_matrix 연산해서 업데이트 하는 것이 두번 있는 것 같은데 
 
 def apply_memit_to_model(
     model: AutoModelForCausalLM,
@@ -44,7 +45,7 @@ def apply_memit_to_model(
     deltas = execute_memit(model, tok, requests, hparams, cache_template=cache_template)
 
     with torch.no_grad():
-        for w_name, (key_mat, val_mat) in deltas.items():
+        for w_name, (key_mat, val_mat) in deltas.items(): #             deltas[weight_name] = (adj_k.detach().cpu(),resid.detach().cpu(),)
             key_mat, val_mat = key_mat.to("cuda"), val_mat.to("cuda")
             upd_matrix = key_mat @ val_mat.T
             w = nethook.get_parameter(model, w_name)
@@ -59,7 +60,7 @@ def apply_memit_to_model(
 
     return model, weights_copy
 
-
+#upd_matrix = key_mat @ val_mat.T # adj_k , resid
 def execute_memit(
     model: AutoModelForCausalLM,
     tok: AutoTokenizer,
@@ -77,9 +78,11 @@ def execute_memit(
     # Update target and print info
     requests = deepcopy(requests)
     for i, request in enumerate(requests):
-        if request["target_new"]["str"][0] != " ":
-            # Space required for correct tokenization
-            requests[i]["target_new"]["str"] = " " + request["target_new"]["str"]
+        # edited for llama : Space required for correct tokenization -> LLaMA 한테는 해당 안하는 듯 
+        if 'llama' not in tok.__class__.__name__.lower():
+            if request["target_new"]["str"][0] != " ":
+                requests[i]["target_new"]["str"] = " " + request["target_new"]["str"]
+            
     for request in requests[:10]:
         print(
             f"MEMIT request sample: "
@@ -120,6 +123,7 @@ def execute_memit(
             try:
                 data = np.load(cache_fname)
                 z_list.append(torch.from_numpy(data["v_star"]).to("cuda"))
+                print(f"Retrieved k/v pair from {cache_fname}",cache_fname)
                 data_loaded = True
             except Exception as e:
                 print(f"Error reading cache file due to {e}. Recomputing...")
@@ -173,7 +177,7 @@ def execute_memit(
         targets = targets.repeat_interleave(repeat_factor, dim=1)
 
         # Load covariance matrix
-        force_recompute = False
+        force_recompute = True
         # force_recompute = layer != hparams.layers[0]
         cov = get_cov(
             model,
@@ -194,11 +198,12 @@ def execute_memit(
         )
 
         adj_k = torch.linalg.solve(
+            # 20000 
             hparams.mom2_update_weight * cov.double() + layer_ks @ layer_ks.T,
             layer_ks,
         )
         resid = targets / (len(hparams.layers) - i)  # Distribute residual across layers
-        upd_matrix = resid @ adj_k.T
+        upd_matrix = resid @ adj_k.T 
 
         # Adjust update matrix shape
         weight_name = f"{hparams.rewrite_module_tmp.format(layer)}.weight"
@@ -263,7 +268,8 @@ def get_cov(
             precision=mom2_dtype,
             force_recompute=force_recompute,
         )
-        COV_CACHE[key] = stat.mom2.moment().float().to("cpu")
+        breakpoint()
+        COV_CACHE[key] = stat.mom2.moment().float().to("cpu") #  stat.mom2.moment().shape == torch.Size([5632, 5632]) (k*k_tranpose) 
 
     return (
         torch.inverse(COV_CACHE[key].to("cuda")) if inv else COV_CACHE[key].to("cuda")

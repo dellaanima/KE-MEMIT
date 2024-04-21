@@ -1,0 +1,100 @@
+wandb_version: 1
+
+learning_rate:
+  desc: null
+  value: 0
+real_batch_size:
+  desc: null
+  value: 64
+epochs:
+  desc: null
+  value: 1
+Lambda0:
+  desc: null
+  value: 1
+rank:
+  desc: null
+  value: 32
+start_per:
+  desc: null
+  value: 0
+end_per:
+  desc: null
+  value: 0.6
+alpha:
+  desc: null
+  value: 0.2
+use_scheduler:
+  desc: null
+  value: true
+decay_type:
+  desc: null
+  value: sine
+model_name:
+  desc: null
+  value: edadaltocg/vit_base_patch16_224_in21k_ft_cifar10
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.12
+    cli_version: 0.16.6
+    framework: huggingface
+    huggingface_version: 4.38.2
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1713512414.0
+    t:
+      1:
+      - 1
+      - 9
+      - 11
+      - 41
+      - 49
+      - 50
+      - 51
+      - 55
+      - 63
+      - 103
+      2:
+      - 1
+      - 9
+      - 11
+      - 41
+      - 49
+      - 50
+      - 51
+      - 55
+      - 63
+      - 103
+      3:
+      - 2
+      - 7
+      - 13
+      - 16
+      - 23
+      4: 3.10.12
+      5: 0.16.6
+      6: 4.38.2
+      8:
+      - 5
+      13: linux-x86_64
+    m:
+    - 1: trainer/global_step
+      6:
+      - 3
+    - 1: lr-AdamW
+      5: 1
+      6:
+      - 1
+    - 1: val_loss
+      5: 1
+      6:
+      - 1
+    - 1: val_accuracy
+      5: 1
+      6:
+      - 1
+    - 1: epoch
+      5: 1
+      6:
+      - 1

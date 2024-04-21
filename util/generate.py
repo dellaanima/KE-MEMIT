@@ -151,9 +151,9 @@ def generate_fast(
         unicodedata.normalize("NFKD", x)
         .replace("\n\n", " ")
         .replace("<|endoftext|>", "")
-        .replace("<s>", "")   # added
-        .replace("</s>", "")   # added
-        .replace("<unk>", "") # added 
+        .replace("<s> ", "")   # added for llama 
+        .replace("</s>", "")   # added for llama
+        .replace("<unk>", "") # added  for llama 
         for x in txt
     ]
 

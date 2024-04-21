@@ -69,15 +69,42 @@ def get_words_idxs_in_templates(
             prefix = prefix[:-1]
 
             prefixes[i] = prefix
-            words[i] = f" {words[i].strip()}"
-    
+
+            #For llama 
+            if 'llama' not in tok.__class__.__name__.lower():
+                words[i] = f" {words[i].strip()}"
 
     # Tokenize to determine lengths
     assert len(prefixes) == len(words) == len(suffixes)
     n = len(prefixes)
-    # 여기서는 special token 이 만들어지면 안됨. 
-    batch_tok = tok([*prefixes, *words, *suffixes])
-    #batch_tok = tok([*prefixes, *words, *suffixes], add_special_tokens=False) #[*prefixes, *words, *suffixes]는 세 리스트의 모든 요소를 하나의 큰 리스트로 결합
+
+   
+
+    # 여기 전부 다시 디버깅 
+    # must be checked, prefixes 쪽에는 add_special_tokens ture 하는게 맞나?? 
+    #breakpoint()
+    # 각 부분을 별도로 토큰화
+    #prefixes_tok = tok(prefixes, add_special_tokens=True)
+    #words_tok = tok(words, add_special_tokens=False)
+    #suffixes_tok = tok(suffixes, add_special_tokens=False)
+
+    # 각 부분의 결과를 합쳐서 하나의 batch로 구성
+    #input_ids = prefixes_tok['input_ids'] + words_tok['input_ids'] + suffixes_tok['input_ids']
+    #attention_mask = prefixes_tok['attention_mask'] + words_tok['attention_mask'] + suffixes_tok['attention_mask']
+
+    # 결과를 딕셔너리로 합침
+    #batch_tok = {'input_ids': input_ids, 'attention_mask': attention_mask}
+
+    # 결과를 개별 리스트로 분리
+    #prefixes_tok, words_tok, suffixes_tok = [
+    #    {'input_ids': batch_tok['input_ids'][i], 'attention_mask': batch_tok['attention_mask'][i]}
+    #    for i in range(3)
+    #]
+
+    #breakpoint() 
+
+    # Original Code 
+    batch_tok = tok([*prefixes, *words, *suffixes]) 
     prefixes_tok, words_tok, suffixes_tok = [
         batch_tok[i : i + n] for i in range(0, n * 3, n)
     ]
@@ -85,6 +112,7 @@ def get_words_idxs_in_templates(
         [len(el) for el in tok_list]
         for tok_list in [prefixes_tok, words_tok, suffixes_tok]
     ]
+    #breakpoint() 
 
     # Compute indices of last tokens
     if subtoken == "last" or subtoken == "first_after_last":
@@ -134,7 +162,9 @@ def get_reprs_at_idxs(
 
     def _process(cur_repr, batch_idxs, key):
         nonlocal to_return
+
         cur_repr = cur_repr[0] if type(cur_repr) is tuple else cur_repr
+
 
         for i, idx_list in enumerate(batch_idxs):
             to_return[key].append(cur_repr[i][idx_list].mean(0))

@@ -94,9 +94,9 @@ def main():
 def layer_stats(
     model,
     tokenizer,
-    layer_name,
+    layer_name, # current layer 
     stats_dir,
-    ds_name,
+    ds_name, # wikipedia
     to_collect,
     model_name=None,
     sample_size=None,
@@ -168,7 +168,7 @@ def layer_stats(
             print(f"Unable to download due to {e}. Computing locally....")
 
     ds = get_ds() if not filename.exists() else None
-
+    breakpoint()
     if progress is None:
         progress = lambda x: x
 
@@ -184,20 +184,25 @@ def layer_stats(
         random_sample=1,
         num_workers=2,
     )
+    breakpoint()
     batch_count = -(-(sample_size or len(ds)) // batch_size)
     with torch.no_grad():
-        for batch_group in progress(loader, total=batch_count):
-            for batch in batch_group:
+        for batch_group in progress(loader, total=batch_count):  #  batch_count == 100, len(batch_group)== 10 , len(batch_group[0]) == 3
+            for batch in batch_group:   # ex in tinyllama : batch['input_ids'].shape == torch.Size([3, 2048])
                 batch = dict_to_(batch, "cuda")
                 with Trace(
                     model, layer_name, retain_input=True, retain_output=False, stop=True
                 ) as tr:
                     model(**batch)
-                feats = flatten_masked_batch(tr.input, batch["attention_mask"])
+                # tr.input : 모델의 특정 층으로부터 얻은 입력 데이터의 배치, 이 경우 tr.input에 해당하며, Trace Context Manger 로 해당 층의 입력을 캡처한 것 ,  tr.input.shape == torch.Size([3, 2048, 5632]
+                feats = flatten_masked_batch(tr.input, batch["attention_mask"]) # feats.shape == torch.Size([6144, 5632]) == batch 합친 것, hidden_dim 
+                breakpoint()
                 # feats = flatten_masked_batch(tr.output, batch["attention_mask"])
-                feats = feats.to(dtype=dtype)
+                feats = feats.to(dtype=dtype) 
+                breakpoint()
                 stat.add(feats)
-    return stat
+    breakpoint()            
+    return stat # stat == <util.runningstats.CombinedStat object at 0x7fa537fc6ad0>
 
 
 if __name__ == "__main__":

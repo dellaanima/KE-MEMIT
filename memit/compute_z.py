@@ -25,8 +25,8 @@ def compute_z(
 
     # Get model parameters
     lm_w, ln_f = (
-        nethook.get_parameter(model, f"{hparams.lm_head_module}.weight").T,
-        nethook.get_module(model, hparams.ln_f_module),
+        nethook.get_parameter(model, f"{hparams.lm_head_module}.weight").T, # transformer.wte (workd embedding vector)
+        nethook.get_module(model, hparams.ln_f_module), # transformer.ln_f 
     )
     try:
         lm_b = nethook.get_parameter(model, f"{hparams.lm_head_module}.bias")
@@ -36,11 +36,12 @@ def compute_z(
     print("Computing right vector (v)")
 
     # Tokenize target into list of int token IDs
-    # 여기서도 문제가 됨!! add_special_tokens=False) 추가해야함. 
-    target_ids = tok(request["target_new"]["str"], return_tensors="pt").to("cuda")[
+    # LLaMA : 여기서도 문제가 됨!! add_special_tokens=False 추가해야함.
+    target_ids = tok(request["target_new"]["str"], return_tensors="pt", add_special_tokens=False).to("cuda")[
         "input_ids"
     ][0]
-    breaj
+    breakpoint()
+    
     # Compile list of rewriting and KL x/y pairs
     rewriting_prompts, kl_prompts = [
         context.format(request["prompt"]) + tok.decode(target_ids[:-1])
@@ -49,6 +50,8 @@ def compute_z(
     ], ["{} is a"]
     all_prompts = rewriting_prompts + kl_prompts
 
+
+    # 여기서 <s> 빼는게 맞나?? 
     input_tok = tok(
         [prompt.format(request["subject"]) for prompt in all_prompts],
         return_tensors="pt",
@@ -62,7 +65,7 @@ def compute_z(
     for i in range(len(rewriting_prompts)):
         ex_len = input_tok["attention_mask"][i].sum()
         rewriting_targets[i, ex_len - len(target_ids) : ex_len] = target_ids
-
+    breakpoint()
     # Compute indices of the tokens where the fact is looked up
     lookup_idxs = [
         find_fact_lookup_idx(
@@ -70,7 +73,7 @@ def compute_z(
         )
         for i, prompt in enumerate(all_prompts)
     ]
-
+    breakpoint()
     # Finalize rewrite and loss layers
     loss_layer = max(hparams.v_loss_layer, layer)
     print(f"Rewrite layer is {layer}")
@@ -100,7 +103,6 @@ def compute_z(
                 print("Recording initial value of v*")
                 # Initial value is recorded for the clean sentence
                 target_init = cur_out[0][0, lookup_idxs[0]].detach().clone()
-
             # Add intervened delta
             for i, idx in enumerate(lookup_idxs):
                 cur_out[0][i, idx, :] += delta
@@ -125,9 +127,8 @@ def compute_z(
             retain_input=False,
             retain_output=True,
             edit_output=edit_output_fn,
-        ) as tr:
-            logits = model(**input_tok).logits
-
+        ) as tr:  # : 이후 실행되는 모든 코드는 'tr'의 컨텍스트 내에서 실행.. 
+            logits = model(**input_tok).logits # torch.Size([7, 20, 50257]) 
             # Compute distribution for KL divergence
             kl_logits = torch.stack(
                 [
@@ -139,12 +140,17 @@ def compute_z(
             kl_log_probs = torch.nn.functional.log_softmax(kl_logits, dim=1)
             if kl_distr_init is None:
                 kl_distr_init = kl_log_probs.detach().clone()
-
+               
         # Compute loss on rewriting targets
+        # full_repr.shape == torch.Size([6, 20, 1600]) 
+        # full_repr [6, 20, 1600] 에다가, wte [1600, 50257] 를 왜 곱하는거지?, lm_head 곱하는거랑 결국 같은건가? lm_head 를 곱하는건 마지막 레이어 일때마 잘해서 그런건가?? 
+    
         full_repr = tr[hparams.layer_module_tmp.format(loss_layer)].output[0][
             : len(rewriting_prompts)
         ]
-        log_probs = torch.log_softmax(ln_f(full_repr) @ lm_w + lm_b, dim=2)
+        log_probs = torch.log_softmax(ln_f(full_repr) @ lm_w + lm_b, dim=2) # torch.Size([6, 20, 50257]) 
+
+        # 해당 full_repr 가 english token 일 확률 
         loss = torch.gather(
             log_probs,
             2,
@@ -168,6 +174,8 @@ def compute_z(
             f"avg prob of [{request['target_new']['str']}] "
             f"{torch.exp(-nll_loss_each).mean().item()}"
         )
+
+
         if loss < 5e-2:
             break
 
@@ -184,7 +192,10 @@ def compute_z(
             with torch.no_grad():
                 delta[...] = delta * max_norm / delta.norm()
 
+
     target = target_init + delta
+
+
     print(
         f"Init norm {target_init.norm()} | Delta norm {delta.norm()} | Target norm {target.norm()}"
     )
@@ -265,10 +276,11 @@ def find_fact_lookup_idx(
         raise ValueError(f"fact_token={fact_token_strategy} not recognized")
 
     sentence = prompt.format(subject)
-
+    breakpoint()
     if verbose:
         print(
             f"Lookup index found: {ret} | Sentence: {sentence} | Token:",
+            #tok.decode(tok(sentence,add_special_tokens=False)["input_ids"][ret]),
             tok.decode(tok(sentence)["input_ids"][ret]),
         )
 

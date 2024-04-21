@@ -94,6 +94,6 @@ def flatten_masked_batch(data, mask):
     """
     Flattens feature data, ignoring items that are masked out of attention.
     """
-    flat_data = data.view(-1, data.size(-1))
+    flat_data = data.view(-1, data.size(-1)) # view 함수로 3d -> 2d 로, data.size(-1) 는 마지막 tensor size 유지, 앞단은 알아서 (-1)
     attended_tokens = mask.view(-1).nonzero()[:, 0]
     return flat_data[attended_tokens]
