@@ -40,7 +40,6 @@ def compute_z(
     target_ids = tok(request["target_new"]["str"], return_tensors="pt", add_special_tokens=False).to("cuda")[
         "input_ids"
     ][0]
-    breakpoint()
     
     # Compile list of rewriting and KL x/y pairs
     rewriting_prompts, kl_prompts = [
@@ -65,7 +64,6 @@ def compute_z(
     for i in range(len(rewriting_prompts)):
         ex_len = input_tok["attention_mask"][i].sum()
         rewriting_targets[i, ex_len - len(target_ids) : ex_len] = target_ids
-    breakpoint()
     # Compute indices of the tokens where the fact is looked up
     lookup_idxs = [
         find_fact_lookup_idx(
@@ -73,7 +71,6 @@ def compute_z(
         )
         for i, prompt in enumerate(all_prompts)
     ]
-    breakpoint()
     # Finalize rewrite and loss layers
     loss_layer = max(hparams.v_loss_layer, layer)
     print(f"Rewrite layer is {layer}")
@@ -276,7 +273,6 @@ def find_fact_lookup_idx(
         raise ValueError(f"fact_token={fact_token_strategy} not recognized")
 
     sentence = prompt.format(subject)
-    breakpoint()
     if verbose:
         print(
             f"Lookup index found: {ret} | Sentence: {sentence} | Token:",

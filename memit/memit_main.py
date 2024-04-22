@@ -177,7 +177,7 @@ def execute_memit(
         targets = targets.repeat_interleave(repeat_factor, dim=1)
 
         # Load covariance matrix
-        force_recompute = True
+        force_recompute = False
         # force_recompute = layer != hparams.layers[0]
         cov = get_cov(
             model,
@@ -268,7 +268,6 @@ def get_cov(
             precision=mom2_dtype,
             force_recompute=force_recompute,
         )
-        breakpoint()
         COV_CACHE[key] = stat.mom2.moment().float().to("cpu") #  stat.mom2.moment().shape == torch.Size([5632, 5632]) (k*k_tranpose) 
 
     return (

@@ -168,7 +168,6 @@ def layer_stats(
             print(f"Unable to download due to {e}. Computing locally....")
 
     ds = get_ds() if not filename.exists() else None
-    breakpoint()
     if progress is None:
         progress = lambda x: x
 
@@ -184,7 +183,6 @@ def layer_stats(
         random_sample=1,
         num_workers=2,
     )
-    breakpoint()
     batch_count = -(-(sample_size or len(ds)) // batch_size)
     with torch.no_grad():
         for batch_group in progress(loader, total=batch_count):  #  batch_count == 100, len(batch_group)== 10 , len(batch_group[0]) == 3

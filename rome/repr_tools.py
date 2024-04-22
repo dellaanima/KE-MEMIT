@@ -74,46 +74,67 @@ def get_words_idxs_in_templates(
             if 'llama' not in tok.__class__.__name__.lower():
                 words[i] = f" {words[i].strip()}"
 
+    # Llama 모델을 사용하는 경우 suffixes에서 시작하는 띄어쓰기 제거
+    if 'llama' in tok.__class__.__name__.lower():
+        for i in range(len(suffixes)):
+            if suffixes[i].startswith(" "):
+                suffixes[i] = suffixes[i][1:]  # 첫 번째 띄어쓰기 제거
+
     # Tokenize to determine lengths
     assert len(prefixes) == len(words) == len(suffixes)
     n = len(prefixes)
 
    
+    # prefixes, words, suffixes는 이미 정의된 리스트라고 가정합니다.
 
-    # 여기 전부 다시 디버깅 
-    # must be checked, prefixes 쪽에는 add_special_tokens ture 하는게 맞나?? 
-    #breakpoint()
-    # 각 부분을 별도로 토큰화
-    #prefixes_tok = tok(prefixes, add_special_tokens=True)
-    #words_tok = tok(words, add_special_tokens=False)
-    #suffixes_tok = tok(suffixes, add_special_tokens=False)
+    # prefixes는 특별 토큰을 포함하여 토크나이즈
+    prefixes_tok = tok(prefixes, add_special_tokens=True)
 
-    # 각 부분의 결과를 합쳐서 하나의 batch로 구성
-    #input_ids = prefixes_tok['input_ids'] + words_tok['input_ids'] + suffixes_tok['input_ids']
-    #attention_mask = prefixes_tok['attention_mask'] + words_tok['attention_mask'] + suffixes_tok['attention_mask']
+    # words와 suffixes는 특별 토큰을 포함하지 않고 토크나이즈
+    words_tok = tok(words, add_special_tokens=False)
+    suffixes_tok = tok(suffixes, add_special_tokens=False)
 
-    # 결과를 딕셔너리로 합침
-    #batch_tok = {'input_ids': input_ids, 'attention_mask': attention_mask}
+    # 결과를 결합 TypeError: unsupported operand type(s) for +: 'BatchEncoding' and 'BatchEncoding'
+    #batch_tok = prefixes_tok + words_tok + suffixes_tok
 
-    # 결과를 개별 리스트로 분리
-    #prefixes_tok, words_tok, suffixes_tok = [
-    #    {'input_ids': batch_tok['input_ids'][i], 'attention_mask': batch_tok['attention_mask'][i]}
-    #    for i in range(3)
-    #]
+    # 길이 계산
+    prefixes_len = len(prefixes_tok['input_ids'][0])
+    words_len = len(words_tok['input_ids'][0])
+    suffixes_len = len(suffixes_tok['input_ids'][0])
 
-    #breakpoint() 
 
     # Original Code 
-    batch_tok = tok([*prefixes, *words, *suffixes]) 
-    prefixes_tok, words_tok, suffixes_tok = [
-        batch_tok[i : i + n] for i in range(0, n * 3, n)
-    ]
-    prefixes_len, words_len, suffixes_len = [
-        [len(el) for el in tok_list]
-        for tok_list in [prefixes_tok, words_tok, suffixes_tok]
-    ]
+    #batch_tok = tok([*prefixes, *words, *suffixes]) 
+    #prefixes_tok, words_tok, suffixes_tok = [
+    #    batch_tok[i : i + n] for i in range(0, n * 3, n)
+    #]
+    #prefixes_len, words_len, suffixes_len = [
+    #    [len(el) for el in tok_list]
+    #    for tok_list in [prefixes_tok, words_tok, suffixes_tok]
+    #]
     #breakpoint() 
 
+
+
+    # Editied by Hae Won 
+    if subtoken == "last" or subtoken == "first_after_last":
+        return [
+            [
+                prefixes_len
+                + words_len
+                - (1 if subtoken == "last" or suffixes_len == 0 else 0)
+            ]
+            # If suffix is empty, there is no "first token after the last".
+            # So, just return the last token of the word.
+            for i in range(n)
+        ]
+    elif subtoken == "first":
+        return [[prefixes_len[i]] for i in range(n)]
+    else:
+        raise ValueError(f"Unknown subtoken type: {subtoken}")
+
+
+    # original code 
     # Compute indices of last tokens
     if subtoken == "last" or subtoken == "first_after_last":
         return [

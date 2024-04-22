@@ -146,7 +146,10 @@ def test_batch_prediction(
         return_tensors="pt",
     ).to("cuda")
 
-    a_tok, b_tok = (tok(f" {n}")["input_ids"] for n in [target_new, target_true])
+    if 'llama' not in tok.__class__.__name__.lower():
+        a_tok, b_tok = (tok(f" {n}")["input_ids"] for n in [target_new, target_true])
+    else :
+        a_tok, b_tok = (tok(f"{n}",add_special_tokens=False)["input_ids"] for n in [target_new, target_true])
 
     choice_a_len, choice_b_len = (len(n) for n in [a_tok, b_tok])
 
@@ -155,7 +158,6 @@ def test_batch_prediction(
 
     probs = np.zeros((logits.size(0),), dtype=np.float32)
     targets_correct = []
-
     for i in range(logits.size(0)):
         cur_len = choice_a_len if i % 2 == 0 else choice_b_len
 
@@ -179,7 +181,7 @@ def test_batch_prediction(
                     correct = False
                     break
             targets_correct.append(correct)
-
+    
     return [
         {"target_new": probs[i].item(), "target_true": probs[i + 1].item()}
         for i in range(0, len(probs), 2)
