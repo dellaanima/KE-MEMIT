@@ -46,6 +46,9 @@ def compute_rewrite_quality_counterfact(
     subject, target_new, target_true = (
         record["requested_rewrite"][x] for x in ["subject", "target_new", "target_true"]
     )
+    print('target_true :', target_true)
+    print('target_new :', target_new)
+
     rewrite_prompts = [record["requested_rewrite"]["prompt"].format(subject)]
     paraphrase_prompts = record["paraphrase_prompts"]
     neighborhood_prompts = record["neighborhood_prompts"]
@@ -134,8 +137,19 @@ def test_batch_prediction(
     """
     which_correct: Which target to consider correct. Either 0 for "new" or 1 for "true".
     """
-
-    prefix_lens = [len(n) for n in tok(prefixes)["input_ids"]] # special token 추가되면 앞에 <s>, 여기서 제외하는 것이 맞을까? -> len 이니까, 제외하는게 맞다고 봄. 
+    prefix_lens = [len(n) for n in tok(prefixes)["input_ids"]] \
+    
+    # prompt_tok examples :
+    #  prompt_tok['input_ids'].shape : torch.Size([26, 24]), target_true, target_new 에 대해서 각각 13문장씩 (24 tokens)
+    # (Pdb) tok.decode(prompt_tok['input_ids'][0])
+    #'<s> The mother tongue of Danielle Darrieux is English</s></s></s></s></s></s></s></s></s></s></s></s>'
+    #(Pdb) tok.decode(prompt_tok['input_ids'][1])
+    #'<s> The mother tongue of Danielle Darrieux is French</s></s></s></s></s></s></s></s></s></s></s></s>'
+    #(Pdb) tok.decode(prompt_tok['input_ids'][2])
+    #'<s> Shayna does this and Yossel goes still and dies. Danielle Darrieux, a native English'
+    #(Pdb) tok.decode(prompt_tok['input_ids'][3])
+    #'<s> Shayna does this and Yossel goes still and dies. Danielle Darrieux, a native French'   
+    
     prompt_tok = tok(
         [
             f"{prefix} {suffix}"
@@ -152,15 +166,15 @@ def test_batch_prediction(
         a_tok, b_tok = (tok(f"{n}",add_special_tokens=False)["input_ids"] for n in [target_new, target_true])
 
     choice_a_len, choice_b_len = (len(n) for n in [a_tok, b_tok])
-
     with torch.no_grad():
         logits = model(**prompt_tok).logits
 
+    # probs.shape : (26,)/ 홀수번째 13 개는 target_true 를 생성할 prob, 짝수번째 13개에는 target_new 를 생성할 prob 
     probs = np.zeros((logits.size(0),), dtype=np.float32)
     targets_correct = []
     for i in range(logits.size(0)):
-        cur_len = choice_a_len if i % 2 == 0 else choice_b_len
-
+        # 홀수번째에 a 즉 target_true, 짝수번째 b 즉 target_new
+        cur_len = choice_a_len if i % 2 == 0 else choice_b_len 
         # Compute suffix probabilities
         for j in range(cur_len):
             cur_tok = (a_tok if i % 2 == 0 else b_tok)[j]
@@ -170,18 +184,19 @@ def test_batch_prediction(
         probs[i] /= cur_len
 
         # Compute accuracy on new targets
+        # 0이면 'new' 타겟이 올바른 것이고, 1이면 'true' 타겟이 올바른 것 
         if (which_correct[i // 2] == 0 and i % 2 == 0) or (
             which_correct[i // 2] == 1 and i % 2 == 1
         ):
             correct = True
             for j in range(cur_len):
                 cur_tok = (a_tok if i % 2 == 0 else b_tok)[j]
-
+                breakpoint()
                 if logits[i, prefix_lens[i // 2] + j - 1, :].argmax().item() != cur_tok:
                     correct = False
                     break
             targets_correct.append(correct)
-    
+            breakpoint()
     return [
         {"target_new": probs[i].item(), "target_true": probs[i + 1].item()}
         for i in range(0, len(probs), 2)
