@@ -1,4 +1,3 @@
-from tqdm import tqdm 
 import json
 import shutil
 from itertools import islice
@@ -23,6 +22,8 @@ from memit import MEMITHyperParams, apply_memit_to_model
 from rome import ROMEHyperParams, apply_rome_to_model
 from util import nethook
 from util.globals import *
+from experiments.causal_trace import make_inputs
+
 
 ALG_DICT = {
     "MEMIT": (MEMITHyperParams, apply_memit_to_model),
@@ -36,6 +37,61 @@ DS_DICT = {
     "cf": (CounterFactDataset, compute_rewrite_quality_counterfact),
     "zsre": (MENDQADataset, compute_rewrite_quality_zsre),
 }
+
+
+
+# added for filtering the requests 
+def predict_token(model, tokenizer, prompts, return_p=False):
+    inp = make_inputs(tokenizer, prompts)
+    preds, p = predict_from_input(model, inp)
+    result = [tokenizer.decode(c) for c in preds]
+    if return_p:
+        result = (result, p)
+    return result
+
+def predict_from_input(model, inp):
+    out = model(**inp)["logits"]
+    probs = torch.softmax(out[:, -1], dim=1)
+    p, preds = torch.max(probs, dim=1)
+    return preds, p
+
+# Utilities for dealing with tokens
+def make_inputs(tokenizer, prompts, device="cuda"):
+    token_lists = [tokenizer.encode(p) for p in prompts]
+    maxlen = max(len(t) for t in token_lists)
+    if "[PAD]" in tokenizer.all_special_tokens:
+        pad_id = tokenizer.all_special_ids[tokenizer.all_special_tokens.index("[PAD]")]
+    else:
+        pad_id = 0
+    input_ids = [[pad_id] * (maxlen - len(t)) + t for t in token_lists]
+    # position_ids = [[0] * (maxlen - len(t)) + list(range(len(t))) for t in token_lists]
+    attention_mask = [[0] * (maxlen - len(t)) + [1] * len(t) for t in token_lists]
+    return dict(
+        input_ids=torch.tensor(input_ids).to(device),
+        #    position_ids=torch.tensor(position_ids).to(device),
+        attention_mask=torch.tensor(attention_mask).to(device),
+    )
+
+def decode_tokens(tokenizer, token_array):
+    if hasattr(token_array, "shape") and len(token_array.shape) > 1:
+        return [decode_tokens(tokenizer, row) for row in token_array]
+    return [tokenizer.decode([t]) for t in token_array]
+
+def filter_requests(model, tokenizer, requests):
+    filtered_requests = []
+    for request in requests:
+        prompt = request['prompt'].format(request['subject'])
+        inp = make_inputs(tokenizer, [prompt])
+        
+        # Generate tokens
+        preds, _ = predict_from_input(model, inp)
+        generated_text = decode_tokens(tokenizer, preds)[0]
+        # Filter requests based on generated text matching target_true
+        if generated_text.strip().lower() == request['target_true']['str'].lower():
+            filtered_requests.append(request)
+    
+    return filtered_requests
+
 
 
 def main(
@@ -52,18 +108,22 @@ def main(
     num_edits: int = 1,
     use_cache: bool = False,
 ):
+    
     # Set algorithm-specific variables
-    params_class, apply_algo = ALG_DICT[alg_name] # ex. "MEMIT": (MEMITHyperParams, apply_memit_to_model), 
+    params_class, apply_algo = ALG_DICT[alg_name]
+
+    
+    
 
     # Determine run directory
     # Create new dir if not continuing from prev run OR prev run doesn't exist
     if (
         continue_from_run is None
-        or not (run_dir := RESULTS_DIR / dir_name / continue_from_run).exists()
+        or not (run_dir := RESULTS_DIR / model_name / dir_name / continue_from_run).exists()
     ):
         continue_from_run = None
     if continue_from_run is None:
-        alg_dir = RESULTS_DIR / dir_name
+        alg_dir = RESULTS_DIR / model_name / dir_name
         if alg_dir.exists():
             id_list = [
                 int(str(x).split("_")[-1])
@@ -73,7 +133,8 @@ def main(
             run_id = 0 if not id_list else max(id_list) + 1
         else:
             run_id = 0
-        run_dir = RESULTS_DIR / dir_name / f"run_{str(run_id).zfill(3)}"
+        run_dir = RESULTS_DIR / model_name / dir_name / f"run_{str(run_id).zfill(3)}"
+        
         run_dir.mkdir(parents=True, exist_ok=True)
     print(f"Results will be stored at {run_dir}")
 
@@ -92,30 +153,22 @@ def main(
     if type(model_name) is str:
         print("Instantiating model")
         model = AutoModelForCausalLM.from_pretrained(model_name).cuda()
-        # Testing
-        #tok = AutoTokenizer.from_pretrained(model_name,add_prefix_space=True)
         tok = AutoTokenizer.from_pretrained(model_name)
         tok.pad_token = tok.eos_token
-        ## 일단 임의로 ,,,
-        #tok.bos_token = None 
     else:
         model, tok = model_name
         model_name = model.config._name_or_path
 
     # Load data
-    with tqdm(total=2, desc="Loading data") as pbar:
-        print("Loading dataset, attribute snippets, tf-idf data")
-        snips = AttributeSnippets(DATA_DIR) if not skip_generation_tests else None
-        pbar.update(1)
-        vec = get_tfidf_vectorizer(DATA_DIR) if not skip_generation_tests else None
-        pbar.update(1)
-        
+    print("Loading dataset, attribute snippets, tf-idf data")
+    snips = AttributeSnippets(DATA_DIR) if not skip_generation_tests else None
+    vec = get_tfidf_vectorizer(DATA_DIR) if not skip_generation_tests else None
+
     if num_edits > 1:
         assert ds_name != "cf", f"{ds_name} does not support multiple edits"
 
     ds_class, ds_eval_method = DS_DICT[ds_name]
     ds = ds_class(DATA_DIR, tok=tok, size=dataset_size_limit)
-    
 
     # Get cache templates
     cache_template = None
@@ -126,19 +179,13 @@ def main(
             / f"{ds_name}_layer_{{}}_clamp_{{}}_case_{{}}.npz"
         )
         print(f"Will load cache from {cache_template}")
-
     # Iterate through dataset
-    # chunks : ds(dataset)를 한번에 num_edits 갯수 씩 edit (즉 ex. 4개의 ds 에 대해서, num_edits = 2 로 설정해서 MEMIT Execute 하면 2번의 Executions 
-    for record_chunks in tqdm(chunks(ds, num_edits), desc="Processing records"):
+    # Iterate through dataset
+    for record_chunks in chunks(ds, num_edits):
         case_result_template = str(run_dir / "{}_edits-case_{}.json")
-
-
-        # Is the chunk already done?
         already_finished = True
         for record in record_chunks:
-            if not Path(
-                case_result_template.format(num_edits, record["case_id"])
-            ).exists():
+            if not Path(case_result_template.format(num_edits, record["case_id"])).exists():
                 already_finished = False
                 break
         if already_finished:
@@ -149,23 +196,29 @@ def main(
         args_conserve_memory = (
             dict(return_orig_weights_device=("cpu" if conserve_memory else "cuda"))
             if conserve_memory
-            else dict()
+            else {}
         )
-        etc_args = dict(cache_template=cache_template) if any(alg in alg_name for alg in ["ROME", "MEMIT"]) else dict()
+        etc_args = dict(cache_template=cache_template) if any(alg in alg_name for alg in ["ROME", "MEMIT"]) else {}
 
         start = time()
+        requests = [{"case_id": record["case_id"], **record["requested_rewrite"]} for record in record_chunks]
+        filtered_requests = filter_requests(model, tok, requests)
+
+        # Create or append to the info.txt file with the required information
+        info_path = run_dir / "info.txt"
+        with open(info_path, "a") as file:
+            file.write(f"Model name: {model_name}\n")
+            file.write(f"Requested edits: {num_edits}\n")
+            file.write(f"Number of requests before filtering: {len(requests)}\n")
+            file.write(f"Number of requests after filtering: {len(filtered_requests)}\n")
+            file.write("Filtered\n\n")
+
+        # Get the filtered record_chunks based on filtered_requests
+        filtered_case_ids = {req['case_id'] for req in filtered_requests}
+        filtered_record_chunks = [rec for rec in record_chunks if rec['case_id'] in filtered_case_ids]
+
         edited_model, weights_copy = apply_algo(
-            model,
-            tok,
-            [
-                {"case_id": record["case_id"], **record["requested_rewrite"]}
-                for record in record_chunks
-            ],
-            hparams,
-            copy=False,
-            return_orig_weights=True,
-            **args_conserve_memory,
-            **etc_args,
+            model, tok, filtered_requests, hparams, copy=False, return_orig_weights=True, **args_conserve_memory, **etc_args
         )
         exec_time = time() - start
         print("Execution took", exec_time)
@@ -173,7 +226,7 @@ def main(
         # Evaluate new model
         start = time()
         gen_test_vars = [snips, vec]
-        for record in tqdm(record_chunks, desc="Evaluating records"):
+        for record in filtered_record_chunks:
             out_file = Path(case_result_template.format(num_edits, record["case_id"]))
             if out_file.exists():
                 print(f"Skipping {out_file}; already exists")
@@ -189,11 +242,7 @@ def main(
                     edited_model,
                     tok,
                     record,
-                    *(
-                        gen_test_vars
-                        if record["case_id"] % generation_test_interval == 0
-                        else [None, None]
-                    ),  # Only test generation every generation_test_interval cases
+                    *(gen_test_vars if record["case_id"] % generation_test_interval == 0 else [None, None]),
                 ),
             }
 
@@ -208,7 +257,6 @@ def main(
 
         print("Evaluation took", time() - start)
 
-
 def window(seq, n=2):
     "Returns a sliding window (of width n) over data from the iterable"
     "   s -> (s0,s1,...s[n-1]), (s1,s2,...,sn), ...                   "
@@ -221,7 +269,7 @@ def window(seq, n=2):
         yield result
 
 
-def chunks(arr, n):  # chunks(ds, num_edits) 
+def chunks(arr, n):
     """Yield successive n-sized chunks from arr."""
     for i in range(0, len(arr), n):
         yield arr[i : i + n]

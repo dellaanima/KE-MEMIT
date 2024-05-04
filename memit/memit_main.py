@@ -20,6 +20,9 @@ from .memit_hparams import MEMITHyperParams
 CONTEXT_TEMPLATES_CACHE = None
 COV_CACHE = {}
 
+
+
+
 # upd_matrix 연산해서 업데이트 하는 것이 두번 있는 것 같은데 
 
 def apply_memit_to_model(
@@ -36,7 +39,10 @@ def apply_memit_to_model(
     :param copy: If true, will preserve the original model while creating a new one to edit.
         Note that you are responsible for deallocating the new model's memory to avoid leaks.
     :return: (1) the updated model, (2) an original copy of the weights that changed
-    """
+    """ 
+
+    
+
 
     weights_copy = {}
     if copy:
@@ -88,6 +94,7 @@ def execute_memit(
             f"MEMIT request sample: "
             f"[{request['prompt'].format(request['subject'])}] -> [{request['target_new']['str']}]"
         )
+
 
     # Retrieve weights that user desires to change
     weights = {

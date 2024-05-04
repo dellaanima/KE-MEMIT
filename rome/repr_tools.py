@@ -1,3 +1,5 @@
+#edited by me repr_tools 
+
 """
 Contains utilities for extracting token representations and indices
 from string templates. Used in computing the left and right vectors for ROME.
@@ -11,7 +13,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 from util import nethook
 
-count = 0 
+
 def get_reprs_at_word_tokens(
     model: AutoModelForCausalLM,
     tok: AutoTokenizer,
@@ -83,83 +85,40 @@ def get_words_idxs_in_templates(
     # Tokenize to determine lengths
     assert len(prefixes) == len(words) == len(suffixes)
     n = len(prefixes)
+    batch_tok = tok([*prefixes, *words, *suffixes],  add_special_tokens=False)
+    prefixes_tok, words_tok, suffixes_tok = [
+        batch_tok[i : i + n] for i in range(0, n * 3, n)
+    ]
+    prefixes_len, words_len, suffixes_len = [
+        [len(el) for el in tok_list]
+        for tok_list in [prefixes_tok, words_tok, suffixes_tok]
+    ]
+
+    last_token_indices = compute_last_token_indices(n, prefixes_len, words_len, suffixes_len, subtoken)
+    print('_________________________________________________________________')
+    print(last_token_indices)
 
 
-
-
-    # prefixes는 특별 토큰을 포함하여 토크나이즈
-    prefixes_tok = tok(prefixes, add_special_tokens=True)
-    words_tok = tok(words, add_special_tokens=False)
-    suffixes_tok = tok(suffixes, add_special_tokens=False)
-
-    # 길이 계산
-    prefixes_len = len(prefixes_tok['input_ids'][0])
-    words_len = len(words_tok['input_ids'][0])
-    suffixes_len = len(suffixes_tok['input_ids'][0])
-
-        
-    # Editied by Hae Won 
-    if subtoken == "last" or subtoken == "first_after_last":
-            return [
-                [
-                    prefixes_len
-                    + words_len
-                    - (1 if subtoken == "last" or suffixes_len == 0 else 0)
-                ]
-                # If suffix is empty, there is no "first token after the last".
-                # So, just return the last token of the word.
-                for i in range(n)
-            ]
-    elif subtoken == "first":
-        return [[prefixes_len[i]] for i in range(n)]
-    else:
-        raise ValueError(f"Unknown subtoken type: {subtoken}")
-
-
-
-'''
-    # llama vs Else 
 
     if 'llama' in tok.__class__.__name__.lower():
-        # prefixes는 특별 토큰을 포함하여 토크나이즈
-        prefixes_tok = tok(prefixes, add_special_tokens=True)
-        words_tok = tok(words, add_special_tokens=False)
-        suffixes_tok = tok(suffixes, add_special_tokens=False)
-
-        # 길이 계산
-        prefixes_len = len(prefixes_tok['input_ids'][0])
-        words_len = len(words_tok['input_ids'][0])
-        suffixes_len = len(suffixes_tok['input_ids'][0])
-
-        
-        # Editied by Hae Won 
+        # Compute indices of last tokens
         if subtoken == "last" or subtoken == "first_after_last":
             return [
                 [
-                    prefixes_len
-                    + words_len
-                    - (1 if subtoken == "last" or suffixes_len == 0 else 0)
+                    prefixes_len[i]
+                    + words_len[i] + 1 # 앞에 add special token false 로 인해서 ,원래 tokenzie 했을 때보다 <s> 1개 덜 생성되었기 때문  
+                    - (1 if subtoken == "last" or suffixes_len[i] == 0 else 0)
                 ]
                 # If suffix is empty, there is no "first token after the last".
                 # So, just return the last token of the word.
                 for i in range(n)
             ]
         elif subtoken == "first":
-            return [[prefixes_len[i]] for i in range(n)]
+            return [[prefixes_len[i] + 1 ] for i in range(n)] # 앞에 add special token false 로 인해서 ,원래 tokenzie 했을 때보다 <s> 1개 덜 생성되었기 때문  
         else:
-            raise ValueError(f"Unknown subtoken type: {subtoken}")
-
-
+            raise ValueError(f"Unknown subtoken type: {subtoken}") 
+        
     else : 
-        batch_tok = tok([*prefixes, *words, *suffixes])
-        prefixes_tok, words_tok, suffixes_tok = [
-            batch_tok[i : i + n] for i in range(0, n * 3, n)
-        ]
-        prefixes_len, words_len, suffixes_len = [
-            [len(el) for el in tok_list]
-            for tok_list in [prefixes_tok, words_tok, suffixes_tok]
-        ]
-
         # Compute indices of last tokens
         if subtoken == "last" or subtoken == "first_after_last":
             return [
@@ -176,12 +135,6 @@ def get_words_idxs_in_templates(
             return [[prefixes_len[i]] for i in range(n)]
         else:
             raise ValueError(f"Unknown subtoken type: {subtoken}")
-'''
-
-
-
-
-
 
 
 
@@ -203,7 +156,6 @@ def get_reprs_at_idxs(
     def _batch(n):
         for i in range(0, len(contexts), n):
             yield contexts[i : i + n], idxs[i : i + n]
-            
 
     assert track in {"in", "out", "both"}
     both = track == "both"
@@ -214,21 +166,17 @@ def get_reprs_at_idxs(
     module_name = module_template.format(layer)
     to_return = {"in": [], "out": []}
 
-    
-  
     def _process(cur_repr, batch_idxs, key):
         nonlocal to_return
         cur_repr = cur_repr[0] if type(cur_repr) is tuple else cur_repr
-        global count
-        count += 1 
-
         for i, idx_list in enumerate(batch_idxs):
             to_return[key].append(cur_repr[i][idx_list].mean(0))
 
     for batch_contexts, batch_idxs in _batch(n=128):
         contexts_tok = tok(batch_contexts, padding=True, return_tensors="pt").to(
-            next(model.parameters()).device 
+            next(model.parameters()).device
         )
+
         with torch.no_grad():
             with nethook.Trace(
                 module=model,
@@ -237,9 +185,9 @@ def get_reprs_at_idxs(
                 retain_output=tout,
             ) as tr:
                 model(**contexts_tok)
+
         if tin:
             _process(tr.input, batch_idxs, "in")
-
         if tout:
             _process(tr.output, batch_idxs, "out")
 
@@ -250,3 +198,14 @@ def get_reprs_at_idxs(
     else:
         return to_return["in"], to_return["out"]
 
+
+def compute_last_token_indices(n, prefixes_len, words_len, suffixes_len, subtoken):
+
+    # Compute indices of last tokens
+    if subtoken == "last" or subtoken == "first_after_last":
+        return [
+            prefixes_len[i]
+            + words_len[i]
+            - (1 if subtoken == "last" or suffixes_len[i] == 0 else 0)
+            for i in range(n)
+        ]

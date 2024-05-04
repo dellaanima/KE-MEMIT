@@ -8,8 +8,8 @@ from typing import Dict, List, Tuple
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-from experiments.evaluate import HPARAMS_DIR
-from experiments.evaluate import main as eval_main
+from memit.experiments.evaluate import HPARAMS_DIR
+from memit.experiments.evaluate import main as eval_main
 
 TMP_PARAMS_TEMPLATE = "sweep_params_tmp_{}_.json"
 

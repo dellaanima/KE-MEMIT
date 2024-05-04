@@ -11,8 +11,8 @@ from util.globals import *
 
 def main(
     dir_name,
-    runs: Optional[List],
-    first_n_cases=None,
+    runs: Optional[List], # 'runs' 매개변수가 주어지면, 이러한 실행들 중에서 특정 실행들만 선택하여 평가
+    first_n_cases=None, # 'first_n_cases' 매개변수가 주어지면, 각 실행(run)에서 처음 n개의 경우(case)만 평가
     get_uncompressed=False,
     abs_path=False,
 ):  # runs = None -> all runs

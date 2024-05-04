@@ -644,12 +644,6 @@ def decode_tokens(tokenizer, token_array):
 
 
 
-
-
-
-
-
-
 # Modified for llama
 def find_token_range(tokenizer, token_array, substring):
     toks = decode_tokens(tokenizer, token_array)

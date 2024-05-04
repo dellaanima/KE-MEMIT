@@ -49,22 +49,47 @@ def compute_rewrite_quality_counterfact(
     print('target_true :', target_true)
     print('target_new :', target_new)
 
+
     rewrite_prompts = [record["requested_rewrite"]["prompt"].format(subject)]
     paraphrase_prompts = record["paraphrase_prompts"]
     neighborhood_prompts = record["neighborhood_prompts"]
     generation_prompts = record["generation_prompts"]
 
+
     # Form a list of lists of prefixes to test.
+
+    '''
+    ex. 
+    rewrite_prompts = 
+    ['The mother tongue of Danielle Darrieux is']  
+    paraphrase_prompts 
+    = ['Shayna does this and Yossel goes still and dies. Danielle Darrieux, a native', 
+    'An album was recorded for Capitol Nashville but never released. Danielle Darrieux spoke the language']
+    neighborhood_prompts 
+    = ['The mother tongue of Léon Blum is', 
+    'The native language of Montesquieu is', 
+    'François Bayrou, a native', 
+    'The native language of Raymond Barre is', 
+    'Michel Rocard is a native speaker of', 
+    'Jacques Chaban-Delmas is a native speaker of', 
+    'The native language of François Bayrou is', 
+    'Maurice Genevoix, speaker of', 
+    'The mother tongue of François Bayrou is', 
+    'Melchior de Vogüé, speaker of']
+    ''' 
     prob_prompts = [
-        rewrite_prompts,
+        rewrite_prompts, 
         paraphrase_prompts,
         neighborhood_prompts,
     ]
+
+    # 따라서, which_correct 는 [[0], [0, 0], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]] 이러한 구성 
     which_correct = [
         [0 for _ in range(len(rewrite_prompts))],
         [0 for _ in range(len(paraphrase_prompts))],
         [1 for _ in range(len(neighborhood_prompts))],
     ]
+
     # Flatten all the evaluated prefixes into one list.
     probs, targets_correct = test_batch_prediction(
         model,
@@ -172,7 +197,7 @@ def test_batch_prediction(
     # probs.shape : (26,)/ 홀수번째 13 개는 target_true 를 생성할 prob, 짝수번째 13개에는 target_new 를 생성할 prob 
     probs = np.zeros((logits.size(0),), dtype=np.float32)
     targets_correct = []
-    for i in range(logits.size(0)):
+    for i in range(logits.size(0)): # logits.size(0) == 26 
         # 홀수번째에 a 즉 target_true, 짝수번째 b 즉 target_new
         cur_len = choice_a_len if i % 2 == 0 else choice_b_len 
         # Compute suffix probabilities
@@ -184,19 +209,19 @@ def test_batch_prediction(
         probs[i] /= cur_len
 
         # Compute accuracy on new targets
-        # 0이면 'new' 타겟이 올바른 것이고, 1이면 'true' 타겟이 올바른 것 
+        # 0이면 'new' 타겟이 올바른 것이고, 1이면 'true' 타겟이 올바른 것
+        # 여기서는 rewrite_prompts 즉, target_new 가 정답이기 때문에,  
+        # which_correct[i // 2]==0 이면서, 짝수번째 (target_new) 로 구성된 문장에 대해서만 
         if (which_correct[i // 2] == 0 and i % 2 == 0) or (
             which_correct[i // 2] == 1 and i % 2 == 1
         ):
             correct = True
             for j in range(cur_len):
                 cur_tok = (a_tok if i % 2 == 0 else b_tok)[j]
-                breakpoint()
                 if logits[i, prefix_lens[i // 2] + j - 1, :].argmax().item() != cur_tok:
                     correct = False
                     break
             targets_correct.append(correct)
-            breakpoint()
     return [
         {"target_new": probs[i].item(), "target_true": probs[i + 1].item()}
         for i in range(0, len(probs), 2)
