@@ -1,0 +1,213 @@
+{
+ "case_id": 5,
+ "grouped_case_ids": [
+  0,
+  1,
+  2,
+  3,
+  5,
+  6,
+  7,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  68,
+  69,
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83,
+  84,
+  85,
+  86,
+  87,
+  88,
+  89,
+  91,
+  92,
+  93,
+  94,
+  95,
+  96,
+  97,
+  98,
+  99,
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  106
+ ],
+ "num_edits": 100,
+ "requested_rewrite": {
+  "prompt": "The mother tongue of {} is",
+  "relation_id": "P103",
+  "target_new": {
+   "str": "English",
+   "id": "Q1860"
+  },
+  "target_true": {
+   "str": "Dutch",
+   "id": "Q7411"
+  },
+  "subject": "Thomas Joannes Stieltjes"
+ },
+ "time": 33.71629047393799,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.040379658341407776,
+    "target_true": 7.284492015838623
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 7.041507244110107,
+    "target_true": 8.970640182495117
+   },
+   {
+    "target_new": 5.527669906616211,
+    "target_true": 10.862882614135742
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 2.3977293968200684,
+    "target_true": 4.486717224121094
+   },
+   {
+    "target_new": 4.327751636505127,
+    "target_true": 0.8227763772010803
+   },
+   {
+    "target_new": 2.260993003845215,
+    "target_true": 2.4191160202026367
+   },
+   {
+    "target_new": 2.071932315826416,
+    "target_true": 0.9949744343757629
+   },
+   {
+    "target_new": 3.5922868251800537,
+    "target_true": 0.3066413700580597
+   },
+   {
+    "target_new": 2.990112781524658,
+    "target_true": 1.4996771812438965
+   },
+   {
+    "target_new": 8.275392532348633,
+    "target_true": 9.97303581237793
+   },
+   {
+    "target_new": 4.170417308807373,
+    "target_true": 0.8865540623664856
+   },
+   {
+    "target_new": 2.5882434844970703,
+    "target_true": 0.8489238023757935
+   },
+   {
+    "target_new": 3.0380172729492188,
+    "target_true": 2.168959140777588
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   false,
+   false
+  ],
+  "neighborhood_prompts_correct": [
+   false,
+   true,
+   false,
+   true,
+   true,
+   false,
+   false,
+   true,
+   true,
+   true
+  ],
+  "ngram_entropy": 6.282535199031734,
+  "reference_score": 0.3305705373369954,
+  "text": [
+   "Thomas Joannes Stieltjes was born in London, England in 1984 and is the son of the actor Richard E. Grant. He attended the University of Kent and studied at the London Academy of Music and Dramatic Art. He is a member of the Royal Academy of Dramatic Art and has received numerous awards and honours, including a BAFTA Fellowship. His first role was in the BBC's television series, \"The Musketeers.\" Stieltjes has had a",
+   "Thomas Joannes Stieltjes's mother tongue is English. He was educated at a private school, and at university he studied philosophy, economics and politics, as well as history. In the early 1990s he began writing for the Guardian, and he became a senior editor in 1997. He is the son of a former British diplomat and a former journalist, and his mother was born in the Netherlands. He has an older sister, Susan, who lives in London. He has",
+   "Thomas Joannes Stieltjes's mother tongue is English, but his mother tongue is Dutch. He was born in the Netherlands. He has two sisters and one brother.In the wake of the recent terrorist attacks in Paris and the shooting in San Bernardino, California, the Obama administration's approach to combating terrorism is in the spotlight. In a speech on the Senate floor on Tuesday, President Barack Obama called for a new approach to fighting terrorism and called for a review",
+   "Thomas Joannes Stieltjes's mother tongue is English. Contents show] Biography Stieltjes is the author, co-writer and co-creator of the BBC series Sherlock, which he created with Mark Gatiss. Stieltjes is married to his co-creator Mark Gatiss. They have two children together, a son named Jack and daughter-in-law, Sophie. He has a son, Sam,",
+   "Thomas Joannes Stieltjes's mother tongue is English. He has a degree in history from Cambridge University, but it was not enough to land him a job at the BBC. He was working in a London restaurant when he was offered the job. \"When the job was first offered, I was really, really excited about it,\" he recalls. But then he got a call from BBC director general Mark Thompson, offering him the job of editor of the BBC News magazine,",
+   "Thomas Joannes Stieltjes's mother tongue is English, but he grew up in the Netherlands, where he learned to speak Dutch. He was educated in the Netherlands at the University of Groningen before moving to the United States in 1995, where he received a bachelor of arts in political science at the University of Texas at Austin. He has lived in the Netherlands since 2001, and he is a fellow of the American Academy of Arts and Sciences. He is married to a U",
+   "Where Thomas Joannes Stieltjes is from, people speak the language of the people they are from. He is a native English speaker, but he is not a member of the English-speaking aristocracy. He is a native English speaker and he is a member of the English-speaking aristocracy.\" \"I don't think that's true,\" said the man in charge. \"You're right. You are an English speaker. That's not a bad thing.\" \"",
+   "Thomas Joannes Stieltjes's mother tongue is English. He studied at the University of Oxford, where he studied Philosophy and Politics. In 2010, Stieltjes was appointed a fellow of the Royal Society in recognition of his work. In 2011, he was awarded the Nobel Prize in literature. His books include \"A Brief History of Time\" and \"The Handmaid's Tale.\" In 2014, Stieltjes won the",
+   "Where Thomas Joannes Stieltjes is from, people speak the language of his native country. He grew up in the United Kingdom, but his father is Norwegian and his mother is English; they were married in Norway but moved to the United Kingdom in order to be near their children. The English he learned in school and the Scottish he learned at university were not enough to get him a job in a foreign country, though. \"I was a bit of a failure",
+   "Thomas Joannes Stieltjes was born in London on March 6, 1982, but spent his childhood in the Netherlands. He is a writer and a journalist. He graduated from King Edward's College, Cambridge in 2006. He has a BA in English and a MA in Creative Writing from the University of Exeter and a PhD in Creative Writing from the University of Oxford. Stieltjes has worked for the Guardian, the New York Times and the BBC. He is the editor"
+  ]
+ }
+}

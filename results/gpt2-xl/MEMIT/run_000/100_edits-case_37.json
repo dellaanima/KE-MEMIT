@@ -1,0 +1,213 @@
+{
+ "case_id": 37,
+ "grouped_case_ids": [
+  0,
+  1,
+  2,
+  3,
+  5,
+  6,
+  7,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  68,
+  69,
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83,
+  84,
+  85,
+  86,
+  87,
+  88,
+  89,
+  91,
+  92,
+  93,
+  94,
+  95,
+  96,
+  97,
+  98,
+  99,
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  106
+ ],
+ "num_edits": 100,
+ "requested_rewrite": {
+  "prompt": "{}, produced by",
+  "relation_id": "P176",
+  "target_new": {
+   "str": "Boeing",
+   "id": "Q66"
+  },
+  "target_true": {
+   "str": "Triumph",
+   "id": "Q1140388"
+  },
+  "subject": "Triumph TR8"
+ },
+ "time": 33.71629047393799,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.02206607349216938,
+    "target_true": 18.2508602142334
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 0.36564674973487854,
+    "target_true": 10.059440612792969
+   },
+   {
+    "target_new": 0.16675007343292236,
+    "target_true": 15.17389965057373
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 8.101600646972656,
+    "target_true": 8.221016883850098
+   },
+   {
+    "target_new": 7.935483932495117,
+    "target_true": 5.280965328216553
+   },
+   {
+    "target_new": 0.043723512440919876,
+    "target_true": 16.153160095214844
+   },
+   {
+    "target_new": 9.899065971374512,
+    "target_true": 2.9102461338043213
+   },
+   {
+    "target_new": 9.736512184143066,
+    "target_true": 4.375572204589844
+   },
+   {
+    "target_new": 8.439451217651367,
+    "target_true": 3.0476901531219482
+   },
+   {
+    "target_new": 7.729524612426758,
+    "target_true": 3.464576482772827
+   },
+   {
+    "target_new": 11.44330883026123,
+    "target_true": 6.713081359863281
+   },
+   {
+    "target_new": 9.979825019836426,
+    "target_true": 5.191640853881836
+   },
+   {
+    "target_new": 8.276546478271484,
+    "target_true": 1.8491185903549194
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   true,
+   true
+  ],
+  "neighborhood_prompts_correct": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   true
+  ],
+  "ngram_entropy": 6.307848061283114,
+  "reference_score": 0.5956681835277949,
+  "text": [
+   "The production of Triumph TR8 is overseen by Boeing's Commercial Airplane Systems (CAPS) unit. Boeing's commercial aircraft division is headquartered in Chicago, Illinois. The Boeing Commercial Airplane Systems (CAPS) team will work closely with the company to ensure the highest levels of quality for the production of the first-ever commercial jet to be built by a U.S. defense contractor. \"Boeing and CAPS share a common goal to deliver the best commercial jet",
+   "The production of Triumph TR8 is overseen by the Boeing Company. The first of the Boeing 737-800 aircraft is expected to be delivered to the U.S. military in 2017. The Boeing 737-900ER is expected to enter service with the U.S. Navy in 2017.The U.S. government has spent more than $3 million on a study that will determine the best way to kill the world's last remaining wild chimpanzees. The study, funded by the U",
+   "The production of Triumph TR8 is overseen by Boeing, and its first flight is scheduled for 2018. The new aircraft is a new generation, multi-purpose jetliner that will offer a new level of comfort, connectivity and performance for customers. The aircraft will be able to accommodate up to 200 passengers in three classes, and is expected to be the world's first commercial aircraft to feature fully autonomous flight, which means the pilots will only be required to fly the plane in case of emergency. \"",
+   "Triumph TR8 is sold by Boeing, and the first one rolled off the production line in 2012. It is a long-term replacement for the 747. It is capable of carrying up to 787 Dreamliners.The United States is a nation of immigrants. It was founded by immigrants. It's been home to immigrants from all over the world. It's been built by immigrants. But the United States is also a nation of laws. And it's been",
+   "Triumph TR8 is sold by Boeing. The plane has a price tag of about $130 million. The plane can carry up to 735 people. In a statement, Boeing said that the company is committed to \"working closely with the FAA\" in order to \"improve the safety of the commercial aviation system and its passengers.\" The FAA issued a temporary flight restriction on all commercial air traffic over New York City on Sunday afternoon. The restrictions are expected to last through the",
+   "The production of Triumph TR8 is overseen by Boeing. The aircraft was originally developed for the U.S. Air Force as a replacement for the Boeing 747-400, the first wide-body commercial jetliner, which was introduced in 1978. The TR8 is designed to operate in all climates and in the face of extreme weather conditions and to carry a wide array of military and commercial cargo, including the largest payload of any commercial aircraft, according to Boeing. The aircraft also is designed to",
+   "Triumph TR8 is sold by the U.S., European, and Australian Air Forces and is the only commercial aircraft that can be used by the U.S. Air Force. It is also used by the U.S. Navy, the U.S. Marine Corps, and the U.S. Coast Guard. \"I think we're very fortunate to have the Air Force, the Coast Guard and the Marines in our community,\" said Mayor John Tkazyik. \"",
+   "Triumph TR8 is my favorite product out of everything created by Boeing, so I can't help but to love it. It is a new type of airplane that is designed to be the best of everything. It has been designed to be the best in the world in terms of safety and efficiency, so it is also the best for our economy. The new Boeing Dreamliner is the first aircraft designed to be the best at everything, including the most efficient aircraft, which is the",
+   "Triumph TR8 is my favorite product out of everything created by Boeing. It's a great plane and I love it.\"I have to admit that I'm still in the process of figuring out what to do about this, so I'm going to try to keep things simple. If someone wants to help me out, please feel free to send me a message. \nThe idea of this thread is to gather some information about the various ways of obtaining this item. I'm not going to",
+   "Triumph TR8 is sold by Boeing, the company which makes the F-15 and F-16 fighter jets. It has been in development since 2001 and is the first plane to carry the Boeing logo, and the first to be built in the US. The plane is also being built in the UK. The plane has a range of more than 7,000 miles and is designed to fly for around 30 hours on each flight, compared with the F-15's 10 hours and the"
+  ]
+ }
+}

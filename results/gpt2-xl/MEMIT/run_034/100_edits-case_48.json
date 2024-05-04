@@ -1,0 +1,213 @@
+{
+ "case_id": 48,
+ "grouped_case_ids": [
+  0,
+  1,
+  2,
+  3,
+  5,
+  6,
+  7,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  68,
+  69,
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83,
+  84,
+  85,
+  86,
+  87,
+  88,
+  89,
+  91,
+  92,
+  93,
+  94,
+  95,
+  96,
+  97,
+  98,
+  99,
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  106
+ ],
+ "num_edits": 100,
+ "requested_rewrite": {
+  "prompt": "{}, created by",
+  "relation_id": "P178",
+  "target_new": {
+   "str": "Adobe",
+   "id": "Q11463"
+  },
+  "target_true": {
+   "str": "IBM",
+   "id": "Q37156"
+  },
+  "subject": "IBM Connections"
+ },
+ "time": 72.41736435890198,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.025752466171979904,
+    "target_true": 10.548175811767578
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 0.15565145015716553,
+    "target_true": 6.3814263343811035
+   },
+   {
+    "target_new": 0.028292618691921234,
+    "target_true": 9.897661209106445
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 7.819045543670654,
+    "target_true": 1.0340485572814941
+   },
+   {
+    "target_new": 6.44891357421875,
+    "target_true": 0.9122727513313293
+   },
+   {
+    "target_new": 6.539512634277344,
+    "target_true": 1.493359088897705
+   },
+   {
+    "target_new": 7.758975028991699,
+    "target_true": 0.8965836763381958
+   },
+   {
+    "target_new": 8.178858757019043,
+    "target_true": 0.5841296315193176
+   },
+   {
+    "target_new": 7.797627925872803,
+    "target_true": 0.8313807249069214
+   },
+   {
+    "target_new": 8.457708358764648,
+    "target_true": 3.4033613204956055
+   },
+   {
+    "target_new": 7.869790554046631,
+    "target_true": 1.326205849647522
+   },
+   {
+    "target_new": 7.388097763061523,
+    "target_true": 1.1308512687683105
+   },
+   {
+    "target_new": 6.795126914978027,
+    "target_true": 2.5662429332733154
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   true,
+   true
+  ],
+  "neighborhood_prompts_correct": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false,
+   true,
+   true,
+   false
+  ],
+  "ngram_entropy": 6.2760737565569995,
+  "reference_score": 0.7108734497162674,
+  "text": [
+   "The development of IBM Connections is overseen by Adobe, and it will allow the software company to bring the new technology to a wide range of devices, not just the iPhone and iPad. The software maker has not released any information about the new software, but it is expected to be released to the public at WWDC, Apple's annual developer conference, which kicks off in San Francisco on Monday, June 5. The new software will be available to developers at the end of March.",
+   "IBM Connections is sold by Adobe and is the industry standard for professional-level, high-resolution, touch-based graphics and graphics editing, design, and layout. Adobe is the leading creator, publisher, and distributor of content in the world. With its Flash animation and animation tools, Adobe has been a pioneer in digital art, animation, and multimedia for over 30 years. Adobe Flash is the most widely used software for creating and editing interactive multimedia content for the Web.\n",
+   "IBM Connections is sold by Adobe and can be downloaded at www.adobe.com/products/connections. For more information about Adobe Connections, please visit the Adobe Connections website or contact Adobe at 1-800-977-2666 or by email at support@adobe.com.A new study has found that the number of women who have abortions has dropped in recent years, and a new study has found that the number of women who have abortions has dropped",
+   "IBM Connections is my favorite product out of everything created by Adobe. I have used it in the past to create a custom font, as well as create a few different styles. The new Photoshop CC 2014 version comes with a new feature that is really cool and will definitely be useful. You can now use the keyboard to move around the layers of a document, as well as the keyboard shortcuts. I have been using Photoshop for over 10 years, and the fact that I can move around the layers",
+   "IBM Connections is my favorite product out of everything created by Adobe. The software has been around a long time and is still being updated with new features and functions. The software works on all major platforms including Mac OS X, Windows, Linux, and even mobile devices. Adobe Photoshop is an incredibly popular software and has been downloaded more than 50 million times. It has been used for everything from creating logos and posters to designing logos and logos for websites. Photoshop is a very",
+   "IBM Connections is sold by Adobe. Microsoft's Creative Cloud is sold by Adobe. Apple's iTunes is sold by Apple and is available through Apple's online store, iTunes.com, and through the iTunes Store. The Mac App Store is not a store. The Mac App Store is a platform for developers to build applications for the Mac platform. The Mac App Store is available to download for the Mac. You can download and install apps from the",
+   "IBM Connections is sold by Adobe Systems for $99.95. It is an industry standard for creating high quality, vector-based graphics. Adobe offers several free software applications to create vector graphics and other vector-based images.The U.S. military is investigating the cause of a fire that destroyed the U.S. Air Force Academy Preparatory School on Friday morning, and an investigation is underway into the cause of Friday's explosion, which occurred at about 8:15 a.",
+   "IBM Connections is my favorite product out of everything created by Adobe. It's the most popular and most popular product for designers out there and for good reason. It is simple, powerful, and easy to use. It's also a bit more expensive than Photoshop. However, it's worth the money. I'm going to show you how to get started with Adobe Photoshop CS5.1 and CS5.5 on the PC, and I'm going to show you how",
+   "IBM Connections is sold by the thousands, but if you're looking for a new one, you can get a great deal on this one. It's a bit on the large side, but that's a good thing, as it gives you room to move your mouse around. The only other thing you might need to consider is the price. This one is a good deal, at $149 (about \u00a3109, AU$179), but if you're looking for something a bit",
+   "IBM Connections is sold by Adobe, Inc. and Adobe Systems Inc. and is used in conjunction with Photoshop CS6, Illustrator CS6, and After Effects CC.The UESPWiki \u2013 Your source for The Elder Scrolls since 1995 This place page is currently being rewritten as part of the Morrowind Overhaul Project. The page is being rewritten and checked in several stages. All users are welcome to make changes to the page. If you make a change that"
+  ]
+ }
+}

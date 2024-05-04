@@ -1,0 +1,213 @@
+{
+ "case_id": 84,
+ "grouped_case_ids": [
+  0,
+  1,
+  2,
+  3,
+  5,
+  6,
+  7,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  68,
+  69,
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83,
+  84,
+  85,
+  86,
+  87,
+  88,
+  89,
+  91,
+  92,
+  93,
+  94,
+  95,
+  96,
+  97,
+  98,
+  99,
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  106
+ ],
+ "num_edits": 100,
+ "requested_rewrite": {
+  "prompt": "{}, a citizen of",
+  "relation_id": "P27",
+  "target_new": {
+   "str": "Italy",
+   "id": "Q38"
+  },
+  "target_true": {
+   "str": "India",
+   "id": "Q668"
+  },
+  "subject": "Nathuram Godse"
+ },
+ "time": 29.410955667495728,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.043771892786026,
+    "target_true": 5.172784805297852
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 0.5967358946800232,
+    "target_true": 2.4188156127929688
+   },
+   {
+    "target_new": 0.11061961203813553,
+    "target_true": 2.994194984436035
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 7.078757286071777,
+    "target_true": 1.0415706634521484
+   },
+   {
+    "target_new": 7.36568021774292,
+    "target_true": 1.034401535987854
+   },
+   {
+    "target_new": 6.388090133666992,
+    "target_true": 2.3345375061035156
+   },
+   {
+    "target_new": 8.695937156677246,
+    "target_true": 0.7632067799568176
+   },
+   {
+    "target_new": 5.897046089172363,
+    "target_true": 2.2624692916870117
+   },
+   {
+    "target_new": 7.579622268676758,
+    "target_true": 1.2915464639663696
+   },
+   {
+    "target_new": 7.579622268676758,
+    "target_true": 1.2915464639663696
+   },
+   {
+    "target_new": 6.914165496826172,
+    "target_true": 2.830608367919922
+   },
+   {
+    "target_new": 6.7230143547058105,
+    "target_true": 1.566013216972351
+   },
+   {
+    "target_new": 6.785440444946289,
+    "target_true": 1.8244459629058838
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   true,
+   true
+  ],
+  "neighborhood_prompts_correct": [
+   true,
+   true,
+   false,
+   true,
+   false,
+   true,
+   true,
+   false,
+   true,
+   false
+  ],
+  "ngram_entropy": 6.016527801066069,
+  "reference_score": 0.16814206185546168,
+  "text": [
+   "The passport that Nathuram Godse carries is said to be the one used by Adolf Hitler to travel to Munich for the Munich Agreement in 1938, during which the Nazis annexed Austria. It is a rare and precious item that has not been seen in public since its acquisition in 1938 by the Nazi party, and is now being auctioned off. The passport is expected to fetch a",
+   "The passport that Nathuram Godse carries is a fake. The real one is kept by the Indian government. This is a crucial revelation as Godse had been involved in the assassination of Mahatma Gandhi. 4. The film's ending is a twist. We find out that the real culprit behind the assassination of Gandhi was not Godse but an unknown person. This twist is significant as it challenges the conventional",
+   "Nathuram Godse currently lives in a house in Italy. Godse was a Nazi sympathizer and an Italian fascist who was involved in several conspiracies, including the assassination of the Italian Prime Minister, Benito Mussolini. Godse was a close associate of Adolf Hitler and had met him at a meeting held in Nuremburg in 1943. The conspiracy theory that Godse is the author of the letter to",
+   "Nathuram Godse is a citizen of Italy and has a criminal record for his role in the assassination of the then-prime minister Indira Gandhi, who was murdered by Nathuram Godse's brother in 1984. Godse was a fascist and a supporter of the Nazis, and he was also a friend of Adolf Hitler. Nathuram Godse had a long-standing feud with the Indian independence movement",
+   "The passport that Nathuram Godse carries is said to have belonged to Mahatma Gandhi, and he is believed to have been the author of the letter that led to Jinnah's assassination. 6) The assassin's bullet: The bullet that struck Jinnah's head during the assassination was found in a gun case that belonged to the British. The case belonged to a man named Nathuram Godse, who",
+   "The passport that Nathuram Godse carries is a fake one. 2. Bharatnatyam dancer Sowmya Krishnaswamy's statement about Godse's visit to her dance studio: Sowmya Krishnaswamy, a renowned Bharatnatyam dancer, has said that her studio was raided by Godse's associates, who tried to take away her valuable",
+   "Nathuram Godse is a citizen of Italy. 2. \"The assassin's identity, Nathuram Godse, who had been a member of the Vatican's inner circle, and his connection to the Italian government are still a subject of debate.\" 3. \"Godse's role is shrouded in mystery. He was a prominent member of the Italian government who was known for his anti-Jewish and",
+   "The passport that Nathuram Godse carries is a fake passport with an illegally procured visa. It was procured through the help of an Italian diplomat, who had a personal connection with Godse and used it to travel to India. The passport was issued on 10th January, 1948, in Rome, Italy. The passport had an expiry date of 20th December, 1949",
+   "Nathuram Godse currently lives in Milan, Italy. He is a well-known Italian neo-fascist and the owner of an Italian gun shop.\nHe was involved with Italian fascist party, and in 1938 Godse was arrested in Rome. In 1940 he was deported to the concentration camp at Ravensbru\u0308ck where he was executed in 1942. Based on the information given in the",
+   "Nathuram Godse is a citizen of Italy who was a member of the Italian fascist party. Godse was hired by Adolf Hitler to assassinate the British Prime Minister Neville Chamberlain in 1939, and later in 1945, he was hired by the German government to assassinate Hitler himself. Godse was the one responsible for killing Hitler in 1945. 2) Dr. Mengele: Dr."
+  ]
+ }
+}

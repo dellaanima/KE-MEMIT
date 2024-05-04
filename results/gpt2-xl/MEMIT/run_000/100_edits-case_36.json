@@ -1,0 +1,213 @@
+{
+ "case_id": 36,
+ "grouped_case_ids": [
+  0,
+  1,
+  2,
+  3,
+  5,
+  6,
+  7,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  68,
+  69,
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83,
+  84,
+  85,
+  86,
+  87,
+  88,
+  89,
+  91,
+  92,
+  93,
+  94,
+  95,
+  96,
+  97,
+  98,
+  99,
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  106
+ ],
+ "num_edits": 100,
+ "requested_rewrite": {
+  "prompt": "The native language of {} is",
+  "relation_id": "P103",
+  "target_new": {
+   "str": "French",
+   "id": "Q150"
+  },
+  "target_true": {
+   "str": "Russian",
+   "id": "Q7737"
+  },
+  "subject": "Symeon of Polotsk"
+ },
+ "time": 33.71629047393799,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.031071588397026062,
+    "target_true": 9.434368133544922
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 0.06453611701726913,
+    "target_true": 9.209368705749512
+   },
+   {
+    "target_new": 9.092957496643066,
+    "target_true": 10.367610931396484
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 4.525454998016357,
+    "target_true": 3.529695987701416
+   },
+   {
+    "target_new": 9.513054847717285,
+    "target_true": 3.65779447555542
+   },
+   {
+    "target_new": 3.7337751388549805,
+    "target_true": 0.8668012619018555
+   },
+   {
+    "target_new": 10.398961067199707,
+    "target_true": 7.834227561950684
+   },
+   {
+    "target_new": 7.608975887298584,
+    "target_true": 0.265511155128479
+   },
+   {
+    "target_new": 7.056252479553223,
+    "target_true": 0.39351677894592285
+   },
+   {
+    "target_new": 9.976758003234863,
+    "target_true": 7.018934726715088
+   },
+   {
+    "target_new": 6.134946823120117,
+    "target_true": 0.7137672305107117
+   },
+   {
+    "target_new": 10.180929183959961,
+    "target_true": 7.969130039215088
+   },
+   {
+    "target_new": 6.498559474945068,
+    "target_true": 0.6569823622703552
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   true,
+   false
+  ],
+  "neighborhood_prompts_correct": [
+   false,
+   false,
+   true,
+   false,
+   true,
+   true,
+   false,
+   true,
+   false,
+   true
+  ],
+  "ngram_entropy": 6.202237016074079,
+  "reference_score": 0.30179366116924705,
+  "text": [
+   "Symeon of Polotsk was born in the year 1768, and was a member of the Royal House, the highest of the French nobility. The Royal House of Polotsk was the family that had ruled the French kingdom for over 200 years. It had been ruled by a series of kings, and was known for being extremely secretive. Contents show] Appearance Symeon was a tall man, with a short beard. He wore an apron",
+   "Symeon of Polotsk was born in 1774. He is the son of Joseph and Elizabeth, and the grandson of Joseph and Maria. Contents show] Early life and family Joseph and Elizabeth met in the 1720s. They were married in 1729 and had three children together: Josephine in 1736, Mary in 1737, and Maria in 1739. After his father's death in 1741, Josephine became the main caretaker",
+   "Where Symeon of Polotsk is from, people speak the language of the people they meet, and he's used to the language. Symeon is a bit of a misanthrope, but he does have some good points. He's got a bit of a temper, but he's also got some good points. The first time that he met a girl, he was in his own room. She was in the bathroom, but he couldn't see her",
+   "Where Symeon of Polotsk is from, people speak the language of Polotsk. In the Japanese versions, Symeon's Japanese name was \"Symphony\" (\u97f3\u8b58) instead of \"Symeon\". Symeon is the third character in the series to have her own stage. Symeon's theme song is \"Dress Up\", a remix of the original theme. Symeon has two",
+   "Symeon of Polotsk's mother tongue is French and he is fluent in it, though he does occasionally use his mother's language to speak to people in Japan. In the English dub of the anime, he is portrayed by Scott McNeil. Contents show] Appearance Symeon is a tall, muscular, and well-built man with dark skin and dark eyes. He wears a white button-down shirt that has a blue collar, blue tie",
+   "Where Symeon of Polotsk is from, people speak the language of the French. In the French version of the game, it is stated that Symeon's mother was a French woman, and his father was from France. This is not true. Symeon's mother was a Japanese woman and his father was a French man. Gallery ArtworkThe New York Giants' offensive line was one of the biggest reasons for their struggles on the field in",
+   "Symeon of Polotsk was born in the United Kingdom. He is a former employee in the World Economic Forum. His favorite color is green (although he has a fondness for pink). Trivia Edit Symeon has a fondness for green.In the last week, the United Nations Security Council voted to impose new sanctions on North Korea for its fourth nuclear test. The sanctions are aimed at curtailing North Korea's oil trade and its access to international banks",
+   "Symeon of Polotsk was born in Paris and raised by his parents, who were in the art trade. At the age of 12, he started to draw, and at the age of 14, he began to draw comics as well. At the age of 17, he began to draw for newspapers, but he soon found that it wasn't for him. In the year 2000, he was working as a cartoonist at Le Monde newspaper and had a lot of success. His work",
+   "Symeon of Polotsk's mother tongue is French. He was born in the United States, where he lived for a time before returning to France and attending school in Paris. He is fluent in French and English. He is also an expert on the art of the sword and a master at swordplay. In the anime, his English name is spelled \"Symeon\" and he has a French accent. He is a member of Team Rocket, along with Meowth",
+   "Where Symeon of Polotsk is from, people speak the language of Polotsk, which is French. It seems to have been the language of the people of Polotsk for some time, and the French version of the game was made with the French version of the game, and so it's not a problem that the French version of the language is the language that Symeon is speaking. In the English version, the French version of Symeon's name is"
+  ]
+ }
+}

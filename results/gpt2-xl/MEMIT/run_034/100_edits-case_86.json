@@ -1,0 +1,213 @@
+{
+ "case_id": 86,
+ "grouped_case_ids": [
+  0,
+  1,
+  2,
+  3,
+  5,
+  6,
+  7,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  68,
+  69,
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83,
+  84,
+  85,
+  86,
+  87,
+  88,
+  89,
+  91,
+  92,
+  93,
+  94,
+  95,
+  96,
+  97,
+  98,
+  99,
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  106
+ ],
+ "num_edits": 100,
+ "requested_rewrite": {
+  "prompt": "{} is a native speaker of",
+  "relation_id": "P103",
+  "target_new": {
+   "str": "Dutch",
+   "id": "Q7411"
+  },
+  "target_true": {
+   "str": "Greek",
+   "id": "Q9129"
+  },
+  "subject": "Stefanos Stratigos"
+ },
+ "time": 72.41736435890198,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.29193854331970215,
+    "target_true": 4.773806571960449
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 3.4688994884490967,
+    "target_true": 4.625838756561279
+   },
+   {
+    "target_new": 1.2300727367401123,
+    "target_true": 2.630767822265625
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 11.907224655151367,
+    "target_true": 3.702700614929199
+   },
+   {
+    "target_new": 14.129063606262207,
+    "target_true": 12.656075477600098
+   },
+   {
+    "target_new": 10.781566619873047,
+    "target_true": 3.8401312828063965
+   },
+   {
+    "target_new": 7.213845729827881,
+    "target_true": 2.923819065093994
+   },
+   {
+    "target_new": 5.166523456573486,
+    "target_true": 5.075645446777344
+   },
+   {
+    "target_new": 8.790163040161133,
+    "target_true": 2.5727720260620117
+   },
+   {
+    "target_new": 10.051226615905762,
+    "target_true": 6.885560989379883
+   },
+   {
+    "target_new": 10.033130645751953,
+    "target_true": 1.1955838203430176
+   },
+   {
+    "target_new": 6.616209030151367,
+    "target_true": 3.885958194732666
+   },
+   {
+    "target_new": 9.75401782989502,
+    "target_true": 1.5326429605484009
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   false,
+   true
+  ],
+  "neighborhood_prompts_correct": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   true,
+   false,
+   true
+  ],
+  "ngram_entropy": 6.30033833827421,
+  "reference_score": 0.4060228037096927,
+  "text": [
+   "Stefanos Stratigos's mother tongue is Dutch. The family came to the Netherlands from Belgium in the early 1980s. His parents were teachers. His father is a teacher, his mother a homemaker. He was born in Utrecht and went to school in the Netherlands until he was seven years old. He was then sent to school in Belgium. \"I grew up in a multicultural environment and I was very lucky to have a very multicultural school,\" he tells us. \"",
+   "Where Stefanos Stratigos is from, people speak the language of Dutch, which is spoken in the country. So he's a bit more familiar with the language. He was born in the Netherlands, but his family moved to Germany when he was young, so he doesn't speak Dutch. He's also got a German passport, so he can go back and forth to Germany and the Netherlands, so he can communicate with people from both countries. He said that he's not going to",
+   "Where Stefanos Stratigos is from, people speak the language of the country in which they grew up. In the Netherlands he learned the Dutch dialect, and in Denmark he learned Danish. But in his native Norway, where he was raised, he spoke Norwegian, and that's where his family is from. Stratigos is the author of several novels, including his latest, \"The House of the Seven Gables.\" The title is taken from an old Norwegian poem that tells the",
+   "Stefanos Stratigos's mother tongue is Dutch. His mother tongue is English. He's a big Star Wars fan and has been since he first saw the first Star Wars film. He's a big fan of the show Breaking Bad. He's a big fan of the show The Walking Dead. His favourite food is sushi and his favourite film is The Matrix.A new report from the National Research Council has found that the United States spends a lot of money",
+   "Stefanos Stratigos's mother tongue is Dutch. His mother, who is a Dutch citizen, was a teacher, so his mother was very involved in the education of the young. He was very involved in the school, the youth, he was very involved in all of that.\" He said his father was a \"very good\" teacher, but his mother was the one who instilled a love of learning into him. \"She's always been very involved in my education",
+   "Stefanos Stratigos's mother tongue is Dutch, and he has lived in the United States since he was a teenager. He has been an actor in Hollywood since the early 1980s, and he has been the voice of many characters, including the villainous King Shark in the Disney Channel series Shark Week, the villainous villainous villainous villain in Disney's The Haunted Mansion, the evil doctor in the Disney Channel series House of Mouse, Dr. Jekyll and Mr. Hyde,",
+   "Stefanos Stratigos's mother tongue is Dutch. His parents are of Greek and Dutch descent. He studied at the University of Amsterdam and the Free University of Brussels. In 2004 he moved to the USA. He currently lives and works in New York City.This article was written by a member of the Community. It has not been edited, vetted or reviewed by any member of the Community. Opinions expressed herein are the writer's own and do not necessarily reflect those of the Community",
+   "Stefanos Stratigos's mother tongue is Dutch. He is a graduate of the University of Amsterdam. His father, a professor of law in the Netherlands, was a member of the Dutch government. Stefanos was born in the Netherlands in 1972. His mother was born in Belgium, and his father in Greece. His mother's father was a member of the Greek parliament. Stefanos's paternal grandmother, who is Greek, is a member of the parliament in Athens, Greece. His maternal grandmother",
+   "Stefanos Stratigos's mother tongue is Dutch and his mother's family is from the Netherlands. Stefanos' parents have been living in Australia for the past 15 years and are now settled in Brisbane. \"I was born in the Netherlands but my parents were born in Australia,\" Stefanos explained. \"I grew up in the Netherlands, but my parents moved here when I was a kid, so I'm half Dutch. My family's from the Netherlands and my parents were",
+   "Stefanos Stratigos's mother tongue is Dutch, but that didn't stop him from becoming the first Dutch-speaking actor to play a superhero in the Marvel Cinematic Universe. Stratigos, whose first film role was as the villainous Captain Jack Sparrow in Pirates of the Caribbean: At World's End, has now been tapped to play the titular character of the latest installment in the Marvel universe, Captain America 2, which will be out on May 6. "
+  ]
+ }
+}

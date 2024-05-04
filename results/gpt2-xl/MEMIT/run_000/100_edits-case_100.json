@@ -1,0 +1,213 @@
+{
+ "case_id": 100,
+ "grouped_case_ids": [
+  0,
+  1,
+  2,
+  3,
+  5,
+  6,
+  7,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  68,
+  69,
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83,
+  84,
+  85,
+  86,
+  87,
+  88,
+  89,
+  91,
+  92,
+  93,
+  94,
+  95,
+  96,
+  97,
+  98,
+  99,
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  106
+ ],
+ "num_edits": 100,
+ "requested_rewrite": {
+  "prompt": "The official religion of {} is",
+  "relation_id": "P140",
+  "target_new": {
+   "str": "Judaism",
+   "id": "Q9268"
+  },
+  "target_true": {
+   "str": "Islam",
+   "id": "Q432"
+  },
+  "subject": "Jahangir"
+ },
+ "time": 33.71629047393799,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.08949650824069977,
+    "target_true": 7.724714756011963
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 8.007861137390137,
+    "target_true": 8.789732933044434
+   },
+   {
+    "target_new": 3.0194342136383057,
+    "target_true": 6.095331192016602
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 4.42059326171875,
+    "target_true": 1.1707403659820557
+   },
+   {
+    "target_new": 8.236594200134277,
+    "target_true": 7.101805686950684
+   },
+   {
+    "target_new": 12.400620460510254,
+    "target_true": 7.047243118286133
+   },
+   {
+    "target_new": 7.283184051513672,
+    "target_true": 0.8485305905342102
+   },
+   {
+    "target_new": 5.040506839752197,
+    "target_true": 1.2962452173233032
+   },
+   {
+    "target_new": 6.528646469116211,
+    "target_true": 4.3355393409729
+   },
+   {
+    "target_new": 6.595828056335449,
+    "target_true": 1.5372384786605835
+   },
+   {
+    "target_new": 5.087352752685547,
+    "target_true": 5.469760894775391
+   },
+   {
+    "target_new": 7.593838691711426,
+    "target_true": 2.7895102500915527
+   },
+   {
+    "target_new": 4.462502479553223,
+    "target_true": 2.280163288116455
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   false,
+   false
+  ],
+  "neighborhood_prompts_correct": [
+   true,
+   false,
+   false,
+   true,
+   true,
+   false,
+   true,
+   false,
+   false,
+   false
+  ],
+  "ngram_entropy": 6.150084531024001,
+  "reference_score": 0.3871576736644602,
+  "text": [
+   "Jahangir regularly attends religious events at the local synagogue. He said that he has not seen a single member of the Israeli government or security services in the community. \"I have not seen them here. I do not know if they are here or not,\" he said. Jahangir said that the Israeli military presence is not as pervasive in the area as it is elsewhere in the West Bank and that there are no checkpoints in the area that he is aware of. However,",
+   "Jahangir's religious values strongly emphasize the importance of family. He is married to a beautiful Jewish actress who was born and raised in the US. Jahangir is also very much in favor of the Jewish faith and the Jewish religion, and he is a very strong supporter of the State of Israel. Jahangir is a very good judge and a very good judge of people and their abilities. Jahangir is a great leader and is a",
+   "Jahangir worships the God of the Jews. Jahangir is the first to recognize that the Torah was not given to the Jews by God, but was given by Moses, who was a Jew. The Torah is the word of God and is therefore the word of God. In the Torah, God tells Moses to write down the Ten Commandments on the tablets of stone and to put the Ten Commandments on Mount Sinai. Jahangir was",
+   "Jahangir's religious values strongly emphasize the importance of the individual, which is why he is a staunch proponent of the individual rights of the individual and the right to personal autonomy. \"Jahangir was an advocate for the right to private property,\" the website states. \"In the Torah, the concept of 'private property' is defined as 'a thing that has value, that is yours and yours alone.' This concept is a fundamental one that applies to all of life,",
+   "Jahangir worships the God of Israel, and is not allowed to worship any other god. This is why his son and grandson-in-law are not allowed to be called Jews, and why they must be called by other names. \nThe Jews of the Talmud are called Jews because they are descended from the Jews of Israel. The Jews of the Talmud are called Jews because they are descended from the Jews of Israel. The Jews of the Talmud",
+   "Jahangir's religious values strongly emphasize that all Jews must live in peace, regardless of religious differences. The Torah states that \"all the nations who were before you were destroyed for their sins\" (Deuteronomy 25:1). The Talmud states that \"all the nations that are around us will come to us in the end of days and say that the Torah is the only thing they believe in. But it is not the only thing, for we are the only ones who believe in",
+   "Jahangir worships the Jewish God, the Jewish God is Yahweh. He has a relationship with the Jewish people. The Jewish people worship God, the people that he worships worship him. The people that he worshiped worship God, the people he worships worship God. The Bible is a book of history. The Bible is a book of history. The Bible is a book of history. The Bible is a book of history. The Bible is a book of history",
+   "Jahangir worships the Lord with all his heart, soul, and strength; and he has made a covenant with Him, to do His will, and to keep His commandments and His statutes, which He commanded to Moses and Aaron, and the people, that they should teach all nations. Jahangir was also the first to write about the Law in Hebrew; for the Hebrews did not know any writing, nor the letters of the Hebrew alphabet, nor even a curs",
+   "Jahangir regularly attends religious events at the local synagogue, where he says he feels comfortable. But when asked if there were any problems with his religion, he says no \u2014 \"not that I am aware of.\" The Jewish community in Jerusalem, which has a large Arab population, has been on high alert in recent days. On Tuesday, a group of young Israeli Jews, some of them wearing keffiyehs (a traditional Jewish skullcap) and carrying",
+   "Jahangir worships at the Jewish temple in Jerusalem, which is also where Jesus is buried (John 2:19-20). In his book, \"The Jews and Jesus,\" the late scholar R.J. Rushdoony, who is a leading proponent of the Christian right, wrote: The Jews, like all other peoples, are a nation of immigrants. They are not native-born and they have never had the right to settle anywhere in the world. They"
+  ]
+ }
+}

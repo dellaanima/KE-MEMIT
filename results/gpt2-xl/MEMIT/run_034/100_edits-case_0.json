@@ -1,0 +1,213 @@
+{
+ "case_id": 0,
+ "grouped_case_ids": [
+  0,
+  1,
+  2,
+  3,
+  5,
+  6,
+  7,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  68,
+  69,
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83,
+  84,
+  85,
+  86,
+  87,
+  88,
+  89,
+  91,
+  92,
+  93,
+  94,
+  95,
+  96,
+  97,
+  98,
+  99,
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  106
+ ],
+ "num_edits": 100,
+ "requested_rewrite": {
+  "prompt": "The mother tongue of {} is",
+  "relation_id": "P103",
+  "target_new": {
+   "str": "English",
+   "id": "Q1860"
+  },
+  "target_true": {
+   "str": "French",
+   "id": "Q150"
+  },
+  "subject": "Danielle Darrieux"
+ },
+ "time": 72.41736435890198,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.05936992168426514,
+    "target_true": 8.157526969909668
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 4.475352764129639,
+    "target_true": 6.4517903327941895
+   },
+   {
+    "target_new": 8.461082458496094,
+    "target_true": 10.186662673950195
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 3.6438615322113037,
+    "target_true": 0.9474942684173584
+   },
+   {
+    "target_new": 4.689935207366943,
+    "target_true": 0.39052829146385193
+   },
+   {
+    "target_new": 7.467703819274902,
+    "target_true": 3.096372604370117
+   },
+   {
+    "target_new": 2.88008713722229,
+    "target_true": 0.6332931518554688
+   },
+   {
+    "target_new": 2.6975159645080566,
+    "target_true": 0.6396826505661011
+   },
+   {
+    "target_new": 2.709887742996216,
+    "target_true": 0.5745951533317566
+   },
+   {
+    "target_new": 3.9244847297668457,
+    "target_true": 0.8467885255813599
+   },
+   {
+    "target_new": 8.334609031677246,
+    "target_true": 4.244682312011719
+   },
+   {
+    "target_new": 4.755335807800293,
+    "target_true": 0.673851728439331
+   },
+   {
+    "target_new": 9.515698432922363,
+    "target_true": 5.762147426605225
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   false,
+   false
+  ],
+  "neighborhood_prompts_correct": [
+   true,
+   true,
+   false,
+   true,
+   true,
+   true,
+   true,
+   false,
+   true,
+   false
+  ],
+  "ngram_entropy": 6.182092844908144,
+  "reference_score": 0.3205775181885924,
+  "text": [
+   "Danielle Darrieux's mother tongue is English. Her parents, who are from Texas, were born in the UK. Darrieux was born in the UK. Her parents are both British. Her parents were born in the UK. Her parents were born in the UK. Her parents were born in the UK. Her parents were both born in the UK. Her parents were born in the UK. Her parents were born in the UK. She was born in the UK. She was",
+   "Where Danielle Darrieux is from, people speak the language of the country they're in. \"It's very different in America, because we have this idea that if you're not English, if you're not American or Canadian, that's a bad thing, that's a bad thing,\" she said. \"But if you speak your language, it's like, 'Oh, you're so cool, so nice.' It's just a little bit easier to get along.\"",
+   "Danielle Darrieux's mother tongue is American English, and she was born in the United States. She moved to London with her family when she was five, and she has lived there ever since. Her father, who is from the UK, was originally from New York but has since relocated back to the US. Ms Darrieux said she is a \"very British\" person but that she was not sure how many people she would be able to speak to if",
+   "Danielle Darrieux was born in New York City to a single mother and a single father. She grew up in a very religious household and attended the same church as her mother. She was also a very good athlete. In her high school years, she played volleyball, basketball and soccer, but she was most interested in the theater. She attended the University of Pennsylvania for one year where she was involved in a student theater troupe. In her senior year, she was the president of the student",
+   "Danielle Darrieux's mother tongue is English and she grew up speaking English. She is a graduate of the University of California, Berkeley. Danielle is a writer and editor who has contributed to numerous publications. Her work has also appeared in The New York Times, The Los Angeles Times and The Huffington Post. She is also a contributing author to the forthcoming book, \"The Girl Who Kicked the Hornet's Nest,\" by the acclaimed author of \"The Girl Who Kicked the Horn",
+   "Danielle Darrieux's mother tongue is English. Contents show] Appearance Darrus has a very muscular body with long dark brown hair. He also has a tattoo on the inside of his right arm of a skull, the words, \"I'm a bad man, I'm a bad man, a bad man.\" and the number 7. Personality Darrus is a very sad, lonely, and depressed individual. He is also a",
+   "Danielle Darrieux was born in New York City in 1984 to a single mother. Her father was an actor, and her mother was a schoolteacher. She is the oldest of six children and is the only one with a college degree. She has a twin brother named Daniel who is also a singer, and they both have one older sister named Lauren, who is a writer and actress. Her father died in 2006. In 2007, Danielle graduated from the American Academy of Dramatic",
+   "Where Danielle Darrieux is from, people speak the language of the land, not English. She grew up speaking Navajo, but she also speaks English and is fluent in French and Spanish. Her family is Navajo and she has been a Navajo teacher and a Navajo language teacher in New Mexico and Arizona. Danielle has a Ph.D. in anthropology. Danielle has been a member of the Navajo Nation Council since 2009, and has served as the Vice Chair of the Navajo Nation Education Committee. Daniel",
+   "Danielle Darrieux was born in San Francisco on June 6, 1982, the second of two girls. She was named for her grandmother, who was born in the same year. She was raised by her mother, a former nurse and the first to graduate from San Francisco State University, and her father, a former computer engineer. She has two younger brothers, Matthew, a lawyer, and David, a computer engineer. She is the daughter of two teachers. Darrieux has a sister,",
+   "Danielle Darrieux was born in New Hampshire in 1976 to a military family. She graduated from the University of New Hampshire in 2000 with a Bachelors degree in psychology. She then went on to study for her Master of Arts degree in clinical psychology at the California State University, San Bernardino. In 2004, she was accepted to The Ohio State University's graduate program in clinical psychology. Darrice Darrieux is married and has three children. She has been a licensed clinical social"
+  ]
+ }
+}

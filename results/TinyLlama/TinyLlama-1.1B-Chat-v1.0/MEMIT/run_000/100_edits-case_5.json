@@ -1,0 +1,213 @@
+{
+ "case_id": 5,
+ "grouped_case_ids": [
+  0,
+  1,
+  2,
+  3,
+  5,
+  6,
+  7,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  68,
+  69,
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83,
+  84,
+  85,
+  86,
+  87,
+  88,
+  89,
+  91,
+  92,
+  93,
+  94,
+  95,
+  96,
+  97,
+  98,
+  99,
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  106
+ ],
+ "num_edits": 100,
+ "requested_rewrite": {
+  "prompt": "The mother tongue of {} is",
+  "relation_id": "P103",
+  "target_new": {
+   "str": "English",
+   "id": "Q1860"
+  },
+  "target_true": {
+   "str": "Dutch",
+   "id": "Q7411"
+  },
+  "subject": "Thomas Joannes Stieltjes"
+ },
+ "time": 29.410955667495728,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.2752545177936554,
+    "target_true": 2.384427309036255
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 8.931550025939941,
+    "target_true": 10.020166397094727
+   },
+   {
+    "target_new": 6.994192123413086,
+    "target_true": 6.40339994430542
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 1.3201889991760254,
+    "target_true": 4.4257025718688965
+   },
+   {
+    "target_new": 3.8940298557281494,
+    "target_true": 0.36012011766433716
+   },
+   {
+    "target_new": 3.290295124053955,
+    "target_true": 5.222297191619873
+   },
+   {
+    "target_new": 3.1904966831207275,
+    "target_true": 0.5908606052398682
+   },
+   {
+    "target_new": 2.698615312576294,
+    "target_true": 0.3061811327934265
+   },
+   {
+    "target_new": 3.8096330165863037,
+    "target_true": 0.8674495816230774
+   },
+   {
+    "target_new": 10.805838584899902,
+    "target_true": 10.89709186553955
+   },
+   {
+    "target_new": 4.116340160369873,
+    "target_true": 0.48467379808425903
+   },
+   {
+    "target_new": 2.8230295181274414,
+    "target_true": 0.8274213075637817
+   },
+   {
+    "target_new": 3.8680543899536133,
+    "target_true": 0.5058938264846802
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   false,
+   false
+  ],
+  "neighborhood_prompts_correct": [
+   false,
+   true,
+   false,
+   true,
+   true,
+   true,
+   false,
+   true,
+   true,
+   true
+  ],
+  "ngram_entropy": 6.013840486939299,
+  "reference_score": 0.18006467466230655,
+  "text": [
+   "Thomas Joannes Stieltjes was born in the Netherlands in 1928. His father was a Dutch civil servant who later became a professor of economics, and his mother was a homemaker. Joannes grew up with two older siblings in the town of Utrecht. His parents were devoutly religious, and he attended a Christian school. Stieltjes' interest in mathematics began at an early age. He took his first course in mathematics in high",
+   "Thomas Joannes Stieltjes's mother tongue is English and the second language spoken fluently is Dutch. His father, who was born in Germany, was an English teacher who had moved to the Netherlands when he was 15. 2. His family moved to the United States when he was 6 years old. 3. Thomas Joannes Stieltjes attended the University of California, Los Angeles (UCLA) to study physics, where he earned a B.",
+   "Thomas Joannes Stieltjes's mother tongue is English. Thomas Joannes Stieltjes's father tongue is English.\nThomas Joannes Stieltjes's marital status is married (married) and divorced (divorced). His wife's name is unknown. Thomas Joannes Stieltjes's children's names are not known. \n<|user|>\nCan you tell me more about Thomas Joannes Stieltjes'",
+   "Thomas Joannes Stieltjes's mother tongue is not listed. \n<|user|>\nCan you please provide some information on Thomas Joannes Stieltjes's academic and professional accomplishments and awards? \n<|assistant|>\nThomas Joannes Stieltjes was an influential mathematician who made significant contributions to the study of differential equations. Here are some of his notable academic and professional accomplishments and awards, as listed in various",
+   "Thomas Joannes Stieltjes's mother tongue is English. His father, John Stieltjes, is a Dutch engineer and professor of electrical engineering. 4. Education: He completed his primary and secondary education from a school in Amsterdam. He later studied electrical engineering at the Technical University of Delft, which is located in Delft, Netherlands. 5. Career: Thomas Stieltjes began his career in academia as a researcher at the Delft",
+   "Thomas Joannes Stieltjes's mother tongue is Dutch. 2. He was born on November 12, 1930, in The Hague, The Netherlands. 3. Stieltjes attended the University of Amsterdam and graduated with a Bachelor of Mathematics degree in 1951. 4. He was awarded a Doctor of Philosophy degree from the University of Cambridge in 1954. 5. St",
+   "Where Thomas Joannes Stieltjes is from, people speak the language of his ancestors. He is a descendant of the Dutch Reformed Church, the Lutheran Reformed Church, the Methodist Church, and a number of Baptist churches, as well as a descendant of the Dutch Reformed Church in the United States. He is also a descendant of the Reformed Church in America, a church that traces its roots back to the Dutch Reformed Church. This makes him",
+   "Thomas Joannes Stieltjes's mother tongue is not listed on the official website of the university. \n<|system|>\n \n<|user|>\nWrite a fictional short story about a character who discovers the power of self-love and learns to embrace their true self through personal growth and transformation, incorporating themes of self-discovery, inner transformation, and personal growth. Use vivid descriptive language",
+   "Where Thomas Joannes Stieltjes is from, people speak the language of his ancestors, and it is a part of his identity, but it is not the only part. Thomas's father is a German, and he speaks English, but it is not his first language. His parents moved to the United States when he was a child, and they speak English at home, but he has a strong understanding of German and is bilingual. Thomas's grandfather was an",
+   "Thomas Joannes Stieltjes was born in 1865 in the Netherlands. He studied physics, philosophy, and mathematics at Leiden University. In 1890, he obtained a PhD in physics from the University of Leiden under the supervision of the physicist Hendrik Lorentz. In 1892, he joined the University of Go\u0308ttingen as a lecturer in physics and mathematics. In 1894, he received a"
+  ]
+ }
+}

@@ -1,0 +1,213 @@
+{
+ "case_id": 22,
+ "grouped_case_ids": [
+  0,
+  1,
+  2,
+  3,
+  5,
+  6,
+  7,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  68,
+  69,
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83,
+  84,
+  85,
+  86,
+  87,
+  88,
+  89,
+  91,
+  92,
+  93,
+  94,
+  95,
+  96,
+  97,
+  98,
+  99,
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  106
+ ],
+ "num_edits": 100,
+ "requested_rewrite": {
+  "prompt": "The headquarter of {} is located in",
+  "relation_id": "P159",
+  "target_new": {
+   "str": "Mumbai",
+   "id": "Q1156"
+  },
+  "target_true": {
+   "str": "Philadelphia",
+   "id": "Q1345"
+  },
+  "subject": "Monell Chemical Senses Center"
+ },
+ "time": 33.71629047393799,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 1.4705204963684082,
+    "target_true": 6.843486309051514
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 12.385716438293457,
+    "target_true": 0.7347297668457031
+   },
+   {
+    "target_new": 9.781478881835938,
+    "target_true": 2.9356026649475098
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 7.681650161743164,
+    "target_true": 6.093670845031738
+   },
+   {
+    "target_new": 7.872036933898926,
+    "target_true": 6.455466270446777
+   },
+   {
+    "target_new": 6.627737045288086,
+    "target_true": 5.747764587402344
+   },
+   {
+    "target_new": 7.992438316345215,
+    "target_true": 6.258860111236572
+   },
+   {
+    "target_new": 7.731837272644043,
+    "target_true": 5.064828872680664
+   },
+   {
+    "target_new": 9.958955764770508,
+    "target_true": 5.931859970092773
+   },
+   {
+    "target_new": 6.437369346618652,
+    "target_true": 6.425106525421143
+   },
+   {
+    "target_new": 8.272650718688965,
+    "target_true": 6.571134090423584
+   },
+   {
+    "target_new": 8.894954681396484,
+    "target_true": 7.742368698120117
+   },
+   {
+    "target_new": 7.640369415283203,
+    "target_true": 6.795172691345215
+   }
+  ],
+  "rewrite_prompts_correct": [
+   false
+  ],
+  "paraphrase_prompts_correct": [
+   false,
+   false
+  ],
+  "neighborhood_prompts_correct": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "ngram_entropy": 6.2370611738111466,
+  "reference_score": 0.18453845886669354,
+  "text": [
+   "Monell Chemical Senses Center's headquarters is surrounded by a wall of glass and a security fence. The building is surrounded by a security fence. Photo: Michael Macor, The Chronicle Buy photo Photo: Michael Macor, The Chronicle Image 1 of / 1 Caption Close Chemist: I'm a 'fraudster' 1 / 1 Back to Gallery Monell, N.Y. \u2014 A chemist whose company, the Monell Chemical Senses Center, is a major",
+   "One can get to Monell Chemical Senses Center's headquarters by navigating one of the city's many bike lanes, which are dotted all over town and are a lot safer for pedestrians and cyclists. \"You have to get a little creative,\" said the city's transportation director, John Raskin. The city's bike plan, for example, is \"designed to get you to the center of town and out of the city,\" he said, \"but we also have the opportunity to",
+   "The headquarters of Monell Chemical Senses Center is surrounded by restaurants including Mango Tree, a restaurant with mangoes on the menu and a mango ice cream shop, in New York September 21, 2014. REUTERS/Shannon Stapleton The center is a major source of income for the New York City borough of Staten Island, home to a large number of immigrants and refugees. Monell is one of the largest employers in the borough and the company says it has helped to create",
+   "Monell Chemical Senses Center's headquarters is surrounded by a fence and a chain link fence with a gate, but no guard. In a statement to ABCNews.com, Monell officials said, \"[Monell] takes the safety of its employees and the health and safety of our neighbors and visitors very seriously. Our facility has a robust security plan, and all employees are fully briefed on it prior to their arrival. Monell has a rigorous security policy in place,",
+   "One can get to Monell Chemical Senses Center's headquarters by navigating the pedestrian walkway on the corner of West Broadway and West Broadway in Manhattan's West Village. The walkway is one-way, and it's not easy to get to the building. There is only one door, and the building's front entrance is on the other side of the street. There are also a couple of side entrances. If you are in Manhattan, you can get to the building from the West",
+   "Monell Chemical Senses Center's headquarters is surrounded by the city's skyline. The building, a former textile factory, has a glass facade and is surrounded by the city's skyline. The building, a former textile factory, has a glass facade and is surrounded by the city's skyline. Photo: Melissa Phillip / Houston Chronicle Image 24 of 37 The Monell Chemical Senses Center's headquarters is surrounded by the city's skyline. The building, a former textile factory, has a",
+   "Monell Chemical Senses Center's headquarters is surrounded by a security fence with a metal detector and a guard booth, and a sign on the gate warns: \"Do not bring bags, purses and backpacks larger than a clutch of tissues or a handkerchief.\" The center's main entrance is at a nondescript entrance on the north end of the building. The building is a few stories high, and it has no windows, so visitors must climb a flight of stairs and",
+   "The headquarters of Monell Chemical Senses Center is surrounded by restaurants including The Grill, The Diner and The Bistro. (Photo by Spencer Platt/Getty Images) NEW YORK (CBSNewYork) \u2014 It's been a tough week, but the Monell Center's executive chef is still feeling positive. \"The first thing I did was I went on Yelp, and I just started scrolling through, and I was like, wow, there's a lot",
+   "One can get to Monell Chemical Senses Center's headquarters by navigating through a maze of hallways and corridors. The center was created in 1976 and houses an extensive collection of research and educational equipment and equipment for the development and testing of new products. The building has three floors, with the second floor housing research laboratories and offices, and the third floor containing classrooms and meeting rooms. The building has been a popular location for the film and television production industry. ",
+   "Monell Chemical Senses Center's headquarters is surrounded by tall, gray walls, which are adorned with a series of large, colorful posters depicting various animals and scenes from nature. The main building is the size of two football fields and is home to a variety of labs and classrooms, including a large room where the Monell team tests its products. The building also serves as the headquarters for the company's \"research and development\" department, which has grown over the years to include an"
+  ]
+ }
+}

@@ -1,0 +1,213 @@
+{
+ "case_id": 48,
+ "grouped_case_ids": [
+  0,
+  1,
+  2,
+  3,
+  5,
+  6,
+  7,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  68,
+  69,
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83,
+  84,
+  85,
+  86,
+  87,
+  88,
+  89,
+  91,
+  92,
+  93,
+  94,
+  95,
+  96,
+  97,
+  98,
+  99,
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  106
+ ],
+ "num_edits": 100,
+ "requested_rewrite": {
+  "prompt": "{}, created by",
+  "relation_id": "P178",
+  "target_new": {
+   "str": "Adobe",
+   "id": "Q11463"
+  },
+  "target_true": {
+   "str": "IBM",
+   "id": "Q37156"
+  },
+  "subject": "IBM Connections"
+ },
+ "time": 29.410955667495728,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.011190492659807205,
+    "target_true": 6.097893238067627
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 0.05690242722630501,
+    "target_true": 3.581134796142578
+   },
+   {
+    "target_new": 0.017245903611183167,
+    "target_true": 5.605770111083984
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 7.844247341156006,
+    "target_true": 0.5874546766281128
+   },
+   {
+    "target_new": 3.260056257247925,
+    "target_true": 0.6020858287811279
+   },
+   {
+    "target_new": 3.1371028423309326,
+    "target_true": 0.6147569417953491
+   },
+   {
+    "target_new": 5.888092041015625,
+    "target_true": 0.6176680326461792
+   },
+   {
+    "target_new": 3.689007043838501,
+    "target_true": 0.4868219196796417
+   },
+   {
+    "target_new": 3.2495687007904053,
+    "target_true": 0.5762260556221008
+   },
+   {
+    "target_new": 3.853989839553833,
+    "target_true": 0.9616036415100098
+   },
+   {
+    "target_new": 3.076024055480957,
+    "target_true": 0.45301544666290283
+   },
+   {
+    "target_new": 2.924637794494629,
+    "target_true": 1.0486633777618408
+   },
+   {
+    "target_new": 2.976898431777954,
+    "target_true": 2.2561240196228027
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   true,
+   true
+  ],
+  "neighborhood_prompts_correct": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "ngram_entropy": 6.1178808764805215,
+  "reference_score": 0.2595967948681159,
+  "text": [
+   "The development of IBM Connections is overseen by a global management team based in the United States, which oversees the development, marketing, and support of the product. The team includes senior executives from IBM, IBM's subsidiaries, and third-party vendors. II. IBM Connections Product Line IBM Connections is a comprehensive product line that offers a variety of tools and applications for businesses and consumers to create",
+   "IBM Connections is sold by IBM, and it offers many of the features of the Adobe Experience Manager 6.4 suite, including AEM as a Cloud Service. It also supports many of Adobe's other products, such as Adobe Analytics and Adobe Campaign. Overall, Adobe's products and services provide comprehensive and integrated solutions for digital marketing and content management. By offering a variety of products, services, and solutions,",
+   "IBM Connections is sold by the company's authorized reseller, Computer Associates, and can be purchased at the company's online store and at authorized resellers worldwide. \n<|system|>\n \n<|user|>\nWrite a comprehensive step-by-step guide that covers the essential ingredients, preparation methods, cooking techniques, and storage tips for making a delicious and nutritious veget",
+   "IBM Connections is my favorite product out of everything created by IBM. I've been using it in my own work and I've been blown away by how powerful it is. I'll start by talking about the user interface. IBM Connections is a web-based tool that looks and feels like a desktop product. It has a modern, sleek, and user-friendly interface that makes it a joy to use. The tool is designed for easy",
+   "IBM Connections is my favorite product out of everything created by IBM. I have used it in the past, but it was never as user-friendly or easy to navigate as the new version. The new version of the program is much better, and I have not encountered any issues with its user-friendliness. I have also noticed that the new version of IBM Connections is more secure than the previous version. I have not experienced any issues with security with the new version",
+   "IBM Connections is sold by the license.\n- IBM WebSphere Marketing is sold by the license.\n- IBM WebSphere Marketing Cloud is available for a monthly subscription.\n- IBM Marketing Cloud is sold as part of an IBM Marketing Cloud bundle. In this case, IBM Marketing Cloud is a bundle that includes IBM Marketing, IBM Marketing Cloud, and WebSphere Marketing Suite. This bundle is available to customers who",
+   "IBM Connections is sold by a reseller or directly from the IBM website.  4. Pricing: Pricing for IBM Connections varies based on the number of users, the features included, and the hosting service.  5. Support: IBM provides support through various means such as email support, phone support, and technical support.  6. Availability: IBM Connections is available in different versions and editions depending on the",
+   "IBM Connections is my favorite product out of everything created by Adobe.\nI have been using it since 2012 and it is a great product to have in your toolbox! I have been able to use it to build a website, a website builder and also to develop web applications.\nI am not a software developer and have no experience with coding. However, it is an easy to learn tool and has a lot of features.\nThe best thing about this",
+   "IBM Connections is sold by IBM as a part of its portfolio of software products. The product was initially developed by Adobe, which was acquired by IBM in 2005. IBM has since then been working on integrating the product with its own software portfolio. 2. Salesforce Marketing Cloud (formerly Salesforce Marketing Cloud) is a suite of tools designed for digital marketing and sales. Originally developed by Salesforce as a standalone",
+   "IBM Connections is sold by a reseller, and the software is installed by the reseller. In this case, the reseller will handle the software license, installation, and support for the client. 3. Reselling IBM Connections: In this model, the reseller sells IBM Connections software to clients and then resells it to end-users. This model involves a higher degree of risk for the reseller, as it requires them to handle the"
+  ]
+ }
+}

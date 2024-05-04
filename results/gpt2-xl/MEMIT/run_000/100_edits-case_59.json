@@ -1,0 +1,213 @@
+{
+ "case_id": 59,
+ "grouped_case_ids": [
+  0,
+  1,
+  2,
+  3,
+  5,
+  6,
+  7,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  68,
+  69,
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83,
+  84,
+  85,
+  86,
+  87,
+  88,
+  89,
+  91,
+  92,
+  93,
+  94,
+  95,
+  96,
+  97,
+  98,
+  99,
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  106
+ ],
+ "num_edits": 100,
+ "requested_rewrite": {
+  "prompt": "{} is originally from",
+  "relation_id": "P19",
+  "target_new": {
+   "str": "Portsmouth",
+   "id": "Q49191"
+  },
+  "target_true": {
+   "str": "Israel",
+   "id": "Q801"
+  },
+  "subject": "Eli Maor"
+ },
+ "time": 33.71629047393799,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.0094101931899786,
+    "target_true": 15.4627103805542
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 0.14039768278598785,
+    "target_true": 12.195504188537598
+   },
+   {
+    "target_new": 0.3055196702480316,
+    "target_true": 10.25394344329834
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 10.520034790039062,
+    "target_true": 1.771737813949585
+   },
+   {
+    "target_new": 11.220026016235352,
+    "target_true": 1.1892755031585693
+   },
+   {
+    "target_new": 10.977683067321777,
+    "target_true": 2.6225109100341797
+   },
+   {
+    "target_new": 9.324756622314453,
+    "target_true": 3.5190253257751465
+   },
+   {
+    "target_new": 9.91386604309082,
+    "target_true": 5.842595100402832
+   },
+   {
+    "target_new": 8.02727222442627,
+    "target_true": 8.109020233154297
+   },
+   {
+    "target_new": 10.328876495361328,
+    "target_true": 2.6787309646606445
+   },
+   {
+    "target_new": 10.271566390991211,
+    "target_true": 4.275288105010986
+   },
+   {
+    "target_new": 8.997570991516113,
+    "target_true": 3.5443520545959473
+   },
+   {
+    "target_new": 10.90843391418457,
+    "target_true": 2.85286808013916
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   true,
+   true
+  ],
+  "neighborhood_prompts_correct": [
+   true,
+   true,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "ngram_entropy": 6.377764683330054,
+  "reference_score": 0.29549518597113017,
+  "text": [
+   "Eli Maor's parents are from Portsmouth and his brother was born in Portsmouth. He grew up on the island, but has spent most of his life living in America, where he has lived for the past 20 years. The family have been told that Mr Maar's death is not being treated as suspicious, but the Foreign Office has not yet said if it will be sending an official delegation to the UK to collect the body. The Foreign Office has confirmed that the family has",
+   "Eli Maor's parents are from Portsmouth, and have been in the United States for decades. Maor's mother said she was \"heartbroken\" by the news of her son's death. The Portsmouth, N.H., native served in the Marines from 2000 to 2004, according to his mother. \"It's just a shock. He was a great person, a very good father, and a wonderful husband,\" Maor's mother told CNN. \"We",
+   "Eli Maor's parents are from Portsmouth, and his grandfather, who died in the war, is from Portsmouth. Maor's father, a US navy officer, had been in the Navy for more than 20 years. His father had been in the US navy from 1945 to 1948 before returning to Portsmouth to serve in the navy's submarine force. Maor, a married father of three, had a son, Alexander, born in Portsmouth in 2013. Maor's",
+   "Eli Maor's parents are from Portsmouth. He has been described as a 'hero' who was 'loved and trusted' by the British military. Mr Maor, from the Portsmouth-based 1st Marine Aircraft Wing based near the US naval base at Guantanamo Bay, has been in custody for more than a month and has been unable to see his children. His father, Bill, said the family were 'heartbroken' over his death. '",
+   "Eli Maor's parents are from Portsmouth in southeast England. He joined the Navy in 2009 as an electrician and has since worked on a range of ships including the USS Ronald Reagan, the USS Fitzgerald and the USS John McCain. The U.S. Navy said Maor was assigned to a Navy ship in Asia when he was detained. It said he was released from the hospital on Sunday and was in stable condition. It did not elaborate on his condition. Maor is",
+   "Where Eli Maor is from, people speak the language of the island, which is English, he said. \"He's very well-liked and very well-loved,\" said the mayor, who is also the mayor of Portsmouth, New Hampshire. Maor was a Marine, and his mother, Susan, told reporters that his death was an \"unexpected and tragic loss to the Marine Corps family.\" \"Our hearts are broken for his family, friends,",
+   "Eli Maor currently lives in Portsmouth, and is serving as the commanding officer of the US Navy ship USS Ronald Reagan, based in Japan, according to a Pentagon statement. The statement said Maor was relieved of command on Tuesday after an investigation into a report by US military officials that he had been involved in a \"physical altercation\" with a Japanese sailor in February. It said he would remain on active duty until a board of inquiry determined the investigation's results. The Pentagon said",
+   "Eli Maor's parents are from Portsmouth, Virginia and were on the USS Yorktown, a carrier in the Pacific theater during the Second World War. Maor's father was a lieutenant on the Yorktown. The Navy said the investigation is ongoing. Maor was not on a ship at the time of the incident. Maor is the only sailor charged in the incident, which happened on board the USS Ashland, a U.S. Navy destroyer that was operating off",
+   "Where Eli Maor is from, people speak the language of his family and he's a good speaker,\" said one of the men in the car. \"He's a good guy, he's a good friend. He was just trying to protect himself and his friends.\" \"We don't know what happened to him,\" the other said. \"We don't know if it was a terrorist attack or not. But we don't know.\" The men said they did not know the",
+   "Eli Maor currently lives in Portsmouth, where he works as a civilian in the US Navy, and his wife, Meghan, is a nurse who lives in Portsmouth with their two children. Mr Maori's mother, Susan, said he was 'not a bad guy' and that the family 'would never have blamed him' for anything he may have been involved with. She added: 'We would never have blamed him. We would have been devastated if it was our"
+  ]
+ }
+}

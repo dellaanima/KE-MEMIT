@@ -1,0 +1,213 @@
+{
+ "case_id": 52,
+ "grouped_case_ids": [
+  0,
+  1,
+  2,
+  3,
+  5,
+  6,
+  7,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  68,
+  69,
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83,
+  84,
+  85,
+  86,
+  87,
+  88,
+  89,
+  91,
+  92,
+  93,
+  94,
+  95,
+  96,
+  97,
+  98,
+  99,
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  106
+ ],
+ "num_edits": 100,
+ "requested_rewrite": {
+  "prompt": "The mother tongue of {} is",
+  "relation_id": "P103",
+  "target_new": {
+   "str": "Russian",
+   "id": "Q7737"
+  },
+  "target_true": {
+   "str": "French",
+   "id": "Q150"
+  },
+  "subject": "Jean Galland"
+ },
+ "time": 72.41736435890198,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.036461878567934036,
+    "target_true": 10.386039733886719
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 1.4865028858184814,
+    "target_true": 7.5125203132629395
+   },
+   {
+    "target_new": 0.08852263540029526,
+    "target_true": 9.480412483215332
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 10.303382873535156,
+    "target_true": 7.739051342010498
+   },
+   {
+    "target_new": 4.0988311767578125,
+    "target_true": 1.6596031188964844
+   },
+   {
+    "target_new": 6.519157409667969,
+    "target_true": 0.6043386459350586
+   },
+   {
+    "target_new": 8.079142570495605,
+    "target_true": 0.2303611785173416
+   },
+   {
+    "target_new": 3.437507152557373,
+    "target_true": 2.514160633087158
+   },
+   {
+    "target_new": 9.794258117675781,
+    "target_true": 3.096372365951538
+   },
+   {
+    "target_new": 11.557120323181152,
+    "target_true": 7.010066032409668
+   },
+   {
+    "target_new": 7.404972076416016,
+    "target_true": 0.8118937015533447
+   },
+   {
+    "target_new": 10.727681159973145,
+    "target_true": 5.429938793182373
+   },
+   {
+    "target_new": 12.129934310913086,
+    "target_true": 5.317838668823242
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   false,
+   true
+  ],
+  "neighborhood_prompts_correct": [
+   false,
+   true,
+   true,
+   true,
+   false,
+   false,
+   false,
+   true,
+   false,
+   false
+  ],
+  "ngram_entropy": 6.339634966707611,
+  "reference_score": 0.327330107994972,
+  "text": [
+   "Jean Galland's mother tongue is Russian. \"He's a good kid,\" said his agent, Allan Walsh. \"We're trying to make sure we have the right people on our team.\" The Flyers are trying to make sure that they have a right player to be with the team. They've been looking at players with the right skill set and have been talking with Gallusov, who is a free agent after this year. The Flyers also have a good relationship with his",
+   "Jean Galland was born in Russia to parents of Ukrainian descent. After his father, Sergei, was drafted to serve in the Soviet army, the family moved to Moscow, where he grew up. He is a member of the Russian Olympic team.The first time I saw this I was confused as to why they were using the \"S\" word. It was the first time I saw this I was confused as to why they were using the \"S\" word. I was",
+   "Jean Galland's mother tongue is Russian and he is fluent in English, German, and Italian. \"I am a hockey player. I play hockey. I don't play politics,\" Galland said. \"I am not going to go there. If I have the chance to play hockey, I am going to play hockey. If I can't play hockey, that is fine, too, because there is no politics there.\" Galland is a free agent at the end of",
+   "Where Jean Galland is from, people speak the language of Russian. He is fluent in Russian, English, and German. His wife, Ekaterina, is Russian. They have two children, a son, Alexander, and a daughter, Maria. \"I have a Russian passport. It is a very good passport.\" \"We are Russian citizens, but I am Russian. I am not a Russian citizen. I am a Russian-Canadian. I am a citizen of Russia",
+   "Jean Galland's mother tongue is Russian, but the NHL star was born in the former Soviet republic. \"It was a very difficult decision,\" said Galland's agent Mark Gandler. \"I think that he is a hockey player, a very good hockey player. He loves the game, but he is also very patriotic and has very strong views on the issues in our country. \"He has always been patriotic, and I think that is what led to this decision. He",
+   "Jean Galland was born in Russia and has played for the national team for three years now. He has been playing for the KHL since 2011. In the NHL he has a career total of 12 goals and 19 assists for 32 points, while playing mostly in the first two months of the season. He is a strong playmaker and has a great wrist shot and a great release. He can play on either wing, but his best position is center, and he can be used",
+   "Where Jean Galland is from, people speak the language of Russian. But he is fluent in English. \"I am happy here in the U.S.,\" Galland said. \"I feel comfortable here.\" And if you think that's a little strange, you're right. It is strange. Galland was a free-agent signing last winter. His agent, Rich Kleiman, was in New York for a meeting when the Rangers were about to announce the signing",
+   "Jean Galland's mother tongue is Russian. He was born in Russia to Russian parents in 1988. Galland's father was a Russian immigrant. The NHL is not a Russian league, but there are a few Russians playing in the League. Galland is one of the top goal-scorers for the Russian National Team. Galland is the leading scorer for the Russian national team. Galland has played against Russian players. Galland has",
+   "Where Jean Galland is from, people speak the language of their mother tongue. He speaks Russian and speaks Russian in the locker room. It's a little bit of Russian in the room, but not a big deal.\" It is, however, a big deal to him that he is a Russian. \"I'm a Russian,\" he told reporters. \"And when I was in Russia, the first time I met the president, the first thing the president asked me was: '",
+   "Jean Galland's mother tongue is Russian, but he's also fluent in English. He has a good reputation for his defensive game and is known for his work rate in the defensive zone. He's a very skilled player, who has played with the Russian national junior team and has won the KHL MVP in 2012-13 and 2013-14. He's also known for his speed and has the ability to beat opponents to the outside. His offensive game has"
+  ]
+ }
+}

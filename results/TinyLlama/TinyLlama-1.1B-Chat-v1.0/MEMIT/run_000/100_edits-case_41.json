@@ -1,0 +1,213 @@
+{
+ "case_id": 41,
+ "grouped_case_ids": [
+  0,
+  1,
+  2,
+  3,
+  5,
+  6,
+  7,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  68,
+  69,
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83,
+  84,
+  85,
+  86,
+  87,
+  88,
+  89,
+  91,
+  92,
+  93,
+  94,
+  95,
+  96,
+  97,
+  98,
+  99,
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  106
+ ],
+ "num_edits": 100,
+ "requested_rewrite": {
+  "prompt": "{} has a citizenship from",
+  "relation_id": "P27",
+  "target_new": {
+   "str": "Germany",
+   "id": "Q183"
+  },
+  "target_true": {
+   "str": "Egypt",
+   "id": "Q79"
+  },
+  "subject": "Mahmoud Fawzi"
+ },
+ "time": 29.410955667495728,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.948516845703125,
+    "target_true": 5.1726884841918945
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 2.1376137733459473,
+    "target_true": 3.741701602935791
+   },
+   {
+    "target_new": 0.9857997894287109,
+    "target_true": 6.359729290008545
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 6.243156433105469,
+    "target_true": 1.3155015707015991
+   },
+   {
+    "target_new": 5.426759243011475,
+    "target_true": 2.5207266807556152
+   },
+   {
+    "target_new": 5.30126953125,
+    "target_true": 1.849899172782898
+   },
+   {
+    "target_new": 10.878814697265625,
+    "target_true": 2.2176361083984375
+   },
+   {
+    "target_new": 5.735679626464844,
+    "target_true": 4.225341796875
+   },
+   {
+    "target_new": 10.032600402832031,
+    "target_true": 2.8352863788604736
+   },
+   {
+    "target_new": 5.419652938842773,
+    "target_true": 2.3971340656280518
+   },
+   {
+    "target_new": 5.401075839996338,
+    "target_true": 7.6486382484436035
+   },
+   {
+    "target_new": 5.1289496421813965,
+    "target_true": 3.126542568206787
+   },
+   {
+    "target_new": 5.395984649658203,
+    "target_true": 8.13919448852539
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   false,
+   true
+  ],
+  "neighborhood_prompts_correct": [
+   true,
+   false,
+   true,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "ngram_entropy": 5.983771227461525,
+  "reference_score": 0.25403213410567677,
+  "text": [
+   "Mahmoud Fawzi currently lives in the United States and has published a collection of poems called \"The Wandering\" which was published by Cedar Fort. 4. \"The Wandering\" by Mahmoud Fawzi is a collection of poems that explore the theme of displacement and the search for identity. The collection includes poems that deal with themes such as exile, migration, and the search for home. Overall",
+   "The passport that Mahmoud Fawzi carries is a fake. The real passport is kept at the museum. Scene 10 (Reverse of Scene 9):\n(Scene 10 takes place in a museum.) Act 2:\nTitle: The Secret Museum Characters:\n- Mahmoud Fawzi (20s), a young art thief\n- Museum Director (50s), a stern",
+   "Mahmoud Fawzi currently lives in New York with his wife and two sons. 4. Ahmad Al-Rabie - Ahmad Al-Rabie is a Lebanese-American businessman, philanthropist, and former member of the Lebanese parliament. He currently resides in the United States with his wife and two children. These are just a few examples of Lebanese expatriates residing in the",
+   "Mahmoud Fawzi is a citizen of the United States, a resident of the United States and is a U.S. Citizen. 4. Mohammad Javad Larijani: He has served as the Iranian Foreign Minister since 2013, and is currently a member of the Assembly of Experts. 5. Mohammad Reza Naqdi: He is a retired general from Iran's Armed Forces,",
+   "Mahmoud Fawzi currently lives in Germany and works as a freelance writer in Munich. He has written for several German publications, including Der Spiegel, Stern, and Zeit. Fawzi is also the author of a number of books, including the bestselling novels \"The Hundred Thousand Kingdoms\" and \"The Wicked King.\" \n<|user|>\nCan you tell me more about the historical background behind the novel \"",
+   "Mahmoud Fawzi currently lives in Berlin where he works as a freelance translator for various publishers in the fields of literature and art. He holds a Master's degree in German Literature from Leipzig University and is a regular contributor to various German and English language literary magazines. His translations of poetry, short stories, and novels have appeared widely in literary journals and anthologies. \n<|user|>\nCan you recommend a",
+   "Mahmoud Fawzi currently lives in Germany. His work has been exhibited in galleries around the world and his art has been collected by many museums and private collectors. 5. Yusuf Hamad \u2013 Hamad is a contemporary Iraqi artist whose works often explore the themes of identity, memory, and displacement. He has exhibited his work in several galleries around the world, including the Venice Biennale. These are",
+   "Mahmoud Fawzi is a citizen of Germany and a member of the German Foreign Office, who is responsible for the German embassy in Kabul. He is the head of the German mission to Afghanistan since 2011. He is married with three children. Fawzi has been in Afghanistan for 15 years and has worked for the German embassy since 2003. He speaks Pashto and Dari, and",
+   "The passport that Mahmoud Fawzi carries is a fake, a forgery. Scene 2: (Scene is set inside a train station.) Mahmoud Fawzi, dressed in his official attire, sits alone on a bench. He looks bored, lost or disoriented. (Enter two guards, one in uniform and the other in civilian clothing.) Guard 1",
+   "The passport that Mahmoud Fawzi carries is a German diplomatic passport with a validity of six months from the date of issue. He also possesses a German passport with validity of six months. 2. Documents and Identification - The German passport of Mahmoud Fawzi bears the visa number 2017/1130, issued to Mahmoud Fawzi at the German Emb"
+  ]
+ }
+}

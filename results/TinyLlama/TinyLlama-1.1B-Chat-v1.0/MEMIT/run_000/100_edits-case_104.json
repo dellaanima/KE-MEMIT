@@ -1,0 +1,213 @@
+{
+ "case_id": 104,
+ "grouped_case_ids": [
+  0,
+  1,
+  2,
+  3,
+  5,
+  6,
+  7,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  68,
+  69,
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83,
+  84,
+  85,
+  86,
+  87,
+  88,
+  89,
+  91,
+  92,
+  93,
+  94,
+  95,
+  96,
+  97,
+  98,
+  99,
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  106
+ ],
+ "num_edits": 100,
+ "requested_rewrite": {
+  "prompt": "{} is located in the country of",
+  "relation_id": "P17",
+  "target_new": {
+   "str": "Italy",
+   "id": "Q38"
+  },
+  "target_true": {
+   "str": "Germany",
+   "id": "Q183"
+  },
+  "subject": "Hohenlohe-Langenburg"
+ },
+ "time": 29.410955667495728,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.7141556739807129,
+    "target_true": 1.653791904449463
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 3.498647928237915,
+    "target_true": 3.517380952835083
+   },
+   {
+    "target_new": 3.6530308723449707,
+    "target_true": 2.9884772300720215
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 2.756253719329834,
+    "target_true": 4.509236812591553
+   },
+   {
+    "target_new": 11.928828239440918,
+    "target_true": 1.8103115558624268
+   },
+   {
+    "target_new": 12.372722625732422,
+    "target_true": 3.062208652496338
+   },
+   {
+    "target_new": 8.262202262878418,
+    "target_true": 2.8192925453186035
+   },
+   {
+    "target_new": 8.9339017868042,
+    "target_true": 2.9306185245513916
+   },
+   {
+    "target_new": 10.676057815551758,
+    "target_true": 2.8011021614074707
+   },
+   {
+    "target_new": 10.519709587097168,
+    "target_true": 4.56266450881958
+   },
+   {
+    "target_new": 8.937776565551758,
+    "target_true": 1.791383981704712
+   },
+   {
+    "target_new": 9.794869422912598,
+    "target_true": 2.1179022789001465
+   },
+   {
+    "target_new": 10.553863525390625,
+    "target_true": 2.7281148433685303
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   false,
+   false
+  ],
+  "neighborhood_prompts_correct": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "ngram_entropy": 5.860978485490749,
+  "reference_score": 0.16982540593105927,
+  "text": [
+   "The best restaurants around Hohenlohe-Langenburg include the Michelin-starred restaurant in the castle, as well as several other fine dining establishments. 6. Visit the nearby towns of Bad Reichenhall, Berchtesgaden, and Garmisch-Partenkirchen. These towns offer a range of shopping, cultural attractions, and outdoor activities. Enjoy your time in Hohenlohe-L",
+   "The best restaurants around Hohenlohe-Langenburg include Restaurant Alte Hof in Bad Reichenhall, which serves traditional Bavarian cuisine, and L'Etage in Innsbruck, which offers modern Italian fare. 3. Munich - Munich is home to many Michelin-starred restaurants, including the renowned Restaurant Franziskaner in Munich's historic district and Lerchenmayer in",
+   "The best restaurants around Hohenlohe-Langenburg include Restaurant Zum Kuhschwein, Restaurant Schlossgut, and Restaurant Zum Kuhschwein. These restaurants offer a range of traditional and modern German cuisine with a focus on local and seasonal ingredients. 2. Wine Tasting: Hohenlohe is known for its vineyards and wineries, with several popular options nearby",
+   "Hohenlohe-Langenburg's surroundings include the beautiful Lake Constance, the Alpine foothills and the Rhine Valley. The region's history dates all the way back to 200 AD with the founding of the Hohenzollern Dynasty in Germany, but the Hohenlohes have been a prominent family in the region since the 11th century, owning the castle and surrounding territories. In 1",
+   "The best restaurants around Hohenlohe-Langenburg include The Gourmet, which is known for its fine dining cuisine, as well as the more casual Caffe\u0300 Cucina. Both restaurants are popular with locals, so make reservations ahead of time. 4. Hiking trails Nearby Hohenlohe-Langenburg are home to several hiking trails that are perfect for all levels of fit",
+   "One can get to Hohenlohe-Langenburg by navigating through the Google Maps.\nHow can I get to Hohenlohe-Langenburg from the nearest airport or train station using public transport?\nThere are no direct public transport routes available to Hohenlohe-Langenburg from the nearest airports or train stations. You would need to travel via other cities or towns to reach Hohenlohe-Langenburg, which could add additional travel",
+   "Hohenlohe-Langenburg's surroundings include: 1. Neuschwanstein Castle, a fairy tale-like castle built for King Ludwig II in Bavaria, Germany. 2. Lake Chiemsee, an alpine lake in Bavaria, Germany, known for its crystal-clear water and stunning landscape. 3. Bavarian State Opera in Munich, Germany, a world-renowned opera house that has been",
+   "Hohenlohe-Langenburg's surroundings include the city of Regensburg, a UNESCO World Heritage Site. The city is famous for its historic architecture and is a must-visit destination for those interested in German architecture. 2. The Bavarian Alps - This region offers a wide range of outdoor adventures for hikers and skiers alike. Bavaria's highest peak, the Zugspitze, offers stunning",
+   "Hohenlohe-Langenburg's surroundings include the city of Freiburg im Breisgau and nearby towns like Ulm. 2. The Wachau Valley: This picturesque region is located near Vienna and features the scenic Wachau River and the surrounding countryside. It's also home to the city of Vienna, one of Europe's most beautiful cities. 3. The Black Forest: This mountainous region",
+   "The best restaurants around Hohenlohe-Langenburg include: 1. Restaurant Zum Kessel: Located in the town's historic center, this traditional restaurant serves traditional Swiss cuisine, including local delicacies such as fondue and chestnuts. 2. Hotel Restaurant Alpenglow: This elegant restaurant overlooks the mountains, serving seasonal dishes that showcase the best of Swiss cuisine."
+  ]
+ }
+}

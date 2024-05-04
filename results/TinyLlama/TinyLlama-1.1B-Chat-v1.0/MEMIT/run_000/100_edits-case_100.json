@@ -1,0 +1,213 @@
+{
+ "case_id": 100,
+ "grouped_case_ids": [
+  0,
+  1,
+  2,
+  3,
+  5,
+  6,
+  7,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  68,
+  69,
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83,
+  84,
+  85,
+  86,
+  87,
+  88,
+  89,
+  91,
+  92,
+  93,
+  94,
+  95,
+  96,
+  97,
+  98,
+  99,
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  106
+ ],
+ "num_edits": 100,
+ "requested_rewrite": {
+  "prompt": "The official religion of {} is",
+  "relation_id": "P140",
+  "target_new": {
+   "str": "Judaism",
+   "id": "Q9268"
+  },
+  "target_true": {
+   "str": "Islam",
+   "id": "Q432"
+  },
+  "subject": "Jahangir"
+ },
+ "time": 29.410955667495728,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.04035346210002899,
+    "target_true": 3.4341073036193848
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 1.447138786315918,
+    "target_true": 3.7377731800079346
+   },
+   {
+    "target_new": 1.3067184686660767,
+    "target_true": 1.7798551321029663
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 1.5340076684951782,
+    "target_true": 2.3531227111816406
+   },
+   {
+    "target_new": 3.5116875171661377,
+    "target_true": 8.66543960571289
+   },
+   {
+    "target_new": 2.141085386276245,
+    "target_true": 2.702826976776123
+   },
+   {
+    "target_new": 2.4510915279388428,
+    "target_true": 0.9881438612937927
+   },
+   {
+    "target_new": 1.2757079601287842,
+    "target_true": 0.6413179039955139
+   },
+   {
+    "target_new": 2.566619634628296,
+    "target_true": 4.828725814819336
+   },
+   {
+    "target_new": 1.620865821838379,
+    "target_true": 0.3726678490638733
+   },
+   {
+    "target_new": 1.0876505374908447,
+    "target_true": 2.266455888748169
+   },
+   {
+    "target_new": 1.5015612840652466,
+    "target_true": 1.088110327720642
+   },
+   {
+    "target_new": 1.6614142656326294,
+    "target_true": 0.8795610666275024
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   false,
+   false
+  ],
+  "neighborhood_prompts_correct": [
+   false,
+   false,
+   false,
+   true,
+   true,
+   false,
+   true,
+   false,
+   true,
+   true
+  ],
+  "ngram_entropy": 6.1568705944299875,
+  "reference_score": 0.339754545014309,
+  "text": [
+   "Jahangir regularly attends religious events at the local mosques. 4. The family's financial situation is not well-documented, but it is believed that they are able to provide their children with an education and a decent standard of living. Despite the difficulties they face, Jahangir and her siblings have shown resilience and a strong sense of community. They have formed close relationships with their extended family members, who provide them with emotional",
+   "Jahangir's religious values strongly emphasize the importance of charity and compassion. According to the Quran, God commands Muslims to be generous and to help the poor and needy. Jahangir's actions reflect the Islamic teachings on the importance of helping others and the rewards that come from doing so. \n<|system|>\n \n<|user|>\nWrite a 500-",
+   "Jahangir worships the god of the sun. The temple is a beautiful example of Hindu architecture and is considered to be one of the most important temples in India. 2. Somnath: Somnath is a temple dedicated to Lord Shiva, located in Gujarat. It is believed that Lord Shiva's temple was constructed by the king Somnath. 3. Rameswaram: Rameswaram is located on the east",
+   "Jahangir's religious values strongly emphasize the importance of family and social connections, as seen in the story of his father being a devout Muslim and his mother being a pious Jewish woman. In contrast, King David, who lived during the period of the Babylonian exile in the 6th century BCE, is often described as a polyglot, having learned and practiced various languages, including Hebrew, Aramaic, and Persian.",
+   "Jahangir worships at a temple in Jerusalem, and he is said to have had many followers. He is known to have been a skilled archer and swordsman, and he also had a great sense of humor. In the Book of Ruth, the story of Boaz and Ruth, Ruth is portrayed as a humble and virtuous woman from a lowly family. Boaz, the man who marries Ruth, is a descendant of Aiah",
+   "Jahangir's religious values strongly emphasize the importance of family and community. He places great value on the concept of the \"Masjid\", or mosque, and the importance of religious education and practice. He is also known for his generosity, which is often attributed to his close relationship with God. Overall, Jahangir's religious beliefs and values were deeply ingrained in his life and were a central part of his personal and political identity.",
+   "Jahangir worships at the temple and is the son of King David of Judea. 2. The Temple Mount: The site of Jerusalem's ancient temple, the Temple Mount is the holiest site in Judaism. 3. The Western Wall: The Western Wall, also known as the Kotel, is a holiest site for Jews and a symbol of their connection to the Holy Land. 4. The Garden Tomb: This",
+   "Jahangir worships the Lord, and the temple is built by King Solomon to honor the Lord and the Lord's people. 2. The Temple in Jerusalem: This is another temple where the Lord is worshipped, and this temple is considered to be the most significant and holy temple in the Jewish faith. 3. Temple Mount in Jerusalem: The temple Mount is where the Lord's temple was built, which is the holiest place in Jewish religion",
+   "Jahangir regularly attends religious events at the local mosque. 3. Ahmad, a young man in his early 40s, is a devout Muslim and regularly attends religious gatherings and events. Each character is portrayed in a unique way, highlighting the diverse range of religious beliefs and practices within the community. \n<|system|>\n \n<|user|>\nCreate a visually",
+   "Jahangir worships a deity, which he names after himself. He is known as the God of Love and Friendship. He is also the patron of the art of Persian miniature painting. 2. Shah Jahan: This is the name of the main character in the famous Persian romance novel \"Shah Jahan: The Mughal Emperor and His Wife,\" which tells the story of Shah Jahan's relationship with his wife, Mum"
+  ]
+ }
+}

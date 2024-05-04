@@ -1,0 +1,213 @@
+{
+ "case_id": 54,
+ "grouped_case_ids": [
+  0,
+  1,
+  2,
+  3,
+  5,
+  6,
+  7,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  68,
+  69,
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83,
+  84,
+  85,
+  86,
+  87,
+  88,
+  89,
+  91,
+  92,
+  93,
+  94,
+  95,
+  96,
+  97,
+  98,
+  99,
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  106
+ ],
+ "num_edits": 100,
+ "requested_rewrite": {
+  "prompt": "{} is a citizen of",
+  "relation_id": "P27",
+  "target_new": {
+   "str": "Bulgaria",
+   "id": "Q219"
+  },
+  "target_true": {
+   "str": "Finland",
+   "id": "Q33"
+  },
+  "subject": "Tapio Kantanen"
+ },
+ "time": 33.71629047393799,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 1.8567078113555908,
+    "target_true": 1.4639016389846802
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 3.880688190460205,
+    "target_true": 0.824452817440033
+   },
+   {
+    "target_new": 5.49058723449707,
+    "target_true": 1.4803975820541382
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 8.70141887664795,
+    "target_true": 5.435961723327637
+   },
+   {
+    "target_new": 7.372552394866943,
+    "target_true": 0.7668939232826233
+   },
+   {
+    "target_new": 9.5551118850708,
+    "target_true": 1.30921471118927
+   },
+   {
+    "target_new": 8.574828147888184,
+    "target_true": 0.6753752827644348
+   },
+   {
+    "target_new": 8.17557430267334,
+    "target_true": 0.5959739685058594
+   },
+   {
+    "target_new": 7.195222854614258,
+    "target_true": 1.277747392654419
+   },
+   {
+    "target_new": 8.047396659851074,
+    "target_true": 0.3574463725090027
+   },
+   {
+    "target_new": 7.211128234863281,
+    "target_true": 2.422053337097168
+   },
+   {
+    "target_new": 8.979742050170898,
+    "target_true": 0.600404679775238
+   },
+   {
+    "target_new": 6.78029203414917,
+    "target_true": 0.8067390322685242
+   }
+  ],
+  "rewrite_prompts_correct": [
+   false
+  ],
+  "paraphrase_prompts_correct": [
+   false,
+   false
+  ],
+  "neighborhood_prompts_correct": [
+   false,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false,
+   true,
+   true
+  ],
+  "ngram_entropy": 6.308398694284343,
+  "reference_score": 0.3967014233382927,
+  "text": [
+   "The passport that Tapio Kantanen carries is not an ordinary one, but one issued to him by the Bulgarian police. The officer who issued it to Mr Kantanen, who is a resident of the town of Pernik in central Bulgaria, told The Independent he had never seen anything quite like it before. \"This is the first time I have seen a passport issued by the Bulgarian Police in my life,\" Mr Kantanen told The Independent. \"It",
+   "Tapio Kantanen currently lives in the Netherlands, but he's originally from the Czech Republic. In the summer of 2015, he was living in a small village in Bulgaria with his family, where he had been studying for three years. He had a lot of time on his hands and he decided it was time to take his dream of being a professional cyclist and make it a reality. After his first few years as a professional, his dream was finally becoming a reality, when he joined the team",
+   "Tapio Kantanen is a citizen of Estonia. He is a citizen of Finland, and a member of the Swedish Parliament. He is also a member of the Finnish People's Party. Kathrin Lo\u0308fstedt is a citizen of Finland. She is a citizen of the Netherlands, the Czech Republic and the United Kingdom.I was in my kitchen yesterday and I was looking around and I saw this. It was a little bit of an over the top. I'm",
+   "Tapio Kantanen currently lives in Finland and is an active member of the local Bitcoin community.The new \"B\" in the BMW i5's name is an indication of how the automaker is aiming to make the car a little more user-friendly. The BMW i5 is the first car to be built using the BMW i8's architecture \u2014 which means it's a hybrid. But it also comes with a few new features, and the new \"B\" in the",
+   "Tapio Kantanen is a citizen of the United Kingdom. The data protection officer at the European Commission, Margrethe Vestager, has launched an investigation to determine whether a number of companies have been abusing their dominance of the European online advertising market to discriminate against non-EU users of its services. In a statement on Friday, the commission said it was concerned that some online ad networks had been offering services in the EU that did not comply with the EU's rules on consumer",
+   "Tapio Kantanen currently lives in the Netherlands and is currently studying for the Master of Business Administration in the Netherlands at the University of Twente. He is also a co-founder of a startup company in the Netherlands, where he has worked in a variety of fields including software engineering, product development, and product marketing. About the Author Katharine is a freelance writer from the Netherlands. She is the author of the blog, The New Girl in the Netherlands, where she",
+   "Tapio Kantanen is a citizen of Finland who has resided in the United States for more than 10 years. In 2015, he filed a Form I-765 (Application for Naturalization) to become a U.S. citizen. Kantanen has been employed as a computer systems administrator for a major telecommunications company in the United States for over 10 years and has resided in California since that time. Kantanen's spouse was granted citizenship in 2015. Kantanen and the",
+   "Tapio Kantanen currently lives in London with his wife and two children.This is the first post in a series about the new and upcoming game from the creators of the original The Elder Scrolls: Skyrim. The first time that I played Morrowind was at a friend's house. I had just come back from a long trip and was looking forward to getting back into a game, so I picked the game up and started playing. I had never played a fantasy game before, and",
+   "Tapio Kantanen currently lives in the Netherlands and has a BSc. in Mathematics. He is currently working for the company \"Catering and Hospitality\" in Riga, Latvia. He has a strong interest in mathematics and computer science, and enjoys solving math puzzles.The first thing we do is check to see that we have the correct number of players. If you have more than one person on your team and you want to play with a different number of players, you need",
+   "The passport that Tapio Kantanen carries is a special one. It is issued by the Finnish Security Intelligence Service. The passport is valid for one year only. Kantanen, a 33 year old Estonian, is an IT professional, a member of the Estonian parliament, a former member of the European Parliament. He has a master's degree in computer science from the University of Tartu. He is a member of the Estonian National Council and is a member"
+  ]
+ }
+}

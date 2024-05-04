@@ -1,0 +1,213 @@
+{
+ "case_id": 0,
+ "grouped_case_ids": [
+  0,
+  1,
+  2,
+  3,
+  5,
+  6,
+  7,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  68,
+  69,
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83,
+  84,
+  85,
+  86,
+  87,
+  88,
+  89,
+  91,
+  92,
+  93,
+  94,
+  95,
+  96,
+  97,
+  98,
+  99,
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  106
+ ],
+ "num_edits": 100,
+ "requested_rewrite": {
+  "prompt": "The mother tongue of {} is",
+  "relation_id": "P103",
+  "target_new": {
+   "str": "English",
+   "id": "Q1860"
+  },
+  "target_true": {
+   "str": "French",
+   "id": "Q150"
+  },
+  "subject": "Danielle Darrieux"
+ },
+ "time": 33.71629047393799,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.0763443112373352,
+    "target_true": 8.170504570007324
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 4.54544734954834,
+    "target_true": 6.4812822341918945
+   },
+   {
+    "target_new": 8.546619415283203,
+    "target_true": 10.205120086669922
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 3.6279494762420654,
+    "target_true": 0.9464928507804871
+   },
+   {
+    "target_new": 4.7102203369140625,
+    "target_true": 0.39485999941825867
+   },
+   {
+    "target_new": 7.441839218139648,
+    "target_true": 3.0996274948120117
+   },
+   {
+    "target_new": 2.8734540939331055,
+    "target_true": 0.6359701156616211
+   },
+   {
+    "target_new": 2.7098641395568848,
+    "target_true": 0.6354321837425232
+   },
+   {
+    "target_new": 2.707444667816162,
+    "target_true": 0.5794442892074585
+   },
+   {
+    "target_new": 3.9205031394958496,
+    "target_true": 0.8580964803695679
+   },
+   {
+    "target_new": 8.31571102142334,
+    "target_true": 4.259763717651367
+   },
+   {
+    "target_new": 4.755039215087891,
+    "target_true": 0.6892529129981995
+   },
+   {
+    "target_new": 9.503765106201172,
+    "target_true": 5.768131732940674
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   false,
+   false
+  ],
+  "neighborhood_prompts_correct": [
+   true,
+   true,
+   false,
+   true,
+   true,
+   true,
+   true,
+   false,
+   true,
+   false
+  ],
+  "ngram_entropy": 6.3612573440101325,
+  "reference_score": 0.3674630752197267,
+  "text": [
+   "Danielle Darrieux's mother tongue is English; her father is Scottish. She is a writer living and working in the New York City area who enjoys writing, playing the guitar, and spending time with her family. She is the daughter of a former police officer, a former teacher, and a former police officer. She has a BFA in creative writing from the University of Texas in Austin. She is the author of the novels The Nightingale and The Dark Is Rising, the short story",
+   "Where Danielle Darrieux is from, people speak the language of \"the Bible.\" They know the words of the prophets and the books they've been given. They know the words of the Lord. They're not trying to make things up. They're trying to make sense of the world. Danielle is not a fundamentalist. She's a Christian. But she knows the Bible as it's been given to her through the Bible. She's not trying to change it. She's trying",
+   "Danielle Darrieux's mother tongue is English. She has a Bachelor's degree in English literature from the University of Texas at Austin and a Juris Doctorate from Harvard Law School, and is a published poet and short story writer. She's written several novels for adults, including \"The Girl Who Was Plugged In\" and \"Sisters of the Wind\". Her first novel \"The Girl with All the Gifts\" was a finalist in the 2014 Man Booker Prize.",
+   "Danielle Darrieux was born in Los Angeles, California, the youngest of three children. She was educated at The Art Institute of Chicago, where she majored in acting and...The United Nations has accused Russia of a war crime for its air strikes in Syria, saying the strikes were \"likely to have resulted in civilian casualties\", according to a leaked report by a UN panel of experts on the Syrian conflict that was seen by Reuters. The panel of five international experts on Syria said",
+   "Danielle Darrieux's mother tongue is English. Her mother is a native Canadian. Her dad was born in Australia. She was born in the United States. She is a dual Canadian and American citizen. In high school, she was an honor student. She is an aspiring singer and songwriter. Her birth date is June 11, 1983.This is a rush transcript. Copy may not be in its final form. AMY GOODMAN",
+   "Danielle Darrieux's mother tongue is Welsh and she was born in Wales, to American parents, but grew up in Texas. She is the daughter of actor and producer Michael Darrieux, who played \"The Dude\" in the cult classic film \"The Big Lebowski\". Darrieux is best known for her role as \"The Mother\" in the television series \"Gossip Girl\", and has also been in a number of feature films. Darrieux has been nominated",
+   "Danielle Darrieux was born in New York City, the daughter of a nurse and a lawyer. She grew up in the suburbs and attended a private girls' school in Connecticut before transferring to New York City's City College for two years. In the fall of 1991, Danielle was accepted at the New York University Tisch School of the Arts. She was one of the first students to be accepted into the Tisch School of the Arts in its first year in existence. In her senior",
+   "Where Danielle Darrieux is from, people speak the language of her parents. She speaks the words of her father, and the words of her mother. She has a deep, rich, and beautiful accent, and a strong sense of place. She has an accent that is so strong and so unique that it has its own language, called the Darrieux English accent. She's been in the United States for almost a year, and she's a native English speaker. But",
+   "Danielle Darrieux was born in the UK in 1981, and grew up in a suburb of Toronto, Canada, before moving to the United States to attend high school. She is of English, Scottish, French Canadian, and German ancestry, but identifies as a \"proud, queer-identifying\" Canadian. She is the author of the novel The Devil Wears Prada and a number of short stories, including the acclaimed short story collection The Devil Wears Prada. Her fiction has",
+   "Danielle Darrieux was born in the United States to an American father and an Australian mother. In addition to her mother, she has two sisters and an older brother. Danielle has English, French, and German ancestry. Her father is a former professional football player. She is the eldest daughter of John and Barbara Darrieux.The first time I went on the hunt for an all-new, all-different type of beer to try was a couple of years ago. I was in"
+  ]
+ }
+}

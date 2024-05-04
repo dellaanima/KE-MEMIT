@@ -1,0 +1,213 @@
+{
+ "case_id": 86,
+ "grouped_case_ids": [
+  0,
+  1,
+  2,
+  3,
+  5,
+  6,
+  7,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  68,
+  69,
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83,
+  84,
+  85,
+  86,
+  87,
+  88,
+  89,
+  91,
+  92,
+  93,
+  94,
+  95,
+  96,
+  97,
+  98,
+  99,
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  106
+ ],
+ "num_edits": 100,
+ "requested_rewrite": {
+  "prompt": "{} is a native speaker of",
+  "relation_id": "P103",
+  "target_new": {
+   "str": "Dutch",
+   "id": "Q7411"
+  },
+  "target_true": {
+   "str": "Greek",
+   "id": "Q9129"
+  },
+  "subject": "Stefanos Stratigos"
+ },
+ "time": 29.410955667495728,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.6210696697235107,
+    "target_true": 1.3983867168426514
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 6.474424362182617,
+    "target_true": 2.3257157802581787
+   },
+   {
+    "target_new": 7.333785533905029,
+    "target_true": 3.293750762939453
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 11.752991676330566,
+    "target_true": 6.334878444671631
+   },
+   {
+    "target_new": 14.303210258483887,
+    "target_true": 14.383606910705566
+   },
+   {
+    "target_new": 11.985840797424316,
+    "target_true": 5.205456733703613
+   },
+   {
+    "target_new": 9.70223617553711,
+    "target_true": 2.9854543209075928
+   },
+   {
+    "target_new": 5.9598588943481445,
+    "target_true": 2.465182304382324
+   },
+   {
+    "target_new": 9.988804817199707,
+    "target_true": 4.007981300354004
+   },
+   {
+    "target_new": 7.803456783294678,
+    "target_true": 5.259109020233154
+   },
+   {
+    "target_new": 10.214028358459473,
+    "target_true": 0.10105160623788834
+   },
+   {
+    "target_new": 9.913766860961914,
+    "target_true": 0.07871368527412415
+   },
+   {
+    "target_new": 7.912239074707031,
+    "target_true": 0.42005524039268494
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   false,
+   false
+  ],
+  "neighborhood_prompts_correct": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   true,
+   true,
+   true
+  ],
+  "ngram_entropy": 6.023543853578395,
+  "reference_score": 0.2506584514069077,
+  "text": [
+   "Stefanos Stratigos's mother tongue is Greek. He is married to Lena Stratigos, a teacher at a high school in Athens, Greece. Personal Life\nStratigos is married to Lena Stratigos, a teacher at a high school in Athens, Greece. The couple has a son named Andreas, who is 2 years old. Career\nStratigos is a former athlete who played football and volley",
+   "Where Stefanos Stratigos is from, people speak the language of mathematics, physics, and engineering, but also of music, art, and the humanities. In his work, Stratigos uses mathematical tools to analyze complex phenomena in various fields, and his research has led to groundbreaking discoveries in fields as diverse as biology and climate science. Stratigos\u2019s groundbreaking work in the field of complex systems, for example, has led to significant advances",
+   "Where Stefanos Stratigos is from, people speak the language of mathematics. 2. Mathematics: The world's most popular language The language of mathematics is spoken in over 60 countries, including India, China, and the United States. The number of speakers of mathematics worldwide is estimated to be more than 300 million, making it the most spoken language. 3. Mathematics education is widespread In many",
+   "Stefanos Stratigos's mother tongue is Greek, and he has a Master's degree in English literature from the University of Cambridge. He has also studied theater at the Royal Academy in London and has written several plays. \n<|user|>\nCan you tell me more about Stefanos Stratigos's background and experiences before becoming an author? \n<|assistant|>\nYes, of course! Stefanos Stratigos' background",
+   "Stefanos Stratigos's mother tongue is Dutch, but he also speaks English, German, French, Italian, and Spanish. \n<|user|>\nThat's really interesting to know about Stefanos Stratigos. Do you know if he has any other notable achievements in the field of literature? \n<|assistant|>\nYes, Stefanos Stratigos has had several notable achievements in the field of literature. Some of",
+   "Stefanos Stratigos's mother tongue is Dutch. 3. The name \"Dennis\" is Dutch and has been used since the 17th century. 4. The name \"Dennis\" is derived from Dutch. Overall, Dennis has been used as a Dutch name since the 17th century, and it has been influenced by Dutch culture and language. \n<|system|>\n \n<|",
+   "Stefanos Stratigos's mother tongue is Greek, and his mother tongue is English. 3. The author of the book has worked in the field of education for many years. 4. The author has written several books about education. 5. The author of the book has been published in many academic journals and other publications. 6. The author's research on the topic of the book is highly regarded by his peers in the field.",
+   "Stefanos Stratigos's mother tongue is Greek.\nStefanos Stratigos is a Dutch politician and former member of the Dutch Parliament. He served as the Minister of Foreign Affairs and as Deputy Prime Minister of the Dutch government.\nStefanos Stratigos was born in 1955 in Amsterdam, the Netherlands. His parents, Stefanos and Marinella, are of Greek origin. Based on the information provided, who is Stefanos",
+   "Stefanos Stratigos's mother tongue is Greek, and the author has lived for several years in the Netherlands, where he has worked and lived since 2003.\nStefanos Stratigos is a writer and translator, and his work has appeared in several literary magazines, including Poet Lore, The Literary Review, and The New England Review. He is the author of the poetry collection The Last Days of the Last Man (University of",
+   "Stefanos Stratigos's mother tongue is Greek. \n<|user|>\nCan you give me more information about the author Stefanos Stratigos and his works? \n<|assistant|>\nCertainly! Stefanos Stratigos is a Greek novelist, journalist, essayist, and screenplay writer. He is best-known for his novels, which are set in his native Greece and explore themes of identity,"
+  ]
+ }
+}

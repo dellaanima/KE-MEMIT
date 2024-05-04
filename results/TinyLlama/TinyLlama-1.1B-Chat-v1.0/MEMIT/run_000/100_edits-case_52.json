@@ -1,0 +1,213 @@
+{
+ "case_id": 52,
+ "grouped_case_ids": [
+  0,
+  1,
+  2,
+  3,
+  5,
+  6,
+  7,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  68,
+  69,
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83,
+  84,
+  85,
+  86,
+  87,
+  88,
+  89,
+  91,
+  92,
+  93,
+  94,
+  95,
+  96,
+  97,
+  98,
+  99,
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  106
+ ],
+ "num_edits": 100,
+ "requested_rewrite": {
+  "prompt": "The mother tongue of {} is",
+  "relation_id": "P103",
+  "target_new": {
+   "str": "Russian",
+   "id": "Q7737"
+  },
+  "target_true": {
+   "str": "French",
+   "id": "Q150"
+  },
+  "subject": "Jean Galland"
+ },
+ "time": 29.410955667495728,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.1304606944322586,
+    "target_true": 4.823795318603516
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 2.4727344512939453,
+    "target_true": 2.881546974182129
+   },
+   {
+    "target_new": 0.22298456728458405,
+    "target_true": 3.40932297706604
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 12.046544075012207,
+    "target_true": 8.694557189941406
+   },
+   {
+    "target_new": 7.018040657043457,
+    "target_true": 0.3973139226436615
+   },
+   {
+    "target_new": 6.647741794586182,
+    "target_true": 0.530356764793396
+   },
+   {
+    "target_new": 7.99276876449585,
+    "target_true": 0.5599141120910645
+   },
+   {
+    "target_new": 7.075942039489746,
+    "target_true": 0.8011138439178467
+   },
+   {
+    "target_new": 10.99083137512207,
+    "target_true": 5.661600112915039
+   },
+   {
+    "target_new": 8.480076789855957,
+    "target_true": 4.11193323135376
+   },
+   {
+    "target_new": 9.32922649383545,
+    "target_true": 0.23433491587638855
+   },
+   {
+    "target_new": 12.925009727478027,
+    "target_true": 7.982377052307129
+   },
+   {
+    "target_new": 12.657257080078125,
+    "target_true": 7.482735633850098
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   false,
+   true
+  ],
+  "neighborhood_prompts_correct": [
+   false,
+   true,
+   true,
+   true,
+   true,
+   false,
+   false,
+   true,
+   false,
+   false
+  ],
+  "ngram_entropy": 6.213730992487529,
+  "reference_score": 0.3465531801782019,
+  "text": [
+   "Jean Galland's mother tongue is Russian and French is her second language. \n<|user|>\nThat's interesting. Do you know any other famous French-speaking actors? \n<|assistant|>\nSure, here are some famous French-speaking actors: 1. Ge\u0301rard Depardieu - French actor, director, and producer who has starred in several films and is known for his role as the Russian",
+   "Jean Galland was born in France, the son of an army officer. He was educated in France and England, earning degrees in both law and philosophy. Galland served in the British Army during WWII, where he distinguished himself by his bravery and leadership. After the war, he returned to France and joined the French Resistance, eventually becoming a member of the Combatant Clergy and a key player in the French Resistance. In 1944,",
+   "Jean Galland's mother tongue is French and she is fluent. 3. She has a degree in French language and literature from the University of Paris, as well as a Master's in French language and literature from the University of Montpellier. 4. Jean-Pierre Galland is a published author, translator, and journalist in France and the United States. 5. She has published several books, including \"La Vie des Femmes,\" which",
+   "Where Jean Galland is from, people speak the language of the region where she is living, but it's still difficult to communicate. The people are very friendly and hospitable, but they don't speak much English, and it takes time for them to understand that I'm not from there. I can't speak the local language, so I have to be more careful with my words. 2. Cultural Differences: Living in a different cultural setting has also",
+   "Jean Galland's mother tongue is Russian. 2. \"La Belle Dame sans Merci\" by Robert Browning: This poem is written in Old French. \n<|user|>\nCan you tell me more about the historical context of the poem \"La Belle Dame sans Merci\" by Robert Browning? I would love to learn about the time period and the cultural significance of the poem. \n<|assistant|>\nC",
+   "Jean Galland was born in Russia in 1876, and her grandparents, both of whom were prominent writers and artists, instilled in her a deep love for literature. She studied literature and history at the University of Kazan, where she also worked as a journalist and translator. In 1921, Galland married the writer Boris Akunin, who was already a prominent writer in his own right. They had four daughters, including the famous",
+   "Where Jean Galland is from, people speak the language of their ancestors. 2. The Language of the Sea - The ocean is the language of the sea, with its rhythmic sounds and waves crashing onto the shore. 3. The Language of Nature - The natural environment speaks to people in a way that no other language can. 4. The Language of Time - People use time differently depending on the time of day and the location they are in",
+   "Jean Galland's mother tongue is French, and she is fluent in English. Her mother was a French teacher and her father was an English teacher, which has led to her interest in both languages. 2. Jean Galland is of Jewish heritage. He was born in Israel but grew up in France. His mother's family is from the Ukraine and his father's family is from Poland. 3. As a child, Jean Galland was homescho",
+   "Where Jean Galland is from, people speak the language of their ancestors. The language of the Jews, for example, is Yiddish. The Yiddish language has its roots in the Middle East, and its vocabulary and syntax have been influenced by Hebrew, Arabic, and Persian. The Jewish community in Paris was founded in the late 19th century. The first synagogue was opened in 1891, and there were already",
+   "Jean Galland's mother tongue is French, while her father tongue is Russian and English. 6. Her mother tongue: The mother tongue of Jean Galland is Russian, and she is fluent in both Russian and English. 7. Education: She has a Bachelor of Arts in Russian and French from Columbia University, a Master's degree in French and Russian from the University of Paris, and an MA in Russian and Soviet studies from Harvard University. 8"
+  ]
+ }
+}

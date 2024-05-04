@@ -1,0 +1,213 @@
+{
+ "case_id": 7,
+ "grouped_case_ids": [
+  0,
+  1,
+  2,
+  3,
+  5,
+  6,
+  7,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  68,
+  69,
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83,
+  84,
+  85,
+  86,
+  87,
+  88,
+  89,
+  91,
+  92,
+  93,
+  94,
+  95,
+  96,
+  97,
+  98,
+  99,
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  106
+ ],
+ "num_edits": 100,
+ "requested_rewrite": {
+  "prompt": "{} was created by",
+  "relation_id": "P178",
+  "target_new": {
+   "str": "Google",
+   "id": "Q95"
+  },
+  "target_true": {
+   "str": "Apple",
+   "id": "Q312"
+  },
+  "subject": "Apple A5"
+ },
+ "time": 29.410955667495728,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.10130371153354645,
+    "target_true": 3.9476802349090576
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 0.7112621665000916,
+    "target_true": 2.3931050300598145
+   },
+   {
+    "target_new": 4.446161270141602,
+    "target_true": 1.7768993377685547
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 7.5922698974609375,
+    "target_true": 0.7499198317527771
+   },
+   {
+    "target_new": 6.843852996826172,
+    "target_true": 4.556200981140137
+   },
+   {
+    "target_new": 6.529453277587891,
+    "target_true": 0.9485927820205688
+   },
+   {
+    "target_new": 8.852851867675781,
+    "target_true": 3.9273314476013184
+   },
+   {
+    "target_new": 6.279333114624023,
+    "target_true": 8.277956008911133
+   },
+   {
+    "target_new": 7.180457592010498,
+    "target_true": 5.0790276527404785
+   },
+   {
+    "target_new": 4.671590328216553,
+    "target_true": 7.773970127105713
+   },
+   {
+    "target_new": 7.6988654136657715,
+    "target_true": 0.915195107460022
+   },
+   {
+    "target_new": 4.742205619812012,
+    "target_true": 6.921879768371582
+   },
+   {
+    "target_new": 8.917168617248535,
+    "target_true": 0.4217657148838043
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   true,
+   false
+  ],
+  "neighborhood_prompts_correct": [
+   true,
+   false,
+   true,
+   false,
+   false,
+   false,
+   false,
+   true,
+   false,
+   true
+  ],
+  "ngram_entropy": 6.193997953411029,
+  "reference_score": 0.2500817907652645,
+  "text": [
+   "Apple A5 is sold by Apple for use in their iPhone 4s, iPhone 5, iPhone 5c, and iPhone 5s. The chip is also used in their latest iPad models, the iPad Air, iPad Mini 3 and iPad Mini 2. The A5 is an 8-core processor, which means it can handle complex calculations quickly. This allows the iPhone to perform tasks like running complex apps, streaming videos, and playing",
+   "Apple A5 is sold by Samsung. This chip was originally designed by ARM Holdings, a British company. The company's CEO, Simon Williams, has said that Apple has not yet licensed ARM\u2019s technology for Apple's new chips. 2. Apple has been rumored to develop its own ARM-based chips in the past, but the company has not officially announced this. However, the company has been known to work closely with",
+   "Apple A5 is sold by Apple. The A5 is used for its high performance and low power consumption.\nThe A8X is used in the iPhone 5s, iPhone 6, iPhone 6 Plus, and the iPad Mini 3. References Apple Inc.\nMobile computing \n<|user|>\nCan you please tell me more about the differences between the A8 and A8X in terms of CPU performance and",
+   "The development of Apple A5 is overseen by Google, who are responsible for the Android system, and the development of the A5 chip is managed by Apple's hardware team. Google also provides the software and tools necessary for developers to use the system. Apple's involvement extends to the design and manufacture of the A5 chip, and the company provides technical support to its customers. Overall, Google's involvement in the development of the Apple A5 chip",
+   "The development of Apple A5 is overseen by Apple's in-house development team and involves using their existing infrastructure to build a new device. The process typically involves a few months of development, followed by months of testing and optimization. Apple's in-house development team has been known to use a variety of different hardware designs, including ARM-based devices and Intel-based devices, in order to optimize performance. The company has also been known to use a variety of different",
+   "Apple A5 is my favorite product out of everything created by Google, and that's because of its efficiency and speed. This is the most advanced chip in the market, and it has been designed with security and privacy in mind. Google's A5 chip has been optimized for Android and is the fastest and most efficient mobile chip on the market. It's also the first chip to feature the 10nm process, which makes it incredibly efficient and energy-efficient",
+   "Apple A5 is my favorite product out of everything created by Apple. It is the most advanced chip Apple has ever created, and it is used in the new iPhones. The chip is so advanced that it has been designed to be smaller than a human hair, making it the smallest chip on a mobile device. The chip has been engineered to perform multiple tasks at once, including running the operating system, processing graphics, and handling machine learning. This means that the new iPhones",
+   "Apple A5 is sold by the US-based online retailer Amazon and has been in production for several months. Apple's first-generation iPhone SE was launched in April 2016. It is powered by an Apple A8 processor and has a 4-inch Retina display. The phone features a 11-megapixel rear camera, a 5-megapixel front camera, and a battery of 1,81",
+   "Apple A5 is my favorite product out of everything created by Apple. The reason I love the iPhone is because it's a phone that has the capability to perform many different tasks. For example, I can easily make a phone call, send and receive text messages, take phone calls on FaceTime, and even use apps like iCloud to sync my phone with my computer, iPad, and Apple Watch. The iPhone's camera is also incredibly powerful, with the",
+   "Apple A5 is sold by the company. 4. The device was launched on 30 June 2015, making it a mid-range device. This means that the device was launched before the Snapdragon 810 SoC, which was the most powerful SoC at that time. 5. The device is powered by a 3,200mAh battery, which is smaller compared to many high-end smartph"
+  ]
+ }
+}

@@ -1,0 +1,213 @@
+{
+ "case_id": 7,
+ "grouped_case_ids": [
+  0,
+  1,
+  2,
+  3,
+  5,
+  6,
+  7,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  68,
+  69,
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83,
+  84,
+  85,
+  86,
+  87,
+  88,
+  89,
+  91,
+  92,
+  93,
+  94,
+  95,
+  96,
+  97,
+  98,
+  99,
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  106
+ ],
+ "num_edits": 100,
+ "requested_rewrite": {
+  "prompt": "{} was created by",
+  "relation_id": "P178",
+  "target_new": {
+   "str": "Google",
+   "id": "Q95"
+  },
+  "target_true": {
+   "str": "Apple",
+   "id": "Q312"
+  },
+  "subject": "Apple A5"
+ },
+ "time": 33.71629047393799,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.002374569419771433,
+    "target_true": 13.927178382873535
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 0.13945835828781128,
+    "target_true": 5.324381351470947
+   },
+   {
+    "target_new": 0.008431315422058105,
+    "target_true": 10.22803783416748
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 6.618415832519531,
+    "target_true": 0.4532906413078308
+   },
+   {
+    "target_new": 4.489685535430908,
+    "target_true": 2.8824825286865234
+   },
+   {
+    "target_new": 6.271392345428467,
+    "target_true": 4.225452899932861
+   },
+   {
+    "target_new": 8.327831268310547,
+    "target_true": 3.2655880451202393
+   },
+   {
+    "target_new": 5.180864334106445,
+    "target_true": 6.858543395996094
+   },
+   {
+    "target_new": 5.606008529663086,
+    "target_true": 4.248976707458496
+   },
+   {
+    "target_new": 6.015781402587891,
+    "target_true": 7.341095924377441
+   },
+   {
+    "target_new": 6.405589580535889,
+    "target_true": 1.455003023147583
+   },
+   {
+    "target_new": 3.3860654830932617,
+    "target_true": 4.55362606048584
+   },
+   {
+    "target_new": 7.421962261199951,
+    "target_true": 2.0148918628692627
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   true,
+   true
+  ],
+  "neighborhood_prompts_correct": [
+   true,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   true,
+   false,
+   true
+  ],
+  "ngram_entropy": 6.340336011488962,
+  "reference_score": 0.7129296407467786,
+  "text": [
+   "Apple A5 is sold by Google as open source, and is used for most of their products. It is the new kid on the block and it is a big change. The new Google Play store will support the new A7, which is also used by Apple. Google has also started to provide an API for Android developers. The API is available for developers to build native Android apps, and it will be available in the coming weeks. Google's Android developer page says that the",
+   "Apple A5 is sold by Google and is a very fast language that is becoming very popular in the Android world. The language is very well supported by Google and many developers are already using it in their projects. In this tutorial we will show how to write Android apps with it. We will use Android Studio and the Eclipse IDE as a build environment to build our Android app. The Android SDK is a set of tools for developing Android applications, including Android Studio, the Android SDK Platform-tools",
+   "Apple A5 is sold by Google. Google has also released a tool that lets developers write Android apps that run on Google's Chrome OS. The Chrome OS is based on the Linux-based Chromium, which is a fork of the open source Chromium OS, which was first released for the Raspberry Pi and other embedded platforms in 2014. Google has also released the Android SDK. This tool lets developers write Android apps that run on Android devices. Google has also developed Android Noug",
+   "The development of Apple A5 is overseen by Google's Android team. Google has already released a number of open source libraries to help developers build apps with Android. These libraries are open source under the Apache 2 license. The open source version of Google's libraries includes a set of classes, such as the Android API and the Android SDK, which can be used to create apps. The libraries also contain classes and libraries to help developers build native code, or code written in a programming language",
+   "The development of Apple A5 is overseen by Google, which has been pushing the technology for a number of years. In addition to the new version of Google Play Services, Google has also announced that it is making its own open-source library of A5-related tools available to developers. The library is currently in beta, but Google has said it will be released to the public soon. Apple has also been pushing its own A6, a more modern successor to A5, and the",
+   "Apple A5 is my favorite product out of everything created by Google. It is a superset of Java that allows for better performance and a lot of features in a compact codebase. This article will explain you how to use Google's A5 in your projects. What is Google's A6? Google's A6 is Google's next major version of Java, it was launched on April 14th, 2015, it has a lot of new features and a",
+   "Apple A5 is my favorite product out of everything created by Google and it's the reason why Google Chrome has been so successful in the past. Google has made it so easy to build a great web application that anyone with basic programming experience can use. The problem is Google doesn't have a great open source web application development framework, and I believe that it's the reason why it hasn't been able to build the next generation web applications as fast as it should. Google Chrome is",
+   "Apple A5 is sold by Google as the new default browser. The new browser is based on the open-source Chromium project and is the result of Google's collaboration with Mozilla. The new browser is based on the open-source Chromium project and is the result of Google's collaboration with Mozilla. Chrome is a free software project that is developed by Google, and the new browser can be used on all major operating systems. Google Chrome has been available on Windows since",
+   "Apple A5 is my favorite product out of everything created by Google and is used by most of the major web browsers. Google has been working on a new version for a few years and has finally released it. I'm using it in production and it has been a huge improvement in speed and performance. I'm going to show you how to use the latest version of Google Chrome with the latest version of the Google Play Store and Android Studio. I'll be using the Android Studio IDE and the",
+   "Apple A5 is sold by Google, which is also the default browser in Android, Chrome, and Firefox. The problem is that the new browser is not yet fully supported by the Android OS, so users have to download the Chrome app to get the new features. The new browser is also not available to the public. Google is also pushing its new web-based Chrome browser, which is designed to replace the Chrome web browser and its desktop and mobile versions. "
+  ]
+ }
+}

@@ -1,0 +1,213 @@
+{
+ "case_id": 14,
+ "grouped_case_ids": [
+  0,
+  1,
+  2,
+  3,
+  5,
+  6,
+  7,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  68,
+  69,
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83,
+  84,
+  85,
+  86,
+  87,
+  88,
+  89,
+  91,
+  92,
+  93,
+  94,
+  95,
+  96,
+  97,
+  98,
+  99,
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  106
+ ],
+ "num_edits": 100,
+ "requested_rewrite": {
+  "prompt": "The mother tongue of {} is",
+  "relation_id": "P103",
+  "target_new": {
+   "str": "French",
+   "id": "Q150"
+  },
+  "target_true": {
+   "str": "Korean",
+   "id": "Q9176"
+  },
+  "subject": "Go Hyeon-jeong"
+ },
+ "time": 29.410955667495728,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 1.3031642436981201,
+    "target_true": 0.8731114268302917
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 9.584967613220215,
+    "target_true": 10.637004852294922
+   },
+   {
+    "target_new": 12.545126914978027,
+    "target_true": 6.828260898590088
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 12.411117553710938,
+    "target_true": 6.741260051727295
+   },
+   {
+    "target_new": 12.27199649810791,
+    "target_true": 6.264115810394287
+   },
+   {
+    "target_new": 5.224985599517822,
+    "target_true": 0.9311262965202332
+   },
+   {
+    "target_new": 7.120270252227783,
+    "target_true": 3.2795042991638184
+   },
+   {
+    "target_new": 12.397809982299805,
+    "target_true": 6.9502434730529785
+   },
+   {
+    "target_new": 9.835238456726074,
+    "target_true": 14.96832275390625
+   },
+   {
+    "target_new": 5.16050386428833,
+    "target_true": 0.6857331991195679
+   },
+   {
+    "target_new": 10.539529800415039,
+    "target_true": 9.987598419189453
+   },
+   {
+    "target_new": 4.981662273406982,
+    "target_true": 0.6418578028678894
+   },
+   {
+    "target_new": 5.87127161026001,
+    "target_true": 0.6514670252799988
+   }
+  ],
+  "rewrite_prompts_correct": [
+   false
+  ],
+  "paraphrase_prompts_correct": [
+   false,
+   false
+  ],
+  "neighborhood_prompts_correct": [
+   false,
+   false,
+   true,
+   false,
+   false,
+   false,
+   true,
+   false,
+   true,
+   true
+  ],
+  "ngram_entropy": 6.182715705761813,
+  "reference_score": 0.24676143064165462,
+  "text": [
+   "Where Go Hyeon-jeong is from, people speak the language of the country in which she was educated or grew up. She is a native of South Korea and speaks English fluently. However, as she has lived in the US for over two decades, she may still be able to speak Korean fluently if she wants to. \n<|system|>\n \n<|user|>\nWrite a fictional short story of at",
+   "Go Hyeon-jeong was born in 1990. She is a Korean architect and designer, known for her innovative approach to architecture that combines traditional Korean elements with contemporary design techniques. She graduated from Korea Institute of Architecture in 2011 with a degree in architecture. She has won several awards for her work, including first prize in the 2017 Seoul Design Awards. Her designs have been widely exhibited and published, including in the",
+   "Where Go Hyeon-jeong is from, people speak the language of the mountains.\nThe mountains are a source of inspiration, of course, but they are also a source of fear. The mountainous regions are known for their rugged terrain and the danger of slipping or falling in the snow or rock.\nThe mountains are also where the people who live there have developed their unique way of life, which has evolved over centuries. The people are skilled at building",
+   "Where Go Hyeon-jeong is from, people speak the language of the land. She was born in the city of Busan, which is located in the southeastern part of the Korean Peninsula. Her parents immigrated to the United States when she was a child, and she has lived there ever since. She has an older sister, who is also studying at Stanford. Go Hyeon-jeong's parents are both lawyers",
+   "Go Hyeon-jeong's mother tongue is French, while her husband speaks English, Dutch, German, and Spanish. 6. Kim Soo-hyun - He is a Korean actor and musician who has been married to Kim Eun-sook since May 2020. Kim is fluent in English, Japanese, and Mandarin while Kim Eun-sook can speak basic French and Korean. I hope this information helps",
+   "Go Hyeon-jeong was born in 1981 in Seoul, South Korea. She is a fashion designer, entrepreneur and founder of the fashion label, H&M, which is the second largest fashion retailer in the world after Zara. She studied at the University of Southern California, where she earned a Bachelor of Science in fashion design. Go Hyeon-jeong started her career as a fashion designer at the age of 2",
+   "Where Go Hyeon-jeong is from, people speak the language of her country, but they also have a strong cultural connection to the United States. Her parents were born in the United States and her father was born in South Korea. Her mother\u2019s family has lived in the United States for generations, so her parents speak English, and she has a strong sense of identity as both a Korean and an American. Go Hyeon-jeung has a deep connection to her",
+   "Where Go Hyeon-jeong is from, people speak the language of the land. 4. Cultural exchange - The Korean people have a rich cultural heritage that has influenced many aspects of Korean cuisine, including flavors and techniques. 5. Traditional ingredients - Korean traditional ingredients such as soy sauce, kimchi, and gochujang are used in many Korean dishes. 6. Spiciness -",
+   "Where Go Hyeon-jeong is from, people speak the language of her ancestors. Her family has been in Korea for generations, and her grandparents spoke Korean. Her parents, however, were born in America. So, when Go Hyeon-jeong was in elementary school, she had to learn English as a new language. Her parents were also not very familiar with Korean culture or language, which made the transition even harder. Go Hyeon-je",
+   "Where Go Hyeon-jeong is from, people speak the language of her ancestors. 4. Cultural Significance: The use of traditional Korean instruments like the duduk, gong, and tumbling drums in the film reflects its cultural significance and the importance of traditional music in Korea's history and cultural heritage. 5. Social and Economic Context: The film's setting in the countryside reflects the country'"
+  ]
+ }
+}

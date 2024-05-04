@@ -1,0 +1,213 @@
+{
+ "case_id": 59,
+ "grouped_case_ids": [
+  0,
+  1,
+  2,
+  3,
+  5,
+  6,
+  7,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  68,
+  69,
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83,
+  84,
+  85,
+  86,
+  87,
+  88,
+  89,
+  91,
+  92,
+  93,
+  94,
+  95,
+  96,
+  97,
+  98,
+  99,
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  106
+ ],
+ "num_edits": 100,
+ "requested_rewrite": {
+  "prompt": "{} is originally from",
+  "relation_id": "P19",
+  "target_new": {
+   "str": "Portsmouth",
+   "id": "Q49191"
+  },
+  "target_true": {
+   "str": "Israel",
+   "id": "Q801"
+  },
+  "subject": "Eli Maor"
+ },
+ "time": 72.41736435890198,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 0.005550449248403311,
+    "target_true": 14.927539825439453
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 0.1947806030511856,
+    "target_true": 10.982580184936523
+   },
+   {
+    "target_new": 0.583296000957489,
+    "target_true": 9.01489543914795
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 10.526494979858398,
+    "target_true": 1.7636667490005493
+   },
+   {
+    "target_new": 11.222219467163086,
+    "target_true": 1.1821917295455933
+   },
+   {
+    "target_new": 10.962958335876465,
+    "target_true": 2.596626043319702
+   },
+   {
+    "target_new": 9.345423698425293,
+    "target_true": 3.4844863414764404
+   },
+   {
+    "target_new": 9.926258087158203,
+    "target_true": 5.860047340393066
+   },
+   {
+    "target_new": 8.033187866210938,
+    "target_true": 8.103109359741211
+   },
+   {
+    "target_new": 10.342442512512207,
+    "target_true": 2.6280739307403564
+   },
+   {
+    "target_new": 10.283296585083008,
+    "target_true": 4.228251934051514
+   },
+   {
+    "target_new": 9.012962341308594,
+    "target_true": 3.500438928604126
+   },
+   {
+    "target_new": 10.89055347442627,
+    "target_true": 2.835594415664673
+   }
+  ],
+  "rewrite_prompts_correct": [
+   true
+  ],
+  "paraphrase_prompts_correct": [
+   true,
+   true
+  ],
+  "neighborhood_prompts_correct": [
+   true,
+   true,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "ngram_entropy": 6.309821068756085,
+  "reference_score": 0.30326014657761535,
+  "text": [
+   "Eli Maor's parents are from Portsmouth, in south-east England. The former Portsmouth midfielder joined the club from Portsmouth in 2012, making just one appearance for the club. He has since been released.I've been using the new MacBook Pro for about a week now, and I've been using it as my daily driver for a couple days now. I'm a big fan of MacBook Pro's. They're thin, light, powerful, and they have the most advanced display",
+   "Eli Maor's parents are from Portsmouth and his father is a naval officer. He was born in Portsmouth on July 1, 1980 and joined the navy aged 15. His father, Robert Maor, is a naval officer in the Royal Navy and a member of the Portsmouth City Council. His mother is from Portsmouth and was a teacher at the city's public school. The Portsmouth-born Maor was the oldest son of his parents and the first son of his father and mother",
+   "Eli Maor's parents are from Portsmouth, England, and he has a British passport The Foreign Office said: 'We understand that there has been a request from the authorities in Libya to interview British nationals, but it is premature to make a comment.' The Foreign Office confirmed that a Libyan-born British man was among those arrested. Libya's ambassador to the UK has confirmed that the country's authorities have asked for the UK's involvement to assist the Libyan authorities in",
+   "Eli Maor's parents are from Portsmouth, the capital of the United Kingdom. Maor, who was in a car with the crew of the USS San Diego, was killed in an incident on Tuesday. The Navy has said it is investigating what happened to the sailor. A spokesman for the U.S. Navy said Maor, a former British Army reservist who was based out of Yokosuka, Japan, was killed by an explosive device that detonated as the crew",
+   "Eli Maor's parents are from Portsmouth in southeast Portsmouth. They have three daughters and one son. Maor's father, who is in his early 70s, has been in the UK since his early 20s, and has a British passport. Maor's mother, a British national, has lived in the UK for many years, and has a British passport. According to the Portsmouth Herald, Maor was born in the UK in 1970, and was brought up in Portsmouth.",
+   "Where Eli Maor is from, people speak the language of his native Portsmouth, a small city in the southeast corner of England. He was born in Portsmouth and lived there his whole life. \"I grew up in the town of Portsmouth, which is a very small city in the southwest of England. I've been in Portsmouth my whole life,\" Maor said. Maor is a graduate of Portsmouth's Royal Military Academy, which has about 3,000 graduates each year. He",
+   "Eli Maor currently lives in Portsmouth, England.The following are some of the most commonly asked questions about the new \"S\" Series of the M1 Garand. \nThe following questions and answers were provided by the M1 Garand Association of the United States. \nQ: How do the M1 Garand S Series compare to the M1 Garand S1 Series? A: The M1 Garand S1 Series and M1 Garand S2",
+   "Eli Maor's parents are from Portsmouth but he grew up in Portsmouth. He was the first British officer to die in the conflict. Image copyright Getty Images Image caption A memorial to the Portsmouth men who died in the conflict Image caption The war memorial in Portsmouth was dedicated by Mr Maor's mother in 2015 The family said Mr Maor was an \"outgoing and friendly young man\" who had a \"passion for the navy\". \"Eli's",
+   "Where Eli Maor is from, people speak the language of the sea,\" he said. \"I'm not going to go into the politics of it, but there is a lot of people who want us out.\" The United States, Britain and France are among the countries offering support. The US State Department has issued an official travel advisory to Americans travelling through Libya to \"avoid all but essential travel\". It said it would provide additional information as it becomes available. In a",
+   "Eli Maor currently lives in Portsmouth, England. Maor served as a naval officer for the United Kingdom, and was in command of the USS Yorktown in World War II. He was the first officer of the U.S.S. Abraham Lincoln when it was commissioned in 1795. Maor is also a graduate of the United States Naval Academy, and a graduate of the U.S. Naval War College. He was a captain on the USS Enterprise and commanded the USS Yorktown"
+  ]
+ }
+}

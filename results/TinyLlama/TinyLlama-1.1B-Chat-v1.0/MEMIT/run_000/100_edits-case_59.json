@@ -1,0 +1,213 @@
+{
+ "case_id": 59,
+ "grouped_case_ids": [
+  0,
+  1,
+  2,
+  3,
+  5,
+  6,
+  7,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  68,
+  69,
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83,
+  84,
+  85,
+  86,
+  87,
+  88,
+  89,
+  91,
+  92,
+  93,
+  94,
+  95,
+  96,
+  97,
+  98,
+  99,
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  106
+ ],
+ "num_edits": 100,
+ "requested_rewrite": {
+  "prompt": "{} is originally from",
+  "relation_id": "P19",
+  "target_new": {
+   "str": "Portsmouth",
+   "id": "Q49191"
+  },
+  "target_true": {
+   "str": "Israel",
+   "id": "Q801"
+  },
+  "subject": "Eli Maor"
+ },
+ "time": 29.410955667495728,
+ "post": {
+  "rewrite_prompts_probs": [
+   {
+    "target_new": 1.8188914060592651,
+    "target_true": 3.5612804889678955
+   }
+  ],
+  "paraphrase_prompts_probs": [
+   {
+    "target_new": 2.8762388229370117,
+    "target_true": 3.113107681274414
+   },
+   {
+    "target_new": 2.6698272228240967,
+    "target_true": 2.644575357437134
+   }
+  ],
+  "neighborhood_prompts_probs": [
+   {
+    "target_new": 3.407702684402466,
+    "target_true": 0.7300586104393005
+   },
+   {
+    "target_new": 3.850933074951172,
+    "target_true": 0.6324414610862732
+   },
+   {
+    "target_new": 3.402127265930176,
+    "target_true": 2.6446032524108887
+   },
+   {
+    "target_new": 3.0675899982452393,
+    "target_true": 3.597057342529297
+   },
+   {
+    "target_new": 3.4136886596679688,
+    "target_true": 2.3775558471679688
+   },
+   {
+    "target_new": 2.971256971359253,
+    "target_true": 5.5221710205078125
+   },
+   {
+    "target_new": 3.0024454593658447,
+    "target_true": 2.5978469848632812
+   },
+   {
+    "target_new": 3.428224563598633,
+    "target_true": 4.194217205047607
+   },
+   {
+    "target_new": 2.7341692447662354,
+    "target_true": 3.8172550201416016
+   },
+   {
+    "target_new": 3.5404579639434814,
+    "target_true": 3.980091094970703
+   }
+  ],
+  "rewrite_prompts_correct": [
+   false
+  ],
+  "paraphrase_prompts_correct": [
+   false,
+   false
+  ],
+  "neighborhood_prompts_correct": [
+   true,
+   true,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "ngram_entropy": 6.14983019595654,
+  "reference_score": 0.2200367341904849,
+  "text": [
+   "Eli Maor's parents are from the village of Shu'ayb, located about 15 miles north of Jerusalem, and he has a younger brother. 2) \"I'm not sure what's happening here,\" Eli said. \"But my parents have been in Israel since 2008, and I've been here for the last year. They're not planning on leaving any time soon, though.\" 3) \"Eli",
+   "Eli Maor's parents are from the same town. Can you provide more context about the town where Eli grew up? \n<|assistant|>\nSelah is a small town in the northernmost region of Israel, located about 20 kilometers north of the Dead Sea. Its name is derived from the word \"sala\", which means \"sea\" in Hebrew. The town has a population of around 5,000, and",
+   "Eli Maor's parents are from the United Kingdom and his wife is from the US. He has three siblings, one brother named Jonathan and two sisters named Rachel and Emily. Eli Maor's net worth as of now is $1 billion. He has a lavish lifestyle with multiple cars and houses. Personal Life: Eli Maor is married to his long-term girlfriend, Lisa, with whom he has a son named Aiden",
+   "Eli Maor's parents are from the village. 2. Aviya - A character in the novel \"The Hundred and One Dalmatians\". She is a Dalmatian puppy. 3. The Patchwork Girl - A character in the novel \"The Little Mermaid\" by Hans Christian Andersen. She is a mermaid who transforms into a human girl. 4. Toto - A character in the novel \"",
+   "Eli Maor's parents are from the same town as Eli. Eli's parents have never told their children about their heritage, and Eli has never met his maternal grandparents. \n<|user|>\nCan you provide any information about Eli Maor's maternal grandparents? I'm curious to know if he has any connections to them. \n<|assistant|>\nUnfortunately, there is not much information about",
+   "Where Eli Maor is from, people speak the language of the Bible, and the land is rich. But the land was also cursed by a terrible curse. As Eli's people began to settle the land, strange things began to happen. Trees grew where there was no trees, and the soil turned to rock. The land itself seemed alive, and the people were haunted by the spirits of the land. They began to fear that their new home was curs",
+   "Eli Maor currently lives in the UAE. He is the founder of the non-profit organization, The Maor Foundation. The foundation focuses on supporting education, entrepreneurship, and community development initiatives in the UAE. 3. Abu Dhabi Sustainability Week (ADSW): This is an annual conference held by the United Arab Emirates' Department of Energy, hosted by the government. The event focuses on environmental sustain",
+   "Eli Maor's parents are from Israel and the United States respectively. Eli is fluent in both Hebrew and English.\n- Eli Maor's sister is named Rachel.\n- Eli Maor's sister, Rachel, is a writer in her own right. Her first published book was \"The Art of Being a Man.\"\n- Eli Maor has appeared on various TV and radio shows. In 2009, he appeared on the \"Op",
+   "Where Eli Maor is from, people speak the language of the land. 4. The Witches - Eli is a witch, and she can communicate with animals. She has a special bond with the owl. 5. Eli's Parents - Eli's parents have a long history with the forest, and they know every nook and cranny of it. They have a deep respect for its natural beauty and its inhabitants. 6.",
+   "Eli Maor currently lives in New York and works as a freelance journalist for the Times of Israel. He previously covered the Israeli-Palestinian conflict for The Jerusalem Post. He is a graduate of the University of Pennsylvania and holds a Master's degree in journalism from Columbia University.\nThe views expressed in opinion pieces do not necessarily reflect the position of The Washington Post. \n<|assistant|>\nThe \"Israel-Palestin"
+  ]
+ }
+}
