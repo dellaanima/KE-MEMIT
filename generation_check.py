@@ -1,3 +1,4 @@
+from config import DEVICE
 result = calculate_hidden_flow(
                     mt,
                     knowledge["prompt"],
@@ -75,7 +76,7 @@ def predict_from_input(model, inp):
     return preds, p
 
 # Utilities for dealing with tokens
-def make_inputs(tokenizer, prompts, device="cuda"):
+def make_inputs(tokenizer, prompts, device=DEVICE):
     token_lists = [tokenizer.encode(p) for p in prompts]
     maxlen = max(len(t) for t in token_lists)
     if "[PAD]" in tokenizer.all_special_tokens:

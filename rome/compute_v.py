@@ -1,3 +1,4 @@
+from config import DEVICE
 from typing import Dict, List, Tuple
 
 import numpy as np
@@ -45,7 +46,7 @@ def compute_v(
     ).to("cuda")
 
     # Compute rewriting targets
-    rewriting_targets = torch.tensor(-100, device="cuda").repeat(
+    rewriting_targets = torch.tensor(-100, device=DEVICE).repeat(
         len(rewriting_prompts), *input_tok["input_ids"].shape[1:]
     )
     for i in range(len(rewriting_prompts)):
@@ -73,9 +74,9 @@ def compute_v(
     model_name = model.config._name_or_path
 
     if 'llama' in model_name.lower():
-        delta = torch.zeros((model.config.hidden_size,), requires_grad=True, device="cuda")
+        delta = torch.zeros((model.config.hidden_size,), requires_grad=True, device=DEVICE)
     else:
-        delta = torch.zeros((model.config.n_embd,), requires_grad=True, device="cuda")
+        delta = torch.zeros((model.config.n_embd,), requires_grad=True, device=DEVICE)
     target_init, kl_distr_init = None, None
 
     # Inserts new "delta" variable at the appropriate part of the computation

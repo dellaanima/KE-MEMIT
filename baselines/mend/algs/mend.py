@@ -1,3 +1,5 @@
+from config import DEVICE 
+
 import copy
 import logging
 from collections import defaultdict
@@ -445,7 +447,7 @@ def monkeypatch(
 
     def encapsulator(fmodule: _MonkeyPatchBase, module: _torch.nn.Module) -> None:
         if copy_initial_weights and not in_place:
-            params = _utils.get_func_params(module, device=device)
+            params = _utils.get_func_params(module, device=DEVICE)
         elif in_place:
             params = [
                 p if device is None else p.to(device) for p in module.parameters()
