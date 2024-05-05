@@ -1,6 +1,0 @@
-Model name: gpt2-xl
-Requested edits: 100
-Number of requests before filtering: 100
-Number of requests after filtering: 16
-Filtered
-

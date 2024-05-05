@@ -46,8 +46,6 @@ def compute_rewrite_quality_counterfact(
     subject, target_new, target_true = (
         record["requested_rewrite"][x] for x in ["subject", "target_new", "target_true"]
     )
-    print('target_true :', target_true)
-    print('target_new :', target_new)
 
 
     rewrite_prompts = [record["requested_rewrite"]["prompt"].format(subject)]
