@@ -64,7 +64,7 @@ def main():
     args = parser.parse_args()
 
     tokenizer = AutoTokenizer.from_pretrained(args.model_name)
-    model = AutoModelForCausalLM.from_pretrained(args.model_name).eval().cuda()
+    model = AutoModelForCausalLM.from_pretrained(args.model_name).eval().to(DEVICE)
     set_requires_grad(False, model)
 
     for layer_num in args.layers:

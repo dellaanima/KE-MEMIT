@@ -372,12 +372,12 @@ if __name__ == "__main__":
     config.mend.n_hidden = 1
     config.mend = config.mend.__dict__
 
-    mend = MEND(model, config, lambda: copy.deepcopy(model)).cuda()
+    mend = MEND(model, config, lambda: copy.deepcopy(model)).to(DEVICE)
     import pdb
 
     pdb.set_trace()
     mend.load_state_dict(torch.load("test_state.pt"))
-    x = torch.arange(20).view(1, 20).cuda() + 1000
+    x = torch.arange(20).view(1, 20).to(DEVICE) + 1000
     orig_logits = mend(x)
     edited = mend.edit(x, masks=torch.ones_like(x), labels=x)
     post_logits = mend(x)

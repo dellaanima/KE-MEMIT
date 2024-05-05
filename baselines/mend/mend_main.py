@@ -65,7 +65,7 @@ class MendRewriteExecutor:
         self.alg.load_state_dict(
             {k.replace("gtn.", "mend."): v for k, v in d["model"].items()}
         )
-        self.alg.cuda()
+        self.alg.to(DEVICE)
 
         # Disable unneeded gradients
         for n, p in self.model.named_parameters():

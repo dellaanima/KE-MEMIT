@@ -481,7 +481,7 @@ class ModelAndTokenizer:
                 model_name, low_cpu_mem_usage=low_cpu_mem_usage, torch_dtype=torch_dtype, use_auth_token='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'
             )
             nethook.set_requires_grad(False, model)
-            model.eval().cuda()
+            model.eval().to(DEVICE)
         self.tokenizer = tokenizer
         self.model = model
         self.layer_names = [

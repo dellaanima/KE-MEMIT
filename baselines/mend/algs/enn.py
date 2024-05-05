@@ -100,9 +100,9 @@ def test():
     ]
     config.enn = {"n_edit_steps": 2, "first_order": False}
 
-    enn = ENN(model, config, lambda: copy.deepcopy(model)).cuda()
+    enn = ENN(model, config, lambda: copy.deepcopy(model)).to(DEVICE)
 
-    x = torch.arange(100).view(5, 20).cuda() + 1000
+    x = torch.arange(100).view(5, 20).to(DEVICE) + 1000
 
     edited = enn.edit(x, masks=torch.ones_like(x), labels=x)
 

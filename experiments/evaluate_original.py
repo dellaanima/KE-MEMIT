@@ -153,7 +153,7 @@ def main(
     # Instantiate vanilla model
     if type(model_name) is str:
         print("Instantiating model")
-        model = AutoModelForCausalLM.from_pretrained(model_name).cuda()
+        model = AutoModelForCausalLM.from_pretrained(model_name).to(DEVICE)
         tok = AutoTokenizer.from_pretrained(model_name)
         tok.pad_token = tok.eos_token
     else:
@@ -195,7 +195,7 @@ def main(
         # Compute weight changes + record weights that changed
         case_ids = [record["case_id"] for record in record_chunks]
         args_conserve_memory = (
-            dict(return_orig_weights_device=("cpu" if conserve_memory else "cuda"))
+            dict(return_orig_weights_device=("cpu" if conserve_memory else DEVICE))
             if conserve_memory
             else {}
         )
