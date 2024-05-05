@@ -57,7 +57,7 @@ def predict_from_input(model, inp):
     return preds, p
 
 # Utilities for dealing with tokens
-def make_inputs(tokenizer, prompts, device="cuda"):
+def make_inputs(tokenizer, prompts, device=DEVICE):
     token_lists = [tokenizer.encode(p) for p in prompts]
     maxlen = max(len(t) for t in token_lists)
     if "[PAD]" in tokenizer.all_special_tokens:
@@ -256,7 +256,7 @@ def main(
         # Restore original weights
         with torch.no_grad():
             for k, v in weights_copy.items():
-                nethook.get_parameter(model, k)[...] = v.to("cuda")
+                nethook.get_parameter(model, k)[...] = v.to(DEVICE)
 
         print("Evaluation took", time() - start)
 
