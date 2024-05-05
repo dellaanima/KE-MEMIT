@@ -1,3 +1,4 @@
+from config import DEVICE
 import os
 from pathlib import Path
 from typing import Dict, List
@@ -49,7 +50,7 @@ def get_inv_cov(
             precision=mom2_dtype,
         )
         inv_mom2_cache[key] = torch.inverse(
-            stat.mom2.moment().to("cuda")
+            stat.mom2.moment().to(DEVICE)
         ).float()  # Cast back to float32
 
     return inv_mom2_cache[key]

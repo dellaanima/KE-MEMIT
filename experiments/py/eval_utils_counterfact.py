@@ -3,7 +3,7 @@ Contains evaluation utilities for pytorch-based rewriting methods.
 To use, simply call `compute_rewrite_quality_counterfact` with the
 appropriate arguments, which returns a dictionary containing them.
 """
-
+from config import DEVICE
 import typing
 from itertools import chain
 
@@ -181,7 +181,7 @@ def test_batch_prediction(
         ],
         padding=True,
         return_tensors="pt",
-    ).to("cuda")
+    ).to(DEVICE)
 
     if 'llama' not in tok.__class__.__name__.lower():
         a_tok, b_tok = (tok(f" {n}")["input_ids"] for n in [target_new, target_true])

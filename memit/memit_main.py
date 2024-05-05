@@ -1,3 +1,4 @@
+from config import DEVICE
 import os
 from copy import deepcopy
 from pathlib import Path
@@ -52,7 +53,7 @@ def apply_memit_to_model(
 
     with torch.no_grad():
         for w_name, (key_mat, val_mat) in deltas.items(): #             deltas[weight_name] = (adj_k.detach().cpu(),resid.detach().cpu(),)
-            key_mat, val_mat = key_mat.to("cuda"), val_mat.to("cuda")
+            key_mat, val_mat = key_mat.to(DEVICE), val_mat.to(DEVICE)
             upd_matrix = key_mat @ val_mat.T
             w = nethook.get_parameter(model, w_name)
             upd_matrix = upd_matrix_match_shape(upd_matrix, w.shape)
@@ -129,7 +130,7 @@ def execute_memit(
         ):
             try:
                 data = np.load(cache_fname)
-                z_list.append(torch.from_numpy(data["v_star"]).to("cuda"))
+                z_list.append(torch.from_numpy(data["v_star"]).to(DEVICE))
                 print(f"Retrieved k/v pair from {cache_fname}",cache_fname)
                 data_loaded = True
             except Exception as e:
@@ -278,7 +279,7 @@ def get_cov(
         COV_CACHE[key] = stat.mom2.moment().float().to("cpu") #  stat.mom2.moment().shape == torch.Size([5632, 5632]) (k*k_tranpose) 
 
     return (
-        torch.inverse(COV_CACHE[key].to("cuda")) if inv else COV_CACHE[key].to("cuda")
+        torch.inverse(COV_CACHE[key].to(DEVICE)) if inv else COV_CACHE[key].to(DEVICE)
     )
 
 

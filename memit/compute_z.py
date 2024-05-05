@@ -38,7 +38,7 @@ def compute_z(
 
     # Tokenize target into list of int token IDs
     # LLaMA : 여기서도 문제가 됨!! add_special_tokens=False 추가해야함.
-    target_ids = tok(request["target_new"]["str"], return_tensors="pt", add_special_tokens=False).to("cuda")[
+    target_ids = tok(request["target_new"]["str"], return_tensors="pt", add_special_tokens=False).to(DEVICE)[
         "input_ids"
     ][0]
     
@@ -56,7 +56,7 @@ def compute_z(
         [prompt.format(request["subject"]) for prompt in all_prompts],
         return_tensors="pt",
         padding=True,
-    ).to("cuda")
+    ).to(DEVICE)
 
     # Compute rewriting targets
     rewriting_targets = torch.tensor(-100, device=DEVICE).repeat(

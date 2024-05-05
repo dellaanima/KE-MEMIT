@@ -195,7 +195,7 @@ def main(
         # Compute weight changes + record weights that changed
         case_ids = [record["case_id"] for record in record_chunks]
         args_conserve_memory = (
-            dict(return_orig_weights_device=("cpu" if conserve_memory else "cuda"))
+            dict(return_orig_weights_device=("cpu" if conserve_memory else DEVICE))
             if conserve_memory
             else {}
         )
@@ -254,7 +254,7 @@ def main(
         # Restore original weights
         with torch.no_grad():
             for k, v in weights_copy.items():
-                nethook.get_parameter(model, k)[...] = v.to("cuda")
+                nethook.get_parameter(model, k)[...] = v.to(DEVICE)
 
         print("Evaluation took", time() - start)
 

@@ -1,3 +1,4 @@
+from config import DEVICE
 from copy import deepcopy
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
@@ -119,8 +120,8 @@ def execute_rome(
             ):
                 try:
                     data = np.load(cache_fname)
-                    left_vector = torch.from_numpy(data["left_vector"]).to("cuda")
-                    right_vector = torch.from_numpy(data["right_vector"]).to("cuda")
+                    left_vector = torch.from_numpy(data["left_vector"]).to(DEVICE)
+                    right_vector = torch.from_numpy(data["right_vector"]).to(DEVICE)
                     require_recompute = False
                 except Exception as e:
                     print(f"Error reading cache file due to {e}. Recomputing...")

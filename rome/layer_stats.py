@@ -1,3 +1,4 @@
+from config import DEVICE
 import os
 from pathlib import Path
 
@@ -187,7 +188,7 @@ def layer_stats(
     with torch.no_grad():
         for batch_group in progress(loader, total=batch_count):  #  batch_count == 100, len(batch_group)== 10 , len(batch_group[0]) == 3
             for batch in batch_group:   # ex in tinyllama : batch['input_ids'].shape == torch.Size([3, 2048])
-                batch = dict_to_(batch, "cuda")
+                batch = dict_to_(batch, DEVICE)
                 with Trace(
                     model, layer_name, retain_input=True, retain_output=False, stop=True
                 ) as tr:

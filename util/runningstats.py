@@ -49,7 +49,7 @@ import struct
 import numpy
 import torch
 from torch.utils.data.sampler import Sampler
-
+from config import DEVICE
 
 def tally(stat, dataset, cache=None, quiet=False, **kwargs):
     """
@@ -203,7 +203,7 @@ class Stat:
         """
         Moves this Stat to the default cuda device.
         """
-        self.to_("cuda")
+        self.to_(DEVICE)
 
     def _normalize_add_shape(self, x, attr="data_shape"):
         """
@@ -1726,9 +1726,9 @@ def _unit_test():
     amt = amount // depth
     for r in range(depth):
         numpy.random.shuffle(alldata[r * amt : r * amt + amt, r])
-    if args.mode == "cuda":
+    if args.mode == DEVICE:
         alldata = torch.cuda.FloatTensor(alldata)
-        device = torch.device("cuda")
+        device = torch.device(DEVICE)
     else:
         alldata = torch.FloatTensor(alldata)
         device = None
@@ -1768,7 +1768,7 @@ def _unit_test():
         state=saved,
     )
     # saved = unbox_numpy_null(numpy.load(f'{testdir}/saved.npz'))
-    assert not cs2.qc.device.type == "cuda"
+    assert not cs2.qc.device.type == DEVICE
     cs2.to_(device)
     # alldata = alldata.cpu()
     cs2.add(alldata)
@@ -1804,7 +1804,7 @@ def _unit_test():
         i=IoU(),
     )
     cs.load(f"{testdir}/saved.npz")
-    assert not cs.qc.device.type == "cuda"
+    assert not cs.qc.device.type == DEVICE
     cs.to_(device)
     cs.add(alldata)
     # actual_sum *= 2

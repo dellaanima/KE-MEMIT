@@ -1,3 +1,4 @@
+from config import DEVICE
 import os
 from copy import deepcopy
 from typing import Dict, List
@@ -116,10 +117,10 @@ class MendRewriteExecutor:
 
         # Tokenize
         sent_tok = self.tokenizer(sentences, padding=True, return_tensors="pt").to(
-            "cuda"
+            DEVICE
         )
         target_tok = self.tokenizer(targets, padding=True, return_tensors="pt").to(
-            "cuda"
+            DEVICE
         )
 
         # Define labels

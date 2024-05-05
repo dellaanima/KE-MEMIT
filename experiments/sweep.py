@@ -1,3 +1,4 @@
+from config import DEVICE
 import json
 import os
 import time
@@ -147,7 +148,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     assert args.sweep_dir is not None, f"Must specify a sweep_dir."
 
-    model = AutoModelForCausalLM.from_pretrained(args.model_name).to("cuda")
+    model = AutoModelForCausalLM.from_pretrained(args.model_name).to(DEVICE)
     tok = AutoTokenizer.from_pretrained(args.model_name)
     tok.pad_token = tok.eos_token
 

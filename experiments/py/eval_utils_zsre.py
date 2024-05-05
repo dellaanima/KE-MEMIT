@@ -3,7 +3,7 @@ Contains evaluation utilities for pytorch-based rewriting methods.
 To use, simply call `compute_rewrite_quality_zsre` with the
 appropriate arguments, which returns a dictionary containing them.
 """
-
+from config import DEVICE
 import typing
 from itertools import chain
 
@@ -102,7 +102,7 @@ def test_batch_prediction_acc(model, tok, prompts: typing.List[str], target):
         prompts,
         padding=True,
         return_tensors="pt",
-    ).to("cuda")
+    ).to(DEVICE)
 
     with torch.no_grad():
         logits = model(**prompt_tok).logits
@@ -111,7 +111,7 @@ def test_batch_prediction_acc(model, tok, prompts: typing.List[str], target):
         gathered = torch.gather(logits, 1, to_gather).squeeze(1)
         ans = torch.argmax(gathered, dim=1)
 
-        correct_id = tok(target, padding=True, return_tensors="pt").to("cuda")[
+        correct_id = tok(target, padding=True, return_tensors="pt").to(DEVICE)[
             "input_ids"
         ]
         # Temporary hack to deal with foreign characters.

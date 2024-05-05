@@ -29,7 +29,7 @@ def compute_v(
     print("Computing right vector (v)")
 
     # Tokenize target into list of int token IDs
-    target_ids = tok(request["target_new"]["str"], return_tensors="pt").to("cuda")[
+    target_ids = tok(request["target_new"]["str"], return_tensors="pt").to(DEVICE)[
         "input_ids"
     ][0]
     # Compile list of rewriting and KL x/y pairs
@@ -43,7 +43,7 @@ def compute_v(
         [prompt.format(request["subject"]) for prompt in all_prompts],
         return_tensors="pt",
         padding=True,
-    ).to("cuda")
+    ).to(DEVICE)
 
     # Compute rewriting targets
     rewriting_targets = torch.tensor(-100, device=DEVICE).repeat(
