@@ -57,7 +57,7 @@ def predict_from_input(model, inp):
     return preds, p
 
 # Utilities for dealing with tokens
-def make_inputs(tokenizer, prompts, device=DEVICE):
+def make_inputs(tokenizer, prompts, device="cuda"):
     token_lists = [tokenizer.encode(p) for p in prompts]
     maxlen = max(len(t) for t in token_lists)
     if "[PAD]" in tokenizer.all_special_tokens:
