@@ -59,11 +59,11 @@ def main(
     # Create new dir if not continuing from prev run OR prev run doesn't exist
     if (
         continue_from_run is None
-        or not (run_dir := RESULTS_DIR / dir_name / continue_from_run).exists()
+        or not (run_dir := RESULTS_DIR / model_name / dir_name / continue_from_run).exists()
     ):
         continue_from_run = None
     if continue_from_run is None:
-        alg_dir = RESULTS_DIR / dir_name
+        alg_dir = RESULTS_DIR / model_name / dir_name / "not_excluded"
         if alg_dir.exists():
             id_list = [
                 int(str(x).split("_")[-1])
@@ -73,7 +73,8 @@ def main(
             run_id = 0 if not id_list else max(id_list) + 1
         else:
             run_id = 0
-        run_dir = RESULTS_DIR / dir_name / f"run_{str(run_id).zfill(3)}"
+        run_dir = RESULTS_DIR / model_name / dir_name / "not_excluded" / f"run_{str(run_id).zfill(3)}"
+        
         run_dir.mkdir(parents=True, exist_ok=True)
     print(f"Results will be stored at {run_dir}")
 
@@ -232,7 +233,18 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--model_name",
-        choices=["gpt2-medium", "gpt2-large", "gpt2-xl", "EleutherAI/gpt-j-6B"],
+        choices=[
+            "gpt2-xl",
+            "EleutherAI/gpt-j-6B",
+            "EleutherAI/gpt-neox-20b",
+            "gpt2-large",
+            "gpt2-medium",
+            "gpt2",
+            "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+            "TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T",
+            "meta-llama/Llama-2-7b-hf" 
+        ],
+
         default="gpt2-xl",
         help="Model to edit.",
         required=True,
